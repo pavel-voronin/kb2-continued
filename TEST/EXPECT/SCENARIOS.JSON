@@ -1,0 +1,42 @@
+{
+  "WORLD": {
+    "L0.DAT": {
+      "bytes": 27729,
+      "sha256": "167ca8b338214a5dbd400b0fc1b670a37593220b5d09bf853246c289ef7ac45a"
+    },
+    "R0.DAT": {
+      "bytes": 27729,
+      "sha256": "167ca8b338214a5dbd400b0fc1b670a37593220b5d09bf853246c289ef7ac45a"
+    },
+    "L1.DAT": {
+      "bytes": 27729,
+      "sha256": "35a41ae8513b1c93a043babe2a9bb177135474565edb08e2d83131663be7149d"
+    },
+    "R1.DAT": {
+      "bytes": 27729,
+      "sha256": "35a41ae8513b1c93a043babe2a9bb177135474565edb08e2d83131663be7149d"
+    },
+    "L2.DAT": {
+      "bytes": 27729,
+      "sha256": "66e812105fe20ed4d78abb7fe46a55b9e989ccf025f68fa0b0fad2e76cf2ec7a"
+    },
+    "R2.DAT": {
+      "bytes": 27729,
+      "sha256": "66e812105fe20ed4d78abb7fe46a55b9e989ccf025f68fa0b0fad2e76cf2ec7a"
+    },
+    "L3.DAT": {
+      "bytes": 27729,
+      "sha256": "396b4829514e9a90025938a871e5ff289f1a66bfba38793222c0949895f7de7b"
+    },
+    "R3.DAT": {
+      "bytes": 27729,
+      "sha256": "396b4829514e9a90025938a871e5ff289f1a66bfba38793222c0949895f7de7b"
+    }
+  },
+  "COMBAT": {
+    "TACTIC.BIN": {
+      "bytes": 362288,
+      "sha256": "0cfe29801256354598390dc4444e8896e1edcf7b78b28b4eb695bde8ce415ac8"
+    }
+  }
+}

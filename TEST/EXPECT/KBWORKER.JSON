@@ -1,0 +1,7101 @@
+{
+  "WorkersMenu.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 48
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "0"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 48
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "0"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-1.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "5140688fde423667e8858b9b1d89a004b10c3845a582838093145a8490afa2ab",
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-1.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "fd51c051ed56825225348db027e81aa2ade3a659465360143b7a47d472619aa8",
+      "Runtime.LastScan": 75
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-1.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "afd325705f9c90f9d6818e1d81daaeccd1c9d38d2f5aed04c94f98cd442f88bd",
+      "Runtime.LastScan": 77
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-1.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "06b2c7173909f9e50a7f9090289159021228277256df4b8376f1560c43503b31",
+      "Runtime.LastScan": 80
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-5.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "cc2e3c8585211c3619236ff26aa5c8867e81a63cea9c5b11a7b665b808a5eb8e",
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-5.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "6c23ca97f05bfdc0045726b7347d69fc18d27b6192c63cb9d78de39ba9a30610",
+      "Runtime.LastScan": 75
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-5.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "2d3f3e4bea7e257655254cd22809485cb2a40d2df135ee6a3b1048e861ffc4f5",
+      "Runtime.LastScan": 77
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.island-5.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Carpenters": 9,
+      "Campaign.Map.sha256": "3fc4b9ade9ce34c0eeec94d44b5e95814585918a3af0b4f6b898fcebed285742",
+      "Runtime.LastScan": 80
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.wrong-terrain": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-1.cancel-direction": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-1.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "e945ab12b89751da0f17cee4461692996a3005e181b216065d1b7d6a5131417a",
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-1.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "2e5e1e5bbfc31519613a452f1fc724e35cb6930f0dd5cdbf34368956e4d1142f",
+      "Runtime.LastScan": 75
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-1.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "ce2eb38f55ec7fd4a2c5a385741dbd235a3d7a6ad2a63a53828f47c7d85a9f6d",
+      "Runtime.LastScan": 77
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-1.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "87ed700779289b5d98b5c6a822bc81d0cc40025b0464f4ddf09a4c119f2f73f1",
+      "Runtime.LastScan": 80
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-5.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "fa5dc0e095b38731b9bf5514ba5f9ad8fea49227cabaaeea07a9216d0c3edcfe",
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-5.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "e7ea49192df9f37accdab6f124abed8776c6113724d68f40b77df97c6e92258f",
+      "Runtime.LastScan": 75
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-5.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "dc93cd72c9f70fdefa06aca1d8406c6f6c27f43ea86e27d28e8c869654f46177",
+      "Runtime.LastScan": 77
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.island-5.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "3caa792b9317950d3ea1b2f72e5de5812eb8bec7358e68ab5101356a8d7cce75",
+      "Runtime.LastScan": 80
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.wrong-terrain": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-2.cancel-direction": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-1.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "6ff43c7e5fdccfc321534d777188f4978664be68056dea5bb03f9fe6ea81e67a",
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-1.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "b7594bf86c7ab8ccaa972b3df735408991ce454cbf304d3371acef767c19bc3a",
+      "Runtime.LastScan": 75
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-1.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "21f5d779000fe03ae6f4e5d31ac6891d3dff4c21ed1755555742d85eb3a84e4f",
+      "Runtime.LastScan": 77
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-1.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "120c0e679517f8a668bc4f505cd255f9425158059c32b51c74e03def2e75d577",
+      "Runtime.LastScan": 80
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-5.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "af2d59cacdf0e89361b5ab446d18da52a0cd9660e8ffca0c6beef434eddf2f06",
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-5.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "c14fda18604ed7a069abc8fcee8f5158e006ae3e6c63bf9b253d8a5c3bd4754b",
+      "Runtime.LastScan": 75
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-5.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "dd59c3819429d9012970fbb05b8300eaf2bb6c80afd85cbd0d7d5e4c559aca45",
+      "Runtime.LastScan": 77
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.island-5.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "c58ed66be99920296dc487fe4d3c4368434041501b1ae6e40c36677b7838bc2c",
+      "Runtime.LastScan": 80
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.wrong-terrain": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-3.cancel-direction": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-1.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "7e870835d00436bbdb098bb66cd63ca34d79bbf7a38d427eb848461a0d3b0d14",
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-1.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "133e05f8cc024b42ffee121667fd30748df58cf2b9a535d3e432f4f94a240fdc",
+      "Runtime.LastScan": 75
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-1.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "f77c196f4a3610ba407f0c0b895bb95d5128376c7a7bb030bfacd0c83eb58a4f",
+      "Runtime.LastScan": 77
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-1.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "d78c4f1849befcabac1706e5f74e96bede3f7ced72d111864a16ed7d482974d9",
+      "Runtime.LastScan": 80
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-5.direction-72": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "d2fe045d86787a4255585394f402fc53292f1d608c210e01fc301e3ccbf6fad4",
+      "Runtime.RegrowthCountdown": 6,
+      "Runtime.LastScan": 72,
+      "Runtime.RegrowthPosition.X": 30,
+      "Runtime.RegrowthPosition.Y": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-5.direction-75": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "ac9c1548af2609eb97c7e40d3eb371c5e4d81255d22be44290695f60c8033419",
+      "Runtime.RegrowthCountdown": 6,
+      "Runtime.LastScan": 75,
+      "Runtime.RegrowthPosition.X": 29,
+      "Runtime.RegrowthPosition.Y": 30
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-5.direction-77": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "bade88ec5f1cba9c119eb8c68f8eb7d04b1340aa47887549f723cc89427016a7",
+      "Runtime.RegrowthCountdown": 6,
+      "Runtime.LastScan": 77,
+      "Runtime.RegrowthPosition.X": 31,
+      "Runtime.RegrowthPosition.Y": 30
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.island-5.direction-80": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Stonecutters": 9,
+      "Campaign.Map.sha256": "dc095408e3b2817c127bbc9d090f0369a0b3589c26eb46182d58831e4dd331d8",
+      "Runtime.RegrowthCountdown": 6,
+      "Runtime.LastScan": 80,
+      "Runtime.RegrowthPosition.X": 30,
+      "Runtime.RegrowthPosition.Y": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.wrong-terrain": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 72
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.job-4.cancel-direction": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.no-worker-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "0"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          8
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.no-worker-2": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 50
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "0"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          8
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.no-worker-3": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 51
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "0"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          8
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.no-worker-4": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 52
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "0"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          8
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.dig-adjacent-water": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Diggers": 9,
+      "Campaign.Map.sha256": "20fcbb17669a849c85d0e4c09fd2abd9599eaaf607147da6a34636d893629101",
+      "Runtime.LastScan": 72
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.fell-isolated-tree": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Woodcutters": 9,
+      "Campaign.Map.sha256": "4c78e438fb7d5d1b77447b6b60482215f93001c054d72a7f162e968d546e5813",
+      "Runtime.LastScan": 72
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WorkersMenu.matrix.non-direction-extended-key": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 59
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          29
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0420\u0410\u0411\u041e\u0422\u041d\u0418\u041a\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u041f\u043b\u043e\u0442\u043d\u0438\u043a\u0438 :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u041b\u0435\u0441\u043ep\u0443\u0431\u044b :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0417\u0435\u043c\u043b\u0435\u043a\u043e\u043f\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u041a\u0430\u043c\u043d\u0435\u0442\u0435\u0441\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "10"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          1
+        ]
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

@@ -1,0 +1,36 @@
+diff --git a/src/ints/bios_keyboard.cpp b/src/ints/bios_keyboard.cpp
+index bcf8931..bdf4252 100644
+--- a/src/ints/bios_keyboard.cpp
++++ b/src/ints/bios_keyboard.cpp
+@@ -31,6 +31,9 @@
+ #include "int10.h"
+ #include "jfont.h"
+ #include "render.h"
++#ifdef JSDOS
++#include <jsdos-events.h>
++#endif
+ 
+ extern bool kana_input;
+ 
+@@ -1320,6 +1323,10 @@ Bitu INT16_Handler(void) {
+     uint16_t temp=0;
+     switch (reg_ah) {
+     case 0x00: /* GET KEYSTROKE */
++#ifdef JSDOS
++        jsdos::finishStartup();
++        if (jsdos::takeImportedSaveKey()) BIOS_AddKeyToBuffer(0x1c0d);
++#endif
+         if (int16_unmask_irq1_on_read)
+             PIC_SetIRQMask(1,false); /* unmask keyboard */
+ 
+@@ -1340,6 +1347,10 @@ Bitu INT16_Handler(void) {
+         }
+         break;
+     case 0x10: /* GET KEYSTROKE (enhanced keyboards only) */
++#ifdef JSDOS
++        jsdos::finishStartup();
++        if (jsdos::takeImportedSaveKey()) BIOS_AddKeyToBuffer(0x1c0d);
++#endif
+         if (int16_unmask_irq1_on_read)
+             PIC_SetIRQMask(1,false); /* unmask keyboard */
+ 

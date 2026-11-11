@@ -1,0 +1,2200 @@
+{
+  "SetGraphicsMode.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SetGraphicsMode.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RestoreControls.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          491,
+          20,
+          491,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          492,
+          20,
+          492,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          488,
+          20,
+          488,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          489,
+          20,
+          489,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          490,
+          20,
+          490,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          493,
+          20,
+          493,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          494,
+          20,
+          494,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          495,
+          20,
+          495,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          1822,
+          17
+        ]
+      ],
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          6622,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          6622,
+          16,
+          8
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshMapParts",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RestoreControls.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          491,
+          20,
+          491,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          492,
+          20,
+          492,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          488,
+          20,
+          488,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          489,
+          20,
+          489,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          490,
+          20,
+          490,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          493,
+          20,
+          493,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          494,
+          20,
+          494,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          495,
+          20,
+          495,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          1822,
+          17
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          6622,
+          16
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshMapParts",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "VictoryReport.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        1,
+        48,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          240,
+          "\u041f \u041e \u0411 \u0415 \u0414 \u0410 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "B \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435 \u0412\u044b \u0437\u0430p\u0430\u0431\u043e\u0442\u0430\u043b\u0438:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043f\u043e\u0432\u044b\u0441\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          264,
+          "0$"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          274,
+          "0"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          0
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "VictoryReport.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        1,
+        48,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          240,
+          "\u041f \u041e \u0411 \u0415 \u0414 \u0410 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "B \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435 \u0412\u044b \u0437\u0430p\u0430\u0431\u043e\u0442\u0430\u043b\u0438:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043f\u043e\u0432\u044b\u0441\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          264,
+          "0$"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          274,
+          "0"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          0
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "DefeatReport.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.EnemyGrace": 40,
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        1,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          240,
+          "\u041f \u041e \u0420 \u0410 \u0416 \u0415 \u041d \u0418 \u0415 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0412\u044b \u043fp\u043e\u0438\u0433p\u0430\u043b\u0438 \u0432 \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435. \u0418 \u043fp\u043e\u0442\u0438\u0432\u043d\u0438\u043a \u0437\u0430\u0433\u043d\u0430\u043b \u0412\u0430\u0441 \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e \u043a\u0443\u0434\u0430."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBADVENT",
+        "RandomHeroLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          31,
+          274,
+          "0"
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          5,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          7
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "DefeatReport.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Flags.SiegeEngineOwned": 0,
+      "Campaign.Flags.ArmyAvailable": 0,
+      "Campaign.EnemyGrace": 40,
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        1,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          240,
+          "\u041f \u041e \u0420 \u0410 \u0416 \u0415 \u041d \u0418 \u0415 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0412\u044b \u043fp\u043e\u0438\u0433p\u0430\u043b\u0438 \u0432 \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435. \u0418 \u043fp\u043e\u0442\u0438\u0432\u043d\u0438\u043a \u0437\u0430\u0433\u043d\u0430\u043b \u0412\u0430\u0441 \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e \u043a\u0443\u0434\u0430."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBADVENT",
+        "RandomHeroLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          31,
+          274,
+          "0"
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          5,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          7
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "CleanupGame.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBART",
+        "ReleaseArtwork",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "CleanupGame.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBART",
+        "ReleaseArtwork",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "GameOver.empty": {
+    "result": 0,
+    "phase": "exit",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.PictureFileName": [
+        11,
+        89,
+        79,
+        85,
+        76,
+        79,
+        83,
+        69,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0
+      ],
+      "Runtime.PicturePage": 32768
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": 0,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "ReleaseArtwork",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "GameOver.army": {
+    "result": 0,
+    "phase": "exit",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.PictureFileName": [
+        11,
+        89,
+        79,
+        85,
+        76,
+        79,
+        83,
+        69,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0
+      ],
+      "Runtime.PicturePage": 32768
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": 0,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "ReleaseArtwork",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RestoreControls.matrix.contract-1.siege-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          491,
+          20,
+          491,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          492,
+          20,
+          492,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          488,
+          20,
+          488,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          489,
+          20,
+          489,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          490,
+          20,
+          490,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          493,
+          20,
+          493,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          494,
+          20,
+          494,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          495,
+          20,
+          495,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          1822,
+          17
+        ]
+      ],
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          6622,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          6622,
+          16,
+          8
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshMapParts",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RestoreControls.matrix.contract-1.siege-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          491,
+          20,
+          491,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          492,
+          20,
+          492,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          488,
+          20,
+          488,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          489,
+          20,
+          489,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          490,
+          20,
+          490,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          493,
+          20,
+          493,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          494,
+          20,
+          494,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          495,
+          20,
+          495,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          1822,
+          17
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          6622,
+          16
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshMapParts",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RestoreControls.matrix.contract-100.siege-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          491,
+          20,
+          491,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          492,
+          20,
+          492,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          488,
+          20,
+          488,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          489,
+          20,
+          489,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          490,
+          20,
+          490,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          493,
+          20,
+          493,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          494,
+          20,
+          494,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          495,
+          20,
+          495,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          1822,
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          1822,
+          17,
+          9
+        ]
+      ],
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          6622,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          6622,
+          16,
+          8
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshMapParts",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RestoreControls.matrix.contract-100.siege-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          491,
+          20,
+          491,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          492,
+          20,
+          492,
+          323,
+          15
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          488,
+          20,
+          488,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          489,
+          20,
+          489,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          490,
+          20,
+          490,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          493,
+          20,
+          493,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          494,
+          20,
+          494,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawLine",
+        [
+          495,
+          20,
+          495,
+          323,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          1822,
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          1822,
+          17,
+          9
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          6622,
+          16
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshMapParts",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SetGraphicsMode.matrix.mode-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SetGraphicsMode.matrix.mode-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "VictoryReport.matrix.kind-2": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.AuthorityChange": 17,
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        2,
+        49,
+        55,
+        48,
+        48,
+        48,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Leadership": 2517,
+      "Campaign.Gold": 2010000
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          240,
+          "\u041f \u041e \u0411 \u0415 \u0414 \u0410 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "B \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435 \u0412\u044b \u0437\u0430p\u0430\u0431\u043e\u0442\u0430\u043b\u0438:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043f\u043e\u0432\u044b\u0441\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          264,
+          "10000$"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          274,
+          "17"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          0
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "VictoryReport.matrix.kind-5": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.AuthorityChange": 7,
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        1,
+        55,
+        48,
+        48,
+        48,
+        48,
+        36,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.WanderingArmies.sha256": "4dba574a4f0cd6f820ad5347c6a6a4eef94b4226fb1358d8296f73f8bd13dc2d",
+      "Campaign.Leadership": 2507,
+      "Campaign.Gold": 2010000
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          240,
+          "\u041f \u041e \u0411 \u0415 \u0414 \u0410 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "B \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435 \u0412\u044b \u0437\u0430p\u0430\u0431\u043e\u0442\u0430\u043b\u0438:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043f\u043e\u0432\u044b\u0441\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          264,
+          "10000$"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          274,
+          "7"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          0
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "DefeatReport.matrix.leadership-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.AuthorityChange": 9,
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        1,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.SiegeEngineOwned": 0,
+      "Campaign.Flags.ArmyAvailable": 0,
+      "Campaign.Leadership": 10,
+      "Campaign.EnemyGrace": 40
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          240,
+          "\u041f \u041e \u0420 \u0410 \u0416 \u0415 \u041d \u0418 \u0415 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0412\u044b \u043fp\u043e\u0438\u0433p\u0430\u043b\u0438 \u0432 \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435. \u0418 \u043fp\u043e\u0442\u0438\u0432\u043d\u0438\u043a \u0437\u0430\u0433\u043d\u0430\u043b \u0412\u0430\u0441 \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e \u043a\u0443\u0434\u0430."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBADVENT",
+        "AbandonShip",
+        []
+      ],
+      [
+        "KBADVENT",
+        "RandomHeroLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          31,
+          274,
+          "9"
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          5,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          7
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "DefeatReport.matrix.leadership-10000": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.AuthorityChange": 9,
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        1,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.SiegeEngineOwned": 0,
+      "Campaign.Flags.ArmyAvailable": 0,
+      "Campaign.Leadership": 9991,
+      "Campaign.EnemyGrace": 40
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          584,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          240,
+          "\u041f \u041e \u0420 \u0410 \u0416 \u0415 \u041d \u0418 \u0415 !"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0412\u044b \u043fp\u043e\u0438\u0433p\u0430\u043b\u0438 \u0432 \u044d\u0442\u043e\u0439 \u0431\u0438\u0442\u0432\u0435. \u0418 \u043fp\u043e\u0442\u0438\u0432\u043d\u0438\u043a \u0437\u0430\u0433\u043d\u0430\u043b \u0412\u0430\u0441 \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e \u043a\u0443\u0434\u0430."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          274,
+          "B\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u043b\u0441\u044f \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBADVENT",
+        "AbandonShip",
+        []
+      ],
+      [
+        "KBADVENT",
+        "RandomHeroLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          31,
+          274,
+          "9"
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          5,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          7
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  }
+}

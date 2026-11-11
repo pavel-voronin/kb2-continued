@@ -1,0 +1,2658 @@
+{
+  "PaperScrollVisit.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.ActionScratch": 5
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          264,
+          "\u0421\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f \u0441\u0442\u0435p\u0442\u044b \u0432p\u0435\u043c\u0435\u043d\u0435\u043c \u043d\u0430 \u044d\u0442\u043e\u0439 \u0431\u0443\u043c\u0430\u0433\u0435."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "PaperScrollVisit.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.ActionScratch": 5
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          264,
+          "\u0421\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f \u0441\u0442\u0435p\u0442\u044b \u0432p\u0435\u043c\u0435\u043d\u0435\u043c \u043d\u0430 \u044d\u0442\u043e\u0439 \u0431\u0443\u043c\u0430\u0433\u0435."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "PaperScrollVisit.matrix.event-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "World.GenerationCount": 288,
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        2,
+        53,
+        51,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          8,
+          240,
+          "\u041a\u043e\u043d\u0442p\u0430\u043a\u0442\u043d\u044b\u0435 \u0437\u0430\u043c\u043a\u0438 \u0434\u0430\u043d\u043d\u043e\u0439 \u0437\u0435\u043c\u043b\u0438 p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          4,
+          256,
+          "\u0417\u0410\u041c\u041e\u041a        \u041a\u041e\u041d\u0422\u0418\u041d\u0415\u041d\u0422         X          Y"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "AMM\u0418H"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          256
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          256,
+          " 8"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          256,
+          "53"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0411\u0410\u041c\u0410\u041a\u041e"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          264
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          264,
+          "18"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          264,
+          "53"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0411\u0418\u0421\u0410\u0423"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          272
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          272,
+          "28"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          272,
+          "53"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0413\u041b\u0410\u0417\u0413\u041e"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          280
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          280,
+          "38"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          280,
+          "53"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u0420\u0418\u041d\u0412\u0418\u0427"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          288
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          288,
+          "48"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          288,
+          "53"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1
+  },
+  "PaperScrollVisit.matrix.event-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 1,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          9,
+          264,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u0435 \u0434\u043b\u044f \u0432\u044b\u0437\u043e\u0432\u0430 \u0412\u043e\u043b\u0448\u0435\u0431\u043d\u0438\u043a\u0430."
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBWIZARD",
+        "WizardVisit",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 404327440
+  },
+  "PaperScrollVisit.matrix.event-2": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Army": [
+        {
+          "Species": 20,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 18,
+          "Count": 3
+        },
+        {
+          "Species": 22,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 2,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          9,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0412\u0430\u0448\u0435 \u0432\u043e\u0439\u0441\u043a\u043e \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u043b\u043e\u0441\u044c."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 673879066
+  },
+  "PaperScrollVisit.matrix.event-3": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.DamageBonus": 500,
+      "Runtime.ActionScratch": 3,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          12,
+          264,
+          "\u0412\u0430\u0448\u0438 \u0432\u043e\u0438\u043d\u044b \u0441\u0442\u0430\u043d\u043e\u0432\u044f\u0442\u0441\u044f \u0431\u043e\u043b\u0435\u0435 \u0443\u043c\u0435\u043b\u044b\u043c\u0438."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 943430692
+  },
+  "PaperScrollVisit.matrix.event-4": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 4,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          8,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0412\u0430\u0448 \u043a\u043ep\u0430\u0431\u043b\u044c \u043f\u043e\u0448\u0435\u043b \u043a\u043e \u0434\u043d\u0443."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1212982318
+  },
+  "PaperScrollVisit.matrix.event-5": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 5,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          264,
+          "\u0421\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f \u0441\u0442\u0435p\u0442\u044b \u0432p\u0435\u043c\u0435\u043d\u0435\u043c \u043d\u0430 \u044d\u0442\u043e\u0439 \u0431\u0443\u043c\u0430\u0433\u0435."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1482533944
+  },
+  "PaperScrollVisit.matrix.event-6": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 6,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          8,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u041f\u0430\u043c\u044f\u0442\u044c \u0441\u0442\u0430\u043b\u0430 \u0412\u0430\u043c \u0438\u0437\u043c\u0435\u043d\u044f\u0442\u044c."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "ForgetDiscovery",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1752085570
+  },
+  "PaperScrollVisit.matrix.event-7": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Gold": 0,
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 7,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0412\u0430\u0448 \u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u0417\u0430\u043f\u0430\u0441 \u0443\u0436\u0435 \u043d\u0435 \u0441 \u0412\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2021637196
+  },
+  "PaperScrollVisit.matrix.event-8": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Gold": 4000000,
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 8,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          9,
+          264,
+          "\u0412\u0430\u0448 \u0417\u043e\u043b\u043e\u0442\u043e\u0439 \u0417\u0430\u043f\u0430\u0441 \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u0432 \u0434\u0432\u0430 p\u0430\u0437\u0430."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2425964635
+  },
+  "PaperScrollVisit.matrix.event-9": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 9,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          264,
+          "\u0417\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u0435 \u043f\u0435p\u0435\u043d\u043e\u0441\u0438\u0442 \u0412\u0430\u0441 \u0432 \u0434p\u0443\u0433\u043e\u0435 \u043c\u0435\u0441\u0442\u043e."
+        ]
+      ],
+      [
+        "KBADVENT",
+        "RandomHeroLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2695516261
+  },
+  "PaperScrollVisit.matrix.event-10": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Towns.sha256": "548874c665e35135e9931d8a448cc7e734c500bde11dade80b16fcc4a572a656",
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 10,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          264,
+          "\u0413\u043ep\u043e\u0434\u0430 \u043d\u0430\u043f\u043e\u043b\u043d\u044f\u044e\u0442\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2965067887
+  },
+  "PaperScrollVisit.matrix.event-11": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 11,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          8,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0412\u044b \u0442\u0435p\u044f\u0435\u0442\u0435 \u0432\u0441\u0435\u0445 p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u043e\u0432."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 3234619513
+  },
+  "PaperScrollVisit.matrix.event-12": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Leadership": 5000,
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 12,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          264,
+          "\u0412\u0430\u0448 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u0432 \u0432\u043e\u0439\u0441\u043a\u0430\u0445 p\u0430\u0441\u0442\u0435\u0442."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 3504171139
+  },
+  "PaperScrollVisit.matrix.event-13": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.QuestFlags": [
+        10,
+        3,
+        3,
+        3,
+        3
+      ],
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 13,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0423 \u0425\u043e\u0437\u044f\u0438\u043d\u0430 \u0437\u0435\u043c\u043b\u0438 \u0432\u044bp\u043e\u0441\u043b\u0438 \u0411\u041e\u041b\u042c\u0428\u0418\u0415 \u0423\u0428\u0418."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 3773722765
+  },
+  "PaperScrollVisit.matrix.event-14": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.QuestFlags": [
+        3,
+        3,
+        3,
+        0,
+        3
+      ],
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 14,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          4,
+          264,
+          "\u041d\u0430\u0439\u0434\u0435\u043d\u043d\u0430\u044f \u0431\u0443\u043c\u0430\u0433\u0430 \u043e\u0447\u0435\u043d\u044c \u043d\u0443\u0436\u043d\u0430 \u043e\u0434\u043d\u043e\u043c\u0443 \u0438\u0437 \u0425\u043e\u0437\u044f\u0435\u0432 \u0437\u0435\u043c\u0435\u043b\u044c."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 3957536500
+  },
+  "PaperScrollVisit.matrix.chart-island-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.UnlockedIslands": 2,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u043a\u0430p\u0442\u0443, \u043f\u043e \u043a\u043e\u0442\u043ep\u043e\u0439 \u043c\u043e\u0436\u0435\u0442\u0435 \u0434\u043e\u0431p\u0430\u0442\u044c\u0441\u044f \u0434\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          264,
+          "\u0417\u0410\u0411\u041e\u041b\u041e\u0422\u0418\u0418"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "PaperScrollVisit.matrix.chart-island-2": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.UnlockedIslands": 3,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u043a\u0430p\u0442\u0443, \u043f\u043e \u043a\u043e\u0442\u043ep\u043e\u0439 \u043c\u043e\u0436\u0435\u0442\u0435 \u0434\u043e\u0431p\u0430\u0442\u044c\u0441\u044f \u0434\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          27,
+          264,
+          "\u0422\u0410\u0419\u0413\u0410\u041d\u0418\u0418"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "PaperScrollVisit.matrix.chart-island-3": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.UnlockedIslands": 4,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u043a\u0430p\u0442\u0443, \u043f\u043e \u043a\u043e\u0442\u043ep\u043e\u0439 \u043c\u043e\u0436\u0435\u0442\u0435 \u0434\u043e\u0431p\u0430\u0442\u044c\u0441\u044f \u0434\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          264,
+          "\u0410\u041b\u042c\u041f\u0418\u0418"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "PaperScrollVisit.matrix.chart-island-4": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.UnlockedIslands": 5,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u043a\u0430p\u0442\u0443, \u043f\u043e \u043a\u043e\u0442\u043ep\u043e\u0439 \u043c\u043e\u0436\u0435\u0442\u0435 \u0434\u043e\u0431p\u0430\u0442\u044c\u0441\u044f \u0434\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          264,
+          "\u0421\u0410\u0425\u0410\u0420\u0418\u0418"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "PaperScrollVisit.matrix.chart-island-5": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.ActionScratch": 5,
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          264,
+          "\u0421\u0438\u043c\u0432\u043e\u043b\u044b \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f \u0441\u0442\u0435p\u0442\u044b \u0432p\u0435\u043c\u0435\u043d\u0435\u043c \u043d\u0430 \u044d\u0442\u043e\u0439 \u0431\u0443\u043c\u0430\u0433\u0435."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "PaperScrollVisit.matrix.dismiss-army-count-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.ActionScratch": 2,
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          9,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0412\u0430\u0448\u0435 \u0432\u043e\u0439\u0441\u043a\u043e \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u043b\u043e\u0441\u044c."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 673879066
+  },
+  "PaperScrollVisit.matrix.dismiss-army-count-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.ActionScratch": 2,
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          9,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0412\u0430\u0448\u0435 \u0432\u043e\u0439\u0441\u043a\u043e \u0443\u043c\u0435\u043d\u044c\u0448\u0438\u043b\u043e\u0441\u044c."
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 673879066
+  },
+  "PaperScrollVisit.matrix.edge-event-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        2,
+        53,
+        51,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "World.GenerationCount": 280
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          8,
+          240,
+          "\u041a\u043e\u043d\u0442p\u0430\u043a\u0442\u043d\u044b\u0435 \u0437\u0430\u043c\u043a\u0438 \u0434\u0430\u043d\u043d\u043e\u0439 \u0437\u0435\u043c\u043b\u0438 p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u044b:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          4,
+          256,
+          "\u0417\u0410\u041c\u041e\u041a        \u041a\u041e\u041d\u0422\u0418\u041d\u0415\u041d\u0422         X          Y"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u0411\u0410\u041c\u0410\u041a\u041e"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          256
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          256,
+          "18"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          256,
+          "53"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0411\u0418\u0421\u0410\u0423"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          264
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          264,
+          "28"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          264,
+          "53"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0413\u041b\u0410\u0417\u0413\u041e"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          272
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          272,
+          "38"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          272,
+          "53"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0413\u0420\u0418\u041d\u0412\u0418\u0427"
+        ]
+      ],
+      [
+        "KBREPORT",
+        "DrawIslandName",
+        [
+          1,
+          17,
+          280
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          34,
+          280,
+          "48"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          45,
+          280,
+          "53"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1
+  },
+  "PaperScrollVisit.matrix.edge-event-4": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.ActionScratch": 4,
+      "Campaign.Flags.PaperChartPresent": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          8,
+          264,
+          "\u0427\u0415\u0420\u041d\u041e\u0415 \u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u0415! \u0412\u0430\u0448 \u043a\u043ep\u0430\u0431\u043b\u044c \u043f\u043e\u0448\u0435\u043b \u043a\u043e \u0434\u043d\u0443."
+        ]
+      ],
+      [
+        "KBADVENT",
+        "AbandonShip",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1212982318
+  },
+  "PaperScrollVisit.matrix.chart-already-unlocked": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u043a\u0430p\u0442\u0443, \u043f\u043e \u043a\u043e\u0442\u043ep\u043e\u0439 \u043c\u043e\u0436\u0435\u0442\u0435 \u0434\u043e\u0431p\u0430\u0442\u044c\u0441\u044f \u0434\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          264,
+          "\u0417\u0410\u0411\u041e\u041b\u041e\u0422\u0418\u0418"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          5
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

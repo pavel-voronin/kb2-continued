@@ -1,0 +1,6 @@
+{
+  "name": "kb2-browser",
+  "private": true,
+  "scripts": { "build": "node build.cjs" },
+  "dependencies": { "fflate": "0.8.2" }
+}

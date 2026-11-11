@@ -1,0 +1,6111 @@
+{
+  "DispatchCommand.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 71
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 71
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ResolveMovement.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ResolveMovement.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "AdvanceAdventureTime.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Days": 199
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "AdvanceAdventureTime.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Days": 199
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ConfirmExit.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ConfirmExit.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "WaitForCommand.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.ActionScratch": 10
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBMOTION",
+        "RevealNearbyTiles",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "WaitForCommand.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.ActionScratch": 40
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBMOTION",
+        "RevealNearbyTiles",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RunGame.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 68,
+      "Runtime.CachedCreatureId": 100
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBSESS",
+        "SetGraphicsMode",
+        [
+          1
+        ]
+      ],
+      [
+        "KBSTART",
+        "InitializeRuntime",
+        []
+      ],
+      [
+        "KBSTART",
+        "LoadTitle",
+        []
+      ],
+      [
+        "KBSTART",
+        "StartupMenu",
+        []
+      ],
+      [
+        "KBSTART",
+        "LoadGameArtwork",
+        []
+      ],
+      [
+        "KBADVENT",
+        "RefreshDwellings",
+        []
+      ],
+      [
+        "KBLOAD",
+        "PrepareLoadedCampaign",
+        []
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBAPP",
+        "WaitForCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "DispatchCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "UpdateHeroFacing",
+        []
+      ],
+      [
+        "KBAPP",
+        "ResolveMovement",
+        []
+      ],
+      [
+        "KBAPP",
+        "AdvanceAdventureTime",
+        []
+      ],
+      [
+        "KBAPP",
+        "ConfirmExit",
+        []
+      ],
+      [
+        "KBSESS",
+        "CleanupGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RunGame.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 68,
+      "Runtime.CachedCreatureId": 100
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBSESS",
+        "SetGraphicsMode",
+        [
+          1
+        ]
+      ],
+      [
+        "KBSTART",
+        "InitializeRuntime",
+        []
+      ],
+      [
+        "KBSTART",
+        "LoadTitle",
+        []
+      ],
+      [
+        "KBSTART",
+        "StartupMenu",
+        []
+      ],
+      [
+        "KBSTART",
+        "LoadGameArtwork",
+        []
+      ],
+      [
+        "KBADVENT",
+        "RefreshDwellings",
+        []
+      ],
+      [
+        "KBLOAD",
+        "PrepareLoadedCampaign",
+        []
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBAPP",
+        "WaitForCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "DispatchCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "UpdateHeroFacing",
+        []
+      ],
+      [
+        "KBAPP",
+        "ResolveMovement",
+        []
+      ],
+      [
+        "KBAPP",
+        "AdvanceAdventureTime",
+        []
+      ],
+      [
+        "KBAPP",
+        "ConfirmExit",
+        []
+      ],
+      [
+        "KBSESS",
+        "CleanupGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-0.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 71
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-0.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 71
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-17.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBWORKER",
+        "WorkersMenu",
+        [
+          1
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-17.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBWORKER",
+        "WorkersMenu",
+        [
+          1
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-18.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-18.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-19.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "RitualSpellReport",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-19.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "RitualSpellReport",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-20.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "CastTornado",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-20.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "CastTornado",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-22.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBMAGIC",
+        "AdventureMagic",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-22.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-23.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "CurrentContract",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-23.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "CurrentContract",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-24.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHELP",
+        "AdventureHelp",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-24.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHELP",
+        "AdventureHelp",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-25.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          20
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-25.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          20
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-30.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBARMY",
+        "ArmyOverview",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-30.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBARMY",
+        "ArmyOverview",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-31.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ],
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          23
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-31.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-32.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "DismissArmy",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-32.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "DismissArmy",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-33.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.SoundDisabled": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-33.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.SoundDisabled": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-34.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHELP",
+        "Credits",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-34.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHELP",
+        "Credits",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-46.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "SearchRitualSpell",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-46.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "SearchRitualSpell",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-47.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "HeroStatus",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-47.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "HeroStatus",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-48.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "CargoReport",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-48.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "CargoReport",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-49.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-49.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBHERO",
+        "SeaVoyage",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-50.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBMAP",
+        "MapVisit",
+        [
+          1
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-50.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBMAP",
+        "MapVisit",
+        [
+          1
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-68.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-68.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-71.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 29,
+      "World.GenerationY": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-71.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 29,
+      "World.GenerationY": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-72.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationY": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-72.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationY": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-73.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31,
+      "World.GenerationY": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-73.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31,
+      "World.GenerationY": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-75.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-75.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 29
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-77.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-77.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-79.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 29,
+      "World.GenerationY": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-79.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 29,
+      "World.GenerationY": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-80.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationY": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-80.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationY": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-81.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31,
+      "World.GenerationY": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.scan-81.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31,
+      "World.GenerationY": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-71": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-71": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 62,
+      "World.GenerationY": 62
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-72": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-72": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationY": 62
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-73": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-73": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-75": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-75": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 62
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-77": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 3
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-77": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-79": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-79": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-80": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationY": 3
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-80": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-2-2.scan-81": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 3,
+      "World.GenerationY": 3
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DispatchCommand.matrix.boundary-63-63.scan-81": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-71.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-71.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          15
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-71.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-71.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-72.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-72.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-72.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-72.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-73.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-73.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-73.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-73.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          15
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-75.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-75.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          15
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-75.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-75.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-77.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-77.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-77.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-77.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          15
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-79.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-79.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          15
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-79.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-79.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-80.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-80.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-80.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-80.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-81.heading-False.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-81.heading-False.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-81.heading-True.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "UpdateHeroFacing.matrix.scan-81.heading-True.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          15
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-0.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-0.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-2.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBCASTLE",
+        "CastleVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-2.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBCASTLE",
+        "CastleVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-4.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-4.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-5.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "WanderingArmyVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-5.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "WanderingArmyVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-7.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBTOWN",
+        "TownVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-7.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBTOWN",
+        "TownVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-8.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBDWELL",
+        "DwellingVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-8.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBDWELL",
+        "DwellingVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-9.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBSCROLL",
+        "PaperScrollVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-9.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBSCROLL",
+        "PaperScrollVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-10.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "TreasureVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-10.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "TreasureVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-11.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "UndergroundVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-11.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "UndergroundVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-12.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBWIZARD",
+        "WizardVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-12.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBWIZARD",
+        "WizardVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-14.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "BoardShip",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-14.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "BoardShip",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-18.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBCASTLE",
+        "CastleVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-18.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBCASTLE",
+        "CastleVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-22.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBEVENTS",
+        "TalkingStoneVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-22.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBEVENTS",
+        "TalkingStoneVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-23.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "RitualGuardianVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-23.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "RitualGuardianVisit",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-28.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBEVENTS",
+        "BlackMage",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-28.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBEVENTS",
+        "BlackMage",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-32.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "SandLanding",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-32.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBVISIT",
+        "SandLanding",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-48.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-48.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.GoodsMarketAge": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        600
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-64.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        200
+      ],
+      [
+        "delay",
+        30
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-64.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        200
+      ],
+      [
+        "delay",
+        30
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-80.ship-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        200
+      ],
+      [
+        "delay",
+        30
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ResolveMovement.matrix.tile-80.ship-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "sound",
+        200
+      ],
+      [
+        "delay",
+        30
+      ],
+      [
+        "no-sound",
+        0
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBVISIT",
+        "RegrowMountain",
+        []
+      ],
+      [
+        "KBMOTION",
+        "AdvanceNearbyRoamers",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "AdvanceAdventureTime.matrix.days-0.extra-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 255
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "AdvanceAdventureTime.matrix.days-1.extra-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBCAL",
+        "EndWeek",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "AdvanceAdventureTime.matrix.days-2.extra-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "AdvanceAdventureTime.matrix.days-200.extra-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.ExtraDays": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "AdvanceAdventureTime.matrix.days-200.extra-2": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.ExtraDays": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ConfirmExit.matrix.ship-False.answers-(1,)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ConfirmExit.matrix.ship-False.answers-(21, 1)": {
+    "result": 1,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ],
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          15
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ConfirmExit.matrix.ship-False.answers-(21, 21)": {
+    "result": 1,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 21
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ],
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          15
+        ]
+      ],
+      [
+        "KBSAVEUI",
+        "SaveNamedGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ConfirmExit.matrix.ship-True.answers-(1,)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ConfirmExit.matrix.ship-True.answers-(21, 1)": {
+    "result": 1,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 21
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "ConfirmExit.matrix.ship-True.answers-(21, 21)": {
+    "result": 1,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 21
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "WaitForCommand.matrix.idle-polls-3": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.IdleCounter": 4,
+      "Runtime.LastScan": 1,
+      "Runtime.WealthPicture": 129,
+      "Runtime.ActionScratch": 40,
+      "Runtime.IdlePowerPhase": 0
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          129
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBMOTION",
+        "RevealNearbyTiles",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "random_seed": 1242767767
+  },
+  "WaitForCommand.matrix.idle-polls-210": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.IdleCounter": 11,
+      "Runtime.LastScan": 1,
+      "Runtime.WealthPicture": 128,
+      "Runtime.ActionScratch": 40
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          129
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshMagic",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          128
+        ]
+      ],
+      [
+        "KBMOTION",
+        "RevealNearbyTiles",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "random_seed": 342459380
+  },
+  "loop.command-then-rejected-exit-then-confirmed-exit": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 68,
+      "Runtime.CachedCreatureId": 100
+    },
+    "calls_at_entry": [
+      [
+        "KBSESS",
+        "SetGraphicsMode",
+        [
+          1
+        ]
+      ],
+      [
+        "KBSTART",
+        "InitializeRuntime",
+        []
+      ],
+      [
+        "KBSTART",
+        "LoadTitle",
+        []
+      ],
+      [
+        "KBSTART",
+        "StartupMenu",
+        []
+      ],
+      [
+        "KBSTART",
+        "LoadGameArtwork",
+        []
+      ],
+      [
+        "KBADVENT",
+        "RefreshDwellings",
+        []
+      ],
+      [
+        "KBLOAD",
+        "PrepareLoadedCampaign",
+        []
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBAPP",
+        "WaitForCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "DispatchCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "UpdateHeroFacing",
+        []
+      ],
+      [
+        "KBAPP",
+        "ResolveMovement",
+        []
+      ],
+      [
+        "KBAPP",
+        "AdvanceAdventureTime",
+        []
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBAPP",
+        "WaitForCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "DispatchCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "UpdateHeroFacing",
+        []
+      ],
+      [
+        "KBAPP",
+        "ResolveMovement",
+        []
+      ],
+      [
+        "KBAPP",
+        "AdvanceAdventureTime",
+        []
+      ],
+      [
+        "KBAPP",
+        "ConfirmExit",
+        []
+      ],
+      [
+        "KBVIEW",
+        "DrawAdventureField",
+        []
+      ],
+      [
+        "KBAPP",
+        "WaitForCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "DispatchCommand",
+        []
+      ],
+      [
+        "KBAPP",
+        "UpdateHeroFacing",
+        []
+      ],
+      [
+        "KBAPP",
+        "ResolveMovement",
+        []
+      ],
+      [
+        "KBAPP",
+        "AdvanceAdventureTime",
+        []
+      ],
+      [
+        "KBAPP",
+        "ConfirmExit",
+        []
+      ],
+      [
+        "KBSESS",
+        "CleanupGame",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WaitForCommand.matrix.idle-below-million": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.IdlePowerPhase": 1,
+      "Runtime.LastScan": 1,
+      "Runtime.IdleCounter": 4,
+      "Runtime.ActionScratch": 10
+    },
+    "calls_at_entry": [
+      [
+        "KBMOTION",
+        "RevealNearbyTiles",
+        []
+      ],
+      [
+        "KBADVENT",
+        "MoveRoamer",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ],
+      [
+        "delay",
+        2
+      ]
+    ],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

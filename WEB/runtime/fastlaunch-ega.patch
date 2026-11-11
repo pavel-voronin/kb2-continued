@@ -1,0 +1,19 @@
+diff --git a/src/ints/bios.cpp b/src/ints/bios.cpp
+index d175823..27fcfdc 100644
+--- a/src/ints/bios.cpp
++++ b/src/ints/bios.cpp
+@@ -11292,7 +11292,13 @@ private:
+                 CALLBACK_RunRealInt(0x10);
+             }
+ #endif
+-            if (control->opt_fastlaunch) return CBRET_NONE;
++            if (control->opt_fastlaunch) {
++                if (machine == MCH_EGA) {
++                    reg_eax = 3;
++                    CALLBACK_RunRealInt(0x10);
++                }
++                return CBRET_NONE;
++            }
+         }
+         extern void GFX_SetTitle(int32_t cycles, int frameskip, Bits timing, bool paused);
+         RunningProgram = "DOSBOX-X";

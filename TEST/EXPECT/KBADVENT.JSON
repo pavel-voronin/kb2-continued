@@ -1,0 +1,462 @@
+{
+  "CountRitualSpells.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "CountRitualSpells.army": {
+    "result": 8,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "PlaceHiddenSpell.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.HiddenSpellEffect": 4,
+      "Campaign.HiddenSpellPosition.X": 18,
+      "Campaign.HiddenSpellPosition.Y": 5,
+      "Campaign.HiddenSpellIsland": 2
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 2377737157
+  },
+  "PlaceHiddenSpell.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "RandomHeroLanding.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.X": 25,
+      "Campaign.Hero.Y": 18
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 1242767767
+  },
+  "RandomHeroLanding.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.X": 25,
+      "Campaign.Hero.Y": 18
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 1242767767
+  },
+  "AbandonShip.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "AbandonShip.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "TransmuteDwellings.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Dwellings.sha256": "c3feb4b66ac86380f1e257043145eb569463376b04d3127b91c7533064b6e30d"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 340655249
+  },
+  "TransmuteDwellings.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Dwellings.sha256": "0b9a0fc29c79511ed35b70eff4eba765ccf3cb6f6e45a1e211f3c45f425760d9"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 340655249
+  },
+  "RefreshRoamingArmyArt.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          5,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshRoamingArmyArt.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          5,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RevealDwellingRange.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "RevealDwellingRange.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "RefreshDwellings.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "RefreshDwellings.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "MoveRoamer.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.RoamerDirection": 3
+    },
+    "buffers": {
+      "position": "1f1e"
+    },
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 1655067934
+  },
+  "MoveRoamer.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.RoamerDirection": 3
+    },
+    "buffers": {
+      "position": "1f1e"
+    },
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 1655067934
+  },
+  "EncounterLanding.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "EncounterLanding.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "RandomHeroLanding.matrix.reject-occupied-first-cell": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Hero.Y": 35,
+      "Campaign.Hero.X": 5
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2377737157
+  },
+  "PlaceHiddenSpell.matrix.reject-occupied-first-cell": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.HiddenSpellPosition.Y": 41,
+      "Campaign.HiddenSpellPosition.X": 35,
+      "Campaign.HiddenSpellEffect": 2,
+      "Campaign.HiddenSpellIsland": 2
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1467157059
+  },
+  "TransmuteDwellings.matrix.upper-species-wrap": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Dwellings.sha256": "f445c3c2a62db2bf72eeb5a1ef2f31ac718d29d0e2118d071d132517bf6123fd"
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 3399634638
+  },
+  "EncounterLanding.matrix.opposite-heading": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.ShipHeading": 1,
+      "Runtime.ShipAbandonBlocked": 0
+    },
+    "calls_at_entry": [
+      [
+        "KBTOWN",
+        "PlaceShip",
+        [
+          30,
+          30
+        ]
+      ],
+      [
+        "KBGFX",
+        "MirrorTileArt",
+        [
+          6
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}
