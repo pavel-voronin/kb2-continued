@@ -2,7 +2,8 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const crypto = require('node:crypto');
-const {zipSync,unzipSync} = require('fflate');
+const {unzipSync} = require('fflate');
+const gameBundle = require('./game-bundle.cjs');
 const preparePage = require('./prepare-page.cjs');
 const root = path.resolve(__dirname,'..');
 const args = process.argv.slice(2);
@@ -25,20 +26,14 @@ for(const [name,hash] of Object.entries(manifest.files)) {
 const classic=fs.readFileSync(path.join(__dirname,'assets/classic.jsdos'));
 const classicExe=unzipSync(classic)['KB2.EXE'];
 if(sha(classicExe)!=='c24025eb398a1c4a960b4ab7a21abb6fb81c86041f988178979381bfd8766a06')throw new Error('Classic EXE changed');
-const game={};
-for(const file of fs.readdirSync(gameDir)) {
-  if(/^(KB2\.EXE|KB2\.FNT|\w+\.PIC)$/i.test(file))game[file.toUpperCase()]=new Uint8Array(fs.readFileSync(path.join(gameDir,file)));
-}
-const required=Object.keys(unzipSync(classic)).filter(name=>/\.(EXE|FNT|PIC)$/i.test(name));
-for(const name of required)if(!game[name])throw new Error('Incomplete DOS release: '+name);
-game['.jsdos/dosbox.conf']=Buffer.from('[dosbox]\nmachine=ega\nmemsize=16\n[cpu]\ncore=normal\ncputype=286\ncycles=fixed 3000\n[render]\naspect=false\nscaler=none\n[mixer]\nrate=44100\nprebuffer=0\n[dos]\nxms=false\nems=false\numb=false\n[autoexec]\n@echo off\nmount c .\nc:\nKB2.EXE\nexit\n');
+const {game,archive}=gameBundle(gameDir,classic);
 // All input checks precede replacing the generated directory.
 if(fs.existsSync(out) && fs.realpathSync(out)!==path.join(fs.realpathSync(__dirname),'dist'))throw new Error('Unexpected output directory');
 fs.rmSync(out,{recursive:true,force:true});
 fs.mkdirSync(path.join(out,'games'),{recursive:true});
 fs.mkdirSync(path.join(out,'vendor'),{recursive:true});
 fs.copyFileSync(path.join(__dirname,'assets/classic.jsdos'),path.join(out,'games/classic.jsdos'));
-fs.writeFileSync(path.join(out,'games/continued.jsdos'),zipSync(game));
+fs.writeFileSync(path.join(out,'games/continued.jsdos'),archive);
 for(const name of Object.keys(manifest.files))fs.copyFileSync(path.join(vendor,name),path.join(out,'vendor',name));
 fs.copyFileSync(path.join(vendor,'manifest.json'),path.join(out,'vendor/manifest.json'));
 fs.cpSync(path.join(__dirname,'runtime/licenses'),path.join(out,'vendor/licenses'),{recursive:true});

@@ -1,6 +1,14 @@
 {
   "name": "kb2-browser",
   "private": true,
-  "scripts": { "build": "node build.cjs" },
-  "dependencies": { "fflate": "0.8.2" }
+  "scripts": {
+    "build": "node build.cjs",
+    "dev": "node dev.mjs"
+  },
+  "dependencies": {
+    "fflate": "0.8.2"
+  },
+  "devDependencies": {
+    "vite": "8.3.8"
+  }
 }
