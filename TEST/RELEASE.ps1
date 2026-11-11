@@ -18,9 +18,9 @@ function Check-Changes([string]$Text, [string]$Tag, [string]$Expected, [string]$
 }
 Check-Changes @'
 # История изменений
-## 2.0.0 — 2026-11-12
+## 2.0.0 - 2026-11-12
 - Новая версия.
-## 1.2.3 — 2026-11-11
+## 1.2.3 - 2026-11-11
 
 - Исправлена ошибка.
 
@@ -28,28 +28,28 @@ Check-Changes @'
 
 Текст с **Markdown**.
 
-## 1.0.0 — 2026-11-01
+## 1.0.0 - 2026-11-01
 - Старые записи.
 '@ 'v1.2.3' "- Исправлена ошибка.`n`n### Баланс`n`nТекст с **Markdown**."
-Check-Changes "## 1.0.0 — 2026-11-11`r`n`r`n- Последняя секция.`r`n" 'V1.0.0' '- Последняя секция.'
-Check-Changes "## 1.2.3-rc.1 — 2026-11-11`n- RC." 'v1.2.3-rc.1' '- RC.'
-Check-Changes "## 1 — 2026-11-11`n- Версия." 'v1' '- Версия.'
-Check-Changes "## 1.2 — 2026-11-11`n- Версия." 'v1.2' '- Версия.'
-Check-Changes "## 1.0.0 — 2026-11-11`n- Старое." 'v2.0.0' '' 'missing section'
-Check-Changes "## 1.0.0 — 2026-11-11`n- A.`n## 1.0.0 — 2026-11-12`n- B." 'v1.0.0' '' 'more than once'
-Check-Changes "## 1.0.0 — 2026-11-11`n`n## 0.9.0 — 2026-11-01`n- Старое." 'v1.0.0' '' 'no release notes'
-Check-Changes "## 1.0.0 — 11.11.2026`n- A." 'v1.0.0' '' 'missing section'
+Check-Changes "## 1.0.0 - 2026-11-11`r`n`r`n- Последняя секция.`r`n" 'V1.0.0' '- Последняя секция.'
+Check-Changes "## 1.2.3-rc.1 - 2026-11-11`n- RC." 'v1.2.3-rc.1' '- RC.'
+Check-Changes "## 1 - 2026-11-11`n- Версия." 'v1' '- Версия.'
+Check-Changes "## 1.2 - 2026-11-11`n- Версия." 'v1.2' '- Версия.'
+Check-Changes "## 1.0.0 - 2026-11-11`n- Старое." 'v2.0.0' '' 'missing section'
+Check-Changes "## 1.0.0 - 2026-11-11`n- A.`n## 1.0.0 - 2026-11-12`n- B." 'v1.0.0' '' 'more than once'
+Check-Changes "## 1.0.0 - 2026-11-11`n`n## 0.9.0 - 2026-11-01`n- Старое." 'v1.0.0' '' 'no release notes'
+Check-Changes "## 1.0.0 - 11.11.2026`n- A." 'v1.0.0' '' 'missing section'
 Check-Changes @'
-## 1.0.0 — 2026-11-11
+## 1.0.0 - 2026-11-11
 Пример:
 ```markdown
-## 1.0.0 — 2026-11-11
+## 1.0.0 - 2026-11-11
 ```
 ### Детали
 - Запись.
-## 0.9.0 — 2026-11-01
+## 0.9.0 - 2026-11-01
 - Старое.
-'@ 'v1.0.0' "Пример:`n``````markdown`n## 1.0.0 — 2026-11-11`n```````n### Детали`n- Запись."
+'@ 'v1.0.0' "Пример:`n``````markdown`n## 1.0.0 - 2026-11-11`n```````n### Детали`n- Запись."
 
 # Test the actual entry point: bad changelog must abort before any workspace exists.
 $work = Join-Path $folder 'must-not-exist'
