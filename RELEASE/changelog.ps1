@@ -25,14 +25,14 @@ function Get-ReleaseChanges {
         if ($null -ne $fence -or $line -notmatch '^ {0,3}##(?:\s+|$)') { continue }
         if ($null -ne $current) { $current.End = $i }
         $current = $null
-        if ($line -match '^ {0,3}##\s+(\S+)\s+—\s+\d{4}-\d{2}-\d{2}\s*$' -and
+        if ($line -match '^ {0,3}##\s+(\S+)\s+-\s+\d{4}-\d{2}-\d{2}\s*$' -and
             $Matches[1] -ceq $version) {
             $current = @{ Start = $i + 1; End = $lines.Count }
             $sections += $current
         }
     }
     if ($sections.Count -eq 0) {
-        throw "CHANGELOG.md: missing section '## $version — YYYY-MM-DD' for tag $Tag."
+        throw "CHANGELOG.md: missing section '## $version - YYYY-MM-DD' for tag $Tag."
     }
     if ($sections.Count -ne 1) {
         throw "CHANGELOG.md: version $version occurs more than once."
