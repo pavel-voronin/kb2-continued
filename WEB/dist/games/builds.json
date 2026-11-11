@@ -1,0 +1,10 @@
+{
+  "classic": {
+    "source": "bbf628eeb5af26786cedc55442243463e5ff731e",
+    "exeSha256": "c24025eb398a1c4a960b4ab7a21abb6fb81c86041f988178979381bfd8766a06"
+  },
+  "continued": {
+    "source": "working tree",
+    "exeSha256": "719b50b00a253f85596aadbda5369a9c48f3c55fa5dba5aa56fcc24759845a0c"
+  }
+}

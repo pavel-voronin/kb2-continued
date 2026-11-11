@@ -1,0 +1,132 @@
+{
+  "LocateViewportBuffer.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.ViewportBufferOffset": 5012,
+      "Runtime.ViewportTopY": 28,
+      "Runtime.IslandBufferOffset": 3136,
+      "Runtime.ViewportLeftX": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "LocateViewportBuffer.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.ViewportBufferOffset": 5012,
+      "Runtime.ViewportTopY": 28,
+      "Runtime.IslandBufferOffset": 3136,
+      "Runtime.ViewportLeftX": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "AdvanceNearbyRoamers.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.ViewportBufferOffset": 31044,
+      "Runtime.WorldMapPending": 1,
+      "Runtime.ViewportTopY": 28,
+      "Runtime.IslandBufferOffset": 29168,
+      "Runtime.ViewportLeftX": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "AdvanceNearbyRoamers.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.ViewportBufferOffset": 31044,
+      "Runtime.WorldMapPending": 1,
+      "Runtime.ViewportTopY": 28,
+      "Runtime.IslandBufferOffset": 29168,
+      "Runtime.ViewportLeftX": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RevealNearbyTiles.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Flags.Discovery.sha256": "484cbfe3947f7a8c5e1669a07948a21ee290168a6293b310a1237b0f78a53fd7",
+      "Runtime.ViewportBufferOffset": 8962,
+      "Runtime.ViewportTopY": 28,
+      "Runtime.IslandBufferOffset": 7086,
+      "Runtime.ViewportLeftX": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RevealNearbyTiles.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Flags.Discovery.sha256": "484cbfe3947f7a8c5e1669a07948a21ee290168a6293b310a1237b0f78a53fd7",
+      "Runtime.ViewportBufferOffset": 8962,
+      "Runtime.ViewportTopY": 28,
+      "Runtime.IslandBufferOffset": 7086,
+      "Runtime.ViewportLeftX": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  }
+}

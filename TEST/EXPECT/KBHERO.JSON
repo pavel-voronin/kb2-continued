@@ -1,0 +1,5719 @@
+{
+  "FirstSeriesEnding.empty": {
+    "result": 0,
+    "phase": "exit",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": 0,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          23,
+          272,
+          "\u041a\u041e\u041d\u0415\u0426 \u041f\u0415\u0420\u0412\u041e\u0419 \u0421\u0415\u0420\u0418\u0418"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBSESS",
+        "CleanupGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "FirstSeriesEnding.army": {
+    "result": 0,
+    "phase": "exit",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": 0,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          23,
+          272,
+          "\u041a\u041e\u041d\u0415\u0426 \u041f\u0415\u0420\u0412\u041e\u0419 \u0421\u0415\u0420\u0418\u0418"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBSESS",
+        "CleanupGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DismissArmy.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          264,
+          "\u0410 \u0443\u0432\u043e\u043b\u044c\u043d\u044f\u0442\u044c \u043d\u0435\u043a\u043e\u0433\u043e."
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DismissArmy.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "World.GenerationLimit": 3,
+      "World.GenerationCount": 288
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0415\u041d\u0422\u0410\u0412\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          264,
+          "1) \u0414\u0420\u0410\u041a\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          272,
+          "2) \u0412\u0410\u041c\u041f\u0418\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          280,
+          "3) \u0413\u0418\u0413\u0410\u041d\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          288,
+          "4) \u0414\u0415\u041c\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SearchRitualSpell.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          21
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SearchRitualSpell.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.GuardianCounts": [
+        125,
+        113,
+        312,
+        41,
+        35
+      ],
+      "Campaign.Hero.Y": 29,
+      "Campaign.Hero.X": 29,
+      "Campaign.GuardianSpecies": [
+        9,
+        7,
+        1,
+        13,
+        15
+      ],
+      "Campaign.Map.sha256": "3fd2a71cfe420c3e17608e0f37bae91ade0992ed8dd0765d4b4c323737f8f1a7"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "random_seed": 2721613530
+  },
+  "HeroStatus.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        3,
+        32,
+        32,
+        48,
+        32,
+        32,
+        48,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          67,
+          30,
+          " 1000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          64,
+          50,
+          "  100000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          60,
+          "     0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          70,
+          "     0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          90,
+          " 10"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          100,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          120,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          130,
+          "  0"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "HeroStatus.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        3,
+        32,
+        32,
+        53,
+        48,
+        53,
+        48,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20961,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20973,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20997,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          21009,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          67,
+          30,
+          " 2500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          64,
+          50,
+          " 2000000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          60,
+          "  1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          70,
+          "  4050"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          90,
+          " 40"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          100,
+          "100"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          120,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          130,
+          "  5"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RitualSpellReport.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RitualSpellReport.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "CastTornado.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          24
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "CastTornado.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          24
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "CargoReport.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27,
+      "Runtime.TextBuffer": [
+        3,
+        32,
+        32,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "#     \u041c\u0430\u043a\u0441.\u0446\u0435\u043d\u0430(#1)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          256,
+          "\u0424\u0420\u0423\u041a\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          256,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          264,
+          "\u0421\u041b\u0410\u0414\u041e\u0421\u0422\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          264,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          272,
+          "\u0412\u0418\u041d\u041e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          272,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          280,
+          "\u0411\u0410\u0420\u0425\u0410\u0422"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          280,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          288,
+          "\u0423\u041a\u0420\u0410\u0428\u0415\u041d\u0418\u042f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          288,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          288,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          296,
+          "\u041e\u0420\u0423\u0416\u0418\u0415"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          296,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          296,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          304,
+          "\u0416\u0415\u041c\u0427\u0423\u0413"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          304,
+          "7)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          304,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          304,
+          "  0"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "CargoReport.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27,
+      "Runtime.TextBuffer": [
+        3,
+        32,
+        32,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "#     \u041c\u0430\u043a\u0441.\u0446\u0435\u043d\u0430(#1)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          256,
+          "\u0424\u0420\u0423\u041a\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          256,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          256,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          264,
+          "\u0421\u041b\u0410\u0414\u041e\u0421\u0422\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          264,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          264,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          272,
+          "\u0412\u0418\u041d\u041e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          272,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          272,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          280,
+          "\u0411\u0410\u0420\u0425\u0410\u0422"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          280,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          280,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          288,
+          "\u0423\u041a\u0420\u0410\u0428\u0415\u041d\u0418\u042f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          288,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          288,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          296,
+          "\u041e\u0420\u0423\u0416\u0418\u0415"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          296,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          296,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          304,
+          "\u0416\u0415\u041c\u0427\u0423\u0413"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          304,
+          "7)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          16,
+          304,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          28,
+          304,
+          "  0"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "CurrentContract.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ContractReport",
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "CurrentContract.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ContractReport",
+        [
+          0,
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-menu-1": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.X": 3,
+      "Campaign.Hero.Y": 3,
+      "Campaign.Days": 1,
+      "Runtime.LastScan": 49
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "EnterIsland",
+        [
+          1
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-menu-2": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.X": 3,
+      "Campaign.Hero.Y": 3,
+      "Campaign.Days": 1,
+      "Runtime.LastScan": 50
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "EnterIsland",
+        [
+          2
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-menu-3": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.X": 3,
+      "Campaign.Hero.Y": 3,
+      "Campaign.Days": 1,
+      "Runtime.LastScan": 51
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "EnterIsland",
+        [
+          3
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-menu-4": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.X": 3,
+      "Campaign.Hero.Y": 3,
+      "Campaign.Days": 1,
+      "Runtime.LastScan": 52
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "EnterIsland",
+        [
+          4
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-menu-5": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.X": 3,
+      "Campaign.Hero.Y": 3,
+      "Campaign.Days": 1,
+      "Runtime.LastScan": 53
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "EnterIsland",
+        [
+          5
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-menu-6": {
+    "result": 0,
+    "phase": "exit",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": 0,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          23,
+          272,
+          "\u041a\u041e\u041d\u0415\u0426 \u041f\u0415\u0420\u0412\u041e\u0419 \u0421\u0415\u0420\u0418\u0418"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBSESS",
+        "CleanupGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DismissArmy.matrix.row-0": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 23,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 18,
+          "Count": 3
+        },
+        {
+          "Species": 22,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "World.GenerationLimit": 3,
+      "Runtime.LastScan": 48,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0415\u041d\u0422\u0410\u0412\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          264,
+          "1) \u0414\u0420\u0410\u041a\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          272,
+          "2) \u0412\u0410\u041c\u041f\u0418\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          280,
+          "3) \u0413\u0418\u0413\u0410\u041d\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          288,
+          "4) \u0414\u0415\u041c\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DismissArmy.matrix.row-1": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Army": [
+        {
+          "Species": 20,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 18,
+          "Count": 3
+        },
+        {
+          "Species": 22,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "World.GenerationLimit": 3,
+      "Runtime.LastScan": 49,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0415\u041d\u0422\u0410\u0412\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          264,
+          "1) \u0414\u0420\u0410\u041a\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          272,
+          "2) \u0412\u0410\u041c\u041f\u0418\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          280,
+          "3) \u0413\u0418\u0413\u0410\u041d\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          288,
+          "4) \u0414\u0415\u041c\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DismissArmy.matrix.row-2": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Army": [
+        {
+          "Species": 20,
+          "Count": 3
+        },
+        {
+          "Species": 23,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 18,
+          "Count": 3
+        },
+        {
+          "Species": 22,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "World.GenerationLimit": 3,
+      "Runtime.LastScan": 50,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0415\u041d\u0422\u0410\u0412\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          264,
+          "1) \u0414\u0420\u0410\u041a\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          272,
+          "2) \u0412\u0410\u041c\u041f\u0418\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          280,
+          "3) \u0413\u0418\u0413\u0410\u041d\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          288,
+          "4) \u0414\u0415\u041c\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DismissArmy.matrix.row-3": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Army": [
+        {
+          "Species": 20,
+          "Count": 3
+        },
+        {
+          "Species": 23,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 22,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "World.GenerationLimit": 3,
+      "Runtime.LastScan": 51,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0415\u041d\u0422\u0410\u0412\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          264,
+          "1) \u0414\u0420\u0410\u041a\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          272,
+          "2) \u0412\u0410\u041c\u041f\u0418\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          280,
+          "3) \u0413\u0418\u0413\u0410\u041d\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          288,
+          "4) \u0414\u0415\u041c\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "DismissArmy.matrix.row-4": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Army": [
+        {
+          "Species": 20,
+          "Count": 3
+        },
+        {
+          "Species": 23,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 18,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "World.GenerationLimit": 3,
+      "Runtime.LastScan": 52,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0415\u041d\u0422\u0410\u0412\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          264,
+          "1) \u0414\u0420\u0410\u041a\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          272,
+          "2) \u0412\u0410\u041c\u041f\u0418\u0420\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          280,
+          "3) \u0413\u0418\u0413\u0410\u041d\u0422\u042b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          288,
+          "4) \u0414\u0415\u041c\u041e\u041d\u042b"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.locked": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "CastTornado.matrix.army-and-mage": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.TornadoCharges": 0,
+      "Campaign.Map.sha256": "4c78e438fb7d5d1b77447b6b60482215f93001c054d72a7f162e968d546e5813"
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1761,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6561,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11361,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16161,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20961,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1773,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6573,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11373,
+          5,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16173,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20973,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1785,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6585,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11385,
+          28,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16185,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20985,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1797,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6597,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11397,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16197,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20997,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1809,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6609,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11409,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16209,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          21009,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1761,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6561,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11361,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16161,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20961,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1773,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6573,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11373,
+          5,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16173,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20973,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1785,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6585,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11385,
+          28,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16185,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20985,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1797,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6597,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11397,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16197,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20997,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1809,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6609,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11409,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16209,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          21009,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1761,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6561,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11361,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16161,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20961,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1773,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6573,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11373,
+          5,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16173,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20973,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1785,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6585,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11385,
+          28,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16185,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20985,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1797,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6597,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11397,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16197,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20997,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1809,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6609,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11409,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16209,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          21009,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1761,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6561,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11361,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16161,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20961,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1773,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6573,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11373,
+          5,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16173,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20973,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1785,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6585,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11385,
+          28,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16185,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20985,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1797,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6597,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11397,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16197,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          20997,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          1809,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          6609,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          11409,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          16209,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawMaskedTile",
+        [
+          21009,
+          0,
+          8
+        ]
+      ],
+      [
+        "KBVISIT",
+        "FindWanderingArmy",
+        [
+          29,
+          30
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RitualSpellReport.matrix.spells-used-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          321
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u042f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          304,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          312,
+          ""
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RitualSpellReport.matrix.spells-used-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          321
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u042f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          256,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u0442\u0435\u043b\u0430 \u0441\u043e\u0437\u0434\u0430\u0432\u0430\u0435\u043c\u044b\u043c \u0432\u043e\u0438\u043d\u0430\u043c"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          264,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0448\u0430\u0433\u043e\u0432 \u0432\u043e\u0438\u043d\u043e\u0432"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          272,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u043e\u0431\u0449\u0443\u044e \u0441\u0438\u043b\u0443 \u0443\u0434\u0430p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          280,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u043e\u0431\u0449\u0443\u044e \u0432\u0435\u043b\u0438\u0447\u0438\u043d\u0443 \u0437\u0430\u0449\u0438\u0442\u044b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          288,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u043e\u0442\u0432\u0435\u0442\u043d\u044b\u0445 \u0443\u0434\u0430p\u043e\u0432"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          296,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u0441\u043f\u043e\u0441\u043e\u0431\u043d\u043e\u0441\u0442\u044c \u043b\u0435\u0442\u0430\u0442\u044c"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          304,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          304,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u0441\u043f\u043e\u0441\u043e\u0431\u043d\u043e\u0441\u0442\u044c \u0441\u0442p\u0435\u043b\u044f\u0442\u044c"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          312,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          312,
+          "B\u044b\u0437\u044b\u0432\u0430\u0435\u0442 \u0414\u0443\u0445 \u0420\u0418\u0422\u0423\u0410\u041b\u042c\u041d\u041e\u0413\u041e \u041a\u0410\u041c\u041d\u042f"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "SearchRitualSpell.matrix.leadership-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.GuardianSpecies": [
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "Campaign.GuardianCounts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Map.sha256": "3fd2a71cfe420c3e17608e0f37bae91ade0992ed8dd0765d4b4c323737f8f1a7",
+      "Campaign.Hero.Y": 29,
+      "Campaign.Hero.X": 29
+    },
+    "calls_at_entry": [
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2721613530
+  },
+  "SearchRitualSpell.matrix.leadership-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.GuardianSpecies": [
+        100,
+        100,
+        100,
+        100,
+        100
+      ],
+      "Campaign.GuardianCounts": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Map.sha256": "3fd2a71cfe420c3e17608e0f37bae91ade0992ed8dd0765d4b4c323737f8f1a7",
+      "Campaign.Hero.Y": 29,
+      "Campaign.Hero.X": 29
+    },
+    "calls_at_entry": [
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2721613530
+  },
+  "HeroStatus.matrix.picture-cached-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        3,
+        32,
+        32,
+        53,
+        48,
+        53,
+        48,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20961,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20973,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20997,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          21009,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          67,
+          30,
+          " 2500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          64,
+          50,
+          " 2000000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          60,
+          "  1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          70,
+          "  4050"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          90,
+          " 40"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          100,
+          "100"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          120,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          130,
+          "  5"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "HeroStatus.matrix.picture-cached-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TownPictureLoaded": 0,
+      "Runtime.TextBuffer": [
+        3,
+        32,
+        32,
+        53,
+        48,
+        53,
+        48,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.PictureFileName": [
+        10,
+        83,
+        84,
+        65,
+        84,
+        85,
+        83,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20961,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20973,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          20997,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          21009,
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          67,
+          30,
+          " 2500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          64,
+          50,
+          " 2000000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          60,
+          "  1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          66,
+          70,
+          "  4050"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          90,
+          " 40"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          100,
+          "100"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          120,
+          "  0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          69,
+          130,
+          "  5"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "CurrentContract.matrix.contract-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ContractReport",
+        [
+          1,
+          1
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "CurrentContract.matrix.contract-100": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          8
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-five.road.shore-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 53,
+      "Runtime.ShoreTile": 32,
+      "Campaign.Map.sha256": "6b010884faf54c3abc4138500412974f88645784581a818c55353a94b06b6c04",
+      "Campaign.Hero.Y": 3,
+      "Campaign.Hero.X": 3
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "EnterIsland",
+        [
+          5
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.island-five.road.shore-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 53,
+      "Runtime.ShoreTile": 47,
+      "Campaign.Map.sha256": "bd7b5f1ac0abb256d89fea078911d6e698317466a0434dc0ae820f838cf0bcd6",
+      "Campaign.Hero.Y": 3,
+      "Campaign.Hero.X": 3
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0417\u0430\u0431\u043e\u043b\u043e\u0442\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "3) \u0422\u0430\u0439\u0433\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "4) \u0410\u043b\u044c\u043f\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "5) \u0421\u0430\u0445\u0430p\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "EnterIsland",
+        [
+          5
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "DismissArmy.matrix.last-stack": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 48,
+      "Runtime.TextBuffer": [
+        1,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "World.GenerationLimit": 3
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0420\u0415\u0421\u0422\u042c\u042f\u041d\u0415"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "DismissArmy.matrix.unpopulated-row": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 57,
+      "Runtime.TextBuffer": [
+        1,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "World.TownNamePool": [
+        0,
+        100,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "World.GenerationLimit": 3
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          240,
+          "- \u0423\u0412\u041e\u041b\u042c\u041d\u0415\u041d\u0418\u0415 \u0412 \u0417\u0410\u041f\u0410\u0421 -"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          3,
+          256,
+          "0) \u041a\u0420\u0415\u0421\u0422\u042c\u042f\u041d\u0415"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RitualSpellReport.matrix.partly-known-spells": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          321
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u0410\u041a\u041b\u0418\u041d\u0410\u041d\u0418\u042f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          ""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          15,
+          256,
+          "\u041f\u0435p\u0435\u0434\u0430\u0435\u0442 \u0442\u0435\u043b\u0430 \u0441\u043e\u0437\u0434\u0430\u0432\u0430\u0435\u043c\u044b\u043c \u0432\u043e\u0438\u043d\u0430\u043c"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "SeaVoyage.matrix.unrecognised-key-and-locked-menu": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 27
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0420a\u0432\u043d\u043e\u043b\u0435\u0441\u044c\u0435"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "6) \u041c\u0430\u043b\u044c\u0433p\u0438\u043c\u0438\u044f"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

@@ -1,0 +1,1275 @@
+{
+  "FillIsland.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "600114649020937b1e4e90d3185ee8fdf5cb7605610b7f94e5a781d594d16ae6"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "FillIsland.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "600114649020937b1e4e90d3185ee8fdf5cb7605610b7f94e5a781d594d16ae6"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "PrepareCampaign.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.RitualStoneIsland": 100,
+      "Campaign.HighestVisitedIsland": 1,
+      "Campaign.Woodcutters": 6,
+      "Campaign.Income": 500,
+      "Campaign.ShipHeading": 1,
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "Campaign.Flags.Heading": 1,
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        }
+      ],
+      "Campaign.ContractIsland": 100,
+      "Campaign.Weeks": 600,
+      "Campaign.SpellColors": [
+        5,
+        2,
+        3,
+        0,
+        7,
+        1,
+        6,
+        4
+      ],
+      "Campaign.ScrollCapacity": 4,
+      "Campaign.UnlockedIslands": 1,
+      "Campaign.SceneIsland": 1,
+      "Campaign.WanderingArmies.sha256": "9fd12983cc05d5fd3a4861573c7d9501d16024ac439d05a8fb91247d395a4909",
+      "Campaign.MagicPower": 1,
+      "Campaign.Difficulty": 6,
+      "Campaign.Stonecutters": 3,
+      "Campaign.Leadership": 50,
+      "Campaign.Mutants.sha256": "6ad3830c5491eeafa81fa6e28486ba12b3bbfe533ae17c93e7e76e9fb04780e1",
+      "Campaign.Relics": [
+        {
+          "Artwork": 26,
+          "Owned": 0
+        },
+        {
+          "Artwork": 25,
+          "Owned": 0
+        },
+        {
+          "Artwork": 24,
+          "Owned": 0
+        },
+        {
+          "Artwork": 27,
+          "Owned": 0
+        }
+      ],
+      "Campaign.Gold": 20000,
+      "Campaign.Carpenters": 4,
+      "Campaign.EnemyGrace": 40,
+      "Campaign.Map.sha256": "2f927cdf28155edcf9e22bab0b8a76f577b47bed4c8fc4bcbebafe9cd3e02b82",
+      "World.CastleNamePool": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "World.SpellColorPool": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "World.GenerationX": 4,
+      "World.TownNamePool": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "random_seed": 2191401672
+  },
+  "PrepareCampaign.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.RitualStoneIsland": 100,
+      "Campaign.HighestVisitedIsland": 1,
+      "Campaign.Woodcutters": 6,
+      "Campaign.Income": 500,
+      "Campaign.ShipHeading": 1,
+      "Campaign.Flags.SiegeEngineOwned": 0,
+      "Campaign.Flags.ArmyAvailable": 0,
+      "Campaign.Flags.SpellUsed": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "Campaign.Flags.SpellAvailable": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.Heading": 1,
+      "Campaign.Flags.LocalMapOwned": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.WizardRelations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        }
+      ],
+      "Campaign.ContractIsland": 100,
+      "Campaign.Weeks": 600,
+      "Campaign.SpellColors": [
+        5,
+        2,
+        3,
+        0,
+        7,
+        1,
+        6,
+        4
+      ],
+      "Campaign.ScrollCapacity": 4,
+      "Campaign.UnlockedIslands": 1,
+      "Campaign.Scrolls": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.SceneIsland": 1,
+      "Campaign.HiddenSpellIsland": 100,
+      "Campaign.WanderingArmies.sha256": "9fd12983cc05d5fd3a4861573c7d9501d16024ac439d05a8fb91247d395a4909",
+      "Campaign.MagicPower": 1,
+      "Campaign.Difficulty": 6,
+      "Campaign.Stonecutters": 3,
+      "Campaign.Leadership": 50,
+      "Campaign.Mutants.sha256": "6ad3830c5491eeafa81fa6e28486ba12b3bbfe533ae17c93e7e76e9fb04780e1",
+      "Campaign.Relics": [
+        {
+          "Artwork": 26,
+          "Owned": 0
+        },
+        {
+          "Artwork": 25,
+          "Owned": 0
+        },
+        {
+          "Artwork": 24,
+          "Owned": 0
+        },
+        {
+          "Artwork": 27,
+          "Owned": 0
+        }
+      ],
+      "Campaign.MapParts": 0,
+      "Campaign.Gold": 20000,
+      "Campaign.Carpenters": 4,
+      "Campaign.EnemyGrace": 40,
+      "Campaign.Map.sha256": "2f927cdf28155edcf9e22bab0b8a76f577b47bed4c8fc4bcbebafe9cd3e02b82",
+      "World.CastleNamePool": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "World.SpellColorPool": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "World.GenerationX": 4,
+      "World.TownNamePool": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "random_seed": 2191401672
+  },
+  "SelectRiverStart.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "World.GenerationY": 65,
+      "World.GenerationX": 18,
+      "World.GenerationChoice": 19
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 1242767767
+  },
+  "SelectRiverStart.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "World.GenerationY": 65,
+      "World.GenerationX": 18,
+      "World.GenerationChoice": 19
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 1242767767
+  },
+  "CarveRiver.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "a34dba22f7701d35e823a393bb9fc399e6538a388da727471c5353258bed2543",
+      "World.GenerationY": 53,
+      "World.GenerationX": 34
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 3516945915
+  },
+  "CarveRiver.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "a34dba22f7701d35e823a393bb9fc399e6538a388da727471c5353258bed2543",
+      "World.GenerationY": 53,
+      "World.GenerationX": 34
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 3516945915
+  },
+  "ScatterGrass.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ScatterGrass.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ScatterForest.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "ddb00e10fae163f1bd5c8f0415ce716707920dbe3c4be49f6985eb4e466c4baa",
+      "World.GenerationY": 64,
+      "World.GenerationX": 36
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 4246950425
+  },
+  "ScatterForest.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "ddb00e10fae163f1bd5c8f0415ce716707920dbe3c4be49f6985eb4e466c4baa",
+      "World.GenerationY": 64,
+      "World.GenerationX": 36
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 4246950425
+  },
+  "ScatterMountains.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "50cf7c70ddca0e466b344b3f22bd3e184ca5eb938dd36cf1997e087e5bf1e2a8",
+      "World.GenerationY": 40,
+      "World.GenerationX": 35
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 2706810665
+  },
+  "ScatterMountains.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "50cf7c70ddca0e466b344b3f22bd3e184ca5eb938dd36cf1997e087e5bf1e2a8",
+      "World.GenerationY": 40,
+      "World.GenerationX": 35
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 2706810665
+  },
+  "ScatterSand.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "868f5165b7648d501bbec4095fea6833c122e4b9bae9ff21c9696531955ed1d2",
+      "World.GenerationY": 9,
+      "World.GenerationX": 7
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 630697673
+  },
+  "ScatterSand.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "868f5165b7648d501bbec4095fea6833c122e4b9bae9ff21c9696531955ed1d2",
+      "World.GenerationY": 9,
+      "World.GenerationX": 7
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 630697673
+  },
+  "PaintDesertRim.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "1323cb424d1807e5864b71205b101d0b21c3642b07c0b9423758222839bb720b"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "PaintDesertRim.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "1323cb424d1807e5864b71205b101d0b21c3642b07c0b9423758222839bb720b"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "PaintRiversAndSea.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "ea08183dbe6bc037ac8e8545057056d8109fc4eb91ac62a6c257785819e317a7",
+      "World.GenerationY": 35,
+      "World.GenerationX": 48,
+      "World.GenerationChoice": 19
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 2347003771
+  },
+  "PaintRiversAndSea.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Map.sha256": "ea08183dbe6bc037ac8e8545057056d8109fc4eb91ac62a6c257785819e317a7",
+      "World.GenerationY": 35,
+      "World.GenerationX": 48,
+      "World.GenerationChoice": 19
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 2347003771
+  },
+  "PlaceInitialHero.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.Y": 7,
+      "Campaign.Hero.X": 7
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "PlaceInitialHero.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Hero.Y": 7,
+      "Campaign.Hero.X": 7
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "FrameTerrain.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "FrameTerrain.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "GenerateContracts.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "GenerateContracts.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "PrepareCampaign.matrix.unsupported-level-byte": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.ShipHeading": 1,
+      "Campaign.Scrolls": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.SpellAvailable": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.PaperChartPresent": [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "Campaign.Flags.SiegeEngineOwned": 0,
+      "Campaign.Flags.Heading": 1,
+      "Campaign.Flags.LocalMapOwned": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Flags.ArmyAvailable": 0,
+      "Campaign.Flags.SpellUsed": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        },
+        {
+          "Species": 100,
+          "Count": 25700
+        }
+      ],
+      "Campaign.Income": 500,
+      "Campaign.Weeks": 513,
+      "Campaign.WanderingArmies.sha256": "9fd12983cc05d5fd3a4861573c7d9501d16024ac439d05a8fb91247d395a4909",
+      "Campaign.ContractIsland": 100,
+      "Campaign.SceneIsland": 1,
+      "Campaign.Mutants.sha256": "6ad3830c5491eeafa81fa6e28486ba12b3bbfe533ae17c93e7e76e9fb04780e1",
+      "Campaign.Map.sha256": "2f927cdf28155edcf9e22bab0b8a76f577b47bed4c8fc4bcbebafe9cd3e02b82",
+      "Campaign.EnemyGrace": 40,
+      "Campaign.RitualStoneIsland": 100,
+      "Campaign.WizardRelations": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.HighestVisitedIsland": 1,
+      "Campaign.SpellColors": [
+        5,
+        2,
+        3,
+        0,
+        7,
+        1,
+        6,
+        4
+      ],
+      "Campaign.Relics": [
+        {
+          "Artwork": 26,
+          "Owned": 0
+        },
+        {
+          "Artwork": 25,
+          "Owned": 0
+        },
+        {
+          "Artwork": 24,
+          "Owned": 0
+        },
+        {
+          "Artwork": 27,
+          "Owned": 0
+        }
+      ],
+      "Campaign.UnlockedIslands": 1,
+      "Campaign.MapParts": 0,
+      "Campaign.Leadership": 50,
+      "Campaign.HiddenSpellIsland": 100,
+      "World.TownNamePool": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "World.GenerationX": 4,
+      "World.SpellColorPool": [
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255,
+        255
+      ],
+      "World.CastleNamePool": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2191401672
+  },
+  "PlaceInitialHero.matrix.town-with-no-free-neighbour": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Hero.Y": 9,
+      "Campaign.Hero.X": 9
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "GenerateContracts.matrix.missing-castle-names": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Contracts": [
+        [
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          }
+        ],
+        [
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          }
+        ],
+        [
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          }
+        ],
+        [
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          }
+        ],
+        [
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          },
+          {
+            "Island": 5,
+            "Slot": 5
+          }
+        ]
+      ]
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

@@ -1,0 +1,1006 @@
+{
+  "PrepareLoadedCampaign.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.ShipHeading": 1,
+      "Campaign.Flags.Heading": 1,
+      "Runtime.SpiritStonePosition.Y": 10,
+      "Runtime.SpiritStonePosition.X": 10,
+      "Runtime.SpellTitles.sha256": "18d4bff20845d35c3e4c2c38581e03b2bba770ba100b15325fdcafa131de5096"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {
+      "25": "000000000000000000000000000000000000",
+      "26": "000000000000000000000000000000000000",
+      "27": "000000000000000000000000000000000000",
+      "28": "000000000000000000000000000000000000",
+      "29": "000000000000000000000000000000000000"
+    },
+    "calls_at_entry": [
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          4,
+          0
+        ]
+      ],
+      [
+        "KBADVENT",
+        "RefreshRoamingArmyArt",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "PrepareLoadedCampaign.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.ShipHeading": 1,
+      "Campaign.Flags.Heading": 1,
+      "Runtime.SpiritStonePosition.Y": 10,
+      "Runtime.SpiritStonePosition.X": 10,
+      "Runtime.SpellTitles.sha256": "18d4bff20845d35c3e4c2c38581e03b2bba770ba100b15325fdcafa131de5096"
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {
+      "25": "000000000000000000000000000000000000",
+      "26": "000000000000000000000000000000000000",
+      "27": "000000000000000000000000000000000000",
+      "28": "000000000000000000000000000000000000",
+      "29": "000000000000000000000000000000000000"
+    },
+    "calls_at_entry": [
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          4,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          20
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          23
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          1,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          17
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          2,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          18
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          3,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          22
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          4,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "RefreshRoamingArmyArt",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "PrepareLoadedCampaign.matrix.two-paper-scrolls-and-ship": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1,
+      "Campaign.Map.sha256": "3b1cb4e377fd2db282cd033c7b1708789e9eb9f3d66bd1f038311a96471dd856",
+      "Campaign.ShipHeading": 1,
+      "Runtime.SpiritStonePosition.Y": 10,
+      "Runtime.SpiritStonePosition.X": 10,
+      "Runtime.SpellTitles.sha256": "18d4bff20845d35c3e4c2c38581e03b2bba770ba100b15325fdcafa131de5096"
+    },
+    "calls_at_entry": [
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          4,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          20
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          23
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          1,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          17
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          2,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          18
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          3,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          22
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          4,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "ComposeTile",
+        [
+          0
+        ]
+      ],
+      [
+        "KBADVENT",
+        "RefreshRoamingArmyArt",
+        []
+      ]
+    ],
+    "creature_delta": {
+      "25": "000000000000000000000000000000000000",
+      "26": "000000000000000000000000000000000000",
+      "27": "000000000000000000000000000000000000",
+      "28": "000000000000000000000000000000000000",
+      "29": "000000000000000000000000000000000000"
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1467157059
+  },
+  "PrepareLoadedCampaign.matrix.no-spirit-stone": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1,
+      "Campaign.ShipHeading": 1,
+      "Runtime.SpellTitles.sha256": "18d4bff20845d35c3e4c2c38581e03b2bba770ba100b15325fdcafa131de5096"
+    },
+    "calls_at_entry": [
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          12,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBWORLD",
+        "PlaceRoamingObject",
+        [
+          1,
+          28,
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          0,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          0
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBGFX",
+        "StoreMutantFrames",
+        [
+          4,
+          0
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          20
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          0,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          23
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          1,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          17
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          2,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          18
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          3,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBART",
+        "LoadCreatureArt",
+        [
+          22
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          0,
+          4,
+          8640,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "RefreshRoamingArmyArt",
+        []
+      ]
+    ],
+    "creature_delta": {
+      "25": "000000000000000000000000000000000000",
+      "26": "000000000000000000000000000000000000",
+      "27": "000000000000000000000000000000000000",
+      "28": "000000000000000000000000000000000000",
+      "29": "000000000000000000000000000000000000"
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

@@ -1,0 +1,25 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index d5d208f..50953f7 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -24,7 +24,7 @@ endif()
+ 
+ if (GL4ES)
+ 	include(ExternalProject)
+-	add_compile_definitions(-DGL4ES=1)
++	add_compile_definitions(GL4ES=1)
+ 	set(GL4ES_PREFIX_DIR "${CMAKE_BINARY_DIR}/gl4es")
+ 	set(GL4ES_INSTALL_DIR "${GL4ES_PREFIX_DIR}/build")
+ 	set(GL4ES_LIBRARY "${GL4ES_INSTALL_DIR}/lib/libGL.a")
+diff --git a/native/jsdos/dosbox-x/jsdos-x-main.cpp b/native/jsdos/dosbox-x/jsdos-x-main.cpp
+index c2756cb..7f9d938 100644
+--- a/native/jsdos/dosbox-x/jsdos-x-main.cpp
++++ b/native/jsdos/dosbox-x/jsdos-x-main.cpp
+@@ -10286,6 +10286,7 @@ int server_run() {
+   jsdos::initAsyncify();
+   CommandLine commandLine(0, nullptr);
+   Config config(&commandLine);
++  config.opt_fastlaunch = true;
+   auto code = jsdos_main(&config);
+   jsdos::destroyAsyncify();
+   return code;

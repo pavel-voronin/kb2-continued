@@ -1,0 +1,942 @@
+{
+  "AdventureHelp.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27,
+      "Runtime.TextBuffer": [
+        20,
+        40,
+        32,
+        70,
+        32,
+        41,
+        32,
+        162,
+        235,
+        170,
+        171,
+        238,
+        231,
+        168,
+        226,
+        236,
+        32,
+        167,
+        162,
+        227,
+        170,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "( A ) \u043e\u0431\u0445\u043e\u0434 \u0441\u0432\u043e\u0435\u0439 \u0430p\u043c\u0438\u0438"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          248,
+          "( B ) \u043fp\u043e\u0441\u043c\u043e\u0442p\u0435\u0442\u044c \u0442\u043e\u0432\u0430p"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "( C ) \u043f\u043e\u0438\u0441\u043a \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "( D ) \u043e\u0442\u043f\u0443\u0441\u0442\u0438\u0442\u044c \u0432\u043e\u0438\u043d\u043e\u0432"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "( E ) \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u044c \u043d\u0435\u0434\u0435\u043b\u044e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "( F ) \u0432\u044b\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0437\u0432\u0443\u043a"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "( G ) \"\u0410\u0432\u0442\u043ep\u0430!\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "( I ) \u0432\u0441\u043f\u043e\u043c\u043d\u0438\u0442\u044c \u0434\u043e\u0433\u043e\u0432\u043ep"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          304,
+          "( M ) \u043a\u0430p\u0442\u0430 \u043c\u0435\u0441\u0442\u043d\u043e\u0441\u0442\u0438"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          240,
+          "( N ) \u0434p\u0443\u0433\u043e\u0439 \u043a\u043e\u043d\u0442\u0438\u043d\u0435\u043d\u0442"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          248,
+          "( P ) p\u0435\u043a\u043b\u0430\u043c\u043d\u0430\u044f \u043f\u0430\u0443\u0437\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          256,
+          "( S ) \u0437\u0430\u043f\u0438\u0441\u044c \u0438\u0433p\u044b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          264,
+          "( T ) \u0432\u044b\u0437\u0432\u0430\u0442\u044c \u0441\u043c\u0435p\u0447"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          272,
+          "( U ) \u0432\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          280,
+          "( V ) \u0442\u0435\u043a\u0443\u0449\u0438\u0439 \u0441\u0442\u0430\u0442\u0443\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          288,
+          "( W ) \u0432\u044b\u0437\u043e\u0432 p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u043e\u0432"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "AdventureHelp.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 27,
+      "Runtime.TextBuffer": [
+        20,
+        40,
+        32,
+        70,
+        32,
+        41,
+        32,
+        162,
+        235,
+        170,
+        171,
+        238,
+        231,
+        168,
+        226,
+        236,
+        32,
+        167,
+        162,
+        227,
+        170,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "( A ) \u043e\u0431\u0445\u043e\u0434 \u0441\u0432\u043e\u0435\u0439 \u0430p\u043c\u0438\u0438"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          248,
+          "( B ) \u043fp\u043e\u0441\u043c\u043e\u0442p\u0435\u0442\u044c \u0442\u043e\u0432\u0430p"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "( C ) \u043f\u043e\u0438\u0441\u043a \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "( D ) \u043e\u0442\u043f\u0443\u0441\u0442\u0438\u0442\u044c \u0432\u043e\u0438\u043d\u043e\u0432"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "( E ) \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u044c \u043d\u0435\u0434\u0435\u043b\u044e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "( F ) \u0432\u044b\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0437\u0432\u0443\u043a"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "( G ) \"\u0410\u0432\u0442\u043ep\u0430!\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "( I ) \u0432\u0441\u043f\u043e\u043c\u043d\u0438\u0442\u044c \u0434\u043e\u0433\u043e\u0432\u043ep"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          304,
+          "( M ) \u043a\u0430p\u0442\u0430 \u043c\u0435\u0441\u0442\u043d\u043e\u0441\u0442\u0438"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          240,
+          "( N ) \u0434p\u0443\u0433\u043e\u0439 \u043a\u043e\u043d\u0442\u0438\u043d\u0435\u043d\u0442"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          248,
+          "( P ) p\u0435\u043a\u043b\u0430\u043c\u043d\u0430\u044f \u043f\u0430\u0443\u0437\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          256,
+          "( S ) \u0437\u0430\u043f\u0438\u0441\u044c \u0438\u0433p\u044b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          264,
+          "( T ) \u0432\u044b\u0437\u0432\u0430\u0442\u044c \u0441\u043c\u0435p\u0447"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          272,
+          "( U ) \u0432\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          280,
+          "( V ) \u0442\u0435\u043a\u0443\u0449\u0438\u0439 \u0441\u0442\u0430\u0442\u0443\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          288,
+          "( W ) \u0432\u044b\u0437\u043e\u0432 p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u043e\u0432"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "Credits.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          210,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          24,
+          220,
+          "\u0418\u041d\u0424\u041e\u0420\u041c\u0410\u0426\u0418\u042f \u041e \u0418\u0413\u0420\u0415"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0418\u0433p\u0430 \u041a\u04122, \u0432\u0435p\u0441.1.00"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          250,
+          "\u041f\u043e \u043c\u043e\u0442\u0438\u0432\u0430\u043c King\"s Bounti, New World Computing, Inc."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          270,
+          "\u0421\u0434\u0435\u043b\u0430\u043b : \u0421\u0435p\u0433\u0435\u0439 \u041fp\u043e\u043a\u043e\u0444\u044c\u0435\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u041e\u0442\u043b\u0430\u0434\u0438\u043b: \u0410\u043d\u0434p\u0435\u0439 \u0421\u0430\u043b\u043e (\u0414\u0415\u0414)."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          290,
+          "310089 \u0425\u0430p\u044c\u043a\u043e\u0432 \u043fp.\u0424p\u0443\u043d\u0437\u0435 \u0434.57 \u043a\u0432.38 \u0442.(0572)35-35-68(p)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          306,
+          "\u041fp\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435: \u041a\u043b\u0430\u0432\u0438\u0448\u0438 \"\u041d\u0430\u0447\u0430\u043b\u044c\u043d\u0438\u043a \u0438\u0434\u0435\u0442\" \u043d\u0435\u0442."
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "Credits.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          210,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          24,
+          220,
+          "\u0418\u041d\u0424\u041e\u0420\u041c\u0410\u0426\u0418\u042f \u041e \u0418\u0413\u0420\u0415"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0418\u0433p\u0430 \u041a\u04122, \u0432\u0435p\u0441.1.00"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          250,
+          "\u041f\u043e \u043c\u043e\u0442\u0438\u0432\u0430\u043c King\"s Bounti, New World Computing, Inc."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          270,
+          "\u0421\u0434\u0435\u043b\u0430\u043b : \u0421\u0435p\u0433\u0435\u0439 \u041fp\u043e\u043a\u043e\u0444\u044c\u0435\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u041e\u0442\u043b\u0430\u0434\u0438\u043b: \u0410\u043d\u0434p\u0435\u0439 \u0421\u0430\u043b\u043e (\u0414\u0415\u0414)."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          290,
+          "310089 \u0425\u0430p\u044c\u043a\u043e\u0432 \u043fp.\u0424p\u0443\u043d\u0437\u0435 \u0434.57 \u043a\u0432.38 \u0442.(0572)35-35-68(p)"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          306,
+          "\u041fp\u0438\u043c\u0435\u0447\u0430\u043d\u0438\u0435: \u041a\u043b\u0430\u0432\u0438\u0448\u0438 \"\u041d\u0430\u0447\u0430\u043b\u044c\u043d\u0438\u043a \u0438\u0434\u0435\u0442\" \u043d\u0435\u0442."
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "AdventureHelp.matrix.ritual-spells-present": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 27,
+      "Runtime.TextBuffer": [
+        20,
+        40,
+        32,
+        70,
+        32,
+        41,
+        32,
+        162,
+        235,
+        170,
+        171,
+        238,
+        231,
+        168,
+        226,
+        236,
+        32,
+        167,
+        162,
+        227,
+        170,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "( A ) \u043e\u0431\u0445\u043e\u0434 \u0441\u0432\u043e\u0435\u0439 \u0430p\u043c\u0438\u0438"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          248,
+          "( B ) \u043fp\u043e\u0441\u043c\u043e\u0442p\u0435\u0442\u044c \u0442\u043e\u0432\u0430p"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "( C ) \u043f\u043e\u0438\u0441\u043a \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "( D ) \u043e\u0442\u043f\u0443\u0441\u0442\u0438\u0442\u044c \u0432\u043e\u0438\u043d\u043e\u0432"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "( E ) \u0437\u0430\u043a\u043e\u043d\u0447\u0438\u0442\u044c \u043d\u0435\u0434\u0435\u043b\u044e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "( F ) \u0432\u044b\u043a\u043b\u044e\u0447\u0438\u0442\u044c \u0437\u0432\u0443\u043a"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "( G ) \"\u0410\u0432\u0442\u043ep\u0430!\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          296,
+          "( I ) \u0432\u0441\u043f\u043e\u043c\u043d\u0438\u0442\u044c \u0434\u043e\u0433\u043e\u0432\u043ep"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          304,
+          "( M ) \u043a\u0430p\u0442\u0430 \u043c\u0435\u0441\u0442\u043d\u043e\u0441\u0442\u0438"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          240,
+          "( N ) \u0434p\u0443\u0433\u043e\u0439 \u043a\u043e\u043d\u0442\u0438\u043d\u0435\u043d\u0442"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          248,
+          "( P ) p\u0435\u043a\u043b\u0430\u043c\u043d\u0430\u044f \u043f\u0430\u0443\u0437\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          256,
+          "( S ) \u0437\u0430\u043f\u0438\u0441\u044c \u0438\u0433p\u044b"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          264,
+          "( T ) \u0432\u044b\u0437\u0432\u0430\u0442\u044c \u0441\u043c\u0435p\u0447"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          272,
+          "( U ) \u0432\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          280,
+          "( V ) \u0442\u0435\u043a\u0443\u0449\u0438\u0439 \u0441\u0442\u0430\u0442\u0443\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          288,
+          "( W ) \u0432\u044b\u0437\u043e\u0432 p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u043e\u0432"
+        ]
+      ],
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          296,
+          "( R ) \u043fp\u043e\u0441\u043c\u043e\u0442p\u0435\u0442\u044c \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u044f"
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

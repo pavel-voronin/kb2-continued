@@ -1,0 +1,4667 @@
+{
+  "EndWeek.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.RitualPower": 10,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.WanderingArmies.sha256": "a4d703a691f6c4f5267b7baba63f604fc902031aefe3477bd9602a456923d6f3",
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.Weeks": 99,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "100000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "0"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 1376306845
+  },
+  "EndWeek.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.Gold": 1997450,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.Weeks": 99,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.gold-1.income-0.restock-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.RitualPower": 40,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.Weeks": 99,
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Gold": 451
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "751"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "300"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.gold-1.income-0.restock-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 0,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 50,
+      "Campaign.RitualStoneIsland": 1,
+      "Campaign.RitualPower": 40,
+      "Campaign.WanderingArmies.sha256": "817c3bcf12dc27a291f5b2c4c54b20461c0551bbcbbf5b8584b0b7540c004e9a",
+      "Campaign.Weeks": 99,
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Gold": 451
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "751"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "300"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 3964786223
+  },
+  "EndWeek.matrix.gold-10.income-0.restock-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.RitualPower": 40,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.Weeks": 99,
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Gold": 460
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "760"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "300"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.gold-10.income-0.restock-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 0,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 50,
+      "Campaign.RitualStoneIsland": 1,
+      "Campaign.RitualPower": 40,
+      "Campaign.WanderingArmies.sha256": "817c3bcf12dc27a291f5b2c4c54b20461c0551bbcbbf5b8584b0b7540c004e9a",
+      "Campaign.Weeks": 99,
+      "Campaign.Army": [
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Gold": 460
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "760"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "300"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 3964786223
+  },
+  "EndWeek.matrix.gold-100000.income-0.restock-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.RitualPower": 40,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.Weeks": 99,
+      "Campaign.Gold": 95950
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "100000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.gold-100000.income-0.restock-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 0,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 50,
+      "Campaign.RitualStoneIsland": 1,
+      "Campaign.RitualPower": 40,
+      "Campaign.WanderingArmies.sha256": "817c3bcf12dc27a291f5b2c4c54b20461c0551bbcbbf5b8584b0b7540c004e9a",
+      "Campaign.Weeks": 99,
+      "Campaign.Gold": 95950
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "100000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 3964786223
+  },
+  "EndWeek.matrix.gold-0.income-1000.restock-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.RitualPower": 40,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.Weeks": 99,
+      "Campaign.Army": [
+        {
+          "Species": 20,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 18,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Gold": 10
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "1510"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "1500"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.gold-0.income-1000.restock-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 0,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 50,
+      "Campaign.RitualStoneIsland": 1,
+      "Campaign.RitualPower": 40,
+      "Campaign.WanderingArmies.sha256": "817c3bcf12dc27a291f5b2c4c54b20461c0551bbcbbf5b8584b0b7540c004e9a",
+      "Campaign.Weeks": 99,
+      "Campaign.Army": [
+        {
+          "Species": 20,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 17,
+          "Count": 3
+        },
+        {
+          "Species": 18,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 3
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        },
+        {
+          "Species": 100,
+          "Count": 0
+        }
+      ],
+      "Campaign.Gold": 10
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "1510"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1000"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "1500"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 3964786223
+  },
+  "EndWeek.matrix.last-week": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        32,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.RitualPower": 40,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.Weeks": 0,
+      "Campaign.Gold": 1997450
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBSESS",
+        "GameOver",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          "  0"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.no-free-roamer-slots.strength-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.WorkerRestockPhase": 1,
+      "Runtime.LastScan": 1,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.WanderingArmies.sha256": "7dcb554957057ade3b43e9628e8ed4b614f5e5ee540a5ea7fb5a431e4006841b",
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.Weeks": 99,
+      "Campaign.Gold": 1997450
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.no-free-roamer-slots.strength-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.WorkerRestockPhase": 1,
+      "Runtime.LastScan": 1,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.WanderingArmies.sha256": "de41d66b7545af9f19bc95c6658619f3d1c667b8eb155be5e7b262d93ea3ea35",
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStoneIsland": 5,
+      "Campaign.Weeks": 99,
+      "Campaign.Gold": 1997450
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.no-free-roamer-slots.strength-65535": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.WorkerRestockPhase": 1,
+      "Runtime.LastScan": 1,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.RitualStonePosition.X": 30,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStoneIsland": 2,
+      "Campaign.Weeks": 99,
+      "Campaign.Gold": 1997450
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1889648464
+  },
+  "EndWeek.matrix.unlocked-island-clamp": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WanderingArmies.sha256": "78698d0727adb3d9b28cabdcad4d757733c13eb8a7c649c6229ca6a9d0544aba",
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.Gold": 1997450,
+      "Campaign.Weeks": 99,
+      "Campaign.RitualStoneIsland": 5
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          5,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.owned-castles-with-garrisons": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStonePosition.X": 30,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.Gold": 1997450,
+      "Campaign.Weeks": 99,
+      "Campaign.RitualStoneIsland": 2
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1889648464
+  },
+  "EndWeek.matrix.empty-castle-no-leadership": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WeeklySpecies": 8,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.Income": 500,
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStonePosition.X": 50,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.Gold": 1997450,
+      "Campaign.Weeks": 99,
+      "Campaign.RitualStoneIsland": 3,
+      "Campaign.Castles.sha256": "f975470042ccb74902b05ec4b3b73c663c54117fb65081a3ec490a40abb54ac6",
+      "Campaign.Map.sha256": "13a644e39513f9120ad9e686afdc56e8ed5becf5be7f670eb98631911bdfc83f"
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0413\u041e\u0420\u0418\u041b\u041b\u042b \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 3620809102
+  },
+  "EndWeek.matrix.missing-talking-stones": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStonePosition.X": 65,
+      "Campaign.RitualStonePosition.Y": 65,
+      "Campaign.Gold": 1997450,
+      "Campaign.Weeks": 99,
+      "Campaign.RitualStoneIsland": 5
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1376306845
+  },
+  "EndWeek.matrix.weekly-dwelling-restock": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.QuantityText": [
+        3,
+        32,
+        57,
+        57,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 1,
+      "Runtime.WorkerRestockPhase": 1,
+      "Campaign.Dwellings.sha256": "4e79ede5076ffbdd2f8642cb7bd6ada2437febf391694d304c8391272233295c",
+      "Campaign.WanderingArmies.sha256": "39895fd30819eace69eb0ec17c1634aabb95657070e2cf998a8eca0c36cb1593",
+      "Campaign.WeeklySpecies": 9,
+      "Campaign.Towns.sha256": "04465d6450a54dbeb940d720ea776e1ac1d569953d8d081a60d21e86f7c2fc91",
+      "Campaign.RitualPower": 40,
+      "Campaign.RitualStonePosition.X": 20,
+      "Campaign.RitualStonePosition.Y": 10,
+      "Campaign.Gold": 1997450,
+      "Campaign.Weeks": 99,
+      "Campaign.RitualStoneIsland": 5
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          71,
+          8,
+          " 99"
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          240,
+          "\u0424\u0418\u041d\u0410\u041d\u0421\u041e\u0412\u042b\u0419 \u041e\u0422\u0427\u0415\u0422 \u041f\u0420\u041e\u0428\u0415\u0414\u0428\u0415\u0419 \u041d\u0415\u0414\u0415\u041b\u0418"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u0418\u043c\u0435\u0435\u0442\u0441\u044f \u0432\u0441\u0435\u0433\u043e ($) :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          264,
+          "2001500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u041d\u0435\u0434\u0435\u043b\u044c\u043d\u0430\u044f \u043fp\u0438\u0431\u0430\u0432\u043a\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          272,
+          "1500"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          280,
+          "\u0420\u0430\u0441\u0445\u043e\u0434\u044b \u043d\u0430 \u0430p\u043c\u0438\u044e  :"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          22,
+          280,
+          "4050"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u041a\u0410\u0420\u041b\u0418\u041a\u0418 \u0430\u043a\u0442\u0438\u0432\u0438\u0437\u0438p\u0443\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "\u041d\u0430\u0441\u0442\u0443\u043f\u0430\u0435\u0442 \u0431\u043b\u0430\u0433\u043e\u043fp\u0438\u044f\u0442\u043d\u044b\u0439 \u043f\u0435p\u0438\u043e\u0434 \u043f\u043e p\u0430\u0441\u043f\u043e\u043b\u043e\u0436\u0435\u043d\u0438\u044e \u0437\u0432\u0435\u0437\u0434 \u0434\u043b\u044f"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "\u044d\u0442\u0438x \u0432\u043e\u0438\u043d\u043e\u0432."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          272,
+          "\u0412\u0441\u0435 \u0438\u0445 \u0436\u0438\u043b\u0438\u0449\u0430 \u043f\u0435p\u0435\u043d\u0430\u0441\u0435\u043b\u044f\u044e\u0442\u0441\u044f."
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          288,
+          "\u0413\u043ep\u043e\u0434 \u041b\u042b\u0421\u0415\u0412\u0421\u041a \u0437\u0430\u043f\u043e\u043b\u043d\u0438\u043b\u0441\u044f p\u0430\u0431\u043e\u0442\u043d\u0438\u043a\u0430\u043c\u0438."
+        ]
+      ],
+      [
+        "KBWORLD",
+        "RelocateArmy",
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBUI",
+        "HeaderPrompt",
+        [
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1376306845
+  }
+}

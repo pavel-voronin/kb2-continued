@@ -1,0 +1,48 @@
+name: Portable release
+
+on:
+  push:
+    tags:
+      - 'v[0-9]*'
+      - 'V[0-9]*'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: portable-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  portable:
+    runs-on: windows-latest
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check changelog extraction and early failure
+        run: ./TEST/RELEASE.ps1
+      - name: Build game and package official DOSBox-X
+        id: portable
+        env:
+          RELEASE_TAG: ${{ github.ref_name }}
+        run: |
+          ./RELEASE/portable.ps1 -Tag $env:RELEASE_TAG -OutputDirectory "$env:RUNNER_TEMP/kb2-release"
+      - name: Publish GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          PORTABLE_ARCHIVE: ${{ steps.portable.outputs.archive }}
+          RELEASE_NOTES: ${{ steps.portable.outputs.notes }}
+        run: |
+          $releaseArgs = @('release', 'create', $env:RELEASE_TAG, $env:PORTABLE_ARCHIVE,
+            '--verify-tag', '--draft', '--title', "King's Bounty 2 — Continued $env:RELEASE_TAG",
+            '--notes-file', $env:RELEASE_NOTES)
+          if ($env:RELEASE_TAG.Contains('-')) { $releaseArgs += '--prerelease' }
+          & gh @releaseArgs
+          if ($LASTEXITCODE -ne 0) { throw 'Release creation or ZIP upload failed.' }
+          & gh release edit $env:RELEASE_TAG --draft=false
+          if ($LASTEXITCODE -ne 0) { throw 'Release publication failed.' }

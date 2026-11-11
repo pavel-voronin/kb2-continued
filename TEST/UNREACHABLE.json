@@ -1,0 +1,919 @@
+{
+  "format": 1,
+  "scope": "Недостижимые пути при указанных контрактах. Они не считаются выполненными тестами.",
+  "modules": {
+    "KBADVENT": "efb6a7fd774b5180f144ddbe0cac139f8b7b6f0e22acda4f2f31dc34310d2cff",
+    "KBBAI": "a3903397794ee248866759a7ce10d48bf0df6a7d491b3bdfadb55dac5ab5838b",
+    "KBBATTLE": "0bfe6bad0e9d9bc9720b5aafd48528d28ae318a27e66d190af5cf1494fcf5437",
+    "KBBDMG": "d4a2eef0a034ef3a5d100e0988c8c804f19e6912c7e4012fc447fa0614878fb3",
+    "KBBDRAW": "ed7def47c2b0e6ffa9db63028510d7861eb136c0e4c801db950d5a7b2c043c33",
+    "KBBMAGIC": "5229eace87eed03522f10798b03a6768e6876b856fe67ba8cc6445fe9b408f05",
+    "KBBRES": "31546b9217fee7f2690d4ff5941ad79019016671b16a2b2c2d33c5bf72b821bf",
+    "KBBTYPE": "a1f683ea51f8f8f7ab4ad6f5f46085c2014391b4bb0c566b368444353ed40030",
+    "KBCAL": "720db5186c0e35174bb1845489810570f36607003bedc5e9d7b690cd699a8873",
+    "KBCASTLE": "ead8f9e45b10353e56f878f1a8adf5c7ae7820be012348c431586ef7c41cfb7e",
+    "KBEVENTS": "a5ebd9bc8752c1cf82eedc1cb7a30f2dff97d3da08caf76a4b7db37a64b5704d",
+    "KBGEN": "0e8bc8920dc43956d5bea196b9d6ddca0606742589b13c96ec82978e362a7b0b",
+    "KBMAGIC": "d6dd982809447b99c2adef1815c4fca0a3db0a2338fc8bb3e70b95c3c762565e",
+    "KBPLAYER": "47a9a6f8242d1f60d9eaaa4503315aba11e1ddc9fdf098bec97e0dbe2e463414",
+    "KBSCROLL": "7c287fba3f488243f0523c79ce763fa6e3fa86fec3c122b5675e6eb2914d5e7a",
+    "KBSTART": "4162159c5c3fb49a522b907f1d9e4001800128782b419b496f4b1e7fcd1b2871",
+    "KBSTATE": "60954698c42393ff8718c1e8d2a5a43ff28269587173dad91facee43e7317806",
+    "KBTABLES": "b407142fc1a6b2028fe8ca07812e8098763be1fb33a33e6cd4d4e72bd2c13382",
+    "KBTOWN": "f332eaee60f29fd77b70ab528ea3183737878cf517eb7db6fb230cadc3191575",
+    "KBTYPES": "2ee1c73d93fb50edeff9dd01985c94f9b04fe0500f1bda3a5cb1972fb512e6cb",
+    "KBWIZARD": "9921d9bf3afd75c6deae90b84f797bc5e110658462cd19c79695565f7da0161a",
+    "KBWORLD": "112d8756b13899a330646840c341320a6ba131cf1b59a2ce9ef92772898b57ca"
+  },
+  "compiler": {
+    "TPC.EXE": "72211facc2159c758fd6db2a6076517568d82654f1a6b92539745af50274e3f0",
+    "TURBO.TPL": "025cf348b34b737f7db84e98b77041d25c7d62e6210e2c410e660f5149c05896"
+  },
+  "proofs": [
+    {
+      "id": "roamer-direction",
+      "reason": "Random(79) div 10 принимает только 0..7; все восемь значений разобраны.",
+      "depends_on": [
+        "KBADVENT",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBADVENT",
+          "local_id": 128,
+          "line": 146,
+          "shape": {
+            "routine": "moveroamer",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "roamerdirection",
+              "of",
+              "0",
+              ":",
+              "begin",
+              "dec",
+              "(",
+              "x",
+              ")",
+              ";",
+              "dec"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "positive-rank",
+      "reason": "CheckAlternative вызывается при StepRanks[2] > PreviousRank. PreviousRank — byte, поэтому StepRanks[2] положителен. FindAdjacent не меняет ранги.",
+      "depends_on": [
+        "KBBAI",
+        "KBBTYPE",
+        "KBPLAYER",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBBAI",
+          "local_id": 36,
+          "line": 74,
+          "shape": {
+            "routine": "enemyphase.choosestep.checkalternative",
+            "kind": "branch-false",
+            "source": [
+              "if",
+              "enemyai",
+              ".",
+              "stepranks",
+              "[",
+              "2",
+              "]",
+              ">",
+              "0",
+              "then",
+              "begin",
+              "enemyai",
+              ".",
+              "bestx",
+              ":=",
+              "x"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "last-candidate-diagonal",
+      "reason": "При трёх равных рангах строгие сравнения RankNeighbour не переставляют последний Candidate[0]. Последняя итерация записывает (X+1,Y+1), в том числе при отказе кандидата. Обе координаты отличаются от (X,Y); ложная ветвь и её два оператора недостижимы.",
+      "depends_on": [
+        "KBBAI",
+        "KBBTYPE",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBBAI",
+          "local_id": 80,
+          "line": 121,
+          "shape": {
+            "routine": "enemyphase.choosestep",
+            "kind": "branch-false",
+            "source": [
+              "if",
+              "(",
+              "x",
+              "<>",
+              "enemyai",
+              ".",
+              "candidatex",
+              "[",
+              "0",
+              "]",
+              ")",
+              "and",
+              "(",
+              "y",
+              "<>",
+              "enemyai"
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 83,
+          "line": 128,
+          "shape": {
+            "routine": "enemyphase.choosestep",
+            "kind": "statement",
+            "source": [
+              "enemyai",
+              ".",
+              "bestx",
+              ":=",
+              "enemyai",
+              ".",
+              "candidatex",
+              "[",
+              "1",
+              "]"
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 84,
+          "line": 129,
+          "shape": {
+            "routine": "enemyphase.choosestep",
+            "kind": "statement",
+            "source": [
+              "enemyai",
+              ".",
+              "besty",
+              ":=",
+              "enemyai",
+              ".",
+              "candidatey",
+              "[",
+              "1",
+              "]"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "literal-false",
+      "reason": "Условие завершения repeat записано как until false. Истинного исхода у него нет.",
+      "depends_on": [
+        "KBBAI",
+        "KBBDRAW",
+        "KBSTATE",
+        "KBTOWN",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBBAI",
+          "local_id": 111,
+          "line": 169,
+          "shape": {
+            "routine": "enemyphase.flytotarget",
+            "kind": "branch-true",
+            "source": [
+              "repeat",
+              "for",
+              "dy",
+              ":=",
+              "-",
+              "radius",
+              "to",
+              "radius",
+              "do",
+              "for",
+              "dx",
+              ":=",
+              "-",
+              "radius",
+              "to",
+              "radius"
+            ]
+          }
+        },
+        {
+          "module": "KBBDRAW",
+          "local_id": 63,
+          "line": 93,
+          "shape": {
+            "routine": "findunitcell",
+            "kind": "branch-true",
+            "source": [
+              "repeat",
+              "repeat",
+              "if",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "battlefield",
+              "[",
+              "x",
+              ",",
+              "y",
+              "]",
+              "=",
+              "side",
+              "then"
+            ]
+          }
+        },
+        {
+          "module": "KBTOWN",
+          "local_id": 232,
+          "line": 329,
+          "shape": {
+            "routine": "townvisit.offercontract",
+            "kind": "branch-true",
+            "source": [
+              "repeat",
+              "if",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "currentcontractoffer",
+              ">",
+              "4",
+              "then",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "currentcontractoffer",
+              ":="
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "shooter-has-ammunition",
+      "reason": "ShooterTurn вызывается только из ветви Shots > 0. До проверки Shots = 0 вызывается лишь BuildCostMap, который не меняет Shots. Внутренний Retry находится после этой проверки.",
+      "depends_on": [
+        "KBBAI",
+        "KBBDRAW",
+        "KBBTYPE",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBBAI",
+          "local_id": 166,
+          "line": 242,
+          "shape": {
+            "routine": "enemyphase.shooterturn",
+            "kind": "branch-true",
+            "source": [
+              "if",
+              "combat",
+              ".",
+              "enemy",
+              "[",
+              "enemyai",
+              ".",
+              "enemyslot",
+              "]",
+              ".",
+              "shots",
+              "=",
+              "0",
+              "then",
+              "shooterturn",
+              ":="
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 168,
+          "line": 242,
+          "shape": {
+            "routine": "enemyphase.shooterturn",
+            "kind": "statement",
+            "source": [
+              "shooterturn",
+              ":=",
+              "3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "victory-spawn-capacity",
+      "reason": "При BattleResult=1 все пять боевых слотов врага имеют Species=100. В них переводится не более пяти активных отрядов игрока (MainI<5); резерв туда не переводится. Поэтому поиск всегда заканчивается goto NextSurvivor, без полного исчерпания пяти слотов.",
+      "depends_on": [
+        "KBBAI",
+        "KBBATTLE",
+        "KBBDMG",
+        "KBBMAGIC",
+        "KBBRES",
+        "KBBTYPE",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBBATTLE",
+          "local_id": 235,
+          "line": 220,
+          "shape": {
+            "routine": "battle",
+            "kind": "loop-exit",
+            "source": [
+              "for",
+              "combat",
+              ".",
+              "spawni",
+              ":=",
+              "0",
+              "to",
+              "4",
+              "do",
+              "if",
+              "penemyspecies",
+              "(",
+              "enemytypes",
+              ")",
+              "^",
+              "["
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "battle-magic-menu",
+      "reason": "Перед case пропускается Esc; оставшиеся допустимые LastScan=2..8 полностью перечислены.",
+      "depends_on": [
+        "KBBMAGIC",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBBMAGIC",
+          "local_id": 243,
+          "line": 222,
+          "shape": {
+            "routine": "magicmenu",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "lastscan",
+              "of",
+              "2",
+              ":",
+              "if",
+              "game",
+              ".",
+              "campaign",
+              ".",
+              "scrolls",
+              "["
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "uncontrolled-zero",
+      "reason": "После Random(10) TX находится в 0..9; перед case выполняется Inc(TX). После else TX:=0 возврат на Direction снова выполняет Inc. Ветка 0 и два её присваивания недостижимы.",
+      "depends_on": [
+        "KBBRES",
+        "KBPLAYER",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBBRES",
+          "local_id": 170,
+          "line": 225,
+          "shape": {
+            "routine": "uncontrolledturn",
+            "kind": "case-0",
+            "source": [
+              "begin",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "stepx",
+              ":=",
+              "-",
+              "1",
+              ";",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "stepy",
+              ":="
+            ]
+          }
+        },
+        {
+          "module": "KBBRES",
+          "local_id": 171,
+          "line": 226,
+          "shape": {
+            "routine": "uncontrolledturn",
+            "kind": "statement",
+            "source": [
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "stepx",
+              ":=",
+              "-",
+              "1"
+            ]
+          }
+        },
+        {
+          "module": "KBBRES",
+          "local_id": 172,
+          "line": 227,
+          "shape": {
+            "routine": "uncontrolledturn",
+            "kind": "statement",
+            "source": [
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "stepy",
+              ":=",
+              "-",
+              "1"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "weekly-slot",
+      "reason": "I присваивается Random(5)+1, то есть 1..5. Проверка I>5 всегда ложна; присваивание I:=5 недостижимо.",
+      "depends_on": [
+        "KBCAL",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBCAL",
+          "local_id": 8,
+          "line": 32,
+          "shape": {
+            "routine": "endweek.reinforceenemy",
+            "kind": "branch-true",
+            "source": [
+              "if",
+              "i",
+              ">",
+              "5",
+              "then",
+              "i",
+              ":=",
+              "5"
+            ]
+          }
+        },
+        {
+          "module": "KBCAL",
+          "local_id": 10,
+          "line": 32,
+          "shape": {
+            "routine": "endweek.reinforceenemy",
+            "kind": "statement",
+            "source": [
+              "i",
+              ":=",
+              "5"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "castle-reward-menu",
+      "reason": "repeat допускает только коды 49..52; case содержит все четыре кода.",
+      "depends_on": [
+        "KBCASTLE",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBCASTLE",
+          "local_id": 43,
+          "line": 44,
+          "shape": {
+            "routine": "castlevisit.audience",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "lastscan",
+              "of",
+              "49",
+              ":",
+              "game",
+              ".",
+              "campaign",
+              ".",
+              "gold",
+              ":=",
+              "game"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "castle-greeting",
+      "reason": "I:=Random(5) даёт 0..4. Ветка 5 и отсутствие подходящей ветви case недостижимы.",
+      "depends_on": [
+        "KBCASTLE",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBCASTLE",
+          "local_id": 333,
+          "line": 401,
+          "shape": {
+            "routine": "castlevisit",
+            "kind": "case-5",
+            "source": [
+              "drawtext",
+              "(",
+              "false",
+              ",",
+              "14",
+              ",",
+              "264",
+              ",",
+              "'Чужеземец, что ты забыл в моем замке ?'",
+              ")"
+            ]
+          }
+        },
+        {
+          "module": "KBCASTLE",
+          "local_id": 334,
+          "line": 401,
+          "shape": {
+            "routine": "castlevisit",
+            "kind": "statement",
+            "source": [
+              "drawtext",
+              "(",
+              "false",
+              ",",
+              "14",
+              ",",
+              "264",
+              ",",
+              "'Чужеземец, что ты забыл в моем замке ?'",
+              ")"
+            ]
+          }
+        },
+        {
+          "module": "KBCASTLE",
+          "local_id": 335,
+          "line": 395,
+          "shape": {
+            "routine": "castlevisit",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "i",
+              "of",
+              "0",
+              ":",
+              "drawtext",
+              "(",
+              "false",
+              ",",
+              "6",
+              ",",
+              "264",
+              ",",
+              "'Деpжись подальше от этого замка, иначе ты покойник !'",
+              ")",
+              ";"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "mage-event",
+      "reason": "Random(119) div 10 даёт 0..11; оба case перечисляют все двенадцать значений.",
+      "depends_on": [
+        "KBEVENTS",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBEVENTS",
+          "local_id": 30,
+          "line": 54,
+          "shape": {
+            "routine": "blackmage",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "event",
+              "of",
+              "0",
+              ":",
+              "drawtext",
+              "(",
+              "false",
+              ",",
+              "17",
+              ",",
+              "272",
+              ",",
+              "powerlostmessage",
+              ")",
+              ";"
+            ]
+          }
+        },
+        {
+          "module": "KBEVENTS",
+          "local_id": 85,
+          "line": 69,
+          "shape": {
+            "routine": "blackmage",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "event",
+              "of",
+              "0",
+              ":",
+              "if",
+              "game",
+              ".",
+              "campaign",
+              ".",
+              "magicpower",
+              ">",
+              "0",
+              "then",
+              "dec",
+              "("
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "workshop-effect",
+      "reason": "PrepareWorkshop заполняет доступную часть Spells только эффектами 0..6, а курсор ограничен LastEffect. При пустом списке LastEffect=-1 и Cursor остаётся 0 (проверено B019): положительный неопределённый Effect при DonorSpecies=100 уходит в ConsumeDonor до case; Effect=0 относится к существующей ветви и не меняется при следующих выборах.",
+      "depends_on": [
+        "KBEVENTS",
+        "KBSTATE",
+        "KBTABLES",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBEVENTS",
+          "local_id": 423,
+          "line": 504,
+          "shape": {
+            "routine": "talkingstonevisit.workshop.applyeffect",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "workshopstate",
+              ".",
+              "effect",
+              "of",
+              "0",
+              ":",
+              "begin",
+              "transferspecies",
+              ";",
+              "transfermovement",
+              ";",
+              "transferattack",
+              ";",
+              "transferdefense",
+              ";"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "adventure-magic-menu",
+      "reason": "После проверки допустимых кодов 1..8 код 1 уходит через goto RestoreHeader; case перечисляет все оставшиеся 2..8.",
+      "depends_on": [
+        "KBMAGIC",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBMAGIC",
+          "local_id": 367,
+          "line": 350,
+          "shape": {
+            "routine": "adventuremagic",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "game",
+              ".",
+              "runtime",
+              ".",
+              "lastscan",
+              "of",
+              "2",
+              ":",
+              "if",
+              "game",
+              ".",
+              "campaign",
+              ".",
+              "scrolls",
+              "["
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "paper-chart-island",
+      "reason": "При штатном состоянии Campaign.Island находится в 1..5. Ветка карты дополнительно требует Island<5; case перечисляет 1..4. Повреждение записи острова вне контракта кампании не считается игровым переходом.",
+      "depends_on": [
+        "KBGEN",
+        "KBSCROLL",
+        "KBSTATE",
+        "KBTYPES",
+        "KBWORLD"
+      ],
+      "points": [
+        {
+          "module": "KBSCROLL",
+          "local_id": 90,
+          "line": 134,
+          "shape": {
+            "routine": "paperscrollvisit",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "game",
+              ".",
+              "campaign",
+              ".",
+              "island",
+              "of",
+              "1",
+              ":",
+              "drawtext",
+              "(",
+              "false",
+              ",",
+              "26",
+              ",",
+              "264"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "startup-menu-choice",
+      "reason": "MenuChoice начинается с 0 и изменяется с циклическим переходом в пределах 0..2. Все три значения разобраны case.",
+      "depends_on": [
+        "KBSTART",
+        "KBSTATE",
+        "KBTYPES"
+      ],
+      "points": [
+        {
+          "module": "KBSTART",
+          "local_id": 192,
+          "line": 230,
+          "shape": {
+            "routine": "startupmenu",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "menuchoice",
+              "of",
+              "0",
+              ":",
+              "newgame",
+              ";",
+              "1",
+              ":",
+              "begin",
+              "resetmenupage",
+              ";",
+              "readcampaign",
+              "end",
+              ";",
+              "2"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "wizard-offer",
+      "reason": "Offer:=Random(10)+1 повторяется до Offer<7; на выходе Offer находится в 1..6, все шесть значений перечислены.",
+      "depends_on": [
+        "KBSTATE",
+        "KBTYPES",
+        "KBWIZARD"
+      ],
+      "points": [
+        {
+          "module": "KBWIZARD",
+          "local_id": 320,
+          "line": 336,
+          "shape": {
+            "routine": "wizardvisit",
+            "kind": "case-unmatched",
+            "source": [
+              "case",
+              "offer",
+              "of",
+              "1",
+              ":",
+              "for",
+              "i",
+              ":=",
+              "1",
+              "to",
+              "5",
+              "do",
+              "game",
+              ".",
+              "campaign",
+              "."
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
