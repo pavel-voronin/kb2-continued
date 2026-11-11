@@ -19,6 +19,15 @@ function readRelease(markdown,tag) {
   return matches[0];
 }
 
+function renderHtml(html,data,startup,revision,runtime) {
+  return html
+    .replaceAll('{{VERSION}}', JSON.parse(data).version)
+    .replaceAll('{{ASSET_REV}}', revision)
+    .replaceAll('{{RUNTIME_REV}}', runtime)
+    .replace('{{STARTUP_IMAGE}}', 'data:image/png;base64,' + startup.toString('base64'))
+    .replace('<!-- release-data -->', `<script type="application/json" id="release-data">${data}</script>`);
+}
+
 function preparePage({tag}={}) {
   const root = path.resolve(__dirname, '..');
   const out = path.join(__dirname, 'dist');
@@ -46,18 +55,14 @@ function preparePage({tag}={}) {
     fs.writeFileSync(path.join(out, name), bytes);
   }
   const revision = hash.digest('hex').slice(0, 12);
-  const html = fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8')
-    .replaceAll('{{VERSION}}', version)
-    .replaceAll('{{ASSET_REV}}', revision)
-    .replaceAll('{{RUNTIME_REV}}', runtime)
-    .replace('{{STARTUP_IMAGE}}', 'data:image/png;base64,' + startup.toString('base64'))
-    .replace('<!-- release-data -->', `<script type="application/json" id="release-data">${data}</script>`);
+  const html = renderHtml(fs.readFileSync(path.join(__dirname, 'index.html'), 'utf8'), data, startup, revision, runtime);
   fs.writeFileSync(path.join(out, 'index.html'), html);
   return version;
 }
 
 module.exports = preparePage;
 module.exports.readRelease = readRelease;
+module.exports.renderHtml = renderHtml;
 if (require.main === module) {
   try { console.log('Локальная страница: ' + preparePage()); }
   catch (error) { console.error(error); process.exitCode = 1; }
