@@ -6,7 +6,7 @@ const context = canvas.getContext('2d', { alpha: false });
 const viewWidth = 600, viewHeight = 330;
 let frameWidth = 640, frameHeight = 350;
 let ci, saveFiles, scale = 1, mode = 'continued', switching = false, ready = false;
-let frameImage, bootTimer, soundEnabled = false;
+let frameImage, bootTimer, soundEnabled = true;
 const settingsKey = 'kb2.settings';
 try {
   const saved = JSON.parse(localStorage.getItem(settingsKey));
