@@ -53,7 +53,8 @@ server=await createServer({
       const release=page.readRelease(markdown);
       const runtime=sha(Buffer.concat(['wdosbox-x.js','wdosbox-x.wasm'].map(name=>fs.readFileSync(path.join(web,'runtime/vendor',name))))).slice(0,16);
       const data=JSON.stringify({...release,markdown,bundles:{classic:sha(classic).slice(0,16),continued:sha(current.archive).slice(0,16)},runtime,font:Buffer.from(current.game['KB2.FNT']).toString('base64')}).replace(/</g,'\\u003c');
-      return page.renderHtml(html,data,fs.readFileSync(path.join(web,'assets/startup.png')),'dev',runtime);
+      // Vite treats ?v= as an immutable dependency URL; source files must stay unversioned in dev.
+      return page.renderHtml(html,data,fs.readFileSync(path.join(web,'assets/startup.png')),'dev',runtime).replaceAll('?v=dev','');
     }},
     configureServer(dev){
       dev.watcher.add([path.join(root,'SRC'),path.join(root,'PASCAL'),path.join(root,'BUILD.BAT'),path.join(root,'CHANGELOG.md')]);

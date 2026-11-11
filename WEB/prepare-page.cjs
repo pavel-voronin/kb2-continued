@@ -49,7 +49,8 @@ function preparePage({tag}={}) {
   const startup = fs.readFileSync(path.join(__dirname, 'assets/startup.png'));
   const hash = crypto.createHash('sha256').update(data);
   hash.update(startup);
-  for (const name of ['style.css', 'changelog.js', 'save-files.js', 'app.js']) {
+  for (const name of ['style.css', 'changelog.js', 'save-files.js', 'app.js', 'favicon.ico',
+    'favicon-16.png', 'favicon-32.png', 'favicon-48.png', 'favicon-64.png']) {
     const bytes = fs.readFileSync(path.join(__dirname, name));
     hash.update(bytes);
     fs.writeFileSync(path.join(out, name), bytes);
