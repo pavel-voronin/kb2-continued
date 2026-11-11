@@ -4,12 +4,12 @@ const {spawnSync}=require('node:child_process');
 const root=path.resolve(__dirname,'..');
 const {unzipSync}=require(path.join(root,'WEB/node_modules/fflate'));
 const readRelease=require('../WEB/prepare-page.cjs').readRelease;
-const markdown='# History\n## 2.0.0 — 2026-11-12\n- New\n## 1.2.3 — 2026-11-11\n- Target\n```md\n## 1.2.3 — 2026-11-11\n```\n';
+const markdown='# History\n## 2.0.0 - 2026-11-12\n- New\n## 1.2.3 - 2026-11-11\n- Target\n```md\n## 1.2.3 - 2026-11-11\n```\n';
 assert.deepEqual(readRelease(markdown,'v1.2.3'),{version:'1.2.3',date:'2026-11-11'});
 assert.equal(readRelease(markdown).version,'2.0.0');
 assert.throws(()=>readRelease(markdown,'v9.9.9'));
-assert.throws(()=>readRelease(markdown+'\n## 1.2.3 — 2026-11-11\n- Duplicate','v1.2.3'));
-assert.equal(readRelease('## 1.0.0-rc.1 — 2026-11-11','v1.0.0-rc.1').version,'1.0.0-rc.1');
+assert.throws(()=>readRelease(markdown+'\n## 1.2.3 - 2026-11-11\n- Duplicate','v1.2.3'));
+assert.equal(readRelease('## 1.0.0-rc.1 - 2026-11-11','v1.0.0-rc.1').version,'1.0.0-rc.1');
 const temp=fs.mkdtempSync(path.join(os.tmpdir(),'kb2-web-test-'));
 try {
   const web=path.join(temp,'WEB'),input=path.join(temp,'GAME');

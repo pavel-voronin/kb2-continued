@@ -10,7 +10,7 @@ function readRelease(markdown,tag) {
     const marker=line.match(/^ {0,3}(`{3,}|~{3,})/);
     if(marker){if(!fence)fence=marker[1];else if(marker[1][0]===fence[0] && line.trim().length>=fence.length && /^(`+|~+)$/.test(line.trim()))fence=null;continue;}
     if(fence)continue;
-    const match=line.match(/^ {0,3}##\s+(\d+(?:\.\d+){0,2}(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?)\s+—\s+(\d{4}-\d{2}-\d{2})\s*$/);
+    const match=line.match(/^ {0,3}##\s+(\d+(?:\.\d+){0,2}(?:-[0-9A-Za-z]+(?:[.-][0-9A-Za-z]+)*)?)\s+-\s+(\d{4}-\d{2}-\d{2})\s*$/);
     if(match)sections.push({version:match[1],date:match[2]});
   }
   const version=tag?tag.replace(/^[vV]/,''):sections[0]?.version;
