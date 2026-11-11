@@ -7,7 +7,31 @@ body {
   color: white;
 }
 #page-layout { min-height: 100vh; display: grid; place-items: center; }
-#player { max-width: 100vw; padding: 8px; }
+#player { max-width: 100vw; padding: 8px; position: relative; }
+#discord-tip {
+  position: absolute;
+  z-index: 20;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+  max-width: calc(100% - 16px);
+  padding: 5px 11px;
+  color: #20351d;
+  line-height: 18px;
+}
+#discord-tip[hidden] { display: none; }
+#discord-tip-art {
+  position: absolute;
+  inset: 0 auto auto 0;
+  z-index: -1;
+  visibility: visible;
+  image-rendering: pixelated;
+  pointer-events: none;
+}
+#discord-tip-close { border: 0; padding: 0; background: transparent; color: #52724a; font-size: 20px; line-height: 18px; cursor: pointer; }
+#discord-tip-close:hover { color: #20351d; }
 .toolbar {
   display: flex;
   flex-wrap: wrap;

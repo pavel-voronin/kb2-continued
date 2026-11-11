@@ -21,6 +21,43 @@ function saveSettings() {
   catch { /* The game remains usable when browser storage is disabled. */ }
 }
 const releaseData = JSON.parse($('#release-data').textContent);
+const discordTip = $('#discord-tip');
+try { discordTip.hidden = localStorage.getItem('kb2.discord-tip-dismissed') === 'true'; }
+catch { discordTip.hidden = false; }
+function positionDiscordTip() {
+  if(discordTip.hidden)return;
+  const bounds=player.getBoundingClientRect(),link=$('#discord').getBoundingClientRect();
+  discordTip.style.width='max-content';
+  const width=Math.ceil(discordTip.getBoundingClientRect().width),height=discordTip.offsetHeight;
+  discordTip.style.width=width+'px';
+  discordTip.style.right='auto';
+  discordTip.style.left=(Math.round(bounds.right-8-width)-bounds.left)+'px';
+  discordTip.style.top=(Math.round(link.top-height-11)-bounds.top)+'px';
+  // Paint a real pixel silhouette: integer coordinates, stepped corners and a 1px outline.
+  const art=$('#discord-tip-art');
+  const tip=Math.max(8,Math.min(width-9,Math.round(link.left+link.width/2-discordTip.getBoundingClientRect().left)));
+  art.width=width;art.height=height+7;
+  art.style.width=width+'px';art.style.height=(height+7)+'px';
+  const mask=new Uint8Array(width*(height+7));
+  for(let y=0;y<height;y++){
+    const inset=y===0||y===height-1?3:y<3||y>=height-3?1:0;
+    mask.fill(1,y*width+inset,(y+1)*width-inset);
+  }
+  for(let y=0;y<7;y++)for(let x=tip-6+y;x<=tip+6-y;x++)mask[(height+y)*width+x]=1;
+  const image=art.getContext('2d').createImageData(width,height+7);
+  for(let y=0;y<height+7;y++)for(let x=0;x<width;x++){
+    const i=y*width+x;if(!mask[i])continue;
+    const edge=x===0||x===width-1||y===0||y===height+6||!mask[i-1]||!mask[i+1]||!mask[i-width]||!mask[i+width];
+    const color=edge?[84,125,73]:y===1?[225,243,215]:[198,232,187];
+    image.data.set([...color,255],i*4);
+  }
+  art.getContext('2d').putImageData(image,0,0);
+}
+$('#discord-tip-close').addEventListener('click',()=>{
+  discordTip.hidden=true;
+  try { localStorage.setItem('kb2.discord-tip-dismissed','true'); } catch { /* Storage may be unavailable. */ }
+});
+new ResizeObserver(positionDiscordTip).observe($('.toolbar'));
 const changelog = new ChangelogWindow({
   button: $('#release'), dialog: $('#changelog-dialog'), canvas: $('#changelog-canvas'),
   closeButton: $('#changelog-close'), data: releaseData,
