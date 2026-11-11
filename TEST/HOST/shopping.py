@@ -66,6 +66,62 @@ def cases(module):
 
                 yield Case(f"recruit.{army}.grace-{grace}", recruit)
     elif module == "KBTOWN":
+        for label, owned, gold, presses, expected_gold, expected_owned, payments in (
+            ("first-and-repeat", False, 9000, 2, 6000, True, 1),
+            ("already-owned", True, 9000, 1, 9000, True, 0),
+            ("insufficient-gold", False, 2999, 1, 2999, False, 1),
+        ):
+
+            def siege(v, owned=owned, gold=gold, presses=presses,
+                      expected_gold=expected_gold, expected_owned=expected_owned,
+                      payments=payments):
+                g = preset(v)
+                g.Campaign.Flags.SiegeEngineOwned = owned
+                g.Campaign.Gold = gold
+                v.set_game(g)
+                charged = []
+
+                def pay(vm, args):
+                    cost, = args
+                    charged.append(cost)
+                    state = vm.game()
+                    if state.Campaign.Gold < cost:
+                        return 1
+                    state.Campaign.Gold -= cost
+                    vm.set_game(state)
+                    return 0
+
+                v.responses["PaymentFailed"] = pay
+                ready(v, v.invoke("TownVisit", keys=[53] * presses + [27]))
+                after = v.game().Campaign
+                assert after.Gold == expected_gold
+                assert bool(after.Flags.SiegeEngineOwned) == expected_owned
+                assert charged == [3000] * payments
+
+                def menu_rows(calls):
+                    rows = []
+                    cleared = False
+                    for _, name, args in calls:
+                        if name == "DrawDialog" and list(args) == [8, 230, 488, 320]:
+                            cleared = True
+                        if name == "DrawText" and list(args[:3]) == [0, 2, 288]:
+                            assert cleared, "Menu must be cleared before drawing the row"
+                            rows.append(args[3])
+                            cleared = False
+                    return rows
+
+                available = "5) Купить стенобитное оpудие ($3000)"
+                purchased = "*) Стенобитное орудие куплено"
+                assert menu_rows(v.calls) == [purchased if owned else available] + [
+                    purchased if expected_owned else available
+                ] * presses
+                previous_calls = len(v.calls)
+                ready(v, v.invoke("TownVisit", keys=[27]))
+                assert menu_rows(v.calls[previous_calls:]) == [
+                    purchased if expected_owned else available
+                ]
+
+            yield Case(f"siege.{label}", siege)
         for cancel, cap in ((False, 0), (True, 0), (False, 1000)):
 
             def market(v, cancel=cancel, cap=cap):

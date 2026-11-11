@@ -32,6 +32,7 @@ const
   PricePrefix = ' ($';
   PriceSuffix = ')';
   SiegeEngineMenuItem = '5) Купить стенобитное оpудие ($3000)';
+  SiegeEngineOwnedMenuItem = '*) Стенобитное орудие куплено';
   WorkersMenuItem = '6) Работники';
   GoodsMenuItem = '7) Товаp';
   CastleCaption = 'Замок ';
@@ -407,7 +408,10 @@ begin
     PricePrefix + TownState.Caption +
       PriceSuffix;
     DrawText(false, 5, 280, TownState.Caption);
-    DrawText(false, 2, 288, SiegeEngineMenuItem);
+    if Game.Campaign.Flags.SiegeEngineOwned then
+      DrawText(false, 2, 288, SiegeEngineOwnedMenuItem)
+    else
+      DrawText(false, 2, 288, SiegeEngineMenuItem);
     DrawText(false, 2, 296, WorkersMenuItem);
     DrawText(false, 2, 304, GoodsMenuItem);
     Game.Runtime.LastScan := Ord(ReadKey);
@@ -428,7 +432,8 @@ begin
       end;
 
       52: BuyScroll(ScrollPrices[Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Scroll]);
-      53: if not PaymentFailed(3000) then
+      53: if not Game.Campaign.Flags.SiegeEngineOwned then
+            if not PaymentFailed(3000) then
       begin
         Game.Runtime.PicturePage := 0;
         DrawPictureTile(6622, 16);
