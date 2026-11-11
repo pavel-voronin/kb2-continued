@@ -1,0 +1,82 @@
+{
+  "InitializePrinter.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {
+      "LPT1": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [
+      [
+        "ioctl",
+        17408,
+        "LPT1",
+        32979
+      ],
+      [
+        "ioctl",
+        17408,
+        "LPT1",
+        32979
+      ],
+      [
+        "ioctl",
+        17409,
+        "LPT1",
+        243
+      ]
+    ],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "InitializePrinter.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {
+      "LPT1": {
+        "size": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [
+      [
+        "ioctl",
+        17408,
+        "LPT1",
+        32979
+      ],
+      [
+        "ioctl",
+        17408,
+        "LPT1",
+        32979
+      ],
+      [
+        "ioctl",
+        17409,
+        "LPT1",
+        243
+      ]
+    ],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  }
+}

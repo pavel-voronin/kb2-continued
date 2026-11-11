@@ -1,0 +1,132 @@
+{
+  "PrepareSave.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Mutants.sha256": "eeea66985f8cf35fac4b1e065d0951fbfe02ed1f704a967c668dcd4482ebdf29",
+      "Campaign.ArchivedIsland": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "PrepareSave.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Mutants.sha256": "eeea66985f8cf35fac4b1e065d0951fbfe02ed1f704a967c668dcd4482ebdf29",
+      "Campaign.ArchivedIsland": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WriteCampaign.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {
+      "KB2.DAT": {
+        "size": 27729,
+        "sha256": "5a50719a9c54cc0a8194ec66a93b74ac1b4300bfdacdcdf7f2497fdb3ffb643d"
+      }
+    },
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WriteCampaign.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {
+      "KB2.DAT": {
+        "size": 27729,
+        "sha256": "6bd122a2d7ebee0771f722ed3c0a0e6c4972f1dc69304dcd6d60596af36d3327"
+      }
+    },
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "ReadCampaign.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "ReadCampaign.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  }
+}

@@ -1,0 +1,40 @@
+const fs=require('node:fs'),path=require('node:path'),os=require('node:os');
+const assert=require('node:assert/strict'),crypto=require('node:crypto');
+const {spawnSync}=require('node:child_process');
+const root=path.resolve(__dirname,'..');
+const {unzipSync}=require(path.join(root,'WEB/node_modules/fflate'));
+const readRelease=require('../WEB/prepare-page.cjs').readRelease;
+const markdown='# History\n## 2.0.0 — 2026-11-12\n- New\n## 1.2.3 — 2026-11-11\n- Target\n```md\n## 1.2.3 — 2026-11-11\n```\n';
+assert.deepEqual(readRelease(markdown,'v1.2.3'),{version:'1.2.3',date:'2026-11-11'});
+assert.equal(readRelease(markdown).version,'2.0.0');
+assert.throws(()=>readRelease(markdown,'v9.9.9'));
+assert.throws(()=>readRelease(markdown+'\n## 1.2.3 — 2026-11-11\n- Duplicate','v1.2.3'));
+assert.equal(readRelease('## 1.0.0-rc.1 — 2026-11-11','v1.0.0-rc.1').version,'1.0.0-rc.1');
+const temp=fs.mkdtempSync(path.join(os.tmpdir(),'kb2-web-test-'));
+try {
+  const web=path.join(temp,'WEB'),input=path.join(temp,'GAME');
+  fs.cpSync(path.join(root,'WEB'),web,{recursive:true,filter:p=>!['dist','node_modules','.build'].includes(path.relative(path.join(root,'WEB'),p).split(path.sep)[0])});
+  fs.writeFileSync(path.join(temp,'CHANGELOG.md'),markdown);
+  fs.mkdirSync(input);
+  const classic=fs.readFileSync(path.join(web,'assets/classic.jsdos'));
+  for(const [name,bytes] of Object.entries(unzipSync(classic)))if(/\.(EXE|FNT|PIC)$/.test(name))fs.writeFileSync(path.join(input,name),bytes);
+  const exe=Buffer.from('MZ continued release packaging fixture');fs.writeFileSync(path.join(input,'KB2.EXE'),exe);
+  const build=tag=>spawnSync(process.execPath,[path.join(web,'build.cjs'),'--game-dir',input,'--tag',tag],{encoding:'utf8',env:{...process.env,NODE_PATH:path.join(root,'WEB/node_modules'),GITHUB_SHA:'fixture-sha'}});
+  const result=build('v1.2.3');assert.equal(result.status,0,result.stderr);
+  const out=path.join(web,'dist');
+  const data=JSON.parse(fs.readFileSync(path.join(out,'version.json')));
+  assert.equal(data.version,'1.2.3');assert.equal(data.commit,'fixture-sha');
+  assert.equal(data.continuedExeSha256,crypto.createHash('sha256').update(exe).digest('hex'));
+  assert.deepEqual(unzipSync(fs.readFileSync(path.join(out,'games/continued.jsdos')))['KB2.EXE'],new Uint8Array(exe));
+  assert.deepEqual(fs.readFileSync(path.join(out,'games/classic.jsdos')),classic);
+  assert.equal(fs.readFileSync(path.join(out,'CHANGELOG.md'),'utf8'),markdown);
+  assert.ok(fs.existsSync(path.join(out,'vendor/licenses/GPL-2.0.txt')));
+  assert.ok(fs.existsSync(path.join(out,'vendor/save-files.patch')));
+  const html=fs.readFileSync(path.join(out,'index.html'),'utf8');assert.ok(html.includes('"version":"1.2.3"'));assert.ok(!html.includes('{{'));
+  assert.notEqual(build('v9.9.9').status,0);assert.equal(fs.readFileSync(path.join(out,'index.html'),'utf8'),html);
+  fs.appendFileSync(path.join(web,'runtime/vendor/wdosbox-x.js'),'tampered');assert.notEqual(build('v1.2.3').status,0);
+  console.log('PASS: release selection, fixed classic, exact continued EXE, metadata, licenses, invalid tag/runtime fail before replacing output.');
+} finally {
+  if(!path.resolve(temp).startsWith(path.join(path.resolve(os.tmpdir()),'kb2-web-test-')))throw Error('Unexpected test cleanup path');
+  fs.rmSync(temp,{recursive:true,force:true});
+}

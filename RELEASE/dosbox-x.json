@@ -1,0 +1,8 @@
+{
+  "version": "2026.10.01",
+  "tag": "dosbox-x-v2026.10.01",
+  "asset": "dosbox-x-mingw64-2026.10.01-portable.zip",
+  "sha256": "def2d84d4415fc26c77252839b4dafb6b476e3a4204b896292e6b05505ca8c59",
+  "directory": "mingw-build/mingw-sdl2",
+  "exeSha256": "072c1944635ccc545a816e128625e3405feab559021e4ef60b2d512f97f754c0"
+}

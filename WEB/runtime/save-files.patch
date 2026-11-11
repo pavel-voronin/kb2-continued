@@ -1,0 +1,77 @@
+diff --git a/src/dos/dos.cpp b/src/dos/dos.cpp
+index 0cf98ae..d6b54d1 100644
+--- a/src/dos/dos.cpp
++++ b/src/dos/dos.cpp
+@@ -29,6 +29,9 @@
+ 
+ #include "control.h"
+ #include "dosbox.h"
++#ifdef JSDOS
++#include <jsdos-events.h>
++#endif
+ #include "dos_inc.h"
+ #include "bios_disk.h"
+ #include "bios.h"
+@@ -2410,6 +2413,14 @@ static Bitu DOS_21Handler(void) {
+         case 0x4e:                  /* FINDFIRST Find first matching file */
+             MEM_StrCopy(SegPhys(ds)+reg_dx,name1,DOSNAMEBUF);
+ 			lfn_filefind_handle=LFN_FILEFIND_NONE;
++#ifdef JSDOS
++            if (!jsdos::prepareSaveSearch(name1)) {
++                reg_ax = DOSERR_FILE_NOT_FOUND;
++                CALLBACK_SCF(true);
++                break;
++            }
++            if (std::string(name1) == "WEBGAME.KB2" && Drives[2]) Drives[2]->EmptyCache();
++#endif
+             if (DOS_FindFirst(name1,reg_cx)) {
+                 CALLBACK_SCF(false);
+                 reg_ax=0;           /* Undocumented */
+diff --git a/src/dos/dos_execute.cpp b/src/dos/dos_execute.cpp
+index ef7d196..d558ead 100644
+--- a/src/dos/dos_execute.cpp
++++ b/src/dos/dos_execute.cpp
+@@ -24,6 +24,9 @@
+ #include <string>
+ 
+ #include "dosbox.h"
++#ifdef JSDOS
++#include <jsdos-events.h>
++#endif
+ #include "logging.h"
+ #include "mem.h"
+ #include "dos_inc.h"
+@@ -109,6 +112,9 @@ void DOS_UpdatePSPName(void) {
+ }
+ 
+ void DOS_Terminate(uint16_t pspseg,bool tsr,uint8_t exitcode) {
++#ifdef JSDOS
++    jsdos::gameTerminated();
++#endif
+ 
+ 	dos.return_code=exitcode;
+ 	dos.return_mode=tsr?(uint8_t)RETURN_TSR:(uint8_t)RETURN_EXIT;
+diff --git a/src/dos/dos_files.cpp b/src/dos/dos_files.cpp
+index c700555..c1d8454 100644
+--- a/src/dos/dos_files.cpp
++++ b/src/dos/dos_files.cpp
+@@ -30,6 +30,9 @@
+ #endif
+ 
+ #include "dosbox.h"
++#ifdef JSDOS
++#include <jsdos-events.h>
++#endif
+ #include "bios.h"
+ #include "logging.h"
+ #include "mem.h"
+@@ -939,6 +942,9 @@ bool DOS_CloseFile(uint16_t entry, bool fcb, uint8_t * refcnt) {
+             LOG(LOG_FILES, LOG_NORMAL)("Closing file %s", Files[handle]->name);
+         }
+         Files[handle]->Close();
++#ifdef JSDOS
++        jsdos::saveFileClosed(Files[handle]->name, Files[handle]->flags);
++#endif
+ 	}
+ 
+ 	DOS_PSP psp(dos.psp());

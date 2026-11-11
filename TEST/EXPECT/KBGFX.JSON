@@ -1,0 +1,730 @@
+{
+  "SetVideoPage.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "SetVideoPage.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "LoadScreenPicture.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "4d661186ca34d09fa1821154683ee224c26559e6156026d5206f32a48d5f4833",
+    "ports": [
+      [
+        964,
+        2,
+        2050
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        514
+      ],
+      [
+        964,
+        2,
+        258
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "LoadScreenPicture.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "4d661186ca34d09fa1821154683ee224c26559e6156026d5206f32a48d5f4833",
+    "ports": [
+      [
+        964,
+        2,
+        2050
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        514
+      ],
+      [
+        964,
+        2,
+        258
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawText.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        3842
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawText.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "ff5e427d5612ab25cf22f5ec0d34c72140afe0aeab642ec0574bcdb4b076785b",
+    "ports": [
+      [
+        964,
+        2,
+        3842
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        3842
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        3842
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        3842
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        3842
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ClearRectangle.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        3842
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ClearRectangle.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        3842
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawPictureTile.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        2050
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        514
+      ],
+      [
+        964,
+        2,
+        258
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawPictureTile.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        2050
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        514
+      ],
+      [
+        964,
+        2,
+        258
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawTile.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.BlitSourceSegment": 45056,
+      "Runtime.BlitOverlaySegment": 45056,
+      "Runtime.PictureMask.sha256": "c7cb2daf2491b13bc4e1340b99b7750d6e75e766e2639c4737880e0186cc295a",
+      "Runtime.BlitDestSegment": 40960
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        2050
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        514
+      ],
+      [
+        964,
+        2,
+        258
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawTile.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.BlitSourceSegment": 45056,
+      "Runtime.BlitOverlaySegment": 45056,
+      "Runtime.PictureMask.sha256": "c7cb2daf2491b13bc4e1340b99b7750d6e75e766e2639c4737880e0186cc295a",
+      "Runtime.BlitDestSegment": 40960
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        2050
+      ],
+      [
+        964,
+        2,
+        1026
+      ],
+      [
+        964,
+        2,
+        514
+      ],
+      [
+        964,
+        2,
+        258
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ComposeTile.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.BlitSourceSegment": 56320,
+      "Runtime.BlitOverlaySegment": 45056,
+      "Runtime.PictureMask.sha256": "c7cb2daf2491b13bc4e1340b99b7750d6e75e766e2639c4737880e0186cc295a",
+      "Runtime.BlitDestOffset": 40320,
+      "Runtime.BlitDestSegment": 45056
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ComposeTile.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.BlitSourceSegment": 56320,
+      "Runtime.BlitOverlaySegment": 45056,
+      "Runtime.PictureMask.sha256": "c7cb2daf2491b13bc4e1340b99b7750d6e75e766e2639c4737880e0186cc295a",
+      "Runtime.BlitDestOffset": 40320,
+      "Runtime.BlitDestSegment": 45056
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawMaskedTile.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.BlitSourceSegment": 45056,
+      "Runtime.PictureMask.sha256": "c7cb2daf2491b13bc4e1340b99b7750d6e75e766e2639c4737880e0186cc295a"
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        2
+      ],
+      [
+        974,
+        2,
+        4
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawMaskedTile.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.BlitSourceSegment": 45056,
+      "Runtime.PictureMask.sha256": "c7cb2daf2491b13bc4e1340b99b7750d6e75e766e2639c4737880e0186cc295a"
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        2
+      ],
+      [
+        974,
+        2,
+        4
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "MirrorTileArt.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "MirrorTileArt.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ClearPicturePlanes.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "ClearPicturePlanes.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawPicturePlanes.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawPicturePlanes.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "StoreMutantFrames.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {
+      "ARMY5.PIC": {
+        "size": 43200,
+        "sha256": "592682e2adbff871c9400bc2e7348488e71828b82e956bcb3ed5986c97522265"
+      }
+    },
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "StoreMutantFrames.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {
+      "ARMY5.PIC": {
+        "size": 43200,
+        "sha256": "592682e2adbff871c9400bc2e7348488e71828b82e956bcb3ed5986c97522265"
+      }
+    },
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawLine.empty.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        3842
+      ],
+      [
+        974,
+        2,
+        0
+      ],
+      [
+        974,
+        2,
+        3841
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        65288
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  },
+  "DrawLine.army.ega": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [
+      [
+        964,
+        2,
+        3842
+      ],
+      [
+        974,
+        2,
+        0
+      ],
+      [
+        974,
+        2,
+        3841
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        1,
+        2,
+        1
+      ],
+      [
+        1,
+        2,
+        65288
+      ]
+    ],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [],
+    "random_seed": 12345
+  }
+}

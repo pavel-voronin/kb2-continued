@@ -1,0 +1,742 @@
+{
+  "SaveNamedGame.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.DataFileName": [
+        0,
+        75,
+        66,
+        50,
+        46,
+        68,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.DataFileName": [
+        0,
+        75,
+        66,
+        50,
+        46,
+        68,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 27
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(13,)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 13,
+      "Runtime.DataFileName": [
+        0,
+        75,
+        66,
+        50,
+        46,
+        68,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(27,)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 27,
+      "Runtime.DataFileName": [
+        0,
+        75,
+        66,
+        50,
+        46,
+        68,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(8, 13)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 13,
+      "Runtime.DataFileName": [
+        0,
+        75,
+        66,
+        50,
+        46,
+        68,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(65, 8, 13)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 13,
+      "Runtime.DataFileName": [
+        0,
+        65,
+        66,
+        50,
+        46,
+        68,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "A"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          " "
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(65, 66, 8, 67, 13)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 13,
+      "Runtime.DataFileName": [
+        6,
+        65,
+        67,
+        46,
+        75,
+        66,
+        50,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "A"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "AB"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          27,
+          272,
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "AC"
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(65, 66, 67, 68, 69, 70, 71, 72)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 72,
+      "Runtime.DataFileName": [
+        12,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        46,
+        75,
+        66,
+        50
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "A"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "AB"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "ABC"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "ABCD"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "ABCDE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "ABCDEF"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "ABCDEFG"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "ABCDEFGH"
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(0, 65, 13)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 13,
+      "Runtime.DataFileName": [
+        5,
+        65,
+        46,
+        75,
+        66,
+        50,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "A"
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SaveNamedGame.matrix.edit-(47, 48, 13)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 13,
+      "Runtime.DataFileName": [
+        5,
+        48,
+        46,
+        75,
+        66,
+        50,
+        65,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          256,
+          "\u0412\u0432\u0435\u0434\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 (8 \u0441\u0438\u043c\u0432\u043e\u043b\u043e\u0432):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          26,
+          272,
+          "0"
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  }
+}

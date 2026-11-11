@@ -1,0 +1,24 @@
+diff --git a/src/ints/int10.cpp b/src/ints/int10.cpp
+index d5e29d8..9a79a3e 100644
+--- a/src/ints/int10.cpp
++++ b/src/ints/int10.cpp
+@@ -27,6 +27,9 @@
+ #include "regs.h"
+ #include "inout.h"
+ #include "int10.h"
++#ifdef JSDOS
++#include <jsdos-events.h>
++#endif
+ #include "mouse.h"
+ #include "setup.h"
+ #include "render.h"
+@@ -73,6 +76,9 @@ Bitu INT10_Handler(void) {
+ 
+ 	switch (reg_ah) {
+ 	case 0x00:								/* Set VideoMode */
++#ifdef JSDOS
++        if (reg_al == 0x10) jsdos::beginStartup();
++#endif
+ 		Mouse_BeforeNewVideoMode(true);
+ 		SetTrueVideoMode(reg_al);
+ 		if(IS_DOSV && IS_DOS_CJK && (reg_al == 0x03 || (reg_al >= 0x70 && reg_al <= 0x73) || reg_al == 0x78)) {

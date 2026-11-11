@@ -1,0 +1,4010 @@
+{
+  "UndergroundVisit.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "World.GenerationY": 0,
+      "World.GenerationX": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          3
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "UndergroundVisit.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "World.GenerationY": 0,
+      "World.GenerationX": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          3
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "BoardShip.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Flags.ShipOwned": 1,
+      "Runtime.ShipAbandonBlocked": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "AbandonShip",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "BoardShip.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Flags.ShipOwned": 1,
+      "Runtime.ShipAbandonBlocked": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "AbandonShip",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SandLanding.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Days": 171
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SandLanding.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Days": 171
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RegrowMountain.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.RegrowthCountdown": 255
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RegrowMountain.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.RegrowthCountdown": 255
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "TreasureVisit.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Gold": 100240,
+      "Runtime.LastScan": 49,
+      "Runtime.CueFrequency": 240,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        52,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "World.GenerationCount": 240,
+      "World.GenerationLimit": 4
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "240"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "4"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "TreasureVisit.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Campaign.Gold": 2000240,
+      "Runtime.LastScan": 49,
+      "Runtime.CueFrequency": 240,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        52,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "World.GenerationCount": 240,
+      "World.GenerationLimit": 4
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "240"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "4"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1655067934
+  },
+  "FindWanderingArmy.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "FindWanderingArmy.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "TreasureVisit.matrix.roll-0.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49,
+      "Campaign.ScrollCapacity": 101
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          272,
+          "M\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0435 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0432\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432 \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u0430 1"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1
+  },
+  "TreasureVisit.matrix.roll-0.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 50,
+      "Campaign.ScrollCapacity": 101
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          5,
+          272,
+          "M\u0430\u043a\u0441\u0438\u043c\u0430\u043b\u044c\u043d\u043e\u0435 \u043a\u043e\u043b\u0438\u0447\u0435\u0441\u0442\u0432\u043e \u0432\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432 \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u0430 1"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1
+  },
+  "TreasureVisit.matrix.roll-2.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49,
+      "Runtime.ActionScratch": 9,
+      "Campaign.Scrolls": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "World.GenerationCount": 3
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          19,
+          272,
+          "\u0412\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          272,
+          "\u0428\u0410\u0420\u041e\u0412\u0410\u042f \u041c\u041e\u041b\u041d\u0418\u042f"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2966606904
+  },
+  "TreasureVisit.matrix.roll-2.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 50,
+      "Runtime.ActionScratch": 9,
+      "Campaign.Scrolls": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2
+      ],
+      "World.GenerationCount": 3
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          19,
+          272,
+          "\u0412\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          272,
+          "\u0428\u0410\u0420\u041e\u0412\u0410\u042f \u041c\u041e\u041b\u041d\u0418\u042f"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2966606904
+  },
+  "TreasureVisit.matrix.roll-3.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49,
+      "Runtime.ActionScratch": 7,
+      "Campaign.Scrolls": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "World.GenerationCount": 4
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          19,
+          272,
+          "\u0412\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          272,
+          "\u0422\u0415\u041b\u0415\u041f\u041e\u0420\u0422"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2235038801
+  },
+  "TreasureVisit.matrix.roll-3.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 50,
+      "Runtime.ActionScratch": 7,
+      "Campaign.Scrolls": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        3,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "World.GenerationCount": 4
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          19,
+          272,
+          "\u0412\u043e\u043b\u0448\u0435\u0431\u0441\u0442\u0432\u043e"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          30,
+          272,
+          "\u0422\u0415\u041b\u0415\u041f\u041e\u0420\u0422"
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 2235038801
+  },
+  "TreasureVisit.matrix.roll-7.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        3,
+        53,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Income": 2000,
+      "World.GenerationCount": 9
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u0430\u043b\u043c\u0430\u0437\u044b \u0438 \u0412\u0435\u043b\u0438\u043a\u043e\u0434\u0443\u0448\u043d\u044b\u0439 \u041a\u043ep\u043e\u043b\u044c \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          264,
+          "\u0412\u0430\u0448\u0435 \u0436\u0430\u043b\u043e\u0432\u0430\u043d\u0438\u0435 \u043d\u0430 ($):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          38,
+          264,
+          "500"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          2
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 808654879
+  },
+  "TreasureVisit.matrix.roll-7.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        3,
+        53,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Income": 2000,
+      "World.GenerationCount": 9
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u0430\u043b\u043c\u0430\u0437\u044b \u0438 \u0412\u0435\u043b\u0438\u043a\u043e\u0434\u0443\u0448\u043d\u044b\u0439 \u041a\u043ep\u043e\u043b\u044c \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          264,
+          "\u0412\u0430\u0448\u0435 \u0436\u0430\u043b\u043e\u0432\u0430\u043d\u0438\u0435 \u043d\u0430 ($):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          38,
+          264,
+          "500"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          2
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 808654879
+  },
+  "TreasureVisit.matrix.roll-8.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        3,
+        53,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Income": 2000,
+      "World.GenerationCount": 10
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u0430\u043b\u043c\u0430\u0437\u044b \u0438 \u0412\u0435\u043b\u0438\u043a\u043e\u0434\u0443\u0448\u043d\u044b\u0439 \u041a\u043ep\u043e\u043b\u044c \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          264,
+          "\u0412\u0430\u0448\u0435 \u0436\u0430\u043b\u043e\u0432\u0430\u043d\u0438\u0435 \u043d\u0430 ($):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          38,
+          264,
+          "500"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          2
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 943430692
+  },
+  "TreasureVisit.matrix.roll-8.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.TextBuffer": [
+        3,
+        53,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.Income": 2000,
+      "World.GenerationCount": 10
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          7,
+          248,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438 \u0430\u043b\u043c\u0430\u0437\u044b \u0438 \u0412\u0435\u043b\u0438\u043a\u043e\u0434\u0443\u0448\u043d\u044b\u0439 \u041a\u043ep\u043e\u043b\u044c \u0443\u0432\u0435\u043b\u0438\u0447\u0438\u0432\u0430\u0435\u0442"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          17,
+          264,
+          "\u0412\u0430\u0448\u0435 \u0436\u0430\u043b\u043e\u0432\u0430\u043d\u0438\u0435 \u043d\u0430 ($):"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          38,
+          264,
+          "500"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          2
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 943430692
+  },
+  "TreasureVisit.matrix.roll-14.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        50,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.CueFrequency": 220,
+      "Campaign.Gold": 2000220,
+      "World.GenerationLimit": 4,
+      "World.GenerationCount": 220
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "220"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "4"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1518251384
+  },
+  "TreasureVisit.matrix.roll-14.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 50,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        50,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.CueFrequency": 220,
+      "Campaign.Leadership": 2504,
+      "World.GenerationLimit": 4,
+      "World.GenerationCount": 220
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "220"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "4"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1518251384
+  },
+  "TreasureVisit.matrix.roll-15.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        51,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.CueFrequency": 230,
+      "Campaign.Gold": 2000230,
+      "World.GenerationLimit": 4,
+      "World.GenerationCount": 230
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "230"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "4"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1617309757
+  },
+  "TreasureVisit.matrix.roll-15.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 50,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        51,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.CueFrequency": 230,
+      "Campaign.Leadership": 2504,
+      "World.GenerationLimit": 4,
+      "World.GenerationCount": 230
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "230"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "4"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 1617309757
+  },
+  "TreasureVisit.matrix.roll-39.choice-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49,
+      "Runtime.TextBuffer": [
+        2,
+        49,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.CueFrequency": 530,
+      "Campaign.Gold": 2000530,
+      "World.GenerationLimit": 10,
+      "World.GenerationCount": 530
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "530"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 4195908924
+  },
+  "TreasureVisit.matrix.roll-39.choice-50": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 50,
+      "Runtime.TextBuffer": [
+        2,
+        49,
+        48,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.CueFrequency": 530,
+      "Campaign.Leadership": 2510,
+      "World.GenerationLimit": 10,
+      "World.GenerationCount": 530
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "530"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "10"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 4195908924
+  },
+  "SandLanding.matrix.days-0.extra-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SandLanding.matrix.days-1.extra-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SandLanding.matrix.days-29.extra-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SandLanding.matrix.days-30.extra-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Days": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "SandLanding.matrix.days-200.extra-5": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.ExtraDays": 0
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawTime",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.army-False.answer-21": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 21
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBSESS",
+        "GameOver",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.matrix.army-False.answer-21": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 21,
+      "Campaign.HiddenSpellIsland": 100
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.army-False.answer-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.matrix.army-False.answer-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.army-True.answer-21": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 21,
+      "Runtime.BattleResult": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBBATTLE",
+        "Battle",
+        [
+          "<buffer>",
+          "<buffer>",
+          10
+        ]
+      ],
+      [
+        "KBSESS",
+        "VictoryReport",
+        [
+          0,
+          5
+        ]
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.matrix.army-True.answer-21": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 1,
+      "Runtime.BattleResult": 1,
+      "Campaign.HiddenSpellIsland": 100
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBBATTLE",
+        "Battle",
+        [
+          "<buffer>",
+          "<buffer>",
+          8
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          264,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438  \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u0435."
+        ]
+      ],
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.army-True.answer-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.matrix.army-True.answer-49": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "UndergroundVisit.matrix.entrance-30-30": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 41,
+      "World.GenerationY": 40
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          3
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "UndergroundVisit.matrix.entrance-30-29": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31,
+      "World.GenerationY": 30
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          3
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "UndergroundVisit.matrix.entrance-29-30": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationX": 31
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          3
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RegrowMountain.matrix.countdown-1.occupied-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.ShoreTile": 95,
+      "Runtime.RegrowthPosition.X": 100,
+      "Runtime.RegrowthCountdown": 0,
+      "Campaign.Map.sha256": "822c00a50b202e8508e88eefddd23cbf01e73d2c15803c5fb8a15ec66f8ba243"
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RegrowMountain.matrix.countdown-1.occupied-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RegrowMountain.matrix.countdown-2.occupied-False": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.RegrowthCountdown": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "RegrowMountain.matrix.countdown-2.occupied-True": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.RegrowthCountdown": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-1.power-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          20,
+          272,
+          "\u0412\u043e\u0439\u0441\u043a\u043e \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e!"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-1.power-40": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-2.power-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          20,
+          272,
+          "\u0412\u043e\u0439\u0441\u043a\u043e \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e!"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-2.power-40": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-3.power-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          20,
+          272,
+          "\u0412\u043e\u0439\u0441\u043a\u043e \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e!"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-3.power-40": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-4.power-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          20,
+          272,
+          "\u0412\u043e\u0439\u0441\u043a\u043e \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e!"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-4.power-40": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-5.power-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          20,
+          272,
+          "\u0412\u043e\u0439\u0441\u043a\u043e \u043d\u0435\u0438\u0437\u0432\u0435\u0441\u0442\u043d\u043e!"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.reserve-5.power-40": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.report-joined": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.grace-with-empty-army": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBUI",
+        "ShowNotice",
+        [
+          9
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.battle-lost": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 21
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBBATTLE",
+        "Battle",
+        [
+          "<buffer>",
+          "<buffer>",
+          10
+        ]
+      ],
+      [
+        "KBSESS",
+        "DefeatReport",
+        []
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "WanderingArmyVisit.matrix.cannot-decline-standing-on-army": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.BattleResult": 1,
+      "Runtime.LastScan": 21
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBBATTLE",
+        "Battle",
+        [
+          "<buffer>",
+          "<buffer>",
+          10
+        ]
+      ],
+      [
+        "KBSESS",
+        "VictoryReport",
+        [
+          0,
+          5
+        ]
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.matrix.battle-lost": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.HiddenSpellIsland": 100,
+      "Runtime.LastScan": 21
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBBATTLE",
+        "Battle",
+        [
+          "<buffer>",
+          "<buffer>",
+          8
+        ]
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RitualGuardianVisit.matrix.second-spell": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.HiddenSpellIsland": 100,
+      "Runtime.BattleResult": 1,
+      "Runtime.LastScan": 1
+    },
+    "calls_at_entry": [
+      [
+        "KBREPORT",
+        "ArmyReport",
+        [
+          "<buffer>",
+          "<buffer>",
+          " "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          14,
+          304,
+          "\u0414p\u0430\u0442\u044c\u0441\u044f \u0431\u0443\u0434\u0435\u0448\u044c ( Y-\u0434\u0430 / N-\u043d\u0435\u0442 ) ?"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBBATTLE",
+        "Battle",
+        [
+          "<buffer>",
+          "<buffer>",
+          8
+        ]
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          13,
+          264,
+          "\u0412\u044b \u043d\u0430\u0448\u043b\u0438  \u0437\u0430\u043a\u043b\u0438\u043d\u0430\u043d\u0438\u0435."
+        ]
+      ],
+      [
+        "KBADVENT",
+        "CountRitualSpells",
+        []
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBSESS",
+        "RestoreControls",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RegrowMountain.matrix.overwrites-tile-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Map.sha256": "c6ec332a603104b215c74517823c8212f904ec21f1925b9def632e418bf9a73a",
+      "Runtime.ShoreTile": 80,
+      "Runtime.RegrowthCountdown": 0,
+      "Runtime.RegrowthPosition.X": 100
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RegrowMountain.matrix.overwrites-tile-5": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.WanderingArmies.sha256": "90224edab0f449d528c8a501fbc2af54101ec6511683617d22134300a51a91b2",
+      "Campaign.Map.sha256": "c6ec332a603104b215c74517823c8212f904ec21f1925b9def632e418bf9a73a",
+      "Runtime.ShoreTile": 80,
+      "Runtime.RegrowthCountdown": 0,
+      "Runtime.RegrowthPosition.X": 100
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RegrowMountain.matrix.overwrites-tile-14": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Map.sha256": "c6ec332a603104b215c74517823c8212f904ec21f1925b9def632e418bf9a73a",
+      "Runtime.ShoreTile": 80,
+      "Runtime.RegrowthCountdown": 0,
+      "Runtime.RegrowthPosition.X": 100
+    },
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "AbandonShip",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "TreasureVisit.matrix.unrecognised-key-before-reward": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "World.GenerationCount": 230,
+      "World.GenerationLimit": 4,
+      "Campaign.Gold": 2000230,
+      "Runtime.CueFrequency": 230,
+      "Runtime.TextBuffer": [
+        1,
+        52,
+        51,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 49
+    },
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "EncounterLanding",
+        []
+      ],
+      [
+        "KBUI",
+        "DrawDialog",
+        [
+          8,
+          230,
+          488,
+          320
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          240,
+          "\u0417\u041e\u041b\u041e\u0422\u041e: $"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          11,
+          240,
+          "230"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          256,
+          "1) \u0423\u0432\u0435\u043b\u0438\u0447\u0438\u0442\u044c \u0437\u043e\u043b\u043e\u0442\u043e\u0439 \u0437\u0430\u043f\u0430\u0441"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          264,
+          "2) \u0420\u0430\u0437\u0434\u0430\u0442\u044c \u0432\u043e\u0438\u043d\u0430\u043c, \u043f\u043e\u0432\u044b\u0441\u0438\u0432 \u0441\u0432\u043e\u0439 \u0430\u0432\u0442\u043ep\u0438\u0442\u0435\u0442 \u043d\u0430:"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          48,
+          264,
+          "4"
+        ]
+      ],
+      [
+        "KBSOUND",
+        "PlayCue",
+        [
+          1
+        ]
+      ],
+      [
+        "KBHUD",
+        "RefreshGold",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1617309757
+  },
+  "FindWanderingArmy.matrix.second-entry": {
+    "result": 1,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

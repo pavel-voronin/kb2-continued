@@ -1,0 +1,1791 @@
+{
+  "LoadCreatureArt.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        48,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY0.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        48,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY0.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.0": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        48,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY0.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.1": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 1,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        48,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          1,
+          "<buffer>",
+          "ARMY0.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.2": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 2,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        48,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          2,
+          "<buffer>",
+          "ARMY0.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.3": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 3,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        48,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          3,
+          "<buffer>",
+          "ARMY0.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.4": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 4,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        48,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          4,
+          "<buffer>",
+          "ARMY0.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.5": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 5,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        49,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY1.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.6": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 6,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        49,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          1,
+          "<buffer>",
+          "ARMY1.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.7": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 7,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        49,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          2,
+          "<buffer>",
+          "ARMY1.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.8": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 8,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        49,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          3,
+          "<buffer>",
+          "ARMY1.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.9": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 9,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        49,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          4,
+          "<buffer>",
+          "ARMY1.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.10": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 10,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        50,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY2.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.11": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 11,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        50,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          1,
+          "<buffer>",
+          "ARMY2.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.12": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 12,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        50,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          2,
+          "<buffer>",
+          "ARMY2.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.13": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 13,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        50,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          3,
+          "<buffer>",
+          "ARMY2.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.14": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 14,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        50,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          4,
+          "<buffer>",
+          "ARMY2.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.15": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 15,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        51,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY3.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.16": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 16,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        51,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          1,
+          "<buffer>",
+          "ARMY3.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.17": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 17,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        51,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          2,
+          "<buffer>",
+          "ARMY3.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.18": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 18,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        51,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          3,
+          "<buffer>",
+          "ARMY3.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.19": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 19,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        51,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          4,
+          "<buffer>",
+          "ARMY3.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.20": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 20,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        52,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY4.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.21": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 21,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        52,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          1,
+          "<buffer>",
+          "ARMY4.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.22": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 22,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        52,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          2,
+          "<buffer>",
+          "ARMY4.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.23": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 23,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        52,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          3,
+          "<buffer>",
+          "ARMY4.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.24": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 24,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        52,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          4,
+          "<buffer>",
+          "ARMY4.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.25": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 25,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        53,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          0,
+          "<buffer>",
+          "ARMY5.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.26": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 26,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        53,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          1,
+          "<buffer>",
+          "ARMY5.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.27": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 27,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        53,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          2,
+          "<buffer>",
+          "ARMY5.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.28": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 28,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        53,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          3,
+          "<buffer>",
+          "ARMY5.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadCreatureArt.matrix.29": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.CachedCreatureId": 29,
+      "Runtime.TextBuffer": [
+        9,
+        65,
+        82,
+        77,
+        89,
+        53,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadCreatureFrames",
+        [
+          4,
+          "<buffer>",
+          "ARMY5.PIC"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  }
+}

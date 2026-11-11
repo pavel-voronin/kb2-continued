@@ -1,0 +1,1914 @@
+{
+  "RefreshMagic.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBADVENT",
+        "PlaceHiddenSpell",
+        []
+      ],
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          7
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          11422,
+          19
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          7
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          21
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          21022,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          21022,
+          20,
+          8
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "effects": [],
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          21022,
+          20
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.0": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          8
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.1": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          13
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          2
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.2": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          13
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          2
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.3": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          3
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          12
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.4": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          3
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          12
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.5": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          12
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          3
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.6": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          12
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          3
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.7": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          9
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.8": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          9
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          6
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.9": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          7
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.10": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          7
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.11": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          9
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.12": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          9
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.13": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.14": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.15": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          5
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          10
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.16": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          5
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          10
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.17": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          14
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.18": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          14
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.19": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          11
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.20": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          11422,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          11422,
+          19,
+          11
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.21": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          11422,
+          19
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMagic.matrix.22": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          11422,
+          19
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.-1": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          8
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.0": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          8
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.1999": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          8
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.2000": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          14
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          1
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.4999": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          14
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          1
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.5000": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          9
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.9999": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          6
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          9
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.10000": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          13
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          2
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.99999": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          11
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.100000": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          8
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          7
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.999999": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          21
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.1000000": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          21
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.2147483647": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          21
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.matrix.0": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          21022,
+          7
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          21022,
+          20,
+          8
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.matrix.1": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          21022,
+          3
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          21022,
+          20,
+          12
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.matrix.2": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          21022,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          21022,
+          20,
+          13
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.matrix.3": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          21022,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          21022,
+          20,
+          14
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.matrix.4": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          21022,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          21022,
+          20,
+          11
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.matrix.5": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          21022,
+          20
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshMapParts.matrix.6": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          21022,
+          20
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-49999": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          12
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          3
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-50000": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          5
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          10
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-74999": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          5
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          10
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-75000": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          4
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          11
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-199999": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          3
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          12
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-200000": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          13
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-499999": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          2
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          13
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-500000": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          14
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-799999": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearPicturePlanes",
+        [
+          16222,
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawPicturePlanes",
+        [
+          16222,
+          21,
+          14
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "RefreshGold.matrix.extra-boundary-800000": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawPictureTile",
+        [
+          16222,
+          21
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

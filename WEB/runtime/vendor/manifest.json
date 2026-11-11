@@ -1,0 +1,11 @@
+{
+  "revision": "js-dos-8.5.3-kb2-1",
+  "emulatorsCommit": "e6f4e5449a5b17ae3ea0fdccfd453c8d299e9ea5",
+  "dosboxXCommit": "788fde99d3d451eab3621009186e5abe516f2b9c",
+  "emscripten": "5.0.2",
+  "files": {
+    "emulators.js": "52598b412977a892fa81c5613c653ed233e06732972c02897d8eac115b941075",
+    "wdosbox-x.js": "d2a7c397e3e847f56f422f2b53d12cb5fbd2fcccb52480e8a523370351c80110",
+    "wdosbox-x.wasm": "99fefe47eac3e934045a1c3cd28fee58cd83ea0096a46a904ba1c1f5c137c99b"
+  }
+}

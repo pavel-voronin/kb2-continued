@@ -1,0 +1,3967 @@
+{
+  "InitializeRuntime.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.WorkerRestockPhase": 1,
+      "Runtime.FontFileName": [
+        7,
+        75,
+        66,
+        50,
+        46,
+        70,
+        78,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.MoneyFileName": [
+        9,
+        77,
+        79,
+        78,
+        69,
+        89,
+        46,
+        80,
+        73,
+        67
+      ],
+      "Runtime.TownPictureLoaded": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBINIT",
+        "InitializeLegacyState",
+        []
+      ],
+      [
+        "KBLPT",
+        "InitializePrinter",
+        []
+      ],
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "InitializeRuntime.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.WorkerRestockPhase": 1,
+      "Runtime.FontFileName": [
+        7,
+        75,
+        66,
+        50,
+        46,
+        70,
+        78,
+        84,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.MoneyFileName": [
+        9,
+        77,
+        79,
+        78,
+        69,
+        89,
+        46,
+        80,
+        73,
+        67
+      ],
+      "Runtime.TownPictureLoaded": 1
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBINIT",
+        "InitializeLegacyState",
+        []
+      ],
+      [
+        "KBLPT",
+        "InitializePrinter",
+        []
+      ],
+      [
+        "KBRANDOM",
+        "RandomizeGame",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadTitle.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        73,
+        84,
+        76,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.PicturePage": 32768
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadTitle.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        73,
+        84,
+        76,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.PicturePage": 32768
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          1
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadGameArtwork.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          14,
+          0,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "LoadGameArtwork.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {},
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "LoadResourceFile",
+        [
+          "<buffer>",
+          ""
+        ]
+      ],
+      [
+        "KBFILES",
+        "CopyRecord",
+        [
+          14,
+          0,
+          2880,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.empty": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBSAVE",
+        "ReadCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.army": {
+    "result": 0,
+    "phase": "ready",
+    "state_delta": {
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "buffers": {},
+    "disk": {},
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "exit_code": null,
+    "output": "",
+    "effects": [],
+    "ports": [],
+    "os_events": [],
+    "creature_delta": {},
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBSAVE",
+        "ReadCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.new.difficulty-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 28
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0443p\u043e\u0432\u0435\u043d\u044c \u0441\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438\u0433p\u044b                 "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0433\u043e\u0442\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430."
+        ]
+      ],
+      [
+        "KBGEN",
+        "PrepareCampaign",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "GenerateWorld",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "PlaceInitialHero",
+        [
+          0
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.new.difficulty-1": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 28
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0443p\u043e\u0432\u0435\u043d\u044c \u0441\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438\u0433p\u044b                 "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0433\u043e\u0442\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430."
+        ]
+      ],
+      [
+        "KBGEN",
+        "PrepareCampaign",
+        [
+          1
+        ]
+      ],
+      [
+        "KBGEN",
+        "GenerateWorld",
+        [
+          1
+        ]
+      ],
+      [
+        "KBGEN",
+        "PlaceInitialHero",
+        [
+          1
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.new.difficulty-2": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 28
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0443p\u043e\u0432\u0435\u043d\u044c \u0441\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438\u0433p\u044b                 "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0433\u043e\u0442\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430."
+        ]
+      ],
+      [
+        "KBGEN",
+        "PrepareCampaign",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGEN",
+        "GenerateWorld",
+        [
+          2
+        ]
+      ],
+      [
+        "KBGEN",
+        "PlaceInitialHero",
+        [
+          2
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.new.difficulty-3": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 28
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0443p\u043e\u0432\u0435\u043d\u044c \u0441\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438\u0433p\u044b                 "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0433\u043e\u0442\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430."
+        ]
+      ],
+      [
+        "KBGEN",
+        "PrepareCampaign",
+        [
+          3
+        ]
+      ],
+      [
+        "KBGEN",
+        "GenerateWorld",
+        [
+          3
+        ]
+      ],
+      [
+        "KBGEN",
+        "PlaceInitialHero",
+        [
+          3
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.new.wrap": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Runtime.LastScan": 28
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0443p\u043e\u0432\u0435\u043d\u044c \u0441\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438\u0433p\u044b                 "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0433\u043e\u0442\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430."
+        ]
+      ],
+      [
+        "KBGEN",
+        "PrepareCampaign",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "GenerateWorld",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "PlaceInitialHero",
+        [
+          0
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.named-()": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435  \"Enter\"           "
+        ]
+      ],
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBSAVE",
+        "ReadCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.named-('ONE.KB2',)": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.ShipHeading": 1,
+      "Campaign.Flags.Heading": 1
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435  \"Enter\"           "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBSAVE",
+        "ReadCampaign",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.named-('ONE.KB2', 'TWO.KB2')": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Campaign.ShipHeading": 1,
+      "Campaign.Flags.Heading": 1
+    },
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435  \"Enter\"           "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          40,
+          "TWO"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          40,
+          "TWO"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          40,
+          "TWO"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBSAVE",
+        "ReadCampaign",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.difficulty-down-then-up": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0443p\u043e\u0432\u0435\u043d\u044c \u0441\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438\u0433p\u044b                 "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0433\u043e\u0442\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430."
+        ]
+      ],
+      [
+        "KBGEN",
+        "PrepareCampaign",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "GenerateWorld",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "PlaceInitialHero",
+        [
+          0
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.main-menu-wrap": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0443p\u043e\u0432\u0435\u043d\u044c \u0441\u043b\u043e\u0436\u043d\u043e\u0441\u0442\u0438 \u0438\u0433p\u044b                 "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 2"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 3"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "    \u0418\u0433p\u0430    "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          60,
+          "\u0422p\u0435\u043d\u0438p\u043e\u0432\u043a\u0430 1"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u041f\u043e\u0434\u043e\u0436\u0434\u0438\u0442\u0435 \u043f\u043e\u0436\u0430\u043b\u0443\u0439\u0441\u0442\u0430, \u043f\u043e\u0434\u0433\u043e\u0442\u0430\u0432\u043b\u0438\u0432\u0430\u0435\u0442\u0441\u044f \u043d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430."
+        ]
+      ],
+      [
+        "KBGEN",
+        "PrepareCampaign",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "GenerateWorld",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGEN",
+        "PlaceInitialHero",
+        [
+          0
+        ]
+      ],
+      [
+        "KBSAVE",
+        "PrepareSave",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.named-menu-down-and-up": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1,
+      "Campaign.ShipHeading": 1,
+      "Runtime.LastScan": 28,
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435  \"Enter\"           "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          40,
+          "TWO"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          40,
+          "TWO"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          40,
+          "TWO"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "ONE"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBSAVE",
+        "ReadCampaign",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  },
+  "StartupMenu.matrix.named-more-than-ten-files": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Flags.Heading": 1,
+      "Campaign.ShipHeading": 1,
+      "Runtime.LastScan": 28,
+      "Runtime.DataFileName": [
+        7,
+        75,
+        66,
+        50,
+        46,
+        68,
+        65,
+        84,
+        75,
+        66,
+        50,
+        0,
+        0
+      ],
+      "Runtime.PictureFileName": [
+        8,
+        84,
+        79,
+        87,
+        78,
+        46,
+        80,
+        73,
+        67,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "ClearRectangle",
+        [
+          464,
+          26,
+          592,
+          154
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "\u041fp\u0435\u0436\u043d\u044f\u044f \u0438\u0433p\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0432\u0430p\u0438\u0430\u043d\u0442 \u0437\u0430\u0433p\u0443\u0437\u043a\u0438 \u0438\u0433p\u044b \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435 \"Enter\""
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "\u041d\u043e\u0432\u0430\u044f \u0438\u0433p\u0430  "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "\u0418\u0433p\u0430 \u0441 \u0434\u0438\u0441\u043a\u0430"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u044b\u0431\u0435p\u0438\u0442\u0435 \u0438\u043c\u044f \u0444\u0430\u0439\u043b\u0430 \u0438 \u043d\u0430\u0436\u043c\u0438\u0442\u0435  \"Enter\"           "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          70,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          80,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          60,
+          90,
+          "            "
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "SAVE00"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          40,
+          "SAVE01"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          50,
+          "SAVE02"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          60,
+          "SAVE03"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          70,
+          "SAVE04"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          80,
+          "SAVE05"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          90,
+          "SAVE06"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          100,
+          "SAVE07"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          110,
+          "SAVE08"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          120,
+          "SAVE09"
+        ]
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          1,
+          62,
+          30,
+          "SAVE00"
+        ]
+      ],
+      [
+        "KBINPUT",
+        "ReadScanCode",
+        []
+      ],
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          62,
+          30,
+          "SAVE00"
+        ]
+      ],
+      [
+        "KBGFX",
+        "SetVideoPage",
+        [
+          0
+        ]
+      ],
+      [
+        "KBGFX",
+        "LoadScreenPicture",
+        []
+      ],
+      [
+        "KBSAVE",
+        "ReadCampaign",
+        []
+      ],
+      [
+        "KBSAVE",
+        "WriteCampaign",
+        []
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 12345
+  }
+}

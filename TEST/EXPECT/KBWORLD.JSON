@@ -1,0 +1,87 @@
+{
+  "PlaceRoamingObject.matrix.reject-occupied-first-cell": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {},
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {
+      "p": "0523"
+    },
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2377737157
+  },
+  "RelocateArmy.matrix.reject-occupied-first-cell": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Map.sha256": "3c4b92fa2f0394b3de268b8afff7a685a451e17ecf0dda8727320f6c367179ec",
+      "Campaign.WanderingArmies.sha256": "9c09607e24e0bbb405879855e5696d88e23e77a558db5a62c50305879c1334c1",
+      "World.GenerationY": 35,
+      "World.GenerationX": 5
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2377737157
+  },
+  "EnterIsland.matrix.boundary-island-0": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Map.sha256": "94acf28783b9fa7edd6c93247a57355d9313f99a40fd56724cbb507142cfe2af",
+      "Campaign.Island": 2,
+      "World.MagePosition.Y": 41,
+      "World.MagePosition.X": 35,
+      "World.WizardPosition.Y": 5,
+      "World.WizardPosition.X": 18
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2721613530
+  },
+  "EnterIsland.matrix.boundary-island-6": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Campaign.Map.sha256": "488404e2ed6bf82e87d41487b36377f39e8dac76dfc0655d4e88747d37a52bd0",
+      "Campaign.Island": 5,
+      "World.MagePosition.Y": 35,
+      "World.MagePosition.X": 5,
+      "World.WizardPosition.Y": 18,
+      "World.WizardPosition.X": 25
+    },
+    "calls_at_entry": [],
+    "creature_delta": {},
+    "buffers": {},
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 2377737157
+  }
+}
