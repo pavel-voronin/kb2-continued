@@ -1,7 +1,17 @@
-name: Portable release
+name: Release and web deployment
 
 on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing DOS release tag to build and deploy the website
+        required: true
+        type: string
   push:
+    branches:
+      - main
+    paths:
+      - 'WEB/**'
     tags:
       - 'v[0-9]*'
       - 'V[0-9]*'
@@ -14,22 +24,8 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
-  emulator-source:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    permissions:
-      contents: read
-    steps:
-      - uses: actions/checkout@v4
-      - name: Archive corresponding emulator source
-        run: bash WEB/runtime/source-archive.sh "$RUNNER_TEMP/KB2-emulator-source.tar.gz"
-      - uses: actions/upload-artifact@v4
-        with:
-          name: kb2-emulator-source
-          path: ${{ runner.temp }}/KB2-emulator-source.tar.gz
-          if-no-files-found: error
   portable:
-    needs: emulator-source
+    if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags/')
     runs-on: windows-latest
     timeout-minutes: 20
     defaults:
@@ -45,38 +41,6 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
         run: |
           ./RELEASE/portable.ps1 -Tag $env:RELEASE_TAG -OutputDirectory "$env:RUNNER_TEMP/kb2-release"
-      - uses: actions/setup-node@v4
-        with:
-          node-version: '24'
-          cache: npm
-          cache-dependency-path: WEB/package-lock.json
-      - name: Install web packager
-        run: npm ci --prefix WEB --ignore-scripts --no-audit --no-fund
-      - name: Check web release packaging
-        run: node TEST/WEB.cjs
-      - name: Package website from the portable game build
-        id: web
-        env:
-          RELEASE_TAG: ${{ github.ref_name }}
-          PORTABLE_ARCHIVE: ${{ steps.portable.outputs.archive }}
-        run: |
-          $portable = Join-Path $env:RUNNER_TEMP 'kb2-web-input'
-          Expand-Archive -LiteralPath $env:PORTABLE_ARCHIVE -DestinationPath $portable
-          node WEB/build.cjs --game-dir (Join-Path $portable 'GAME') --tag $env:RELEASE_TAG
-          if ($LASTEXITCODE -ne 0) { throw 'Website packaging failed.' }
-          $site = Join-Path $env:RUNNER_TEMP "KB2-web-$env:RELEASE_TAG.tar.gz"
-          tar -czf $site -C WEB/dist .
-          if ($LASTEXITCODE -ne 0) { throw 'Website archive failed.' }
-          "archive=$site" >> $env:GITHUB_OUTPUT
-      - uses: actions/upload-artifact@v4
-        with:
-          name: kb2-website
-          path: ${{ steps.web.outputs.archive }}
-          if-no-files-found: error
-      - uses: actions/download-artifact@v4
-        with:
-          name: kb2-emulator-source
-          path: emulator-source
       - name: Publish GitHub release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -84,10 +48,8 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
           PORTABLE_ARCHIVE: ${{ steps.portable.outputs.archive }}
           RELEASE_NOTES: ${{ steps.portable.outputs.notes }}
-          WEB_ARCHIVE: ${{ steps.web.outputs.archive }}
         run: |
-          $releaseArgs = @('release', 'create', $env:RELEASE_TAG, $env:PORTABLE_ARCHIVE, $env:WEB_ARCHIVE,
-            'emulator-source/KB2-emulator-source.tar.gz',
+          $releaseArgs = @('release', 'create', $env:RELEASE_TAG, $env:PORTABLE_ARCHIVE,
             '--verify-tag', '--draft', '--title', "KB2: Continued $env:RELEASE_TAG",
             '--notes-file', $env:RELEASE_NOTES)
           if ($env:RELEASE_TAG.Contains('-')) { $releaseArgs += '--prerelease' }
@@ -97,7 +59,10 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Release publication failed.' }
   deploy-web:
     needs: portable
-    if: vars.KB2_DEPLOY_ENABLED == 'true'
+    if: >-
+      !cancelled() && vars.KB2_DEPLOY_ENABLED == 'true' &&
+      (needs.portable.result == 'success' || github.event_name == 'workflow_dispatch' ||
+       github.ref == 'refs/heads/main')
     runs-on: ubuntu-latest
     timeout-minutes: 10
     concurrency:
@@ -105,14 +70,48 @@ jobs:
       cancel-in-progress: false
     permissions:
       contents: read
+      id-token: write
+    env:
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
     steps:
-      - uses: actions/download-artifact@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
-          name: kb2-website
-          path: web-artifact
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: WEB/package-lock.json
+      - name: Install web packager
+        run: npm ci --prefix WEB --ignore-scripts --no-audit --no-fund
+      - name: Check web release packaging
+        run: node TEST/WEB.cjs
+      - name: Download the published DOS game
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if [[ "$GITHUB_EVENT_NAME" == push && "$GITHUB_REF" == refs/heads/main ]]; then
+            RELEASE_TAG=$(gh release view --json tagName --jq .tagName)
+            printf 'RELEASE_TAG=%s\n' "$RELEASE_TAG" >> "$GITHUB_ENV"
+          fi
+          [[ "$RELEASE_TAG" =~ ^[vV][0-9]+(\.[0-9]+){0,2}(-[0-9A-Za-z]+([.-][0-9A-Za-z]+)*)?$ ]] || exit 1
+          gh release download "$RELEASE_TAG" --pattern "KB2-continued-$RELEASE_TAG-win64-portable.zip" --dir "$RUNNER_TEMP/kb2-release"
+          unzip -q "$RUNNER_TEMP/kb2-release/KB2-continued-$RELEASE_TAG-win64-portable.zip" 'GAME/*' -d "$RUNNER_TEMP/kb2-web-input"
+      - name: Build the website for deployment
+        run: |
+          set -euo pipefail
+          node WEB/build.cjs --game-dir "$RUNNER_TEMP/kb2-web-input/GAME" --tag "$RELEASE_TAG"
+          mkdir web-artifact
+          tar -czf "web-artifact/KB2-web-$RELEASE_TAG.tar.gz" -C WEB/dist .
+      - name: Connect to the private deployment network
+        uses: tailscale/github-action@v4
+        with:
+          oauth-client-id: ${{ vars.KB2_TS_CLIENT_ID }}
+          audience: ${{ vars.KB2_TS_AUDIENCE }}
+          tags: tag:kb2-ci
+          ping: ${{ vars.KB2_SSH_HOST }}
       - name: Deploy the published release
         env:
-          RELEASE_TAG: ${{ github.ref_name }}
           KB2_SSH_HOST: ${{ vars.KB2_SSH_HOST }}
           KB2_SSH_USER: ${{ vars.KB2_SSH_USER }}
           KB2_SSH_PORT: ${{ vars.KB2_SSH_PORT }}
@@ -130,6 +129,6 @@ jobs:
           printf '%s\n' "$KB2_DEPLOY_KEY" > "$work/key"
           printf '%s\n' "$KB2_SSH_KNOWN_HOSTS" > "$work/known_hosts"
           chmod 600 "$work/key" "$work/known_hosts"
-          ssh -o BatchMode=yes -o StrictHostKeyChecking=yes -o UserKnownHostsFile="$work/known_hosts" \
+          ssh -o BatchMode=yes -o ConnectTimeout=20 -o StrictHostKeyChecking=yes -o UserKnownHostsFile="$work/known_hosts" \
               -i "$work/key" -p "${KB2_SSH_PORT:-22}" "$KB2_SSH_USER@$KB2_SSH_HOST" \
               "release $RELEASE_TAG" < "web-artifact/KB2-web-$RELEASE_TAG.tar.gz"
