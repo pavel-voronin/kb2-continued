@@ -138,6 +138,7 @@ async function start(nextMode){
     if(saveFiles){await saveFiles.dispose();saveFiles=null;}
     if(ci){await ci.exit();ci=null;}
     mode=nextMode;saveSettings();
+    document.title=$('#mode').querySelector(`option[value="${mode}"]`).textContent;
     $('footer').replaceChildren(document.createTextNode('© 1992–1993 Сергей Прокофьев'));
     if(mode==='continued')$('footer').append(document.createElement('br'),document.createTextNode('© 2026 Павел Воронин'));
     changelog.setMode(mode);
