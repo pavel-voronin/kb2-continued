@@ -77,7 +77,7 @@ async function build(mode) {
     if (!fs.existsSync(built)) throw new Error('Сначала соберите ядро: WEB/runtime/build.sh (Emscripten 5.0.2).');
     fs.copyFileSync(built, path.join(out, 'vendor', name));
   }
-  for (const name of ['fastlaunch.patch', 'fastlaunch-ega.patch', 'startup-cycles.patch', 'startup-keyboard.patch', 'startup-video.patch', 'build.sh', 'package.cjs']) fs.copyFileSync(path.join(__dirname, 'runtime', name), path.join(out, 'vendor', name));
+  for (const name of ['fastlaunch.patch', 'fastlaunch-ega.patch', 'jsdos-integration.patch', 'startup-keyboard.patch', 'startup-video.patch', 'save-files.patch', 'build.sh', 'package.cjs']) fs.copyFileSync(path.join(__dirname, 'runtime', name), path.join(out, 'vendor', name));
   fs.copyFileSync(path.join(__dirname, 'node_modules/emulators/LICENSE'), path.join(out, 'vendor/LICENSE'));
   const builds = {};
   for (const mode of ['classic', 'continued']) {

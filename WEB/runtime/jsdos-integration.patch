@@ -1,0 +1,117 @@
+diff --git a/native/jsdos/include/jsdos-events.h b/native/jsdos/include/jsdos-events.h
+index df9e738..ae69917 100644
+--- a/native/jsdos/include/jsdos-events.h
++++ b/native/jsdos/include/jsdos-events.h
+@@ -15,6 +15,12 @@ namespace jsdos {
+     void Mouse_ButtonReleased(uint8_t button);
+ 
+     void handleTriggeredEvents();
++    void beginStartup();
++    void finishStartup();
++    bool prepareSaveSearch(char* pattern);
++    bool takeImportedSaveKey();
++    void saveFileClosed(const char* name, uint32_t flags);
++    void gameTerminated();
+ }
+ 
+ #endif  // JS_DOS_JSDOS_EVENTS_H
+diff --git a/native/jsdos/jsdos-events.cpp b/native/jsdos/jsdos-events.cpp
+index 539016c..85d718c 100644
+--- a/native/jsdos/jsdos-events.cpp
++++ b/native/jsdos/jsdos-events.cpp
+@@ -9,6 +9,7 @@
+ #include <stdlib.h>
+ 
+ #include <cstdlib>
++#include <cstring>
+ #include <list>
+ #include <string>
+ #include <vector>
+@@ -163,6 +164,65 @@ extern "C" void EMSCRIPTEN_KEEPALIVE TriggerEventByName(const char* name) {
+ void MAPPER_TriggerEventByName(const std::string& name);
+ extern void RDTSC_rebase();
+ extern uint32_t emulator_speed;
++static Bit32s startupSavedCycles = 0;
++static int startupRequestedCycles = 0;
++static bool webFilesEnabled = false;
++static bool webImportReady = false;
++static bool webChooseImported = false;
++
++bool jsdos::prepareSaveSearch(char* pattern) {
++  if (!webFilesEnabled || std::string(server_get_running_program()) != "KB2" ||
++      std::string(pattern).find("*.KB2") == std::string::npos) return true;
++  if (!webImportReady) {
++    client_log("kb2-files", "load-request");
++    return false;
++  }
++  std::strcpy(pattern, "WEBGAME.KB2");
++  webImportReady = false;
++  webChooseImported = true;
++  return true;
++}
++
++bool jsdos::takeImportedSaveKey() {
++  if (!webChooseImported || std::string(server_get_running_program()) != "KB2") return false;
++  webChooseImported = false;
++  return true;
++}
++
++void jsdos::saveFileClosed(const char* name, uint32_t flags) {
++  if (!webFilesEnabled || !name || (flags & 3) == 0 ||
++      std::string(server_get_running_program()) != "KB2") return;
++  const std::string path(name);
++  if ((path.size() >= 4 && path.substr(path.size()-4) == ".KB2") || path == "KB2.DAT") {
++    const std::string message = "saved:" + path;
++    client_log("kb2-files", message.c_str());
++  }
++}
++
++void jsdos::gameTerminated() {
++  if (webFilesEnabled && std::string(server_get_running_program()) == "KB2")
++    client_log("kb2-files", "game-exit");
++}
++
++void jsdos::beginStartup() {
++  if (startupRequestedCycles > 0 && startupSavedCycles == 0 &&
++      std::string(server_get_running_program()) == "KB2") {
++    startupSavedCycles = CPU_CycleMax;
++    CPU_CycleMax = startupRequestedCycles;
++    RDTSC_rebase();
++    client_log("kb2-startup", "graphics-init");
++  }
++}
++
++void jsdos::finishStartup() {
++  if (startupSavedCycles <= 0 || std::string(server_get_running_program()) != "KB2") return;
++  if (startupSavedCycles > 0) CPU_CycleMax = startupSavedCycles;
++  startupRequestedCycles = 0;
++  startupSavedCycles = 0;
++  RDTSC_rebase();
++  const std::string message = "ready;cycles=" + std::to_string(CPU_CycleMax);
++  client_log("kb2-startup", message.c_str());
++}
+ #endif
+ 
+ extern bool ticksLocked;
+@@ -181,6 +241,15 @@ void jsdos::handleTriggeredEvents() {
+       render.frameskip.max = atoi(&next.back());
+     } else if (next.find("auto_adjust:") == 0) {
+       CPU_CycleAutoAdjust = next.back() == '1';
++#ifdef JSDOS_X
++    } else if (next == "kb2_files:1") {
++      webFilesEnabled = true;
++    } else if (next == "kb2_load_ready") {
++      webImportReady = true;
++    } else if (next.find("startup_cycles:") == 0) {
++      const int cycles = atoi(next.substr(15).c_str());
++      if (startupRequestedCycles == 0 && cycles > 0) startupRequestedCycles = cycles;
++#endif
+     } else if (next.find("cycles:") == 0) {
+       CPU_CycleMax = atoi(next.substr(7).c_str());
+ #ifdef JSDOS_X
+@@ -202,4 +271,5 @@ void jsdos::handleTriggeredEvents() {
+ #endif
+   }
+   triggerEvents.clear();
++
+ }

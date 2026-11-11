@@ -22,10 +22,10 @@ if git -C native/dosbox-x apply --check "$web_dir/runtime/fastlaunch-ega.patch" 
 else
   git -C native/dosbox-x apply --reverse --check "$web_dir/runtime/fastlaunch-ega.patch"
 fi
-if git apply --check "$web_dir/runtime/startup-cycles.patch" 2>/dev/null; then
-  git apply "$web_dir/runtime/startup-cycles.patch"
+if git apply --check "$web_dir/runtime/jsdos-integration.patch" 2>/dev/null; then
+  git apply "$web_dir/runtime/jsdos-integration.patch"
 else
-  git apply --reverse --check "$web_dir/runtime/startup-cycles.patch"
+  git apply --reverse --check "$web_dir/runtime/jsdos-integration.patch"
 fi
 if git -C native/dosbox-x apply --check "$web_dir/runtime/startup-keyboard.patch" 2>/dev/null; then
   git -C native/dosbox-x apply "$web_dir/runtime/startup-keyboard.patch"
@@ -36,6 +36,11 @@ if git -C native/dosbox-x apply --check "$web_dir/runtime/startup-video.patch" 2
   git -C native/dosbox-x apply "$web_dir/runtime/startup-video.patch"
 else
   git -C native/dosbox-x apply --reverse --check "$web_dir/runtime/startup-video.patch"
+fi
+if git -C native/dosbox-x apply --check "$web_dir/runtime/save-files.patch" 2>/dev/null; then
+  git -C native/dosbox-x apply "$web_dir/runtime/save-files.patch"
+else
+  git -C native/dosbox-x apply --reverse --check "$web_dir/runtime/save-files.patch"
 fi
 emcc --version | head -1 | grep -F '5.0.2'
 emcmake cmake -S . -B build/wasm -G Ninja -DCMAKE_BUILD_TYPE=Release -DDOSBOX_DEBUG=OFF

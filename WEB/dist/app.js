@@ -5,7 +5,7 @@ const context = canvas.getContext('2d', { alpha: false });
 // The EGA frame is 640×350; the original UI occupies its upper-left 600×330.
 const viewWidth = 600, viewHeight = 330;
 let frameWidth = 640, frameHeight = 350;
-let ci, scale = 1, mode = 'continued', switching = false, ready = false;
+let ci, saveFiles, scale = 1, mode = 'continued', switching = false, ready = false;
 let frameImage, bootTimer, soundEnabled = false;
 const settingsKey = 'kb2.settings';
 try {
@@ -41,7 +41,7 @@ for(let i=1;i<=12;i++) codes['F'+i]=289+i;
 for(let i=0;i<=9;i++){codes['Digit'+i]=48+i;codes['Numpad'+i]=320+i;}
 for(let i=65;i<=90;i++) codes['Key'+String.fromCharCode(i)]=i;
 function releaseKeys(){if(ci) for(const code of held) ci.sendKeyEvent(code,false);held.clear();}
-function send(code, down){if(!ci || !ready)return;if(down){if(held.has(code))return;held.add(code);}else held.delete(code);ci.sendKeyEvent(code,down);}
+function send(code, down){if(!ci || !ready)return;if(down){if(held.has(code))return;held.add(code);}else held.delete(code);if(saveFiles)saveFiles.noteKey(code,down);ci.sendKeyEvent(code,down);}
 function fit(){
   const full=!!document.fullscreenElement || document.body.classList.contains('browser-fullscreen');
   const viewport=$('#viewport');
@@ -98,6 +98,7 @@ async function start(nextMode){
   $('#startup-screen').hidden=false;$('#loading').classList.remove('has-message');
   $('#mode').disabled=true;
   try{
+    if(saveFiles){await saveFiles.dispose();saveFiles=null;}
     if(ci){await ci.exit();ci=null;}
     mode=nextMode;saveSettings();
     $('footer').replaceChildren(document.createTextNode('© 1992–1993 Сергей Прокофьев'));
@@ -109,6 +110,14 @@ async function start(nextMode){
     ci=await emulators.dosboxXWorker(new Uint8Array(await response.arrayBuffer()), {audioWorklet:true});
     applySound();
     const current=ci;
+    let ended=false;
+    function finishRun(){
+      if(ci!==current || ended)return;
+      ended=true;ready=false;releaseKeys();clearTimeout(bootTimer);screen.classList.remove('ready');
+      $('#startup-screen').hidden=false;$('#retry').hidden=true;$('#loading').classList.remove('has-message');
+      queueMicrotask(()=>{if(ci===current)start(mode);});
+    }
+    saveFiles=new SaveFilesClient({ci:current,isCurrent:()=>ci===current,onExit:finishRun});
     let programReady=false;
     let lastFrame;
     // The core restores 3000 cycles before KB2's first blocking keyboard read.
@@ -123,7 +132,7 @@ async function start(nextMode){
     frameImage=context.createImageData(frameWidth,frameHeight);
     ci.events().onFrameSize((width,height)=>{frameWidth=width;frameHeight=height;frameImage=context.createImageData(width,height);});
     function paintFrame(rgb,rgba){
-      if(ci!==current)return;const data=rgb||rgba;if(!data)return;
+      if(ci!==current || ended)return;const data=rgb||rgba;if(!data)return;
       if(!ready){
         if(!programReady)return;
         let colored=0;const stride=rgb?3:4;
@@ -136,7 +145,7 @@ async function start(nextMode){
       context.putImageData(frameImage,0,0);
     }
     ci.events().onFrame((rgb,rgba)=>{lastFrame=[rgb,rgba];paintFrame(rgb,rgba);});
-    ci.events().onExit(()=>{if(ci===current&&ready){ready=false;screen.classList.remove('ready');$('#status').textContent='Игра завершена';$('#retry').hidden=false;$('#loading').classList.add('has-message');}});
+    ci.events().onExit(finishRun);
   }catch(error){console.error(error);$('#status').textContent='Не удалось запустить игру: '+error.message;$('#retry').hidden=false;$('#loading').classList.add('has-message');}
   finally{switching=false;$('#mode').value=mode;$('#mode').disabled=false;}
 }
