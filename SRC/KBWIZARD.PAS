@@ -117,7 +117,6 @@ var
   Island: byte;
 
 begin
-  if Game.Campaign.Flags.ShipOwned then Game.Campaign.ShipIsland := Game.Campaign.Island;
   DrawDialog(8, 230, 488, 320);
   DrawText(false, 2, 240, WizardCaption);
   DrawText(false, 2, 256, PlainsMenuItem);
@@ -134,6 +133,8 @@ Retry:
   if Game.Runtime.LastScan = 27 then Exit;
   Val(Chr(Game.Runtime.LastScan), Island, Game.World.GenerationLimit);
   if Game.Campaign.UnlockedIslands + 1 < Island then goto Retry;
+  if PaymentFailed(5000) then Exit;
+  if Game.Campaign.Flags.ShipOwned then Game.Campaign.ShipIsland := Game.Campaign.Island;
   EnterIsland(Island);
 
   if Game.Campaign.UnlockedIslands + 1 = Island then Game.Campaign.UnlockedIslands := Island;
@@ -322,9 +323,7 @@ begin
         RefreshDwellings;
       end
       else Successful := false;
-    51: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 1 then
-      if not PaymentFailed(5000) then IslandTravel
-      else Successful := false;
+    51: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 1 then IslandTravel;
     52: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 2 then
       if Game.Campaign.MagicPower < 10 then
         if not PaymentFailed(1000) then WizardContractBoard

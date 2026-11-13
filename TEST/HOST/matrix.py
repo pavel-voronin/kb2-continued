@@ -1853,7 +1853,7 @@ def cases(module):
                 module,
                 "WizardVisit",
                 f"payment-failure-{key}",
-                keys=[key],
+                keys=[key, 49] if key == 51 else [key],
                 changes={"Campaign.MagicPower": 0},
                 responses={"PaymentFailed": 1},
             )
