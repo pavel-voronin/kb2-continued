@@ -27,6 +27,71 @@ def buying(v, args, byte_stock=False):
 
 
 def cases(module):
+    if module == "KBWIZARD":
+        for label, keys, gold, attempted, travelled in (
+            ("cancel", [51, 27], 20000, False, False),
+            ("locked-then-cancel", [51, 53, 27], 20000, False, False),
+            ("success", [51, 50], 20000, True, True),
+            ("locked-then-success", [51, 53, 50], 5000, True, True),
+            ("insufficient", [51, 50], 4999, True, False),
+        ):
+
+            def travel(v, keys=keys, gold=gold, attempted=attempted, travelled=travelled):
+                g = preset(v)
+                g.Campaign.Gold = gold
+                g.Campaign.WizardRelations[0] = 2
+                g.Campaign.UnlockedIslands = 1
+                g.Campaign.HighestVisitedIsland = 1
+                g.Campaign.Flags.ShipOwned = True
+                g.Campaign.ShipIsland = 5
+                v.set_game(g)
+                operations = []
+
+                def pay(vm, args):
+                    assert list(args) == [5000]
+                    assert vm.game().Runtime.LastScan == 50
+                    operations.append("payment")
+                    state = vm.game()
+                    if state.Campaign.Gold < 5000:
+                        return 1
+                    state.Campaign.Gold -= 5000
+                    vm.set_game(state)
+                    return 0
+
+                def enter(vm, args):
+                    assert list(args) == [2]
+                    assert operations == ["payment"]
+                    state = vm.game()
+                    assert state.Campaign.ShipIsland == 1
+                    state.Campaign.Island = 2
+                    vm.set_game(state)
+                    operations.append("enter")
+                    return 0
+
+                def land(vm, args):
+                    state = vm.game()
+                    state.Campaign.Hero.X = 20
+                    state.Campaign.Hero.Y = 21
+                    vm.set_game(state)
+                    operations.append("land")
+                    return 0
+
+                v.responses.update(PaymentFailed=pay, EnterIsland=enter, RandomHeroLanding=land)
+                ready(v, v.invoke("WizardVisit", keys=keys))
+                after = v.game().Campaign
+                assert operations == (["payment", "enter", "land"] if travelled else
+                                      ["payment"] if attempted else [])
+                assert after.Gold == gold - (5000 if travelled else 0)
+                assert after.Island == (2 if travelled else 1)
+                assert after.ShipIsland == (1 if travelled else 5)
+                assert after.UnlockedIslands == (2 if travelled else 1)
+                assert after.HighestVisitedIsland == (2 if travelled else 1)
+                assert (after.Hero.X, after.Hero.Y) == (
+                    (20, 21) if travelled else (g.Campaign.Hero.X, g.Campaign.Hero.Y))
+                if not travelled:
+                    assert after.WizardRelations[0] == 3
+
+            yield Case(f"travel-payment.{label}", travel)
     if module in ("KBCASTLE", "KBWIZARD"):
         wizard = module == "KBWIZARD"
         seed = next(s for s in range(20000)
