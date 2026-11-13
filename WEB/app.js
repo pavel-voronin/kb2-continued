@@ -129,14 +129,14 @@ $('#sound').addEventListener('click',()=>{
   soundEnabled=!soundEnabled;saveSettings();updateSoundButton();applySound();
   screen.focus({preventScroll:true});
 });
-async function start(nextMode){
+async function start(nextMode,discard=false){
   if(switching)return;switching=true;releaseKeys();ready=false;clearTimeout(bootTimer);
   screen.classList.remove('ready');$('#retry').hidden=true;$('#status').textContent='Загрузка…';
   $('#startup-screen').hidden=false;$('#loading').classList.remove('has-message');
   $('#mode').disabled=true;
   try{
     if(saveFiles){await saveFiles.dispose();saveFiles=null;}
-    if(ci){await ci.exit();ci=null;}
+    if(ci){if(discard&&window.kb2LocalScenarios)window.kb2LocalScenarios.discard(ci);else await ci.exit();ci=null;}
     mode=nextMode;saveSettings();
     document.title=$('#mode').querySelector(`option[value="${mode}"]`).textContent;
     $('footer').replaceChildren(document.createTextNode('© 1992–1993 Сергей Прокофьев'));
@@ -155,7 +155,6 @@ async function start(nextMode){
       $('#startup-screen').hidden=false;$('#retry').hidden=true;$('#loading').classList.remove('has-message');
       queueMicrotask(()=>{if(ci===current)start(mode);});
     }
-    saveFiles=new SaveFilesClient({ci:current,isCurrent:()=>ci===current,onExit:finishRun});
     let programReady=false;
     let lastFrame;
     // The core restores 3000 cycles before KB2's first blocking keyboard read.
@@ -164,6 +163,7 @@ async function start(nextMode){
       programReady=true;
       if(lastFrame)paintFrame(...lastFrame);
     });
+    saveFiles=new SaveFilesClient({ci:current,isCurrent:()=>ci===current,onExit:finishRun});
     ci.sendBackendEvent({type:'wc-trigger-event',event:'startup_cycles:30000'});
     bootTimer=setTimeout(()=>{if(!ready){$('#status').textContent='Игра не запустилась. Можно повторить запуск.';$('#retry').hidden=false;$('#loading').classList.add('has-message');}},30000);
     frameWidth=ci.width()||640;frameHeight=ci.height()||350;
@@ -184,6 +184,8 @@ async function start(nextMode){
     }
     ci.events().onFrame((rgb,rgba)=>{lastFrame=[rgb,rgba];paintFrame(rgb,rgba);});
     ci.events().onExit(finishRun);
+    window.kb2LocalScenarios?.attach({ci:current,isCurrent:()=>ci===current,isReady:()=>ready,
+      restart:()=>start('continued',true),releaseKeys});
   }catch(error){console.error(error);$('#status').textContent='Не удалось запустить игру: '+error.message;$('#retry').hidden=false;$('#loading').classList.add('has-message');}
   finally{switching=false;$('#mode').value=mode;$('#mode').disabled=false;}
 }
