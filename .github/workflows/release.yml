@@ -52,7 +52,6 @@ jobs:
           $releaseArgs = @('release', 'create', $env:RELEASE_TAG, $env:PORTABLE_ARCHIVE,
             '--verify-tag', '--draft', '--title', "KB2: Continued $env:RELEASE_TAG",
             '--notes-file', $env:RELEASE_NOTES)
-          if ($env:RELEASE_TAG.Contains('-')) { $releaseArgs += '--prerelease' }
           & gh @releaseArgs
           if ($LASTEXITCODE -ne 0) { throw 'Release creation or ZIP upload failed.' }
           & gh release edit $env:RELEASE_TAG --draft=false
