@@ -306,7 +306,9 @@ begin
       Offer := Random(10);
       Inc(Offer)
     until Offer < 7;
-    DrawText(false, 2, 296, WizardNames[Offer]);
+    if (Offer = 2) and (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 <> 0) then
+      DrawText(false, 2, 296, '*) Часть древней карты уже получена')
+    else DrawText(false, 2, 296, WizardNames[Offer]);
   end;
 
   Game.Runtime.LastScan := Ord(ReadKey);
@@ -332,11 +334,11 @@ begin
       if not PaymentFailed(10000) then Inc(Game.Campaign.TornadoCharges)
       else Successful := false;
     54: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 4 then
-      if not PaymentFailed(WizardPrices[Offer]) then
+      if (Offer <> 2) or (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 = 0) then
+        if not PaymentFailed(WizardPrices[Offer]) then
         case Offer of
           1: for I := 1 to 5 do Game.Campaign.Towns[Game.Campaign.Island, I].Scroll := Random(13);
-          2: if Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 = 0 then
-          begin
+          2: begin
             Game.Campaign.WizardVisited[Game.Campaign.Island] := Game.Campaign.WizardVisited[Game.Campaign.Island]
     or 2;
             Inc(Game.Campaign.MapParts);

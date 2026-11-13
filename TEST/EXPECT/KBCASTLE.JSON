@@ -581,23 +581,6 @@
           272,
           "3) \u041e\u0431\u044a\u044f\u0432\u0438\u0442\u044c \u0432\u043e\u0439\u043d\u0443 \u0445\u043e\u0437\u044f\u0438\u043d\u0443 \u0437\u0435\u043c\u043b\u0438"
         ]
-      ],
-      [
-        "KBECON",
-        "PaymentFailed",
-        [
-          3000
-        ]
-      ],
-      [
-        "KBGFX",
-        "DrawText",
-        [
-          0,
-          2,
-          256,
-          "*) K\u0430p\u0442a \u0437\u0435\u043c\u043b\u0438 \u043a\u0443\u043f\u043b\u0435\u043d\u0430        "
-        ]
       ]
     ],
     "random_seed": 12345
@@ -21632,7 +21615,7 @@
     "ports": [],
     "random_seed": 1655067934
   },
-  "CastleVisit.matrix.buy-map-fails": {
+  "CastleVisit.matrix.buy-map-already-owned": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -21815,13 +21798,6 @@
           2,
           272,
           "3) \u041e\u0431\u044a\u044f\u0432\u0438\u0442\u044c \u0432\u043e\u0439\u043d\u0443 \u0445\u043e\u0437\u044f\u0438\u043d\u0443 \u0437\u0435\u043c\u043b\u0438"
-        ]
-      ],
-      [
-        "KBECON",
-        "PaymentFailed",
-        [
-          3000
         ]
       ]
     ],

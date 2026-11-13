@@ -27,6 +27,89 @@ def buying(v, args, byte_stock=False):
 
 
 def cases(module):
+    if module in ("KBCASTLE", "KBWIZARD"):
+        wizard = module == "KBWIZARD"
+        seed = next(s for s in range(20000)
+                    if (((s * 134775813 + 1) & 0xFFFFFFFF) * 10 >> 32) == 1)
+        for island in (1, 5):
+            for mode in ("first-and-repeat", "owned", "insufficient", "other-island"):
+
+                def map_purchase(v, island=island, mode=mode, wizard=wizard, seed=seed):
+                    g = preset(v)
+                    slot = island - 1
+                    price = 500000 if wizard else island * 3000
+                    g.Campaign.Island = island
+                    g.Campaign.Gold = price - 1 if mode == "insufficient" else price * 3
+                    g.Campaign.MapParts = 1 if mode in ("owned", "other-island") else 0
+                    g.Campaign.WizardRelations[slot] = 10
+                    g.Campaign.QuestFlags[slot] = 1
+                    g.Campaign.Castles[slot][0].Owned = False
+                    g.World.GenerationX = g.Campaign.Castles[slot][0].X
+                    g.World.GenerationY = g.Campaign.Castles[slot][0].Y
+                    g.Campaign.Hero.Y = g.World.GenerationY + 1
+                    for i in range(5):
+                        g.Campaign.Flags.LocalMapOwned[i] = False
+                        g.Campaign.WizardVisited[i] = 1
+                    owned_slot = slot if mode == "owned" else (slot + 1) % 5
+                    if mode in ("owned", "other-island"):
+                        g.Campaign.Flags.LocalMapOwned[owned_slot] = True
+                        g.Campaign.WizardVisited[owned_slot] |= 2
+                    v.set_game(g)
+                    charged = []
+
+                    def pay(vm, args):
+                        cost, = args
+                        charged.append(cost)
+                        state = vm.game()
+                        if state.Campaign.Gold < cost:
+                            return 1
+                        state.Campaign.Gold -= cost
+                        vm.set_game(state)
+                        return 0
+
+                    v.responses["PaymentFailed"] = pay
+
+                    def visit():
+                        v.cpu.mem_write(v.addresses[2][0], struct.pack("<I", seed))
+                        ready(v, v.invoke("WizardVisit" if wizard else "CastleVisit",
+                                          keys=[54] if wizard else [49, 49, 27]))
+
+                    visit()
+                    visit()  # Re-enter with the state left by the first visit.
+                    bought = mode not in ("owned", "insufficient")
+                    expected_owned = mode != "insufficient"
+                    after = v.game().Campaign
+                    assert after.Gold == g.Campaign.Gold - (price if bought else 0)
+                    if wizard:
+                        assert bool(after.WizardVisited[slot] & 2) == expected_owned
+                        assert after.WizardVisited[slot] & 1
+                        assert after.MapParts == g.Campaign.MapParts + int(bought)
+                        if expected_owned:
+                            assert any(n == "DrawText" and a[3] ==
+                                       "*) Часть древней карты уже получена"
+                                       for _, n, a in v.calls)
+                    else:
+                        assert bool(after.Flags.LocalMapOwned[slot]) == expected_owned
+                    attempts = (2 if wizard else 4) if mode == "insufficient" else int(bought)
+                    assert charged == [price] * attempts
+                    if mode == "other-island":
+                        assert after.Flags.LocalMapOwned[owned_slot]
+                        assert after.WizardVisited[owned_slot] & 2
+
+                yield Case(f"map-purchase.island-{island}.{mode}", map_purchase)
+        if not wizard:
+
+            def castle_map_reward(v):
+                g = preset(v)
+                g.Campaign.QuestFlags[0] = 0
+                g.Campaign.WizardVisited[0] = 1
+                g.Campaign.MapParts = 0
+                v.set_game(g)
+                ready(v, v.invoke("CastleVisit", keys=[50, 51, 27]))
+                assert v.game().Campaign.WizardVisited[0] == 3
+                assert v.game().Campaign.MapParts == 1
+
+            yield Case("map-part.castle-reward-sets-ownership", castle_map_reward)
     if module == "KBDWELL":
         for army in ("empty", "reserve-free", "full", "over-limit"):
             for grace in (0, 1):
