@@ -57,6 +57,34 @@ jobs:
           if ($LASTEXITCODE -ne 0) { throw 'Release creation or ZIP upload failed.' }
           & gh release edit $env:RELEASE_TAG --draft=false
           if ($LASTEXITCODE -ne 0) { throw 'Release publication failed.' }
+  notify-discord:
+    needs: portable
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check Discord announcement
+        run: node TEST/DISCORD.cjs
+      - name: Announce the published release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          RELEASE_TAG: ${{ github.ref_name }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+          gh release view $env:RELEASE_TAG --json tagName,url,isDraft > release.json
+          if ($LASTEXITCODE -ne 0) { throw 'Cannot read the published release.' }
+          . ./RELEASE/changelog.ps1
+          $env:RELEASE_CHANGES = Get-ReleaseChanges -Path ./CHANGELOG.md -Tag $env:RELEASE_TAG
+          node RELEASE/discord.cjs release.json
+          if ($LASTEXITCODE -ne 0) { throw 'Discord announcement failed.' }
   deploy-web:
     needs: portable
     if: >-
