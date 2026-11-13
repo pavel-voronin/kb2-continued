@@ -374,7 +374,8 @@ begin
           Game.Runtime.LastScan := Ord(ReadKey);
 
           case Game.Runtime.LastScan of
-            49: if not PaymentFailed(Game.Campaign.Island * 3000) then
+            49: if not Game.Campaign.Flags.LocalMapOwned[Game.Campaign.Island] then
+              if not PaymentFailed(Game.Campaign.Island * 3000) then
             begin
               Game.Campaign.Flags.LocalMapOwned[Game.Campaign.Island] := true;
               DrawText(false, 2, 256, '*) Kаpтa земли куплена        ');

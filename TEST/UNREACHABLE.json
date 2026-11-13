@@ -11,7 +11,7 @@
     "KBBRES": "31546b9217fee7f2690d4ff5941ad79019016671b16a2b2c2d33c5bf72b821bf",
     "KBBTYPE": "a1f683ea51f8f8f7ab4ad6f5f46085c2014391b4bb0c566b368444353ed40030",
     "KBCAL": "720db5186c0e35174bb1845489810570f36607003bedc5e9d7b690cd699a8873",
-    "KBCASTLE": "ead8f9e45b10353e56f878f1a8adf5c7ae7820be012348c431586ef7c41cfb7e",
+    "KBCASTLE": "1b879745f794e37e77b17249ba53c12fe146c579504fbe29aed15b3e3cabfd46",
     "KBEVENTS": "a5ebd9bc8752c1cf82eedc1cb7a30f2dff97d3da08caf76a4b7db37a64b5704d",
     "KBGEN": "0e8bc8920dc43956d5bea196b9d6ddca0606742589b13c96ec82978e362a7b0b",
     "KBMAGIC": "d6dd982809447b99c2adef1815c4fca0a3db0a2338fc8bb3e70b95c3c762565e",
@@ -22,7 +22,7 @@
     "KBTABLES": "b407142fc1a6b2028fe8ca07812e8098763be1fb33a33e6cd4d4e72bd2c13382",
     "KBTOWN": "b2ad82f72e51d55c32e25661a1ec36765f6debfbcacf21010c50ac0f3a064b42",
     "KBTYPES": "2ee1c73d93fb50edeff9dd01985c94f9b04fe0500f1bda3a5cb1972fb512e6cb",
-    "KBWIZARD": "9921d9bf3afd75c6deae90b84f797bc5e110658462cd19c79695565f7da0161a",
+    "KBWIZARD": "074c31dfe1f08fd8f69ce766af84ed35a36af0809f16e9d51783f5323196396b",
     "KBWORLD": "112d8756b13899a330646840c341320a6ba131cf1b59a2ce9ef92772898b57ca"
   },
   "compiler": {
@@ -588,8 +588,8 @@
       "points": [
         {
           "module": "KBCASTLE",
-          "local_id": 333,
-          "line": 401,
+          "local_id": 336,
+          "line": 402,
           "shape": {
             "routine": "castlevisit",
             "kind": "case-5",
@@ -609,8 +609,8 @@
         },
         {
           "module": "KBCASTLE",
-          "local_id": 334,
-          "line": 401,
+          "local_id": 337,
+          "line": 402,
           "shape": {
             "routine": "castlevisit",
             "kind": "statement",
@@ -630,8 +630,8 @@
         },
         {
           "module": "KBCASTLE",
-          "local_id": 335,
-          "line": 395,
+          "local_id": 338,
+          "line": 396,
           "shape": {
             "routine": "castlevisit",
             "kind": "case-unmatched",
@@ -888,8 +888,8 @@
       "points": [
         {
           "module": "KBWIZARD",
-          "local_id": 320,
-          "line": 336,
+          "local_id": 324,
+          "line": 339,
           "shape": {
             "routine": "wizardvisit",
             "kind": "case-unmatched",

@@ -1014,7 +1014,7 @@ def cases(module):
         yield sample(
             module,
             "CastleVisit",
-            "buy-map-fails",
+            "buy-map-already-owned",
             keys=[49, 27],
             responses={"PaymentFailed": 1},
         )
