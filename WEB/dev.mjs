@@ -5,6 +5,7 @@ import {spawn} from 'node:child_process';
 import {createServer} from 'vite';
 import gameBundle from './game-bundle.cjs';
 import page from './prepare-page.cjs';
+import scenarios from './scenarios/server.cjs';
 
 const web=import.meta.dirname,root=path.dirname(web);
 const sha=bytes=>crypto.createHash('sha256').update(bytes).digest('hex');
@@ -30,7 +31,7 @@ async function rebuild() {
     console.log('[game] Compiling current sources...');
     await compile();
     const {archive,game}=gameBundle(path.join(web,'.build/dev/build/SRC/DIST'),classic);
-    current={archive,game};
+    current={archive:scenarios.localBundle(archive),game};
     console.log('[game] Ready: '+sha(game['KB2.EXE']));
     server?.ws.send({type:'full-reload',path:'*'});
   } catch(error) {
@@ -54,9 +55,10 @@ server=await createServer({
       const runtime=sha(Buffer.concat(['wdosbox-x.js','wdosbox-x.wasm'].map(name=>fs.readFileSync(path.join(web,'runtime/vendor',name))))).slice(0,16);
       const data=JSON.stringify({...release,markdown,bundles:{classic:sha(classic).slice(0,16),continued:sha(current.archive).slice(0,16)},runtime,font:Buffer.from(current.game['KB2.FNT']).toString('base64')}).replace(/</g,'\\u003c');
       // Vite treats ?v= as an immutable dependency URL; source files must stay unversioned in dev.
-      return page.renderHtml(html,data,fs.readFileSync(path.join(web,'assets/startup.png')),'dev',runtime).replaceAll('?v=dev','');
+      return scenarios.injectHtml(page.renderHtml(html,data,fs.readFileSync(path.join(web,'assets/startup.png')),'dev',runtime).replaceAll('?v=dev',''));
     }},
     configureServer(dev){
+      scenarios.installScenarios(dev,{root,getGame:()=>current.game});
       dev.watcher.add([path.join(root,'SRC'),path.join(root,'PASCAL'),path.join(root,'BUILD.BAT'),path.join(root,'CHANGELOG.md')]);
       dev.watcher.on('all',(event,file)=>{
         if(!['add','change','unlink'].includes(event)||!sourceFile(file))return;
@@ -75,6 +77,7 @@ server=await createServer({
           const file=path.join(web,'runtime/vendor',name);
           if(!fs.existsSync(file))return next();
           bytes=fs.readFileSync(file);
+          if(name==='wdosbox-x.js')bytes=Buffer.from(scenarios.patchWorker(bytes.toString('utf8')));
           if(name.endsWith('.js'))type='text/javascript';
           else if(name.endsWith('.wasm'))type='application/wasm';
           else if(name.endsWith('.json'))type='application/json';

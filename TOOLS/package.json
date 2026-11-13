@@ -1,0 +1,10 @@
+{
+  "name": "kb2-tools",
+  "private": true,
+  "scripts": {
+    "scenarios:prepare": "node scenarios/assemble.cjs"
+  },
+  "dependencies": {
+    "fflate": "0.8.2"
+  }
+}

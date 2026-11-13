@@ -31,6 +31,10 @@ try {
   assert.ok(fs.existsSync(path.join(out,'vendor/licenses/GPL-2.0.txt')));
   assert.ok(fs.existsSync(path.join(out,'vendor/save-files.patch')));
   const html=fs.readFileSync(path.join(out,'index.html'),'utf8');assert.ok(html.includes('"version":"1.2.3"'));assert.ok(!html.includes('{{'));
+  assert.ok(!html.includes('/__scenarios/'));
+  assert.ok(!fs.existsSync(path.join(out,'scenarios')));
+  assert.ok(!fs.readFileSync(path.join(out,'vendor/wdosbox-x.js'),'utf8').includes('kb2-scenario'));
+  assert.ok(!fs.readFileSync(path.join(out,'vendor/wdosbox-x.js'),'utf8').includes('kb2-snapshot'));
   assert.notEqual(build('v9.9.9').status,0);assert.equal(fs.readFileSync(path.join(out,'index.html'),'utf8'),html);
   fs.appendFileSync(path.join(web,'runtime/vendor/wdosbox-x.js'),'tampered');assert.notEqual(build('v1.2.3').status,0);
   console.log('PASS: release selection, fixed classic, exact continued EXE, metadata, licenses, invalid tag/runtime fail before replacing output.');
