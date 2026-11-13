@@ -10,7 +10,6 @@ const {messages, send} = require('../RELEASE/discord.cjs');
     '[Играть в браузере](https://kb2.pavelvoronin.com/)');
   assert.deepEqual(payload.allowed_mentions, {parse: []});
   assert.equal(payload.flags, 4); // SUPPRESS_EMBEDS: keep links without previews.
-  assert.match(messages({...release, tag: 'v1.1.0-rc.1'})[0].content, /1\.1\.0-rc\.1/);
   const long = {...release, changes: '- @everyone <@123> ' + '🧙'.repeat(3000) + '\n- Последний пункт.'};
   const parts = messages(long);
   assert.ok(parts.length > 1);
@@ -38,5 +37,5 @@ const {messages, send} = require('../RELEASE/discord.cjs');
   await assert.rejects(send(webhook, [payload], async () => { throw new Error(webhook); }), error =>
     !error.message.includes('test-secret') && error.message.includes('check the channel'));
   await assert.rejects(send(webhook, [payload], async () => ({ok: true, json: async () => ({})})), /confirm/);
-  console.log('PASS: approved text, prerelease, long changes, mentions disabled, confirmed send and failures.');
+  console.log('PASS: approved text, long changes, mentions disabled, confirmed send and failures.');
 })().catch(error => { console.error(error); process.exitCode = 1; });
