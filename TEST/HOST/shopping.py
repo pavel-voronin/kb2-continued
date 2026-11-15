@@ -28,6 +28,111 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        for power in (0, 1):
+            for offer, owned in ((1, False), (2, False), (2, True),
+                                 (3, False), (4, False), (6, False)):
+
+                def other_offer(v, power=power, offer=offer, owned=owned):
+                    g = preset(v, True)
+                    g.Campaign.MagicPower = power
+                    g.Campaign.Gold = 1000000
+                    g.Campaign.MapParts = int(owned)
+                    g.Campaign.WizardVisited[0] = 3 if owned else 1
+                    g.Campaign.DamageBonus = 25
+                    for town in g.Campaign.Towns[0]:
+                        town.Scroll = 13
+                        for i in range(4):
+                            town.Workers[i] = 0
+                    for i, dwelling in enumerate(g.Campaign.Dwellings[0]):
+                        dwelling.Species = i
+                        dwelling.Count = 0
+                    v.set_game(g)
+                    charged = []
+                    price = {1: 100000, 2: 500000, 3: 200000,
+                             4: 200000, 6: 100000}[offer]
+
+                    def pay(vm, args):
+                        assert list(args) == [price]
+                        charged.append(price)
+                        state = vm.game()
+                        state.Campaign.Gold -= price
+                        vm.set_game(state)
+                        return 0
+
+                    v.responses["PaymentFailed"] = pay
+                    seed = next(s for s in range(20000)
+                                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 10 >> 32) == offer - 1)
+                    v.cpu.mem_write(v.addresses[2][0], struct.pack("<I", seed))
+                    ready(v, v.invoke("WizardVisit", keys=[54]))
+                    after = v.game().Campaign
+                    assert charged == ([] if owned else [price])
+                    assert after.Gold == 1000000 - (0 if owned else price)
+                    assert after.MagicPower == power
+                    assert not any(n == "TransmuteDwellings" for _, n, _ in v.calls)
+                    assert not any(n == "DrawText" and a[3] ==
+                                   "*) Для изменения воинов нужна волшебная сила 2"
+                                   for _, n, a in v.calls)
+                    if offer == 1:
+                        assert all(0 <= t.Scroll <= 12 for t in after.Towns[0])
+                    elif offer == 2:
+                        assert after.MapParts == 1
+                        assert after.WizardVisited[0] == 3
+                        assert any(n == "RefreshMapParts" for _, n, _ in v.calls) == (not owned)
+                    elif offer == 3:
+                        assert [list(t.Workers) for t in after.Towns[0]] == [
+                            [2, 3, 1, 2], [2, 3, 0, 1], [0, 2, 1, 2],
+                            [1, 1, 3, 1], [2, 1, 1, 1]]
+                    elif offer == 4:
+                        assert [d.Species for d in after.Dwellings[0]] == list(range(8))
+                        assert [d.Count for d in after.Dwellings[0]] == [
+                            1000, 400, 500, 500, 500, 200, 200, 200]
+                    elif offer == 6:
+                        assert after.DamageBonus == 1025
+
+                yield Case(f"other-offer-{offer}.power-{power}.owned-{owned}", other_offer)
+        for power, gold in ((0, 500000), (1, 500000), (2, 400000), (2, 399999)):
+
+            def transmute_purchase(v, power=power, gold=gold):
+                g = preset(v)
+                g.Campaign.MagicPower = power
+                g.Campaign.Gold = gold
+                g.Campaign.WizardRelations[0] = 5
+                v.set_game(g)
+                before = bytes(g.Campaign.Dwellings)
+                operations = []
+
+                def pay(vm, args):
+                    assert list(args) == [400000]
+                    operations.append("payment")
+                    state = vm.game()
+                    if state.Campaign.Gold < 400000:
+                        return 1
+                    state.Campaign.Gold -= 400000
+                    vm.set_game(state)
+                    return 0
+
+                def transmute(vm, args):
+                    assert list(args) == [1]
+                    assert operations == ["payment"]
+                    assert vm.game().Campaign.Gold == gold - 400000
+                    operations.append("transmute")
+                    return 0
+
+                v.responses.update(PaymentFailed=pay, TransmuteDwellings=transmute)
+                seed = next(s for s in range(20000)
+                            if (((s * 134775813 + 1) & 0xFFFFFFFF) * 10 >> 32) == 4)
+                v.cpu.mem_write(v.addresses[2][0], struct.pack("<I", seed))
+                ready(v, v.invoke("WizardVisit", keys=[54]))
+                paid = power >= 2 and gold >= 400000
+                assert v.game().Campaign.Gold == gold - (400000 if paid else 0)
+                assert operations == (["payment", "transmute"] if paid else
+                                      ["payment"] if power >= 2 else [])
+                assert bytes(v.game().Campaign.Dwellings) == before
+                assert any(n == "DrawText" and a[3] ==
+                           "*) Для изменения воинов нужна волшебная сила 2"
+                           for _, n, a in v.calls) == (power < 2)
+
+            yield Case(f"transmute-purchase.power-{power}.gold-{gold}", transmute_purchase)
         for active, gold in ((False, 2000), (False, 0), (True, 1000), (True, 999)):
 
             def contract_hint(v, active=active, gold=gold):
