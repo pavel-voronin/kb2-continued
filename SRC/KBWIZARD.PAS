@@ -314,6 +314,8 @@ begin
     until Offer < 7;
     if (Offer = 2) and (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 <> 0) then
       DrawText(false, 2, 296, '*) Часть древней карты уже получена')
+    else if (Offer = 5) and (Game.Campaign.MagicPower < 2) then
+      DrawText(false, 2, 296, '*) Для изменения воинов нужна волшебная сила 2')
     else DrawText(false, 2, 296, WizardNames[Offer]);
   end;
 
@@ -338,7 +340,8 @@ begin
       else Successful := false;
     54: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 4 then
       if (Offer <> 2) or (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 = 0) then
-        if not PaymentFailed(WizardPrices[Offer]) then
+        if (Offer <> 5) or (Game.Campaign.MagicPower > 1) then
+          if not PaymentFailed(WizardPrices[Offer]) then
         case Offer of
           1: for I := 1 to 5 do Game.Campaign.Towns[Game.Campaign.Island, I].Scroll := Random(13);
           2: begin
