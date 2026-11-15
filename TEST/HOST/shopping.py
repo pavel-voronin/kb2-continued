@@ -28,6 +28,40 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        for active, gold in ((False, 2000), (False, 0), (True, 1000), (True, 999)):
+
+            def contract_hint(v, active=active, gold=gold):
+                g = preset(v)
+                g.Campaign.MagicPower = 1
+                g.Campaign.WizardRelations[0] = 3
+                g.Campaign.ContractIsland = 1 if active else 100
+                g.Campaign.ContractSlot = 1
+                g.Campaign.Gold = gold
+                v.set_game(g)
+                charged = []
+
+                def pay(vm, args):
+                    assert list(args) == [1000]
+                    charged.append(1000)
+                    state = vm.game()
+                    if state.Campaign.Gold < 1000:
+                        return 1
+                    state.Campaign.Gold -= 1000
+                    vm.set_game(state)
+                    return 0
+
+                v.responses["PaymentFailed"] = pay
+                v.scans.extend([1])
+                ready(v, v.invoke("WizardVisit", keys=[52]))
+                paid = active and gold >= 1000
+                assert v.game().Campaign.Gold == gold - (1000 if paid else 0)
+                assert charged == ([1000] if active else [])
+                assert any(n == "ShowNotice" and list(a) == [8]
+                           for _, n, a in v.calls) == (not active)
+                assert any(n == "DrawText" and a[3] == "ЗАМОК ПО КОНТРАКТУ"
+                           for _, n, a in v.calls) == paid
+
+            yield Case(f"contract-hint.active-{active}.gold-{gold}", contract_hint)
         for label, keys, gold, attempted, travelled in (
             ("cancel", [51, 27], 20000, False, False),
             ("locked-then-cancel", [51, 53, 27], 20000, False, False),

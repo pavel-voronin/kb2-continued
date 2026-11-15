@@ -76,6 +76,11 @@ const
 begin
   if Game.Campaign.ContractIsland < 6 then
   begin
+    if PaymentFailed(1000) then
+    begin
+      Successful := false;
+      Exit;
+    end;
     DrawDialog(8, 230, 488, 320);
     DrawText(false, 2, 240, ContractCaption);
     DrawText(false, 2, 256, IslandCaption);
@@ -326,8 +331,7 @@ begin
     51: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 1 then IslandTravel;
     52: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 2 then
       if Game.Campaign.MagicPower < 10 then
-        if not PaymentFailed(1000) then WizardContractBoard
-        else Successful := false
+        WizardContractBoard
       else InstructionBook;
     53: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 3 then
       if not PaymentFailed(10000) then Inc(Game.Campaign.TornadoCharges)

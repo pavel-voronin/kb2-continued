@@ -18984,13 +18984,6 @@
         ]
       ],
       [
-        "KBECON",
-        "PaymentFailed",
-        [
-          1000
-        ]
-      ],
-      [
         "KBUI",
         "ShowNotice",
         [
