@@ -16,6 +16,8 @@ try {
     if(typeof saved.sound === 'boolean') soundEnabled = saved.sound;
   }
 } catch { /* Unavailable storage or invalid settings: use defaults. */ }
+const requestedMode = new URL(window.location.href).searchParams.get('mode');
+if(requestedMode === 'classic') mode = requestedMode;
 function saveSettings() {
   try { localStorage.setItem(settingsKey, JSON.stringify({ mode, percent: Math.round(scale * 100), sound: soundEnabled })); }
   catch { /* The game remains usable when browser storage is disabled. */ }
@@ -138,6 +140,10 @@ async function start(nextMode,discard=false){
     if(saveFiles){await saveFiles.dispose();saveFiles=null;}
     if(ci){if(discard&&window.kb2LocalScenarios)window.kb2LocalScenarios.discard(ci);else await ci.exit();ci=null;}
     mode=nextMode;saveSettings();
+    const url=new URL(window.location.href);
+    if(mode==='classic')url.searchParams.set('mode','classic');
+    else url.searchParams.delete('mode');
+    window.history.replaceState(window.history.state,'',url);
     document.title=$('#mode').querySelector(`option[value="${mode}"]`).textContent;
     $('footer').replaceChildren(document.createTextNode('© 1992–1993 Сергей Прокофьев'));
     if(mode==='continued')$('footer').append(document.createElement('br'),document.createTextNode('© 2026 Павел Воронин'));
