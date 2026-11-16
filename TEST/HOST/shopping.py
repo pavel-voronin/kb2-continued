@@ -28,6 +28,65 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        worker_caps = {
+            1: [[2, 3, 1, 2], [2, 3, 0, 1], [0, 2, 1, 2], [1, 1, 3, 1], [2, 1, 1, 1]],
+            5: [[1, 0, 5, 1], [1, 1, 5, 0], [1, 0, 4, 2], [2, 0, 7, 3], [0, 1, 5, 0]],
+        }
+        for island, capacities in worker_caps.items():
+            deficits = [(i, j) for i, row in enumerate(capacities)
+                        for j, count in enumerate(row) if count > 0]
+            for missing, gold in [(None, 300000), (None, 0)] + [
+                    (cell, 200000) for cell in deficits] + [(deficits[-1], 199999)]:
+
+                def worker_restock(v, island=island, capacities=capacities,
+                                   missing=missing, gold=gold):
+                    g = preset(v, True)
+                    g.Campaign.Island = island
+                    g.Campaign.Gold = gold
+                    for town, row in zip(g.Campaign.Towns[island - 1], capacities):
+                        for j, count in enumerate(row):
+                            town.Workers[j] = count
+                    if missing is not None:
+                        i, j = missing
+                        g.Campaign.Towns[island - 1][i].Workers[j] -= 1
+                    # Another island is empty: it must neither enable this purchase
+                    # nor receive the workers bought for the current island.
+                    other = 4 if island == 1 else 0
+                    for town in g.Campaign.Towns[other]:
+                        for j in range(4):
+                            town.Workers[j] = 0
+                    v.set_game(g)
+                    before = [[list(t.Workers) for t in towns] for towns in g.Campaign.Towns]
+                    charges = []
+
+                    def pay(vm, args):
+                        assert list(args) == [200000]
+                        charges.append(200000)
+                        state = vm.game()
+                        if state.Campaign.Gold < 200000:
+                            return 1
+                        state.Campaign.Gold -= 200000
+                        vm.set_game(state)
+                        return 0
+
+                    v.responses["PaymentFailed"] = pay
+                    seed = next(s for s in range(20000)
+                                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 10 >> 32) == 2)
+                    v.cpu.mem_write(v.addresses[2][0], struct.pack("<I", seed))
+                    ready(v, v.invoke("WizardVisit", keys=[54]))
+                    paid = missing is not None and gold >= 200000
+                    assert charges == ([200000] if missing is not None else [])
+                    assert v.game().Campaign.Gold == gold - (200000 if paid else 0)
+                    expected = before
+                    if paid:
+                        expected[island - 1] = capacities
+                    assert [[list(t.Workers) for t in towns]
+                            for towns in v.game().Campaign.Towns] == expected
+                    assert any(n == "DrawText" and a[3] ==
+                               "*) Работников во всех городах достаточно"
+                               for _, n, a in v.calls) == (missing is None)
+
+                yield Case(f"worker-restock.island-{island}.missing-{missing}.gold-{gold}", worker_restock)
         for power in (0, 1):
             for offer, owned in ((1, False), (2, False), (2, True),
                                  (3, False), (4, False), (6, False)):
