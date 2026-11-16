@@ -29,6 +29,11 @@ window.kb2LocalScenarios=new class {
       if(!pending)return;run.pending.delete(reply.id);clearTimeout(pending.timer);
       if(reply.error)pending.reject(Error(reply.error));else pending.resolve(reply.result);
     });
+    if(!this.linkHandled){
+      this.linkHandled=true;
+      const id=new URL(window.location.href).searchParams.get('scenario');
+      if(id)this.apply(id);
+    }
   }
   discard(ci){
     // The bundled transport disposes its Worker and AudioPort in onExit(). A
@@ -92,7 +97,7 @@ window.kb2LocalScenarios=new class {
   }
   render(){
     let panel=document.querySelector('#local-scenarios');
-    if(!this.items?.length){panel?.remove();return;}
+    if(!this.items?.length&&!this.error){panel?.remove();return;}
     if(!panel){panel=document.createElement('aside');panel.id='local-scenarios';panel.setAttribute('aria-label','Сценарии');document.querySelector('#player').append(panel);}
     const toggle=document.createElement('button');toggle.id='local-scenario-toggle';toggle.title='Сценарии';toggle.setAttribute('aria-label','Сценарии');
     toggle.setAttribute('aria-expanded',String(!!this.open));toggle.setAttribute('aria-controls','local-scenario-menu');
@@ -104,11 +109,12 @@ window.kb2LocalScenarios=new class {
     const close=document.createElement('button');close.id='local-scenario-close';close.setAttribute('aria-label','Закрыть сценарии');close.addEventListener('click',()=>this.setOpen(false));
     const content=document.createElement('div');content.id='local-scenario-content';
     const list=document.createElement('ul');
-    for(const item of this.items){
+    for(const item of this.items||[]){
       const li=document.createElement('li'),button=document.createElement('button');
       button.textContent=item.title;button.title=item.title;button.disabled=this.busy;button.setAttribute('aria-pressed',String(this.selected===item.id));
       button.classList.toggle('loading',this.busy&&this.loadingId===item.id);
-      button.addEventListener('click',()=>this.apply(item.id));li.append(button);list.append(li);
+      const link=document.createElement('a');link.href=this.link(item.id);link.textContent='↗';link.title='Ссылка на сценарий';link.setAttribute('aria-label','Ссылка на сценарий: '+item.title);
+      button.addEventListener('click',()=>this.apply(item.id));li.append(button,link);list.append(li);
     }
     const error=document.createElement('p');error.id='local-scenario-error';error.setAttribute('role','alert');error.hidden=!this.error;error.textContent=this.error||'';
     content.append(list,error);menu.append(frame,close,content);panel.replaceChildren(toggle,menu);panel.setAttribute('aria-busy',String(this.busy));panel.dataset.phase=this.phase||'';
@@ -127,6 +133,9 @@ window.kb2LocalScenarios=new class {
       const size=14*screen.width/600;button.style.fontSize=size+'px';
       if(button.scrollWidth>button.clientWidth&&button.clientWidth>0)button.style.fontSize=(size*button.clientWidth/button.scrollWidth)+'px';
     }
+  }
+  link(id){
+    const url=new URL(window.location.href);url.searchParams.set('scenario',id);return url.href;
   }
   async apply(id){
     if(this.busy)return;
@@ -149,6 +158,7 @@ window.kb2LocalScenarios=new class {
       await this.request('restore');
       if(!this.run.restoredFrame||await this.hash(this.frameBytes(this.run.restoredFrame,scenario.frameMask))!==scenario.frameSha256)throw Error('Эмулятор не восстановил изображение снимка целиком.');
       this.selected=id;
+      window.history.replaceState(null,'',this.link(id));
       this.phase='ready';
     }catch(error){this.error=error.message;this.open=true;console.error(error);}
     finally{if(this.run){this.run.capture=false;this.run.restoredFrame=null;this.run.ci.resume();}this.busy=false;this.render();document.querySelector('#screen').focus({preventScroll:true});}
