@@ -40,8 +40,9 @@ try {
   // operations must be writing the .sav file and requesting native restoration.
   const frame=Uint8Array.of(12,34,56),meta={snapshotBytes:bytes.length,snapshotSha256:snapshot.sha(bytes),frameSha256:snapshot.sha(frame)};
   const events={},calls=[],registered=[],focus=()=>{};
-  const context={console,Uint8Array,TextDecoder,Map,Promise,JSON,Date,Error,Array,setTimeout,clearTimeout,crypto:require('node:crypto').webcrypto,
-    EventSource:class{},ResizeObserver:class{observe(){}},window:{addEventListener:type=>registered.push(type)},
+  const location={href:'http://127.0.0.1:5173/?keep=yes#game'};
+  const context={console,URL,Uint8Array,TextDecoder,Map,Promise,JSON,Date,Error,Array,setTimeout,clearTimeout,crypto:require('node:crypto').webcrypto,
+    EventSource:class{},ResizeObserver:class{observe(){}},window:{location,history:{replaceState:(_state,_title,url)=>{location.href=url;}},addEventListener:type=>registered.push(type)},
     document:{addEventListener(){},querySelector:selector=>selector==='#local-scenarios'?null:{focus}},
     fetch:async url=>({ok:true,json:async()=>url.endsWith('/list')?[]:meta,arrayBuffer:async()=>bytes.buffer.slice(bytes.byteOffset,bytes.byteOffset+bytes.byteLength)})};
   vm.runInNewContext(fs.readFileSync(path.join(root,'WEB/scenarios/client.js'),'utf8'),context);
@@ -56,6 +57,15 @@ try {
   client.attach(run);await client.apply('owned');
   assert.equal(client.error,null);assert.equal(client.selected,'owned');assert.equal(run.capture,false);
   assert.deepEqual(calls,[['restart'],['file',snapshot.snapshotFile],['event','kb2-snapshot','restore']]);
+  assert.equal(location.href,'http://127.0.0.1:5173/?keep=yes&scenario=owned#game');
+  assert.equal(new URL(client.link('red-knight')).searchParams.get('scenario'),'red-knight');
+  // A shared URL loads through the same real restoration method exactly once,
+  // including the attach() performed by the emulator restart.
+  location.href='http://127.0.0.1:5173/?scenario=red-knight';client.linkHandled=false;
+  client.attach(run);
+  for(let i=0;client.busy&&i<100;i++)await new Promise(resolve=>setTimeout(resolve,5));
+  assert.equal(client.busy,false);assert.equal(client.error,null);assert.equal(client.selected,'red-knight');
+  assert.equal(calls.filter(call=>call[0]==='restart').length,2);
   assert.ok(!registered.includes('keyup'));
   console.log('PASS: native snapshot store, integrity/legacy rejection, completion after restored frame, client loading without RAM writes or input replay.');
 } finally {
