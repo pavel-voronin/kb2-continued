@@ -22,7 +22,7 @@ const
   TornadoMenuItem = '5) Дать СМЕРЧ.($10000)';
 
 var
-  Successful: boolean;
+  Successful, WorkersNeeded: boolean;
   I, Offer: word;
 
 procedure HireWorkers;
@@ -312,8 +312,18 @@ begin
       Offer := Random(10);
       Inc(Offer)
     until Offer < 7;
+    WorkersNeeded := false;
+    if Offer = 3 then
+      for I := 1 to 5 do
+        if (Game.Campaign.Towns[Game.Campaign.Island, I].Workers[1] < WorkerCapacities[Game.Campaign.Island, I, 0]) or
+          (Game.Campaign.Towns[Game.Campaign.Island, I].Workers[2] < WorkerCapacities[Game.Campaign.Island, I, 1]) or
+          (Game.Campaign.Towns[Game.Campaign.Island, I].Workers[3] < WorkerCapacities[Game.Campaign.Island, I, 2]) or
+          (Game.Campaign.Towns[Game.Campaign.Island, I].Workers[4] < WorkerCapacities[Game.Campaign.Island, I, 3]) then
+          WorkersNeeded := true;
     if (Offer = 2) and (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 <> 0) then
       DrawText(false, 2, 296, '*) Часть древней карты уже получена')
+    else if (Offer = 3) and not WorkersNeeded then
+      DrawText(false, 2, 296, '*) Работников во всех городах достаточно')
     else if (Offer = 5) and (Game.Campaign.MagicPower < 2) then
       DrawText(false, 2, 296, '*) Для изменения воинов нужна волшебная сила 2')
     else DrawText(false, 2, 296, WizardNames[Offer]);
@@ -341,7 +351,8 @@ begin
     54: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 4 then
       if (Offer <> 2) or (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 = 0) then
         if (Offer <> 5) or (Game.Campaign.MagicPower > 1) then
-          if not PaymentFailed(WizardPrices[Offer]) then
+          if (Offer <> 3) or WorkersNeeded then
+            if not PaymentFailed(WizardPrices[Offer]) then
         case Offer of
           1: for I := 1 to 5 do Game.Campaign.Towns[Game.Campaign.Island, I].Scroll := Random(13);
           2: begin
