@@ -22,7 +22,7 @@ const
   TornadoMenuItem = '5) Дать СМЕРЧ.($10000)';
 
 var
-  Successful, WorkersNeeded: boolean;
+  Successful, WorkersNeeded, DwellingsNeeded: boolean;
   I, Offer: word;
 
 procedure HireWorkers;
@@ -320,10 +320,18 @@ begin
           (Game.Campaign.Towns[Game.Campaign.Island, I].Workers[3] < WorkerCapacities[Game.Campaign.Island, I, 2]) or
           (Game.Campaign.Towns[Game.Campaign.Island, I].Workers[4] < WorkerCapacities[Game.Campaign.Island, I, 3]) then
           WorkersNeeded := true;
+    DwellingsNeeded := false;
+    if Offer = 4 then
+      for I := 0 to 7 do
+        if Game.Campaign.Dwellings[Game.Campaign.Island, I].Count <
+          WeeklyDwellingCapacities[Game.Campaign.Dwellings[Game.Campaign.Island, I].Species] then
+          DwellingsNeeded := true;
     if (Offer = 2) and (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 <> 0) then
       DrawText(false, 2, 296, '*) Часть древней карты уже получена')
     else if (Offer = 3) and not WorkersNeeded then
       DrawText(false, 2, 296, '*) Работников во всех городах достаточно')
+    else if (Offer = 4) and not DwellingsNeeded then
+      DrawText(false, 2, 296, '*) Воинов во всех жилищах достаточно')
     else if (Offer = 5) and (Game.Campaign.MagicPower < 2) then
       DrawText(false, 2, 296, '*) Для изменения воинов нужна волшебная сила 2')
     else DrawText(false, 2, 296, WizardNames[Offer]);
@@ -352,7 +360,8 @@ begin
       if (Offer <> 2) or (Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 = 0) then
         if (Offer <> 5) or (Game.Campaign.MagicPower > 1) then
           if (Offer <> 3) or WorkersNeeded then
-            if not PaymentFailed(WizardPrices[Offer]) then
+            if (Offer <> 4) or DwellingsNeeded then
+              if not PaymentFailed(WizardPrices[Offer]) then
         case Offer of
           1: for I := 1 to 5 do Game.Campaign.Towns[Game.Campaign.Island, I].Scroll := Random(13);
           2: begin
@@ -370,8 +379,11 @@ begin
             Game.Campaign.Towns[Game.Campaign.Island, I].Workers[4] := WorkerCapacities[Game.Campaign.Island, I, 3];
           end;
 
-          4: for I := 0 to 7 do Game.Campaign.Dwellings[Game.Campaign.Island, I].Count :=
-            WeeklyDwellingCapacities[Game.Campaign.Dwellings[Game.Campaign.Island, I].Species];
+          4: for I := 0 to 7 do
+            if Game.Campaign.Dwellings[Game.Campaign.Island, I].Count <
+              WeeklyDwellingCapacities[Game.Campaign.Dwellings[Game.Campaign.Island, I].Species] then
+              Game.Campaign.Dwellings[Game.Campaign.Island, I].Count :=
+                WeeklyDwellingCapacities[Game.Campaign.Dwellings[Game.Campaign.Island, I].Species];
           5: TransmuteDwellings(Game.Campaign.Island);
           6: Inc(Game.Campaign.DamageBonus, 1000);
         end;

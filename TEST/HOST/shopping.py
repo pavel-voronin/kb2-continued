@@ -28,6 +28,64 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        for island in (1, 5):
+            for missing, gold in [(None, 300000), (None, 0), ("above", 300000)] + [
+                    (slot, 200000) for slot in range(8)] + [
+                    (7, 199999), ("mixed", 300000), ("mixed", 199999)]:
+
+                def dwelling_restock(v, island=island, missing=missing, gold=gold):
+                    g = preset(v, True)
+                    g.Campaign.Island = island
+                    g.Campaign.Gold = gold
+                    species = [0, 1, 5, 10, 15, 19, 22, 24]
+                    capacities = [1000, 400, 200, 100, 30, 70, 30, 30]
+                    for i, dwelling in enumerate(g.Campaign.Dwellings[island - 1]):
+                        dwelling.Species = species[i]
+                        dwelling.Count = capacities[i] + int(missing == "above")
+                    if isinstance(missing, int):
+                        g.Campaign.Dwellings[island - 1][missing].Count -= 1
+                    if missing == "mixed":
+                        g.Campaign.Dwellings[island - 1][0].Count += 50
+                        g.Campaign.Dwellings[island - 1][7].Count -= 1
+                    other = 4 if island == 1 else 0
+                    for dwelling in g.Campaign.Dwellings[other]:
+                        dwelling.Count = 0
+                    v.set_game(g)
+                    before = [[(d.Species, d.Count) for d in land]
+                              for land in g.Campaign.Dwellings]
+                    charges = []
+
+                    def pay(vm, args):
+                        assert list(args) == [200000]
+                        charges.append(200000)
+                        state = vm.game()
+                        if state.Campaign.Gold < 200000:
+                            return 1
+                        state.Campaign.Gold -= 200000
+                        vm.set_game(state)
+                        return 0
+
+                    v.responses["PaymentFailed"] = pay
+                    seed = next(s for s in range(20000)
+                                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 10 >> 32) == 3)
+                    v.cpu.mem_write(v.addresses[2][0], struct.pack("<I", seed))
+                    ready(v, v.invoke("WizardVisit", keys=[54]))
+                    needed = isinstance(missing, int) or missing == "mixed"
+                    paid = needed and gold >= 200000
+                    assert charges == ([200000] if needed else [])
+                    assert v.game().Campaign.Gold == gold - (200000 if paid else 0)
+                    expected = before
+                    if paid:
+                        expected[island - 1] = list(zip(species, capacities))
+                        if missing == "mixed":
+                            expected[island - 1][0] = (species[0], capacities[0] + 50)
+                    assert [[(d.Species, d.Count) for d in land]
+                            for land in v.game().Campaign.Dwellings] == expected
+                    assert any(n == "DrawText" and a[3] ==
+                               "*) Воинов во всех жилищах достаточно"
+                               for _, n, a in v.calls) == (not needed)
+
+                yield Case(f"dwelling-restock.island-{island}.missing-{missing}.gold-{gold}", dwelling_restock)
         worker_caps = {
             1: [[2, 3, 1, 2], [2, 3, 0, 1], [0, 2, 1, 2], [1, 1, 3, 1], [2, 1, 1, 1]],
             5: [[1, 0, 5, 1], [1, 1, 5, 0], [1, 0, 4, 2], [2, 0, 7, 3], [0, 1, 5, 0]],
