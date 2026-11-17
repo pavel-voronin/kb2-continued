@@ -28,6 +28,63 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        for power, gold in ((0, 5000), (1, 5000), (254, 5000),
+                            (254, 4999), (255, 5000), (255, 0)):
+
+            def power_purchase(v, power=power, gold=gold):
+                g = preset(v)
+                g.Campaign.MagicPower = power
+                g.Campaign.Gold = gold
+                g.Campaign.WizardRelations[0] = 1
+                v.set_game(g)
+                charges = []
+
+                def pay(vm, args):
+                    assert list(args) == [5000]
+                    charges.append(5000)
+                    state = vm.game()
+                    if state.Campaign.Gold < 5000:
+                        return 1
+                    state.Campaign.Gold -= 5000
+                    vm.set_game(state)
+                    return 0
+
+                v.responses["PaymentFailed"] = pay
+                ready(v, v.invoke("WizardVisit", keys=[50]))
+                paid = power < 255 and gold >= 5000
+                after = v.game().Campaign
+                assert after.Gold == gold - (5000 if paid else 0)
+                assert after.MagicPower == power + int(paid)
+                assert charges == ([5000] if power < 255 else [])
+                assert any(n == "DrawText" and a[3] ==
+                           "*) Волшебная сила достигла максимума"
+                           for _, n, a in v.calls) == (power == 255)
+                assert any(n == "RefreshMagic" for _, n, _ in v.calls) == paid
+
+            yield Case(f"power-purchase.power-{power}.gold-{gold}", power_purchase)
+    if module == "KBCASTLE":
+        for amount, key in ((5, 51), (8, 52)):
+            for power in (0, 1, 246, 247, 248, 249, 250, 251, 254, 255):
+
+                def power_reward(v, amount=amount, key=key, power=power):
+                    g = preset(v)
+                    g.Campaign.MagicPower = power
+                    g.Campaign.QuestFlags[0] = 0
+                    g.Campaign.WizardVisited[0] = 1
+                    g.Campaign.MapParts = 0
+                    v.set_game(g)
+                    ready(v, v.invoke("CastleVisit", keys=[50, key, 27]))
+                    after = v.game().Campaign
+                    assert after.MagicPower == min(255, power + amount)
+                    assert after.Gold == g.Campaign.Gold
+                    assert after.ScrollCapacity == g.Campaign.ScrollCapacity + (10 if amount == 5 else 15)
+                    assert after.Leadership == g.Campaign.Leadership + (0 if amount == 5 else 1000)
+                    assert after.MapParts == int(amount == 5)
+                    assert after.QuestFlags[0] == 100
+                    assert after.Income == g.Campaign.Income + 2000
+
+                yield Case(f"power-reward.amount-{amount}.power-{power}", power_reward)
+    if module == "KBWIZARD":
         for island in (1, 5):
             for missing, gold in [(None, 300000), (None, 0), ("above", 300000)] + [
                     (slot, 200000) for slot in range(8)] + [

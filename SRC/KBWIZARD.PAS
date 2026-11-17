@@ -299,7 +299,10 @@ begin
   DrawText(false, 51, 240, Game.Runtime.TextBuffer);
   DrawText(false, 2, 256, WorkersMenuItem);
 
-  if Game.Campaign.WizardRelations[Game.Campaign.Island] > 0 then DrawText(false, 2, 264, MagicPowerMenuItem);
+  if Game.Campaign.WizardRelations[Game.Campaign.Island] > 0 then
+    if Game.Campaign.MagicPower = 255 then
+      DrawText(false, 2, 264, '*) Волшебная сила достигла максимума')
+    else DrawText(false, 2, 264, MagicPowerMenuItem);
   if Game.Campaign.WizardRelations[Game.Campaign.Island] > 1 then DrawText(false, 2, 272, IslandTravelMenuItem);
   if Game.Campaign.WizardRelations[Game.Campaign.Island] > 2 then
     if Game.Campaign.MagicPower < 10 then DrawText(false, 2, 280, CastleHintMenuItem)
@@ -341,6 +344,7 @@ begin
   case Game.Runtime.LastScan of
     49: HireWorkers;
     50: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 0 then
+      if Game.Campaign.MagicPower < 255 then
       if not PaymentFailed(5000) then
       begin
         Inc(Game.Campaign.MagicPower);

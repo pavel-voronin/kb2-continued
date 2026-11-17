@@ -198,15 +198,15 @@ def cases(module):
         yield Case("B012.prepare-save-removes-actor-markers", markers)
     elif module == "KBWIZARD":
 
-        def overflow(v):
+        def maximum_power(v):
             g = v.fixture()
             g.Campaign.MagicPower = 255
             g.Campaign.WizardRelations[0] = 5
             v.set_game(g)
             ready(v, v.invoke("WizardVisit", keys=[50, 27]))
-            assert v.game().Campaign.MagicPower == 0
-            assert any(
-                name == "PaymentFailed" and args == [5000] for _, name, args in v.calls
+            assert v.game().Campaign.MagicPower == 255
+            assert not any(
+                name == "PaymentFailed" for _, name, args in v.calls
             )
 
-        yield Case("B013.power-purchase-wraps-byte-to-zero", overflow)
+        yield Case("B013.maximum-power-prevents-purchase", maximum_power)

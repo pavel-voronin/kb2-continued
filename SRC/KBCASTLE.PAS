@@ -55,7 +55,8 @@ begin
 
       51: begin
         if Game.Campaign.WizardVisited[Game.Campaign.Island] and 2 = 0 then Inc(Game.Campaign.MapParts);
-          Inc(Game.Campaign.MagicPower, 5);
+          if Game.Campaign.MagicPower <= 250 then Inc(Game.Campaign.MagicPower, 5)
+          else Game.Campaign.MagicPower := 255;
           Inc(Game.Campaign.ScrollCapacity, 10);
           RefreshMapParts;
           Game.Campaign.WizardVisited[Game.Campaign.Island] := Game.Campaign.WizardVisited[Game.Campaign.Island] or 2;
@@ -63,7 +64,8 @@ begin
 
       52: begin
         Inc(Game.Campaign.Leadership, 1000);
-        Inc(Game.Campaign.MagicPower, 8);
+        if Game.Campaign.MagicPower <= 247 then Inc(Game.Campaign.MagicPower, 8)
+        else Game.Campaign.MagicPower := 255;
         Inc(Game.Campaign.ScrollCapacity, 15);
       end;
     end;
