@@ -30,6 +30,9 @@ async function press(run,scan,char=0,world=false,seed=36){
   if(world){run.set('Runtime.IdleCounter',0);run.set('World.WizardAge',0);run.set('World.MageAge',0);}
   run.seed(seed);const frames=run.frames;run.key(scan,char);
   await wait(()=>run.keyboardEmpty(),'native key consumed');
+  // The old input loop can increment IdleCounter once before consuming this
+  // key. Only a fresh counter after consumption proves the turn has finished.
+  if(world)run.set('Runtime.IdleCounter',0);
   await wait(()=>run.frames>frames,'native display updated');
   if(world)await wait(()=>run.byte('Runtime.IdleCounter')>0,'world input ready');
 }

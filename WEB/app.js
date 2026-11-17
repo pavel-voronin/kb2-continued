@@ -5,7 +5,7 @@ const context = canvas.getContext('2d', { alpha: false });
 // The EGA frame is 640×350; the original UI occupies its upper-left 600×330.
 const viewWidth = 600, viewHeight = 330;
 let frameWidth = 640, frameHeight = 350;
-let ci, saveFiles, scale = 1, mode = 'continued', switching = false, ready = false;
+let ci, saveFiles, printer, scale = 1, mode = 'continued', switching = false, ready = false;
 let frameImage, bootTimer, soundEnabled = true;
 const settingsKey = 'kb2.settings';
 try {
@@ -137,6 +137,7 @@ async function start(nextMode,discard=false){
   $('#startup-screen').hidden=false;$('#loading').classList.remove('has-message');
   $('#mode').disabled=true;
   try{
+    if(printer){printer.dispose();printer=null;}
     if(saveFiles){await saveFiles.dispose();saveFiles=null;}
     if(ci){if(discard&&window.kb2LocalScenarios)window.kb2LocalScenarios.discard(ci);else await ci.exit();ci=null;}
     mode=nextMode;saveSettings();
@@ -151,7 +152,10 @@ async function start(nextMode,discard=false){
     const response=await fetch(`games/${mode}.jsdos?v=${releaseData.bundles[mode]}`);if(!response.ok)throw new Error(`Загрузка игры: HTTP ${response.status}`);
     emulators.pathPrefix='vendor/';
     emulators.pathSuffix='?v='+releaseData.runtime;
-    ci=await emulators.dosboxXWorker(new Uint8Array(await response.arrayBuffer()), {audioWorklet:true});
+    const bundle=new Uint8Array(await response.arrayBuffer());
+    // The classic archive stays byte-for-byte original; supply the same printer
+    // configuration as the continued game through js-dos's configuration API.
+    ci=await emulators.dosboxXWorker(mode==='classic'?[bundle,releaseData.dosboxConf]:bundle, {audioWorklet:true});
     applySound();
     const current=ci;
     let ended=false;
@@ -183,6 +187,9 @@ async function start(nextMode,discard=false){
         for(let i=0;i<data.length;i+=stride)if(data[i]!==data[i+1]||data[i+1]!==data[i+2]){if(++colored>100)break;}
         if(colored<=100)return;
         ready=true;clearTimeout(bootTimer);screen.classList.add('ready');$('#startup-screen').hidden=true;if(changelog.open)current.pause();else screen.focus({preventScroll:true});
+        printer=new PrintClient({ci:current,isCurrent:()=>ci===current,
+          onOpen:()=>{releaseKeys();current.pause();},
+          onClose:()=>{if(ready&&!changelog.open){current.resume();applySound();screen.focus({preventScroll:true});}}});
       }
       if(!frameImage||frameImage.data.length!==frameWidth*frameHeight*4)frameImage=context.createImageData(frameWidth,frameHeight);
       if(rgba)frameImage.data.set(rgba);else for(let src=0,dst=0;src<rgb.length;src+=3,dst+=4){frameImage.data[dst]=rgb[src];frameImage.data[dst+1]=rgb[src+1];frameImage.data[dst+2]=rgb[src+2];frameImage.data[dst+3]=255;}

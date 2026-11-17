@@ -8,6 +8,6 @@ for(const file of fs.readdirSync(gameDir)) {
 }
 const required=Object.keys(unzipSync(classic)).filter(name=>/\.(EXE|FNT|PIC)$/i.test(name));
 for(const name of required)if(!game[name])throw new Error('Incomplete DOS release: '+name);
-game['.jsdos/dosbox.conf']=Buffer.from('[dosbox]\nmachine=ega\nmemsize=16\n[cpu]\ncore=normal\ncputype=286\ncycles=fixed 3000\n[render]\naspect=false\nscaler=none\n[mixer]\nrate=44100\nprebuffer=0\n[dos]\nxms=false\nems=false\numb=false\n[autoexec]\n@echo off\nmount c .\nc:\nKB2.EXE\nexit\n');
+game['.jsdos/dosbox.conf']=Buffer.from('[dosbox]\nmachine=ega\nmemsize=16\n[cpu]\ncore=normal\ncputype=286\ncycles=fixed 3000\n[render]\naspect=false\nscaler=none\n[mixer]\nrate=44100\nprebuffer=0\n[dos]\nxms=false\nems=false\numb=false\n[parallel]\nparallel1=file append:/home/web_user/.jsdos/print.prn timeout:1000 addFF\n[autoexec]\n@echo off\nmount c .\nc:\nKB2.EXE\nexit\n');
   return {game,archive:zipSync(game)};
 };

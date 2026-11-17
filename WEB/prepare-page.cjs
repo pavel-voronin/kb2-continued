@@ -45,11 +45,12 @@ function preparePage({tag}={}) {
   const runtimeHash = crypto.createHash('sha256');
   for (const name of ['wdosbox-x.js', 'wdosbox-x.wasm']) runtimeHash.update(fs.readFileSync(path.join(out, 'vendor', name)));
   const runtime = runtimeHash.digest('hex').slice(0, 16);
-  const data = JSON.stringify({ version, date, markdown, bundles, runtime, font: Buffer.from(font).toString('base64') }).replace(/</g, '\\u003c');
+  const dosboxConf = Buffer.from(bundle['.jsdos/dosbox.conf']).toString('utf8');
+  const data = JSON.stringify({ version, date, markdown, bundles, runtime, dosboxConf, font: Buffer.from(font).toString('base64') }).replace(/</g, '\\u003c');
   const startup = fs.readFileSync(path.join(__dirname, 'assets/startup.png'));
   const hash = crypto.createHash('sha256').update(data);
   hash.update(startup);
-  for (const name of ['style.css', 'changelog.js', 'save-files.js', 'app.js', 'favicon.ico',
+  for (const name of ['style.css', 'changelog.js', 'save-files.js', 'print.js', 'app.js', 'favicon.ico',
     'favicon-16.png', 'favicon-32.png', 'favicon-48.png', 'favicon-64.png']) {
     const bytes = fs.readFileSync(path.join(__dirname, name));
     hash.update(bytes);
