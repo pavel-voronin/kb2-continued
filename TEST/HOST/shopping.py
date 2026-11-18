@@ -28,6 +28,45 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        for charges, gold, affinity in ((0, 10000, 4), (1, 10000, 4),
+                                        (254, 10000, 4), (254, 9999, 4),
+                                        (255, 20000, 4), (255, 0, 4),
+                                        (254, 20000, 3), (255, 20000, 3)):
+
+            def tornado_purchase(v, charges=charges, gold=gold, affinity=affinity):
+                g = preset(v)
+                g.Campaign.TornadoCharges = charges
+                g.Campaign.Gold = gold
+                g.Campaign.WizardRelations[0] = affinity
+                v.set_game(g)
+                payments = []
+
+                def pay(vm, args):
+                    assert list(args) == [10000]
+                    payments.append(10000)
+                    state = vm.game()
+                    if state.Campaign.Gold < 10000:
+                        return 1
+                    state.Campaign.Gold -= 10000
+                    vm.set_game(state)
+                    return 0
+
+                v.responses["PaymentFailed"] = pay
+                ready(v, v.invoke("WizardVisit", keys=[53]))
+                allowed = charges < 255 and affinity > 3
+                paid = allowed and gold >= 10000
+                after = v.game().Campaign
+                assert after.Gold == gold - (10000 if paid else 0)
+                assert after.TornadoCharges == charges + int(paid)
+                assert payments == ([10000] if allowed else [])
+                assert any(n == "DrawText" and a[3] ==
+                           "*) Запас смерчей достиг максимума"
+                           for _, n, a in v.calls) == (charges == 255 and affinity > 3)
+                assert any(n == "DrawText" and a[3] == "5) Дать СМЕРЧ.($10000)"
+                           for _, n, a in v.calls) == allowed
+
+            yield Case(f"tornado-purchase.charges-{charges}.gold-{gold}.affinity-{affinity}", tornado_purchase)
+    if module == "KBWIZARD":
         for power, gold in ((0, 5000), (1, 5000), (254, 5000),
                             (254, 4999), (255, 5000), (255, 0)):
 

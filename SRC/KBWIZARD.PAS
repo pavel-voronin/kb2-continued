@@ -307,7 +307,10 @@ begin
   if Game.Campaign.WizardRelations[Game.Campaign.Island] > 2 then
     if Game.Campaign.MagicPower < 10 then DrawText(false, 2, 280, CastleHintMenuItem)
     else DrawText(false, 2, 280, SpellHintMenuItem);
-  if Game.Campaign.WizardRelations[Game.Campaign.Island] > 3 then DrawText(false, 2, 288, TornadoMenuItem);
+  if Game.Campaign.WizardRelations[Game.Campaign.Island] > 3 then
+    if Game.Campaign.TornadoCharges = 255 then
+      DrawText(false, 2, 288, '*) Запас смерчей достиг максимума')
+    else DrawText(false, 2, 288, TornadoMenuItem);
 
   if Game.Campaign.WizardRelations[Game.Campaign.Island] > 4 then
   begin
@@ -358,6 +361,7 @@ begin
         WizardContractBoard
       else InstructionBook;
     53: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 3 then
+      if Game.Campaign.TornadoCharges < 255 then
       if not PaymentFailed(10000) then Inc(Game.Campaign.TornadoCharges)
       else Successful := false;
     54: if Game.Campaign.WizardRelations[Game.Campaign.Island] > 4 then
