@@ -22,7 +22,7 @@
     "KBTABLES": "b407142fc1a6b2028fe8ca07812e8098763be1fb33a33e6cd4d4e72bd2c13382",
     "KBTOWN": "b2ad82f72e51d55c32e25661a1ec36765f6debfbcacf21010c50ac0f3a064b42",
     "KBTYPES": "2ee1c73d93fb50edeff9dd01985c94f9b04fe0500f1bda3a5cb1972fb512e6cb",
-    "KBWIZARD": "e1c19d42a700c7926c99cd3f058dbbb25ca5a682542584b50f8f580a618b8ae7",
+    "KBWIZARD": "4d2aa0142ce67fb8b3bf7b566e3e3dd415122aaec8f45c32f8236945bdc4126d",
     "KBWORLD": "112d8756b13899a330646840c341320a6ba131cf1b59a2ce9ef92772898b57ca"
   },
   "compiler": {
@@ -888,8 +888,8 @@
       "points": [
         {
           "module": "KBWIZARD",
-          "local_id": 385,
-          "line": 373,
+          "local_id": 396,
+          "line": 376,
           "shape": {
             "routine": "wizardvisit",
             "kind": "case-unmatched",

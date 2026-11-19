@@ -28,6 +28,45 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        for bonus, gold in ((0, 100000), (63535, 100000), (64535, 100000),
+                            (64536, 100000), (65000, 100000), (65534, 100000),
+                            (65535, 200000), (65535, 0), (65000, 99999)):
+
+            def damage_purchase(v, bonus=bonus, gold=gold):
+                g = preset(v)
+                g.Campaign.DamageBonus = bonus
+                g.Campaign.Gold = gold
+                g.Campaign.WizardRelations[0] = 5
+                v.set_game(g)
+                payments = []
+
+                def pay(vm, args):
+                    assert list(args) == [100000]
+                    payments.append(100000)
+                    state = vm.game()
+                    if state.Campaign.Gold < 100000:
+                        return 1
+                    state.Campaign.Gold -= 100000
+                    vm.set_game(state)
+                    return 0
+
+                v.responses["PaymentFailed"] = pay
+                seed = next(s for s in range(20000)
+                            if (((s * 134775813 + 1) & 0xFFFFFFFF) * 10 >> 32) == 5)
+                v.cpu.mem_write(v.addresses[2][0], struct.pack("<I", seed))
+                ready(v, v.invoke("WizardVisit", keys=[54]))
+                paid = bonus < 65535 and gold >= 100000
+                assert v.game().Campaign.Gold == gold - (100000 if paid else 0)
+                assert v.game().Campaign.DamageBonus == (min(65535, bonus + 1000) if paid else bonus)
+                assert payments == ([100000] if bonus < 65535 else [])
+                assert any(n == "DrawText" and a[3] ==
+                           "*) Усиление воинов достигло максимума"
+                           for _, n, a in v.calls) == (bonus == 65535)
+                assert any(n == "DrawText" and a[3] == "6) Усилить воинов($100000)"
+                           for _, n, a in v.calls) == (bonus < 65535)
+
+            yield Case(f"damage-purchase.bonus-{bonus}.gold-{gold}", damage_purchase)
+    if module == "KBWIZARD":
         for charges, gold, affinity in ((0, 10000, 4), (1, 10000, 4),
                                         (254, 10000, 4), (254, 9999, 4),
                                         (255, 20000, 4), (255, 0, 4),

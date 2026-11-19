@@ -340,6 +340,8 @@ begin
       DrawText(false, 2, 296, '*) Воинов во всех жилищах достаточно')
     else if (Offer = 5) and (Game.Campaign.MagicPower < 2) then
       DrawText(false, 2, 296, '*) Для изменения воинов нужна волшебная сила 2')
+    else if (Offer = 6) and (Game.Campaign.DamageBonus = 65535) then
+      DrawText(false, 2, 296, '*) Усиление воинов достигло максимума')
     else DrawText(false, 2, 296, WizardNames[Offer]);
   end;
 
@@ -369,7 +371,8 @@ begin
         if (Offer <> 5) or (Game.Campaign.MagicPower > 1) then
           if (Offer <> 3) or WorkersNeeded then
             if (Offer <> 4) or DwellingsNeeded then
-              if not PaymentFailed(WizardPrices[Offer]) then
+              if (Offer <> 6) or (Game.Campaign.DamageBonus < 65535) then
+                if not PaymentFailed(WizardPrices[Offer]) then
         case Offer of
           1: for I := 1 to 5 do Game.Campaign.Towns[Game.Campaign.Island, I].Scroll := Random(13);
           2: begin
@@ -393,7 +396,8 @@ begin
               Game.Campaign.Dwellings[Game.Campaign.Island, I].Count :=
                 WeeklyDwellingCapacities[Game.Campaign.Dwellings[Game.Campaign.Island, I].Species];
           5: TransmuteDwellings(Game.Campaign.Island);
-          6: Inc(Game.Campaign.DamageBonus, 1000);
+          6: if Game.Campaign.DamageBonus <= 64535 then Inc(Game.Campaign.DamageBonus, 1000)
+            else Game.Campaign.DamageBonus := 65535;
         end;
   end;
 
