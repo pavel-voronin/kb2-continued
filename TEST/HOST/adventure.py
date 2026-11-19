@@ -6,6 +6,46 @@ from runtime import linear
 
 
 def cases(module):
+    if module == "KBSCROLL":
+        for event, scratch in ((1, 0), (1, 10), (8, None)):
+
+            def paper_wait(v, event=event, scratch=scratch):
+                g = v.fixture()
+                g.Campaign.Flags.PaperChartPresent[0] = False
+                v.set_game(g)
+                seed = next(s for s in range(20000)
+                            if (((s * 134775813 + 1) & 0xFFFFFFFF) * 149 >> 32) // 10 == event)
+                v.cpu.mem_write(v.addresses[2][0], struct.pack("<I", seed))
+                reads = []
+                visits = []
+
+                def read(vm, args):
+                    reads.append(len(reads) + 1)
+                    assert len(reads) <= (1 if event == 1 else 2), "Extra key read after wizard"
+                    return 28 if event == 1 else (2 if len(reads) == 1 else 1)
+
+                def wizard(vm, args):
+                    visits.append(True)
+                    state = vm.game()
+                    state.Runtime.ActionScratch = scratch
+                    state.Runtime.LastScan = 27
+                    vm.set_game(state)
+                    return 0
+
+                v.responses["ReadScanCode"] = read
+                v.responses["WizardVisit"] = wizard
+                ready(v, v.invoke("PaperScrollVisit"))
+                after = v.game().Campaign
+                assert visits == ([True] if event == 1 else [])
+                assert len(reads) == (1 if event == 1 else 2)
+                assert after.Flags.PaperChartPresent[0]
+                assert after.Gold == g.Campaign.Gold * (2 if event == 8 else 1)
+                assert any(n == "RefreshGold" for _, n, _ in v.calls)
+                assert [a[0] for _, n, a in v.calls if n == "HeaderPrompt"] == (
+                    [0] if event == 1 else [5, 0])
+
+            yield Case(f"paper-result-wait.event-{event}.wizard-scratch-{scratch}", paper_wait)
+        return
     if module != "KBADVENT":
         return
     directions = ((-1, -1), (0, -1), (1, -1), (1, 0), (1, 1), (0, 1), (-1, 1), (-1, 0))

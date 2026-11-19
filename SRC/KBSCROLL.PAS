@@ -20,6 +20,7 @@ const
 
 var
   Event, Rows: byte;
+  WaitForResult: boolean;
   UnknownLocal: string[80];
 
 procedure PaperContractReport;
@@ -148,6 +149,7 @@ begin
   else
   begin
     Game.Runtime.ActionScratch := Random(149) div 10;
+    WaitForResult := Game.Runtime.ActionScratch <> 1;
     PaperNarrative;
 
     case Game.Runtime.ActionScratch of
@@ -188,10 +190,13 @@ begin
       14: Game.Campaign.QuestFlags[Random(4) + 1] := 0;
     end;
 
-    HeaderPrompt(5);
-    repeat
-      Game.Runtime.LastScan := ReadScanCode
-    until Game.Runtime.LastScan = 1;
+    if WaitForResult then
+    begin
+      HeaderPrompt(5);
+      repeat
+        Game.Runtime.LastScan := ReadScanCode
+      until Game.Runtime.LastScan = 1;
+    end;
     RefreshGold;
   end;
 

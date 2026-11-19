@@ -16,7 +16,7 @@
     "KBGEN": "0e8bc8920dc43956d5bea196b9d6ddca0606742589b13c96ec82978e362a7b0b",
     "KBMAGIC": "d6dd982809447b99c2adef1815c4fca0a3db0a2338fc8bb3e70b95c3c762565e",
     "KBPLAYER": "47a9a6f8242d1f60d9eaaa4503315aba11e1ddc9fdf098bec97e0dbe2e463414",
-    "KBSCROLL": "7c287fba3f488243f0523c79ce763fa6e3fa86fec3c122b5675e6eb2914d5e7a",
+    "KBSCROLL": "c55d95b94c8ae056802d0d912c8b40513bd689912a854471e9c7f86ad8eb1aa6",
     "KBSTART": "4162159c5c3fb49a522b907f1d9e4001800128782b419b496f4b1e7fcd1b2871",
     "KBSTATE": "60954698c42393ff8718c1e8d2a5a43ff28269587173dad91facee43e7317806",
     "KBTABLES": "b407142fc1a6b2028fe8ca07812e8098763be1fb33a33e6cd4d4e72bd2c13382",
@@ -813,7 +813,7 @@
         {
           "module": "KBSCROLL",
           "local_id": 90,
-          "line": 134,
+          "line": 135,
           "shape": {
             "routine": "paperscrollvisit",
             "kind": "case-unmatched",
