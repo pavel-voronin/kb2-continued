@@ -8,6 +8,30 @@ from runtime import Creature
 def cases(module):
     if module != "KBCAL":
         return
+    for gold, count in ((250, 100), (0, 0)):
+
+        def payroll_equality(v, gold=gold, count=count):
+            g = v.fixture()
+            g.Campaign.Gold = gold
+            g.Campaign.Income = 0
+            if count:
+                g.Campaign.Army[0].Species = 0
+                g.Campaign.Army[0].Count = count
+                definition = Creature.from_buffer_copy(
+                    v.read(v.addresses[1][0], C.sizeof(Creature))
+                )
+                assert definition.Cost.Price * count // 20 == gold
+            v.set_game(g)
+            before = [(a.Species, a.Count) for a in g.Campaign.Army]
+            ready(v, v.invoke("EndWeek"))
+            after = v.game().Campaign
+            assert after.Weeks == 99 and after.Days == 200
+            assert after.Gold == 0
+            assert [(a.Species, a.Count) for a in after.Army] == before
+            assert any(n == "DrawText" and a[3] == "ФИНАНСОВЫЙ ОТЧЕТ ПРОШЕДШЕЙ НЕДЕЛИ"
+                       for _, n, a in v.calls)
+
+        yield Case(f"payroll-equality.gold-{gold}.count-{count}", payroll_equality)
     for lifetime in (0, 1, 2, 255):
 
         def mutant(v, lifetime=lifetime):

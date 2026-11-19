@@ -9,17 +9,6 @@ from runtime import INDEX, Battle, linear
 def cases(module):
     if module == "KBCAL":
 
-        def equality(v):
-            g = v.fixture()
-            g.Campaign.Gold = 0
-            g.Campaign.Income = 0
-            v.set_game(g)
-            result = v.invoke("EndWeek", instructions=20_000)
-            assert result[1]["kind"] == "budget", result
-            assert v.game().Campaign.Weeks == 99 and v.game().Campaign.Gold == 0
-
-        yield Case("B001.zero-payroll-equality-does-not-return", equality)
-
         def wrong_island(v):
             g = v.fixture()
             c = g.Campaign.Castles[1][0]

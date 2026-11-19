@@ -175,7 +175,7 @@ begin
       Payroll := Payroll - Largest;
       Game.Campaign.Army[LargestSlot].Species := 100;
     end;
-  until Game.Campaign.Gold > Payroll;
+  until Game.Campaign.Gold >= Payroll;
   DrawDialog(8, 230, 488, 320);
   HeaderPrompt(6);
   DrawText(false, 13, 240, '”ˆ€‘‚›‰ ’—…’ ˜…„˜…‰ …„…‹ˆ');
