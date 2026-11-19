@@ -20,9 +20,9 @@
     "KBSTART": "4162159c5c3fb49a522b907f1d9e4001800128782b419b496f4b1e7fcd1b2871",
     "KBSTATE": "60954698c42393ff8718c1e8d2a5a43ff28269587173dad91facee43e7317806",
     "KBTABLES": "b407142fc1a6b2028fe8ca07812e8098763be1fb33a33e6cd4d4e72bd2c13382",
-    "KBTOWN": "b2ad82f72e51d55c32e25661a1ec36765f6debfbcacf21010c50ac0f3a064b42",
+    "KBTOWN": "172938e5bdb857872ccc917cf43810f6d8820196bc7dd4a9e20c91a6582c5ecd",
     "KBTYPES": "2ee1c73d93fb50edeff9dd01985c94f9b04fe0500f1bda3a5cb1972fb512e6cb",
-    "KBWIZARD": "4d2aa0142ce67fb8b3bf7b566e3e3dd415122aaec8f45c32f8236945bdc4126d",
+    "KBWIZARD": "79efc4916aa07b250f9012d17c33abca8b8c00b87e9af2eeac68e0afcbe99e74",
     "KBWORLD": "112d8756b13899a330646840c341320a6ba131cf1b59a2ce9ef92772898b57ca"
   },
   "compiler": {
@@ -256,8 +256,8 @@
         },
         {
           "module": "KBTOWN",
-          "local_id": 232,
-          "line": 329,
+          "local_id": 243,
+          "line": 337,
           "shape": {
             "routine": "townvisit.offercontract",
             "kind": "branch-true",
@@ -888,8 +888,8 @@
       "points": [
         {
           "module": "KBWIZARD",
-          "local_id": 396,
-          "line": 376,
+          "local_id": 387,
+          "line": 381,
           "shape": {
             "routine": "wizardvisit",
             "kind": "case-unmatched",

@@ -35,6 +35,18 @@ const
   DiggersMenuItem = '3) Землекопы: $500';
   StonecuttersMenuItem = '4) Камнетесы: $2000';
 
+procedure Hire(var Workers: word; Price: word);
+var
+  Quantity: byte;
+begin
+  if Workers = 65535 then Exit;
+  if PaymentFailed(Price) then Exit;
+  Quantity := Game.Campaign.MagicPower;
+  if Quantity = 0 then Quantity := 1;
+  if 65535 - Workers < Quantity then Workers := 65535
+  else Inc(Workers, Quantity);
+end;
+
 begin
   DrawDialog(8, 230, 488, 320);
   DrawText(false, 2, 240, HireWorkersCaption);
@@ -49,18 +61,10 @@ begin
   repeat
     Game.Runtime.LastScan := Ord(ReadKey);
     case Game.Runtime.LastScan of
-      49: if not PaymentFailed(500) then
-        if Game.Campaign.MagicPower = 0 then Inc(Game.Campaign.Carpenters)
-        else Inc(Game.Campaign.Carpenters, Game.Campaign.MagicPower);
-      50: if not PaymentFailed(1000) then
-        if Game.Campaign.MagicPower = 0 then Inc(Game.Campaign.Woodcutters)
-        else Inc(Game.Campaign.Woodcutters, Game.Campaign.MagicPower);
-      51: if not PaymentFailed(500) then
-        if Game.Campaign.MagicPower = 0 then Inc(Game.Campaign.Diggers)
-        else Inc(Game.Campaign.Diggers, Game.Campaign.MagicPower);
-      52: if not PaymentFailed(2000) then
-        if Game.Campaign.MagicPower = 0 then Inc(Game.Campaign.Stonecutters)
-        else Inc(Game.Campaign.Stonecutters, Game.Campaign.MagicPower);
+      49: Hire(Game.Campaign.Carpenters, 500);
+      50: Hire(Game.Campaign.Woodcutters, 1000);
+      51: Hire(Game.Campaign.Diggers, 500);
+      52: Hire(Game.Campaign.Stonecutters, 2000);
     end;
   until (Game.Runtime.LastScan in [49..52]) or (Game.Runtime.LastScan = 27);
 end;

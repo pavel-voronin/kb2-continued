@@ -28,6 +28,101 @@ def buying(v, args, byte_stock=False):
 
 def cases(module):
     if module == "KBWIZARD":
+        for key, field, price in ((49, "Carpenters", 500), (50, "Woodcutters", 1000),
+                                  (51, "Diggers", 500), (52, "Stonecutters", 2000)):
+            for count, power, enough in ((0, 0, True), (65534, 0, True),
+                                        (65534, 1, True), (65534, 255, True),
+                                        (65280, 255, True), (65535, 255, True),
+                                        (65535, 0, False), (65534, 255, False)):
+
+                def hire_limit(v, key=key, field=field, price=price,
+                               count=count, power=power, enough=enough):
+                    g = preset(v)
+                    g.Campaign.MagicPower = power
+                    g.Campaign.Gold = 10000 if enough else price - 1
+                    setattr(g.Campaign, field, count)
+                    v.set_game(g)
+                    before = {name: getattr(g.Campaign, name) for name in
+                              ("Carpenters", "Woodcutters", "Diggers", "Stonecutters")}
+                    payments = []
+
+                    def pay(vm, args):
+                        assert list(args) == [price]
+                        payments.append(price)
+                        state = vm.game()
+                        if state.Campaign.Gold < price:
+                            return 1
+                        state.Campaign.Gold -= price
+                        vm.set_game(state)
+                        return 0
+
+                    v.responses["PaymentFailed"] = pay
+                    ready(v, v.invoke("WizardVisit", keys=[49, key]))
+                    paid = count < 65535 and enough
+                    expected = dict(before)
+                    expected[field] = min(65535, count + max(1, power)) if paid else count
+                    assert {name: getattr(v.game().Campaign, name) for name in before} == expected
+                    assert v.game().Campaign.Gold == g.Campaign.Gold - (price if paid else 0)
+                    assert payments == ([price] if count < 65535 else [])
+
+                yield Case(f"worker-hire.{field}.count-{count}.power-{power}.enough-{enough}", hire_limit)
+    if module == "KBTOWN":
+        for scan, field, stock_index, price in ((2, "Carpenters", 0, 500),
+                                               (3, "Woodcutters", 1, 500),
+                                               (4, "Diggers", 3, 800),
+                                               (5, "Stonecutters", 2, 800)):
+            for count, expected_capacity in ((65535, None), (65534, 1), (65530, 3)):
+
+                def town_limit(v, scan=scan, field=field, stock_index=stock_index,
+                               price=price, count=count, expected_capacity=expected_capacity):
+                    g = preset(v)
+                    g.Campaign.Gold = 10000
+                    setattr(g.Campaign, field, count)
+                    g.Campaign.Towns[0][0].Workers[stock_index] = 3
+                    v.set_game(g)
+                    purchases = []
+
+                    def buy(vm, args):
+                        capacity, cost, destination, stock = args
+                        assert (capacity, cost) == (expected_capacity, price)
+                        assert vm.word(linear(destination)) == count
+                        assert vm.read(linear(stock), 1) == b"\x03"
+                        purchases.append(capacity)
+                        # Existing quantity buyer accepts one worker within the supplied capacity.
+                        vm.cpu.mem_write(linear(destination), struct.pack("<H", count + 1))
+                        vm.cpu.mem_write(linear(stock), b"\x02")
+                        state = vm.game()
+                        state.Campaign.Gold -= price
+                        vm.set_game(state)
+                        return 0
+
+                    v.responses["BuyByteQuantity"] = buy
+                    v.scans.extend([scan, 1])
+                    ready(v, v.invoke("TownVisit", keys=[54, 27]))
+                    paid = expected_capacity is not None
+                    assert purchases == ([expected_capacity] if paid else [])
+                    assert getattr(v.game().Campaign, field) == count + int(paid)
+                    assert v.game().Campaign.Towns[0][0].Workers[stock_index] == 3 - int(paid)
+                    assert v.game().Campaign.Gold == 10000 - (price if paid else 0)
+
+                yield Case(f"town-worker-limit.{field}.count-{count}", town_limit)
+    if module == "KBECON":
+        for wanted in (1, 2):
+
+            def quantity_limit(v, wanted=wanted):
+                g = v.fixture()
+                g.Campaign.Gold = 10000
+                v.set_game(g)
+                destination = v.alloc(struct.pack("<H", 65534))
+                stock = v.alloc(b"\x03")
+                ready(v, v.invoke("BuyByteQuantity", 1, 500, destination, stock,
+                                  keys=[48 + wanted, 13]))
+                assert v.word(linear(destination)) == (65535 if wanted == 1 else 65534)
+                assert v.read(linear(stock), 1) == (b"\x02" if wanted == 1 else b"\x03")
+                assert v.game().Campaign.Gold == (9500 if wanted == 1 else 10000)
+
+            yield Case(f"worker-capacity.quantity-{wanted}", quantity_limit)
+    if module == "KBWIZARD":
         for bonus, gold in ((0, 100000), (63535, 100000), (64535, 100000),
                             (64536, 100000), (65000, 100000), (65534, 100000),
                             (65535, 200000), (65535, 0), (65000, 99999)):

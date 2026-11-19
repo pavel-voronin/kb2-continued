@@ -50,6 +50,16 @@ const
   DiggersMenuItem = '3) Землекопы($800):';
   StonecuttersMenuItem = '4) Камнетесы($800):';
 
+procedure BuyWorkers(var Workers: word; var Stock: byte; Price: word);
+var
+  Capacity: word;
+begin
+  if Workers = 65535 then Exit;
+  Capacity := 65535 - Workers;
+  if Stock < Capacity then Capacity := Stock;
+  BuyByteQuantity(Capacity, Price, Workers, Stock);
+end;
+
 begin
   repeat
     DrawDialog(8, 230, 488, 320);
@@ -72,18 +82,14 @@ begin
     Game.Runtime.LastScan := ReadScanCode;
 
     case Game.Runtime.LastScan of
-      2: BuyByteQuantity(Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[1], 500,
-    Game.Campaign.Carpenters,
-        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[1]);
-      3: BuyByteQuantity(Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[2], 500,
-    Game.Campaign.Woodcutters,
-        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[2]);
-      4: BuyByteQuantity(Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[4], 800,
-    Game.Campaign.Diggers,
-        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[4]);
-      5: BuyByteQuantity(Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[3], 800,
-    Game.Campaign.Stonecutters,
-        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[3]);
+      2: BuyWorkers(Game.Campaign.Carpenters,
+        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[1], 500);
+      3: BuyWorkers(Game.Campaign.Woodcutters,
+        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[2], 500);
+      4: BuyWorkers(Game.Campaign.Diggers,
+        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[4], 800);
+      5: BuyWorkers(Game.Campaign.Stonecutters,
+        Game.Campaign.Towns[Game.Campaign.Island, TownState.Slot].Workers[3], 800);
     end;
   until Game.Runtime.LastScan = 1;
   HeaderPrompt(2);
