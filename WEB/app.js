@@ -2,75 +2,37 @@
 const $ = (selector) => document.querySelector(selector);
 const player = $('#player'), canvas = $('#canvas'), screen = $('#screen');
 const context = canvas.getContext('2d', { alpha: false });
+const modeLinks = document.querySelectorAll('.versions [data-mode]');
 // The EGA frame is 640×350; the original UI occupies its upper-left 600×330.
 const viewWidth = 600, viewHeight = 330;
 const aspect = $('#aspect');
 // On a 4:3 display, the full 640×350 EGA frame is equivalent to 640×480.
 const egaPixelHeight = 480 / 350;
 let frameWidth = 640, frameHeight = 350;
-let ci, saveFiles, printer, scale = 1, mode = 'continued', switching = false, ready = false;
+let ci, saveFiles, printer, mode = 'continued', switching = false, ready = false;
 let frameImage, bootTimer, soundEnabled = true;
 const settingsKey = 'kb2.settings';
 try {
   const saved = JSON.parse(localStorage.getItem(settingsKey));
   if(saved && typeof saved === 'object') {
     if(saved.mode === 'classic' || saved.mode === 'continued') mode = saved.mode;
-    if(Number.isInteger(saved.percent) && saved.percent >= 100 && saved.percent <= 150 && saved.percent % 10 === 0) scale = saved.percent / 100;
     if(typeof saved.sound === 'boolean') soundEnabled = saved.sound;
     if(saved.aspect === 'square' || saved.aspect === 'ega') aspect.value = saved.aspect;
   }
 } catch { /* Unavailable storage or invalid settings: use defaults. */ }
 const requestedMode = new URL(window.location.href).searchParams.get('mode');
-if(requestedMode === 'classic') mode = requestedMode;
+if(requestedMode === 'classic' || requestedMode === 'continued') mode = requestedMode;
 function saveSettings() {
-  try { localStorage.setItem(settingsKey, JSON.stringify({ mode, percent: Math.round(scale * 100), sound: soundEnabled, aspect: aspect.value })); }
+  try { localStorage.setItem(settingsKey, JSON.stringify({ mode, sound: soundEnabled, aspect: aspect.value })); }
   catch { /* The game remains usable when browser storage is disabled. */ }
 }
 const releaseData = JSON.parse($('#release-data').textContent);
-const discordTip = $('#discord-tip');
-try { discordTip.hidden = localStorage.getItem('kb2.discord-tip-dismissed') === 'true'; }
-catch { discordTip.hidden = false; }
-function positionDiscordTip() {
-  if(discordTip.hidden)return;
-  const bounds=player.getBoundingClientRect(),link=$('#discord').getBoundingClientRect();
-  discordTip.style.width='max-content';
-  const width=Math.ceil(discordTip.getBoundingClientRect().width),height=discordTip.offsetHeight;
-  discordTip.style.width=width+'px';
-  discordTip.style.right='auto';
-  discordTip.style.left=(Math.round(bounds.right-8-width)-bounds.left)+'px';
-  discordTip.style.top=(Math.round(link.top-height-11)-bounds.top)+'px';
-  // Paint a real pixel silhouette: integer coordinates, stepped corners and a 1px outline.
-  const art=$('#discord-tip-art');
-  const tip=Math.max(8,Math.min(width-9,Math.round(link.left+link.width/2-discordTip.getBoundingClientRect().left)));
-  art.width=width;art.height=height+7;
-  art.style.width=width+'px';art.style.height=(height+7)+'px';
-  const mask=new Uint8Array(width*(height+7));
-  for(let y=0;y<height;y++){
-    const inset=y===0||y===height-1?3:y<3||y>=height-3?1:0;
-    mask.fill(1,y*width+inset,(y+1)*width-inset);
-  }
-  for(let y=0;y<7;y++)for(let x=tip-6+y;x<=tip+6-y;x++)mask[(height+y)*width+x]=1;
-  const image=art.getContext('2d').createImageData(width,height+7);
-  for(let y=0;y<height+7;y++)for(let x=0;x<width;x++){
-    const i=y*width+x;if(!mask[i])continue;
-    const edge=x===0||x===width-1||y===0||y===height+6||!mask[i-1]||!mask[i+1]||!mask[i-width]||!mask[i+width];
-    const color=edge?[84,125,73]:y===1?[225,243,215]:[198,232,187];
-    image.data.set([...color,255],i*4);
-  }
-  art.getContext('2d').putImageData(image,0,0);
-}
-$('#discord-tip-close').addEventListener('click',()=>{
-  discordTip.hidden=true;
-  try { localStorage.setItem('kb2.discord-tip-dismissed','true'); } catch { /* Storage may be unavailable. */ }
-});
-new ResizeObserver(positionDiscordTip).observe($('.toolbar'));
 const changelog = new ChangelogWindow({
-  button: $('#release'), dialog: $('#changelog-dialog'), canvas: $('#changelog-canvas'),
+  trigger: $('#release'), dialog: $('#changelog-dialog'), canvas: $('#changelog-canvas'),
   closeButton: $('#changelog-close'), data: releaseData,
   onOpen: () => { releaseKeys(); if(ci&&ready)ci.pause(); },
   onClose: () => { if(ci&&ready){ci.resume();applySound();} screen.focus({preventScroll:true}); }
 });
-changelog.setMode(mode);
 const held = new Set();
 const codes = { Escape:256, Enter:257, Tab:258, Backspace:259, Insert:260, Delete:261,
   ArrowRight:262, ArrowLeft:263, ArrowDown:264, ArrowUp:265, PageUp:266, PageDown:267,
@@ -89,23 +51,13 @@ function fit(){
   const full=!!document.fullscreenElement || document.body.classList.contains('browser-fullscreen');
   const viewport=$('#viewport');
   const displayHeight=viewHeight*(aspect.value==='ega'?egaPixelHeight:1);
-  const ratio=full?Math.min(viewport.clientWidth/viewWidth,viewport.clientHeight/displayHeight):scale;
+  const ratio=full?Math.min(viewport.clientWidth/viewWidth,viewport.clientHeight/displayHeight):1;
   screen.style.width=`${viewWidth*ratio}px`;screen.style.height=`${displayHeight*ratio}px`;
   // The artwork's visible frame spans x=4..596 inside the 600-pixel view.
   player.style.setProperty('--toolbar-width',`${593*ratio}px`);
   player.style.setProperty('--toolbar-offset',`${0.5*ratio}px`);
 }
 new ResizeObserver(fit).observe($('#viewport'));
-for(let percent=100;percent<=150;percent+=10){
-  const option=document.createElement('option');
-  option.value=String(percent);option.textContent=percent+'%';option.selected=percent===Math.round(scale*100);
-  $('#scale').append(option);
-}
-$('#scale').addEventListener('change',()=>{
-  scale=Number($('#scale').value)/100;
-  saveSettings();
-  fit();screen.focus({preventScroll:true});
-});
 aspect.addEventListener('change',()=>{
   saveSettings();
   fit();screen.focus({preventScroll:true});
@@ -115,12 +67,15 @@ $('#fullscreen').addEventListener('click',fullscreen);
 document.addEventListener('fullscreenchange',()=>{releaseKeys();fit();$('#fullscreen').setAttribute('aria-label',document.fullscreenElement?'Выйти из полного экрана':'Развернуть');});
 // If the browser reserves F11, its native fullscreen still uses our fit layout.
 window.addEventListener('resize',()=>{
-  document.body.classList.toggle('browser-fullscreen',!document.fullscreenElement && window.innerHeight>=window.screen.height-2);
+  const heightWithoutZoom=window.innerHeight*window.outerWidth/window.innerWidth;
+  const coversScreen=window.outerHeight>=window.screen.height-2 && heightWithoutZoom>=window.screen.height-2;
+  document.body.classList.toggle('browser-fullscreen',!document.fullscreenElement && coversScreen);
   fit();
 });
 window.addEventListener('keydown',event=>{
   if(event.code==='F11'){event.preventDefault();if(!event.repeat)fullscreen();return;}
   if(event.code==='Escape'&&document.fullscreenElement){releaseKeys();return;}
+  if(event.ctrlKey && (event.key==='+' || event.key==='=' || event.key==='-' || event.key==='0'))return;
   if(document.activeElement!==screen)return;
   const code=codes[event.code];if(code===undefined || event.metaKey)return;
   event.preventDefault();send(code,true);
@@ -144,7 +99,6 @@ async function start(nextMode,discard=false){
   if(switching)return;switching=true;releaseKeys();ready=false;clearTimeout(bootTimer);
   screen.classList.remove('ready');$('#retry').hidden=true;$('#status').textContent='Загрузка…';
   $('#startup-screen').hidden=false;$('#loading').classList.remove('has-message');
-  $('#mode').disabled=true;
   try{
     if(printer){printer.dispose();printer=null;}
     if(saveFiles){await saveFiles.dispose();saveFiles=null;}
@@ -154,9 +108,15 @@ async function start(nextMode,discard=false){
     if(mode==='classic')url.searchParams.set('mode','classic');
     else url.searchParams.delete('mode');
     window.history.replaceState(window.history.state,'',url);
-    document.title=$('#mode').querySelector(`option[value="${mode}"]`).textContent;
+    for(const link of modeLinks){
+      if(link.dataset.mode===mode){
+        link.setAttribute('aria-current','page');
+        document.title=`KB2: ${link.textContent}`;
+      }else link.removeAttribute('aria-current');
+    }
     $('footer').replaceChildren(document.createTextNode('© 1992–1993 Сергей Прокофьев'));
     if(mode==='continued')$('footer').append(document.createElement('br'),document.createTextNode('© 2026 Павел Воронин'));
+    $('#github').href=mode==='classic'?'https://github.com/pavel-voronin/kb2':'https://github.com/pavel-voronin/kb2-continued';
     changelog.setMode(mode);
     const response=await fetch(`games/${mode}.jsdos?v=${releaseData.bundles[mode]}`);if(!response.ok)throw new Error(`Загрузка игры: HTTP ${response.status}`);
     emulators.pathPrefix='vendor/';
@@ -209,9 +169,14 @@ async function start(nextMode,discard=false){
     window.kb2LocalScenarios?.attach({ci:current,isCurrent:()=>ci===current,isReady:()=>ready,
       restart:()=>start('continued',true),releaseKeys});
   }catch(error){console.error(error);$('#status').textContent='Не удалось запустить игру: '+error.message;$('#retry').hidden=false;$('#loading').classList.add('has-message');}
-  finally{switching=false;$('#mode').value=mode;$('#mode').disabled=false;}
+  finally{switching=false;}
 }
-$('#mode').addEventListener('change',()=>{if($('#mode').value!==mode)start($('#mode').value);});
+for(const link of modeLinks){
+  link.addEventListener('click',event=>{
+    if(event.ctrlKey||event.metaKey||event.shiftKey||event.altKey)return;
+    event.preventDefault();
+    if(link.dataset.mode!==mode)start(link.dataset.mode);
+  });
+}
 $('#retry').addEventListener('click',()=>start(mode));
-$('#mode').value=mode;
 updateSoundButton();fit();player.classList.add('ui-ready');start(mode);

@@ -22,8 +22,8 @@ class ChangelogWindow {
     return days === 0 ? 'сегодня' : days === 1 ? 'вчера' : `${days}д назад`;
   }
 
-  constructor({ button, dialog, canvas, closeButton, data, onOpen, onClose }) {
-    this.button = button;
+  constructor({ trigger, dialog, canvas, closeButton, data, onOpen, onClose }) {
+    this.trigger = trigger;
     this.dialog = dialog;
     this.canvas = canvas;
     this.context = canvas.getContext('2d', { alpha: false });
@@ -41,7 +41,7 @@ class ChangelogWindow {
     this.lines = this.wrap(data.markdown);
     dialog.setAttribute('aria-label', 'История версий');
     dialog.querySelector('.changelog-text').textContent = data.markdown;
-    button.textContent = 'Обновление: ' + ChangelogWindow.ageLabel(data.date);
+    trigger.textContent = `версия ${data.version} (${ChangelogWindow.ageLabel(data.date)})`;
     this.viewedKey = 'kb2.changelog.lastViewedVersion';
     this.lastViewed = null;
     try { this.lastViewed = localStorage.getItem(this.viewedKey); }
@@ -52,7 +52,11 @@ class ChangelogWindow {
       this.lastViewed = event.newValue;
       this.updateUnread();
     });
-    button.addEventListener('click', () => this.open ? this.hide() : this.show());
+    trigger.addEventListener('click', event => {
+      event.preventDefault();
+      if (this.open) this.hide();
+      else this.show();
+    });
     closeButton.addEventListener('click', () => this.hide());
     dialog.addEventListener('wheel', event => {
       if (!this.open) return;
@@ -76,9 +80,9 @@ class ChangelogWindow {
 
   updateUnread() {
     const unread = ChangelogWindow.hasUnseenVersion(this.data.version, this.lastViewed);
-    this.button.classList.toggle('has-update', ChangelogWindow.previewHighlight || unread);
-    this.button.classList.toggle('preview-update', ChangelogWindow.previewHighlight);
-    this.button.setAttribute('aria-label', this.button.textContent + (unread ? ', есть непросмотренные изменения' : ''));
+    this.trigger.classList.toggle('has-update', ChangelogWindow.previewHighlight || unread);
+    this.trigger.classList.toggle('preview-update', ChangelogWindow.previewHighlight);
+    this.trigger.setAttribute('aria-label', this.trigger.textContent + (unread ? ', есть непросмотренные изменения' : ''));
   }
 
   markViewed() {
@@ -108,12 +112,12 @@ class ChangelogWindow {
   }
 
   setMode(mode) {
-    this.button.hidden = mode !== 'continued';
-    if (this.button.hidden) this.hide();
+    this.trigger.hidden = mode !== 'continued';
+    if (this.trigger.hidden) this.hide();
   }
 
   show() {
-    if (this.open || this.button.hidden) return;
+    if (this.open || this.trigger.hidden) return;
     this.open = true;
     this.offset = 0;
     this.onOpen();
