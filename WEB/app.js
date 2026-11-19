@@ -4,6 +4,9 @@ const player = $('#player'), canvas = $('#canvas'), screen = $('#screen');
 const context = canvas.getContext('2d', { alpha: false });
 // The EGA frame is 640×350; the original UI occupies its upper-left 600×330.
 const viewWidth = 600, viewHeight = 330;
+const aspect = $('#aspect');
+// On a 4:3 display, the full 640×350 EGA frame is equivalent to 640×480.
+const egaPixelHeight = 480 / 350;
 let frameWidth = 640, frameHeight = 350;
 let ci, saveFiles, printer, scale = 1, mode = 'continued', switching = false, ready = false;
 let frameImage, bootTimer, soundEnabled = true;
@@ -14,12 +17,13 @@ try {
     if(saved.mode === 'classic' || saved.mode === 'continued') mode = saved.mode;
     if(Number.isInteger(saved.percent) && saved.percent >= 100 && saved.percent <= 150 && saved.percent % 10 === 0) scale = saved.percent / 100;
     if(typeof saved.sound === 'boolean') soundEnabled = saved.sound;
+    if(saved.aspect === 'square' || saved.aspect === 'ega') aspect.value = saved.aspect;
   }
 } catch { /* Unavailable storage or invalid settings: use defaults. */ }
 const requestedMode = new URL(window.location.href).searchParams.get('mode');
 if(requestedMode === 'classic') mode = requestedMode;
 function saveSettings() {
-  try { localStorage.setItem(settingsKey, JSON.stringify({ mode, percent: Math.round(scale * 100), sound: soundEnabled })); }
+  try { localStorage.setItem(settingsKey, JSON.stringify({ mode, percent: Math.round(scale * 100), sound: soundEnabled, aspect: aspect.value })); }
   catch { /* The game remains usable when browser storage is disabled. */ }
 }
 const releaseData = JSON.parse($('#release-data').textContent);
@@ -84,8 +88,9 @@ function send(code, down){if(!ci || !ready)return;if(down){if(held.has(code))ret
 function fit(){
   const full=!!document.fullscreenElement || document.body.classList.contains('browser-fullscreen');
   const viewport=$('#viewport');
-  const ratio=full?Math.min(viewport.clientWidth/viewWidth,viewport.clientHeight/viewHeight):scale;
-  screen.style.width=`${viewWidth*ratio}px`;screen.style.height=`${viewHeight*ratio}px`;
+  const displayHeight=viewHeight*(aspect.value==='ega'?egaPixelHeight:1);
+  const ratio=full?Math.min(viewport.clientWidth/viewWidth,viewport.clientHeight/displayHeight):scale;
+  screen.style.width=`${viewWidth*ratio}px`;screen.style.height=`${displayHeight*ratio}px`;
   // The artwork's visible frame spans x=4..596 inside the 600-pixel view.
   player.style.setProperty('--toolbar-width',`${593*ratio}px`);
   player.style.setProperty('--toolbar-offset',`${0.5*ratio}px`);
@@ -98,6 +103,10 @@ for(let percent=100;percent<=150;percent+=10){
 }
 $('#scale').addEventListener('change',()=>{
   scale=Number($('#scale').value)/100;
+  saveSettings();
+  fit();screen.focus({preventScroll:true});
+});
+aspect.addEventListener('change',()=>{
   saveSettings();
   fit();screen.focus({preventScroll:true});
 });
