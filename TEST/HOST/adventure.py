@@ -6,6 +6,95 @@ from runtime import linear
 
 
 def cases(module):
+    if module == "KBVISIT":
+        for current in (1, 5):
+            for island, slot in ((1, 2), (5, 7)):
+
+                def lookup(v, current=current, island=island, slot=slot):
+                    g = v.fixture()
+                    g.Campaign.Island = current
+                    for land, index in ((0, 2), (4, 7)):
+                        g.Campaign.WanderingArmies[land][index].X = 30
+                        g.Campaign.WanderingArmies[land][index].Y = 30
+                    v.set_game(g)
+                    assert ready(v, v.invoke("FindWanderingArmy", island, 30, 30)) == slot
+                    assert v.game().Campaign.Island == current
+
+                yield Case(f"army-lookup.current-{current}.island-{island}", lookup)
+
+            def regrow(v, current=current):
+                g = v.fixture()
+                g.Campaign.Island = current
+                g.Runtime.RegrowthPosition.X = 30
+                g.Runtime.RegrowthPosition.Y = 30
+                g.Runtime.RegrowthCountdown = 1
+                g.World.GenerationX = 31
+                g.World.GenerationY = 30
+                for land, slot, x, y in ((0, 2, 30, 30), (4, 2, 25, 25), (4, 7, 30, 30)):
+                    army = g.Campaign.WanderingArmies[land][slot]
+                    army.X, army.Y = x, y
+                    g.Campaign.Map[land][x][y] = 5
+                v.set_game(g)
+                g.Campaign.WanderingArmies[4][7].X = 255
+                g.Campaign.Map[4][30][30] = 80
+                ready(v, v.invoke("RegrowMountain"))
+                after = v.game()
+                assert bytes(after.Campaign.WanderingArmies) == bytes(g.Campaign.WanderingArmies)
+                assert bytes(after.Campaign.Map) == bytes(g.Campaign.Map)
+                assert after.Campaign.Island == current
+                assert after.Runtime.RegrowthCountdown == 0
+                assert after.Runtime.RegrowthPosition.X == 100
+
+            yield Case(f"regrowth.army-on-island-5.hero-{current}", regrow)
+
+            def visit(v, current=current):
+                g = v.fixture()
+                g.Campaign.Island = current
+                slot = 2 if current == 1 else 7
+                army = g.Campaign.WanderingArmies[current - 1][slot]
+                army.X = army.Y = 30
+                army.Species[:] = [2, 3, 100, 100, 100]
+                army.Counts[:] = [37, 42, 0, 0, 0]
+                v.set_game(g)
+                reports = []
+
+                def report(vm, args):
+                    assert vm.read(linear(args[0]), 5) == bytes(army.Species)
+                    assert vm.read(linear(args[1]), 10) == bytes(army.Counts)
+                    reports.append(True)
+                    return 1
+
+                v.responses["ArmyReport"] = report
+                ready(v, v.invoke("WanderingArmyVisit"))
+                assert reports == [True]
+
+            yield Case(f"army-visit.current-island-{current}", visit)
+        return
+    if module == "KBHERO":
+        for island in (1, 5):
+
+            def tornado(v, island=island):
+                g = v.fixture()
+                g.Campaign.Island = island
+                g.Campaign.TornadoCharges = 1
+                g.Campaign.Map[island - 1][29][30] = 5
+                v.set_game(g)
+                queries = []
+
+                def lookup(vm, args):
+                    assert list(args) == [island, 29, 30]
+                    queries.append(list(args))
+                    return 7
+
+                v.responses["FindWanderingArmy"] = lookup
+                ready(v, v.invoke("CastTornado"))
+                assert queries == [[island, 29, 30]]
+                assert [a for _, n, a in v.calls if n == "RelocateArmy"] == [[island, 7]]
+                assert v.game().Campaign.Map[island - 1][29][30] == 0
+                assert v.game().Campaign.TornadoCharges == 0
+
+            yield Case(f"tornado.army-current-island-{island}", tornado)
+        return
     if module == "KBSCROLL":
         for event, scratch in ((1, 0), (1, 10), (8, None)):
 

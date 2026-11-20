@@ -154,7 +154,7 @@ def arguments(vm, entry, rich):
                 value = 7
             args.append(value)
     if vm.target == "KBVISIT" and entry["name"] == "FindWanderingArmy":
-        args = [30, 30]
+        args = [vm.game().Campaign.Island, 30, 30]
     return args, watch
 
 

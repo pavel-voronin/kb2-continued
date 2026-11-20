@@ -5,7 +5,7 @@ interface
 
 procedure TreasureVisit;
 procedure UndergroundVisit;
-function FindWanderingArmy(X, Y: byte): shortint;
+function FindWanderingArmy(Island, X, Y: byte): shortint;
 procedure WanderingArmyVisit;
 procedure BoardShip;
 procedure SandLanding;
@@ -101,7 +101,7 @@ begin
   end;
 end;
 
-function FindWanderingArmy(X, Y: byte): shortint;
+function FindWanderingArmy(Island, X, Y: byte): shortint;
 var
   I: shortint;
 
@@ -109,8 +109,8 @@ begin
   I := -1;
   repeat
     Inc(I)
-  until (Game.Campaign.WanderingArmies[Game.Campaign.Island, I].X = X) and
-    (Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Y = Y);
+  until (Game.Campaign.WanderingArmies[Island, I].X = X) and
+    (Game.Campaign.WanderingArmies[Island, I].Y = Y);
   FindWanderingArmy := I;
 end;
 
@@ -133,7 +133,7 @@ begin
       Inc(Total);
     end;
 
-  I := FindWanderingArmy(Game.World.GenerationX, Game.World.GenerationY);
+  I := FindWanderingArmy(Game.Campaign.Island, Game.World.GenerationX, Game.World.GenerationY);
   if ArmyReport(TReportSpecies(Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Species),
     TReportCounts(Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Counts), ' ') then goto Finished;
   case Reserve of
@@ -259,7 +259,7 @@ begin
 
       if Game.Campaign.Map[5, Game.Runtime.RegrowthPosition.X, Game.Runtime.RegrowthPosition.Y] = 5 then
       begin
-        Slot := FindWanderingArmy(Game.Runtime.RegrowthPosition.X, Game.Runtime.RegrowthPosition.Y);
+        Slot := FindWanderingArmy(5, Game.Runtime.RegrowthPosition.X, Game.Runtime.RegrowthPosition.Y);
         Game.Campaign.WanderingArmies[5, Slot].X := 255;
       end;
 

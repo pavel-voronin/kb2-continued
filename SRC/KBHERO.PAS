@@ -223,7 +223,7 @@ begin
       for Y := Y0 to Y0 + 4 do
         case Game.Campaign.Map[Game.Campaign.Island, X, Y] of
           5: begin
-            Slot := FindWanderingArmy(X, Y);
+            Slot := FindWanderingArmy(Game.Campaign.Island, X, Y);
             Game.Campaign.Map[Game.Campaign.Island, X, Y] := 0;
             RelocateArmy(Game.Campaign.Island, Slot);
           end;

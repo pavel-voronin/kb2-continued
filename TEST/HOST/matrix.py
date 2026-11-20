@@ -561,7 +561,7 @@ def cases(module):
             module,
             "FindWanderingArmy",
             "second-entry",
-            values=[31, 30],
+            values=[1, 31, 30],
             changes={
                 "Campaign.WanderingArmies.0.1.X": 31,
                 "Campaign.WanderingArmies.0.1.Y": 30,
