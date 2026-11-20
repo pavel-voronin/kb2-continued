@@ -7,22 +7,7 @@ from runtime import INDEX, Battle, linear
 
 
 def cases(module):
-    if module == "KBCAL":
-
-        def wrong_island(v):
-            g = v.fixture()
-            c = g.Campaign.Castles[1][0]
-            c.Owned = True
-            g.Campaign.Map[1][c.X][c.Y] = 18
-            g.Campaign.Map[0][c.X][c.Y] = 0
-            v.set_game(g)
-            ready(v, v.invoke("EndWeek"))
-            after = v.game().Campaign
-            assert not after.Castles[1][0].Owned
-            assert after.Map[0][c.X][c.Y] == 2 and after.Map[1][c.X][c.Y] == 18
-
-        yield Case("B002.empty-castle-changes-current-island-map", wrong_island)
-    elif module == "KBEVENTS":
+    if module == "KBEVENTS":
 
         def spirit_only_workshop(v):
             g = preset(v, True)

@@ -8,6 +8,32 @@ from runtime import Creature
 def cases(module):
     if module != "KBCAL":
         return
+    for current_island, castle_island in ((2, 1), (1, 5), (2, 2)):
+        for garrison in (False, True):
+
+            def castle_map(v, current_island=current_island,
+                           castle_island=castle_island, garrison=garrison):
+                g = v.fixture()
+                g.Campaign.Island = current_island
+                c = g.Campaign.Castles[castle_island - 1][0]
+                c.Owned = True
+                if garrison:
+                    c.Species[0] = 0
+                    c.Counts[0] = 1
+                g.Campaign.Map[castle_island - 1][c.X][c.Y] = 18
+                if current_island != castle_island:
+                    g.Campaign.Map[current_island - 1][c.X][c.Y] = 48
+                v.set_game(g)
+                if not garrison:
+                    g.Campaign.Map[castle_island - 1][c.X][c.Y] = 2
+                ready(v, v.invoke("EndWeek"))
+                after = v.game().Campaign
+                assert after.Island == current_island
+                assert after.Castles[castle_island - 1][0].Owned == garrison
+                assert bytes(after.Map) == bytes(g.Campaign.Map)
+
+            yield Case(f"castle-map.hero-{current_island}.castle-{castle_island}.garrison-{garrison}",
+                       castle_map)
     for gold, count in ((250, 100), (0, 0)):
 
         def payroll_equality(v, gold=gold, count=count):

@@ -78,7 +78,7 @@ begin
         for J := 0 to 4 do if Game.Campaign.Castles[Island, Slot].Species[J] < 100 then Inc(Total);
         if Total = 0 then
         begin
-          Game.Campaign.Map[Game.Campaign.Island, Game.Campaign.Castles[Island, Slot].X,
+          Game.Campaign.Map[Island, Game.Campaign.Castles[Island, Slot].X,
     Game.Campaign.Castles[Island, Slot].Y] := 2;
           Game.Campaign.Castles[Island, Slot].Owned := false;
           Dec(Game.Campaign.Income, IslandFactors[Island] * 20);
