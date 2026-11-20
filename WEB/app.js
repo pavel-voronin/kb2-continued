@@ -57,6 +57,13 @@ function fit(){
   player.style.setProperty('--toolbar-width',`${593*ratio}px`);
   player.style.setProperty('--toolbar-offset',`${0.5*ratio}px`);
 }
+const fullscreenDisplay=window.matchMedia('(display-mode: fullscreen)');
+function fitWindow(){
+  const heightWithoutZoom=window.innerHeight*window.outerWidth/window.innerWidth;
+  const coversScreen=window.outerHeight>=window.screen.height-2 && heightWithoutZoom>=window.screen.height-2;
+  document.body.classList.toggle('browser-fullscreen',!document.fullscreenElement && (fullscreenDisplay.matches || coversScreen));
+  fit();
+}
 new ResizeObserver(fit).observe($('#viewport'));
 aspect.addEventListener('change',()=>{
   saveSettings();
@@ -64,24 +71,37 @@ aspect.addEventListener('change',()=>{
 });
 async function fullscreen(){try{releaseKeys();if(document.fullscreenElement)await document.exitFullscreen();else await player.requestFullscreen();screen.focus({preventScroll:true});}catch(error){$('#status').textContent='Полный экран недоступен: '+error.message;console.error(error);}}
 $('#fullscreen').addEventListener('click',fullscreen);
-document.addEventListener('fullscreenchange',()=>{releaseKeys();fit();$('#fullscreen').setAttribute('aria-label',document.fullscreenElement?'Выйти из полного экрана':'Развернуть');});
-// If the browser reserves F11, its native fullscreen still uses our fit layout.
-window.addEventListener('resize',()=>{
-  const heightWithoutZoom=window.innerHeight*window.outerWidth/window.innerWidth;
-  const coversScreen=window.outerHeight>=window.screen.height-2 && heightWithoutZoom>=window.screen.height-2;
-  document.body.classList.toggle('browser-fullscreen',!document.fullscreenElement && coversScreen);
-  fit();
+let escapeLocked=false, fullscreenRevision=0;
+document.addEventListener('fullscreenchange',async()=>{
+  const revision=++fullscreenRevision;
+  const playerFullscreen=document.fullscreenElement===player;
+  escapeLocked=false;
+  releaseKeys();
+  fitWindow();
+  $('#fullscreen').setAttribute('aria-label',playerFullscreen?'Выйти из полного экрана':'Развернуть');
+  const keyboard=navigator.keyboard;
+  if(!keyboard?.lock)return;
+  if(!playerFullscreen){keyboard.unlock();return;}
+  try {
+    await keyboard.lock(['Escape']);
+    if(revision===fullscreenRevision && document.fullscreenElement===player)escapeLocked=true;
+  } catch {
+    // Keep the browser's default Escape behavior if keyboard lock is denied.
+  }
 });
+window.addEventListener('resize',fitWindow);
+fullscreenDisplay.addEventListener('change',fitWindow);
 window.addEventListener('keydown',event=>{
-  if(event.code==='F11'){event.preventDefault();if(!event.repeat)fullscreen();return;}
-  if(event.code==='Escape'&&document.fullscreenElement){releaseKeys();return;}
+  if(event.code==='F11')return;
+  if(event.code==='Escape'&&document.fullscreenElement&&!escapeLocked){releaseKeys();return;}
   if(event.ctrlKey && (event.key==='+' || event.key==='=' || event.key==='-' || event.key==='0'))return;
   if(document.activeElement!==screen)return;
   const code=codes[event.code];if(code===undefined || event.metaKey)return;
   event.preventDefault();send(code,true);
 });
 window.addEventListener('keyup',event=>{const code=codes[event.code];if(held.has(code)){event.preventDefault();send(code,false);}});
-screen.addEventListener('blur',releaseKeys);window.addEventListener('blur',releaseKeys);
+screen.addEventListener('blur',releaseKeys);
+window.addEventListener('blur',releaseKeys);
 document.addEventListener('visibilitychange',()=>{if(document.hidden)releaseKeys();});
 screen.addEventListener('pointerdown',()=>screen.focus({preventScroll:true}));
 function updateSoundButton(){
@@ -115,7 +135,7 @@ async function start(nextMode,discard=false){
       }else link.removeAttribute('aria-current');
     }
     $('footer').replaceChildren(document.createTextNode('© 1992–1993 Сергей Прокофьев'));
-    if(mode==='continued')$('footer').append(document.createElement('br'),document.createTextNode('© 2026 Павел Воронин'));
+    if(mode==='continued')$('footer').prepend(document.createTextNode('© 2026 Павел Воронин'),document.createElement('br'));
     $('#github').href=mode==='classic'?'https://github.com/pavel-voronin/kb2':'https://github.com/pavel-voronin/kb2-continued';
     changelog.setMode(mode);
     const response=await fetch(`games/${mode}.jsdos?v=${releaseData.bundles[mode]}`);if(!response.ok)throw new Error(`Загрузка игры: HTTP ${response.status}`);
@@ -179,4 +199,4 @@ for(const link of modeLinks){
   });
 }
 $('#retry').addEventListener('click',()=>start(mode));
-updateSoundButton();fit();player.classList.add('ui-ready');start(mode);
+updateSoundButton();fitWindow();player.classList.add('ui-ready');start(mode);
