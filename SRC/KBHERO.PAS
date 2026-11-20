@@ -201,7 +201,8 @@ end;
 
 procedure CastTornado;
 var
-  X, Y, Slot, Mask, X0, Y0: byte;
+  X, Y, Mask, X0, Y0: byte;
+  Slot: shortint;
 
 begin
   if Game.Campaign.TornadoCharges > 0 then
@@ -225,7 +226,7 @@ begin
           5: begin
             Slot := FindWanderingArmy(Game.Campaign.Island, X, Y);
             Game.Campaign.Map[Game.Campaign.Island, X, Y] := 0;
-            RelocateArmy(Game.Campaign.Island, Slot);
+            if Slot >= 0 then RelocateArmy(Game.Campaign.Island, Slot);
           end;
 
           28: begin

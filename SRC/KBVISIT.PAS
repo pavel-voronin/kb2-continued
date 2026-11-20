@@ -106,12 +106,14 @@ var
   I: shortint;
 
 begin
-  I := -1;
-  repeat
-    Inc(I)
-  until (Game.Campaign.WanderingArmies[Island, I].X = X) and
-    (Game.Campaign.WanderingArmies[Island, I].Y = Y);
-  FindWanderingArmy := I;
+  FindWanderingArmy := -1;
+  for I := 0 to 20 do
+    if (Game.Campaign.WanderingArmies[Island, I].X = X) and
+      (Game.Campaign.WanderingArmies[Island, I].Y = Y) then
+    begin
+      FindWanderingArmy := I;
+      Exit;
+    end;
 end;
 
 procedure WanderingArmyVisit;
@@ -134,6 +136,11 @@ begin
     end;
 
   I := FindWanderingArmy(Game.Campaign.Island, Game.World.GenerationX, Game.World.GenerationY);
+  if I < 0 then
+  begin
+    Game.Campaign.Map[Game.Campaign.Island, Game.World.GenerationX, Game.World.GenerationY] := 0;
+    goto Finished;
+  end;
   if ArmyReport(TReportSpecies(Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Species),
     TReportCounts(Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Counts), ' ') then goto Finished;
   case Reserve of
@@ -246,7 +253,7 @@ end;
 
 procedure RegrowMountain;
 var
-  Slot: byte;
+  Slot: shortint;
 
 begin
   Dec(Game.Runtime.RegrowthCountdown);
@@ -260,7 +267,7 @@ begin
       if Game.Campaign.Map[5, Game.Runtime.RegrowthPosition.X, Game.Runtime.RegrowthPosition.Y] = 5 then
       begin
         Slot := FindWanderingArmy(5, Game.Runtime.RegrowthPosition.X, Game.Runtime.RegrowthPosition.Y);
-        Game.Campaign.WanderingArmies[5, Slot].X := 255;
+        if Slot >= 0 then Game.Campaign.WanderingArmies[5, Slot].X := 255;
       end;
 
       Game.Runtime.ShoreTile := 80;

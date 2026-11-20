@@ -7,6 +7,52 @@ from runtime import linear
 
 def cases(module):
     if module == "KBVISIT":
+        for island in (1, 5):
+            for slot in (0, 20, None):
+
+                def boundary(v, island=island, slot=slot):
+                    g = v.fixture()
+                    g.Campaign.Island = 5 if island == 1 else 1
+                    army = g.Campaign.WanderingArmies[island - 1]
+                    army[0].X, army[0].Y = 30, 31
+                    other = g.Campaign.WanderingArmies[1 if island == 1 else 0][0]
+                    other.X = other.Y = 30
+                    if slot is not None:
+                        army[slot].X = army[slot].Y = 30
+                    v.set_game(g)
+                    assert ready(v, v.invoke("FindWanderingArmy", island, 30, 30)) == (
+                        -1 if slot is None else slot)
+                    assert bytes(v.game().Campaign) == bytes(g.Campaign)
+
+                yield Case(f"army-lookup.boundary.island-{island}.slot-{slot}", boundary)
+
+            for slot in (20, None):
+
+                def regrow_boundary(v, current=island, slot=slot):
+                    g = v.fixture()
+                    g.Campaign.Island = current
+                    g.Campaign.Hero.X = g.World.GenerationX = 31
+                    g.Campaign.Hero.Y = g.World.GenerationY = 30
+                    g.Runtime.RegrowthPosition.X = g.Runtime.RegrowthPosition.Y = 30
+                    g.Runtime.RegrowthCountdown = 1
+                    g.Campaign.WanderingArmies[4][2].X = 25
+                    g.Campaign.WanderingArmies[4][2].Y = 25
+                    g.Campaign.Map[4][25][25] = 5
+                    g.Campaign.Map[4][30][30] = 5
+                    if slot is not None:
+                        g.Campaign.WanderingArmies[4][slot].X = 30
+                        g.Campaign.WanderingArmies[4][slot].Y = 30
+                    v.set_game(g)
+                    if slot is not None:
+                        g.Campaign.WanderingArmies[4][slot].X = 255
+                    g.Campaign.Map[4][30][30] = 80
+                    ready(v, v.invoke("RegrowMountain"))
+                    after = v.game()
+                    assert bytes(after.Campaign) == bytes(g.Campaign)
+                    assert after.Runtime.RegrowthCountdown == 0
+                    assert after.Runtime.RegrowthPosition.X == 100
+
+                yield Case(f"regrowth.lookup-boundary.hero-{island}.slot-{slot}", regrow_boundary)
         for current in (1, 5):
             for island, slot in ((1, 2), (5, 7)):
 
@@ -47,53 +93,68 @@ def cases(module):
 
             yield Case(f"regrowth.army-on-island-5.hero-{current}", regrow)
 
-            def visit(v, current=current):
-                g = v.fixture()
-                g.Campaign.Island = current
-                slot = 2 if current == 1 else 7
-                army = g.Campaign.WanderingArmies[current - 1][slot]
-                army.X = army.Y = 30
-                army.Species[:] = [2, 3, 100, 100, 100]
-                army.Counts[:] = [37, 42, 0, 0, 0]
-                v.set_game(g)
-                reports = []
+            for slot in (0, 20, None):
 
-                def report(vm, args):
-                    assert vm.read(linear(args[0]), 5) == bytes(army.Species)
-                    assert vm.read(linear(args[1]), 10) == bytes(army.Counts)
-                    reports.append(True)
-                    return 1
+                def visit(v, current=current, slot=slot):
+                    g = v.fixture()
+                    g.Campaign.Island = current
+                    g.Campaign.Map[current - 1][30][30] = 5
+                    other = g.Campaign.WanderingArmies[current - 1][1]
+                    other.X, other.Y = 31, 30
+                    other.Species[0], other.Counts[0] = 0, 10
+                    g.Campaign.Map[current - 1][31][30] = 5
+                    if slot is not None:
+                        army = g.Campaign.WanderingArmies[current - 1][slot]
+                        army.X = army.Y = 30
+                        army.Species[:] = [2, 3, 100, 100, 100]
+                        army.Counts[:] = [37, 42, 0, 0, 0]
+                    v.set_game(g)
+                    reports = []
 
-                v.responses["ArmyReport"] = report
-                ready(v, v.invoke("WanderingArmyVisit"))
-                assert reports == [True]
+                    def report(vm, args):
+                        assert slot is not None, "No report for missing army"
+                        assert vm.read(linear(args[0]), 5) == bytes(army.Species)
+                        assert vm.read(linear(args[1]), 10) == bytes(army.Counts)
+                        reports.append(True)
+                        return 1
 
-            yield Case(f"army-visit.current-island-{current}", visit)
+                    v.responses["ArmyReport"] = report
+                    ready(v, v.invoke("WanderingArmyVisit"))
+                    assert reports == ([] if slot is None else [True])
+                    assert not any(n == "Battle" for _, n, _ in v.calls)
+                    if slot is None:
+                        g.Campaign.Map[current - 1][30][30] = 0
+                    assert bytes(v.game().Campaign) == bytes(g.Campaign)
+
+                yield Case(f"army-visit.current-island-{current}.slot-{slot}", visit)
         return
     if module == "KBHERO":
         for island in (1, 5):
+            for slot in (-1, 0, 20):
 
-            def tornado(v, island=island):
-                g = v.fixture()
-                g.Campaign.Island = island
-                g.Campaign.TornadoCharges = 1
-                g.Campaign.Map[island - 1][29][30] = 5
-                v.set_game(g)
-                queries = []
+                def tornado(v, island=island, slot=slot):
+                    g = v.fixture()
+                    g.Campaign.Island = island
+                    g.Campaign.TornadoCharges = 1
+                    g.Campaign.Map[island - 1][29][30] = 5
+                    v.set_game(g)
+                    queries = []
 
-                def lookup(vm, args):
-                    assert list(args) == [island, 29, 30]
-                    queries.append(list(args))
-                    return 7
+                    def lookup(vm, args):
+                        assert list(args) == [island, 29, 30]
+                        queries.append(list(args))
+                        return slot
 
-                v.responses["FindWanderingArmy"] = lookup
-                ready(v, v.invoke("CastTornado"))
-                assert queries == [[island, 29, 30]]
-                assert [a for _, n, a in v.calls if n == "RelocateArmy"] == [[island, 7]]
-                assert v.game().Campaign.Map[island - 1][29][30] == 0
-                assert v.game().Campaign.TornadoCharges == 0
+                    v.responses["FindWanderingArmy"] = lookup
+                    ready(v, v.invoke("CastTornado"))
+                    assert queries == [[island, 29, 30]]
+                    assert [a for _, n, a in v.calls if n == "RelocateArmy"] == (
+                        [] if slot < 0 else [[island, slot]])
+                    g.Campaign.Map[island - 1][29][30] = 0
+                    g.Campaign.TornadoCharges = 0
+                    assert bytes(v.game().Campaign) == bytes(g.Campaign)
 
-            yield Case(f"tornado.army-current-island-{island}", tornado)
+                yield Case(f"tornado.army-current-island-{island}.slot-{slot}", tornado)
         return
     if module == "KBSCROLL":
         for event, scratch in ((1, 0), (1, 10), (8, None)):
