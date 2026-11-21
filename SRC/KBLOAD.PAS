@@ -17,7 +17,6 @@ var
   I, J: byte;
   UnknownLocal: word;
   Count: byte;
-  Positions: array[1..2] of TPosition;
 
 begin
   PlaceRoamingObject(Game.Campaign.Island, 12, Game.World.WizardPosition);
@@ -45,8 +44,6 @@ begin
       if Game.Campaign.Map[Game.Campaign.Island, I, J] = 9 then
       begin
         Inc(Count);
-        Positions[Count].X := I;
-        Positions[Count].Y := J;
         Game.Campaign.Map[Game.Campaign.Island, I, J] := 0;
       end;
 
