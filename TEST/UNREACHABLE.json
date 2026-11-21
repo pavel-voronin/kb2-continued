@@ -17,7 +17,7 @@
     "KBMAGIC": "d6dd982809447b99c2adef1815c4fca0a3db0a2338fc8bb3e70b95c3c762565e",
     "KBPLAYER": "47a9a6f8242d1f60d9eaaa4503315aba11e1ddc9fdf098bec97e0dbe2e463414",
     "KBSCROLL": "c55d95b94c8ae056802d0d912c8b40513bd689912a854471e9c7f86ad8eb1aa6",
-    "KBSTART": "4162159c5c3fb49a522b907f1d9e4001800128782b419b496f4b1e7fcd1b2871",
+    "KBSTART": "a955c4a4bfddd8455a98615b6460ebc504d5db9dbab4e757d7ac16dfe78d67f7",
     "KBSTATE": "60954698c42393ff8718c1e8d2a5a43ff28269587173dad91facee43e7317806",
     "KBTABLES": "b407142fc1a6b2028fe8ca07812e8098763be1fb33a33e6cd4d4e72bd2c13382",
     "KBTOWN": "172938e5bdb857872ccc917cf43810f6d8820196bc7dd4a9e20c91a6582c5ecd",
@@ -850,7 +850,7 @@
       "points": [
         {
           "module": "KBSTART",
-          "local_id": 192,
+          "local_id": 198,
           "line": 230,
           "shape": {
             "routine": "startupmenu",

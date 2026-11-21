@@ -953,7 +953,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ],
       [
         "KBUI",
@@ -4832,7 +4834,7 @@
       ],
       [
         "KBSAVEUI",
-        "SaveNamedGame",
+        "NamedSaveFailed",
         []
       ]
     ],

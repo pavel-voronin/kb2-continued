@@ -3,19 +3,22 @@ unit KBSaveUI;
 
 interface
 
-procedure SaveNamedGame;
+function NamedSaveFailed: boolean;
 
 implementation
 
 uses KBSave, KBUI, KBGfx, Crt, KBState;
 
-procedure SaveNamedGame;
+function NamedSaveFailed: boolean;
 var
   Length: byte;
+  PreviousFileName: string[12];
 
 begin
   DrawDialog(8, 230, 488, 320);
   DrawText(false, 14, 256, 'Введите имя файла (8 символов):');
+  NamedSaveFailed := false;
+  PreviousFileName := Game.Runtime.DataFileName;
   Game.Runtime.DataFileName := '';
   Length := 0;
 
@@ -50,7 +53,12 @@ begin
   begin
     Game.Runtime.DataFileName := Game.Runtime.DataFileName + '.KB2';
     PrepareSave;
-    WriteCampaign;
+    if not WriteCampaign(true) then
+    begin
+      Game.Runtime.DataFileName := PreviousFileName;
+      ShowNotice(25);
+      NamedSaveFailed := true;
+    end;
   end;
 end;
 end.

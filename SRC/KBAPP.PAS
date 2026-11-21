@@ -98,8 +98,8 @@ begin
     31: if not Game.Runtime.ShipAbandonBlocked then
     begin
       PrepareSave;
-      WriteCampaign;
-      ShowNotice(23)
+      if WriteCampaign(true) then ShowNotice(23)
+      else ShowNotice(25)
     end;
 
     32: DismissArmy;
@@ -222,7 +222,8 @@ begin
   begin
     ShowNotice(15);
 
-    if Game.Runtime.LastScan = 21 then SaveNamedGame;
+    if Game.Runtime.LastScan = 21 then
+      if NamedSaveFailed then Exit;
   end;
 
   ConfirmExit := true;

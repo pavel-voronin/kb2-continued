@@ -1,5 +1,5 @@
 {
-  "SaveNamedGame.empty": {
+  "NamedSaveFailed.empty": {
     "result": 0,
     "phase": "ready",
     "state_delta": {
@@ -53,7 +53,7 @@
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.army": {
+  "NamedSaveFailed.army": {
     "result": 0,
     "phase": "ready",
     "state_delta": {
@@ -107,7 +107,7 @@
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(13,)": {
+  "NamedSaveFailed.matrix.edit-(13,)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -161,7 +161,7 @@
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(27,)": {
+  "NamedSaveFailed.matrix.edit-(27,)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -215,7 +215,7 @@
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(8, 13)": {
+  "NamedSaveFailed.matrix.edit-(8, 13)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -269,7 +269,7 @@
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(65, 8, 13)": {
+  "NamedSaveFailed.matrix.edit-(65, 8, 13)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -343,7 +343,7 @@
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(65, 66, 8, 67, 13)": {
+  "NamedSaveFailed.matrix.edit-(65, 66, 8, 67, 13)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -441,13 +441,15 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(65, 66, 67, 68, 69, 70, 71, 72)": {
+  "NamedSaveFailed.matrix.edit-(65, 66, 67, 68, 69, 70, 71, 72)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -585,13 +587,15 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(0, 65, 13)": {
+  "NamedSaveFailed.matrix.edit-(0, 65, 13)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -659,13 +663,15 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "creature_delta": {},
     "random_seed": 12345
   },
-  "SaveNamedGame.matrix.edit-(47, 48, 13)": {
+  "NamedSaveFailed.matrix.edit-(47, 48, 13)": {
     "result": 0,
     "phase": "ready",
     "exit_code": null,
@@ -733,7 +739,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "creature_delta": {},

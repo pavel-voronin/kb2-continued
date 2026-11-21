@@ -481,7 +481,7 @@ def cases(module):
             (0, 65, 13),
             (47, 48, 13),
         ):
-            yield sample(module, "SaveNamedGame", "edit-" + str(keys), keys=keys)
+            yield sample(module, "NamedSaveFailed", "edit-" + str(keys), keys=keys)
     if module == "KBVISIT":
         for reserve in range(1, 6):
             for power in (0, 40):

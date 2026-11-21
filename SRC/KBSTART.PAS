@@ -10,7 +10,7 @@ procedure StartupMenu;
 
 implementation
 
-uses KBInit, KBLpt, KBGen, KBRandom, Dos, KBState, KBTables, KBFiles, KBGfx, KBInput, KBSave;
+uses KBInit, KBLpt, KBGen, KBRandom, Dos, KBState, KBTables, KBFiles, KBGfx, KBInput, KBSave, KBUI;
 
 procedure InitializeRuntime;
 begin
@@ -116,7 +116,7 @@ begin
   GenerateWorld(MenuChoice);
   PlaceInitialHero(MenuChoice);
   PrepareSave;
-  WriteCampaign;
+  if not WriteCampaign(true) then ShowNotice(25);
 end;
 
 procedure EnumerateFiles;
@@ -204,7 +204,7 @@ begin
   Game.Campaign.Flags.Heading := true;
   Game.Campaign.ShipHeading := 1;
   Game.Runtime.DataFileName := 'KB2.DAT';
-  WriteCampaign;
+  if not WriteCampaign(false) then ShowNotice(25);
 Finished:
 end;
 

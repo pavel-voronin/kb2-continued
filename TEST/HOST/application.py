@@ -40,7 +40,68 @@ def cases(module):
         yield Case(
             "dismiss.unpopulated-row-with-defined-stack-background", unpopulated_row
         )
+    elif module == "KBSAVEUI":
+
+        def named_write_denied(v):
+            g = v.fixture()
+            original = bytes(g.Runtime.DataFileName)
+            v.set_game(g)
+            v.responses["WriteCampaign"] = 0
+            assert ready(v, v.invoke("NamedSaveFailed", keys=[65, 13])) == 1
+            assert bytes(v.game().Runtime.DataFileName) == original
+            assert [a for _, n, a in v.calls if n == "ShowNotice"] == [[25]]
+
+        yield Case("named-save.failure-restores-filename", named_write_denied)
+    elif module == "KBSTART":
+
+        for named in (False, True):
+
+            def initial_write_denied(v, named=named):
+                v.set_game(v.fixture())
+                if named:
+                    v.disk["ONE.KB2"] = b""
+                v.scans.extend([72, 28, 28] if named else [28, 28])
+                v.responses["WriteCampaign"] = 0
+                ready(v, v.invoke("StartupMenu"))
+                assert any(n == ("ReadCampaign" if named else "GenerateWorld") for _, n, _ in v.calls)
+                assert [a for _, n, a in v.calls if n == "ShowNotice"] == [[25]]
+
+            yield Case(f"startup.initial-save-failure.named-{named}", initial_write_denied)
+    elif module == "KBUI":
+
+        def save_notice(v):
+            v.set_game(v.fixture())
+            ready(v, v.invoke("ShowNotice", 25))
+            assert [a[3] for _, n, a in v.calls if n == "DrawText"] == ["Не удалось сохранить игру."]
+
+        yield Case("notice.save-failure", save_notice)
     elif module == "KBAPP":
+
+        def quick_write_denied(v):
+            g = v.fixture()
+            g.Runtime.LastScan = 31
+            v.set_game(g)
+            v.responses["WriteCampaign"] = 0
+            ready(v, v.invoke("DispatchCommand"))
+            assert [a for _, n, a in v.calls if n == "ShowNotice"] == [[25]]
+
+        yield Case("quick-save.failure-notice", quick_write_denied)
+
+        def failed_save_blocks_exit(v):
+            v.set_game(v.fixture())
+            answers = iter((21, 21))
+
+            def notice(vm, args):
+                g = vm.game()
+                g.Runtime.LastScan = next(answers)
+                vm.set_game(g)
+                return 0
+
+            v.responses.update(ShowNotice=notice, NamedSaveFailed=1)
+            assert ready(v, v.invoke("ConfirmExit")) == 0
+            assert sum(n == "NamedSaveFailed" for _, n, _ in v.calls) == 1
+
+        yield Case("exit.failed-named-save-stays-in-game", failed_save_blocks_exit)
 
         def loop(v):
             preset(v)

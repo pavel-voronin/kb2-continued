@@ -938,7 +938,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "random_seed": 12345
@@ -1181,7 +1183,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "random_seed": 12345
@@ -1449,7 +1453,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "random_seed": 12345
@@ -1742,7 +1748,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "random_seed": 12345
@@ -2010,7 +2018,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "random_seed": 12345
@@ -2526,7 +2536,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          0
+        ]
       ]
     ],
     "random_seed": 12345
@@ -2810,7 +2822,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          0
+        ]
       ]
     ],
     "random_seed": 12345
@@ -3071,7 +3085,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "creature_delta": {},
@@ -3339,7 +3355,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          1
+        ]
       ]
     ],
     "creature_delta": {},
@@ -3623,7 +3641,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          0
+        ]
       ]
     ],
     "creature_delta": {},
@@ -3952,7 +3972,9 @@
       [
         "KBSAVE",
         "WriteCampaign",
-        []
+        [
+          0
+        ]
       ]
     ],
     "creature_delta": {},

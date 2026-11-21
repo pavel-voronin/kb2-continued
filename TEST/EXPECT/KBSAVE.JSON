@@ -38,7 +38,7 @@
     "random_seed": 12345
   },
   "WriteCampaign.empty": {
-    "result": 0,
+    "result": 1,
     "phase": "ready",
     "state_delta": {},
     "buffers": {},
@@ -68,7 +68,7 @@
     "random_seed": 12345
   },
   "WriteCampaign.army": {
-    "result": 0,
+    "result": 1,
     "phase": "ready",
     "state_delta": {},
     "buffers": {},

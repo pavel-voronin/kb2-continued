@@ -14,7 +14,7 @@ const
   LegacySaveBytes = LegacyPackedBytes + LegacyDataBytes;
 
 procedure PrepareSave;
-procedure WriteCampaign;
+function WriteCampaign(StripRoamers: boolean): boolean;
 procedure ReadCampaign;
 
 implementation
@@ -26,16 +26,30 @@ var
   I: byte;
 
 begin
-  Game.Campaign.Map[Game.Campaign.Island, Game.World.WizardPosition.X, Game.World.WizardPosition.Y] := 0;
-  Game.Campaign.Map[Game.Campaign.Island, Game.World.MagePosition.X, Game.World.MagePosition.Y] := 0;
   Game.Campaign.ArchivedIsland := Game.Campaign.Island;
   Game.Campaign.ArchiveMarker := 0;
 
   for I := 25 to 29 do Game.Campaign.Mutants[I] := CreatureDefinitions[I];
 end;
 
-procedure WriteCampaign;
+function WriteCampaign(StripRoamers: boolean): boolean;
+var
+  Written: boolean;
+  WizardCell, MageCell: word;
+
+function SavedCell(X, Y: byte): word;
 begin
+  SavedCell := LegacyPackedBytes + Ofs(Game.Campaign.Map[Game.Campaign.Island, X, Y]) -
+    Ofs(Game.Campaign.VisitedCastles);
+end;
+
+begin
+  Written := false;
+  if StripRoamers then
+  begin
+    WizardCell := SavedCell(Game.World.WizardPosition.X, Game.World.WizardPosition.Y);
+    MageCell := SavedCell(Game.World.MagePosition.X, Game.World.MagePosition.Y);
+  end;
   asm
     lea si, Game.Campaign.Flags.Discovery
     lea di, Game.Runtime.PictureBanks
@@ -70,6 +84,19 @@ begin
     lea si, Game.Campaign.VisitedCastles
     mov cx, LegacyDataWords
     rep movsw
+
+    cmp StripRoamers, 0
+    je @CreateFile
+    mov bx, di
+    sub bx, LegacySaveBytes
+    add bx, WizardCell
+    mov byte ptr es:[bx], 0
+    mov bx, di
+    sub bx, LegacySaveBytes
+    add bx, MageCell
+    mov byte ptr es:[bx], 0
+
+@CreateFile:
     lea dx, Game.Runtime.DataFileName
     mov bx, dx
     inc dx
@@ -82,20 +109,35 @@ begin
     xor cx, cx
     mov ah, 3ch
     int 21h
-    mov bx, ax
     mov cx, di
     pop di
+    jc @Finished
+    mov bx, ax
     sub cx, di
     mov dx, di
     push ds
     mov ax, es
     mov ds, ax
     mov ah, 40h
+    push cx
     int 21h
+    pop cx
+    jc @Close
+    cmp ax, cx
+    jne @Close
+    mov Written, 1
+
+@Close:
     mov ah, 3eh
     int 21h
     pop ds
+    jnc @Finished
+    mov Written, 0
+
+@Finished:
   end;
+
+  WriteCampaign := Written;
 
   LoadResourceFile(Game.Runtime.PictureBanks[4], Game.Runtime.IslandPictureFileName);
 end;

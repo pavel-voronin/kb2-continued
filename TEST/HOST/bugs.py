@@ -154,22 +154,6 @@ def cases(module):
             assert (after.Hero.X, after.Hero.Y) == (31, 31)
 
         yield Case("B011.surrounded-ritual-lands-in-blocked-cell", surrounded)
-    elif module == "KBSAVE":
-
-        def markers(v):
-            g = v.fixture()
-            g.World.WizardPosition.X = 20
-            g.World.WizardPosition.Y = 21
-            g.World.MagePosition.X = 22
-            g.World.MagePosition.Y = 23
-            g.Campaign.Map[0][20][21] = 12
-            g.Campaign.Map[0][22][23] = 28
-            v.set_game(g)
-            ready(v, v.invoke("PrepareSave"))
-            after = v.game().Campaign
-            assert after.Map[0][20][21] == 0 and after.Map[0][22][23] == 0
-
-        yield Case("B012.prepare-save-removes-actor-markers", markers)
     elif module == "KBWIZARD":
 
         def maximum_power(v):

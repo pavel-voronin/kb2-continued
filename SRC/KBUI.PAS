@@ -119,6 +119,7 @@ begin
     22: DrawText(false, 4, 272, 'На этой неделе Вы не можете больше останавливать вpемя.');
     23: DrawText(false, 23, 272, 'Игpа записана.');
     24: DrawText(false, 17, 272, 'У Вас нет ни одного смеpча.');
+    25: DrawText(false, 18, 272, 'Не удалось сохранить игру.');
   end;
 
   Game.Runtime.LastScan := ReadScanCode;

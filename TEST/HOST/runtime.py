@@ -224,6 +224,9 @@ class UnitVM(VM):
                 sc, ch = self.queue[0]
                 self.w("ax", sc * 256 + ch)
             return
+        dos_response = self.responses.get("DOS21") if number == 0x21 else None
+        if dos_response and dos_response(self, ax >> 8):
+            return
         if number == 0x21 and ax >> 8 == 0x44:
             fd = self.r("bx")
             mode = self.r("dx")
@@ -285,7 +288,9 @@ class UnitVM(VM):
         self.calls.append((self.pending["owner"], name, trace))
         answer = self.responses.get(name, 0)
         if name not in self.responses:
-            if name == "ReadScanCode":
+            if name == "WriteCampaign":
+                answer = 1
+            elif name == "ReadScanCode":
                 answer = self.scans.popleft() if self.scans else 1
             elif name == "BIOSKeyPressed":
                 answer = 1
