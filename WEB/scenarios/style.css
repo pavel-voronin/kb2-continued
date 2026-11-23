@@ -9,9 +9,9 @@
 #local-scenario-menu ul { list-style: none; margin: 0; padding: 0; }
 #local-scenario-menu li { display: flex; align-items: center; gap: 8px; }
 #local-scenario-menu li button { min-width: 0; flex: 1; }
-#local-scenario-menu li a { color: #bbb; text-decoration: none; padding: 5px; }
+#local-scenario-menu li a { color: #bbb; text-decoration: none; padding: 1px 5px; line-height: 1.15; }
 #local-scenario-menu li a:hover, #local-scenario-menu li a:focus-visible { color: white; }
-#local-scenario-menu li button { display: block; width: 100%; padding: 5px 0; border: 0; background: none; text-align: left; color: #bbb; cursor: pointer; line-height: 1.5; white-space: nowrap; font-family: monospace; font-weight: normal; }
+#local-scenario-menu li button { display: block; width: 100%; padding: 1px 0; border: 0; background: none; text-align: left; color: #bbb; cursor: pointer; line-height: 1.15; white-space: nowrap; font-family: monospace; font-weight: normal; }
 #local-scenario-menu li button:hover, #local-scenario-menu li button:focus-visible { color: white; }
 #local-scenario-menu li button[aria-pressed="true"] { color: #eacb83; font-weight: normal; }
 #local-scenario-menu li button:disabled { opacity: .5; }

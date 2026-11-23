@@ -65,6 +65,20 @@ window.kb2LocalScenarios=new class {
     for(const name of masks){const rect=rectangles[name];if(!rect)throw Error('Неизвестная анимация снимка.');const [x,y,w,h]=rect;for(let row=y;row<y+h;row++)copy.fill(0,(row*640+x)*3,(row*640+x+w)*3);}
     return copy;
   }
+  async waitForRestoredFrame(run,scenario){
+    // The first frame can catch the battle cursor in a different animation phase.
+    const deadline=Date.now()+2000;
+    let checked;
+    while(run.isCurrent()&&Date.now()<deadline){
+      const frame=run.restoredFrame;
+      if(frame&&frame!==checked){
+        checked=frame;
+        if(await this.hash(this.frameBytes(frame,scenario.frameMask))===scenario.frameSha256)return;
+      }
+      await new Promise(resolve=>setTimeout(resolve,20));
+    }
+    throw Error('Эмулятор не восстановил изображение снимка целиком.');
+  }
   async refresh(){
     try{
       const response=await fetch('/__scenarios/list');if(!response.ok)throw Error('Список сценариев недоступен.');
@@ -156,7 +170,7 @@ window.kb2LocalScenarios=new class {
       await this.run.ci.fsWriteFile('.jsdos/scenario.sav',bytes);
       this.run.capture=true;
       await this.request('restore');
-      if(!this.run.restoredFrame||await this.hash(this.frameBytes(this.run.restoredFrame,scenario.frameMask))!==scenario.frameSha256)throw Error('Эмулятор не восстановил изображение снимка целиком.');
+      await this.waitForRestoredFrame(this.run,scenario);
       this.selected=id;
       window.history.replaceState(null,'',this.link(id));
       this.phase='ready';

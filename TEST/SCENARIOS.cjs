@@ -75,9 +75,15 @@ try {
   const pixels=Buffer.alloc(640*350*3,15),normalized=require('../TOOLS/scenarios/frame.cjs').normalize(pixels,['magic','wealth']);
   assert.deepEqual(Buffer.from(client.frameBytes(pixels,['magic','wealth'])),normalized,'Client and offline frame checks must mask the same animated pixels');
   assert.throws(()=>client.frameBytes(pixels,['unknown']),/Неизвестная/);
+  let initialFrame=frame;
   const ci={events:()=>({onMessage:fn=>events.message=fn,onFrame:fn=>events.frame=fn}),
     fsWriteFile:async(file,data)=>{calls.push(['file',file]);assert.deepEqual(Buffer.from(data),bytes);},resume:()=>{},
-    sendBackendEvent:event=>{calls.push(['event',event.type,event.op]);assert.equal(event.op,'restore');events.frame(frame,null);events.message('log','[kb2-snapshot]'+JSON.stringify({id:event.id,result:{restored:true}}));}};
+    sendBackendEvent:event=>{
+      calls.push(['event',event.type,event.op]);assert.equal(event.op,'restore');
+      events.frame(initialFrame,null);
+      events.message('log','[kb2-snapshot]'+JSON.stringify({id:event.id,result:{restored:true}}));
+      if(initialFrame!==frame)setTimeout(()=>events.frame(frame,null),40);
+    }};
   const run={ci,isCurrent:()=>true,isReady:()=>true,releaseKeys(){},restart:async()=>{calls.push(['restart']);client.attach(run);}};
   client.attach(run);await client.apply('owned');
   assert.equal(client.error,null);assert.equal(client.selected,'owned');assert.equal(run.capture,false);
@@ -85,7 +91,8 @@ try {
   assert.equal(location.href,'http://127.0.0.1:5173/?keep=yes&scenario=owned#game');
   assert.equal(new URL(client.link('red-knight')).searchParams.get('scenario'),'red-knight');
   // A shared URL loads through the same real restoration method exactly once,
-  // including the attach() performed by the emulator restart.
+  // even when its expected animation phase comes after the restore reply.
+  initialFrame=Uint8Array.of(12,34,0);
   location.href='http://127.0.0.1:5173/?scenario=red-knight';client.linkHandled=false;
   client.attach(run);
   for(let i=0;client.busy&&i<100;i++)await new Promise(resolve=>setTimeout(resolve,5));
