@@ -417,6 +417,33 @@ def cases(module):
             changes={"Combat.Enemy.0.Shots": 0},
             field=[(2, 1, 64), (2, 2, 64), (2, 3, 64)],
         )
+        for target_x in (3, 4):
+            for diagonal in (0, 48, 64, 80):
+                specimen = trial(
+                    module,
+                    "EnemyPhase",
+                    f"route-choice.target-{target_x}.diagonal-{diagonal}",
+                    units=[
+                        ("Player", 0, 3, 60, target_x, 1),
+                        ("Player", 1, 5, 10, 0, 3),
+                        ("Enemy", 0, 3, 20, 1, 1),
+                    ],
+                    changes={"Combat.Player.0.Shots": 0, "Combat.Enemy.0.Shots": 0},
+                    field=[(2, 0, 80), (2, 1, 80), (2, 2, diagonal)],
+                )
+
+                def route_choice(v, specimen=specimen, target_x=target_x, diagonal=diagonal):
+                    specimen.run(v)
+                    if target_x == 3 and diagonal == 0:
+                        step, target = [2, 2], [3, 1]
+                    else:
+                        step, target = [0, 2], [0, 3]
+                    moves = [args[-2:] for _, name, args in v.calls if name == "RelocateUnit"]
+                    attacks = [args[1:] for _, name, args in v.calls if name == "AttackUnit"]
+                    assert moves == [step], moves
+                    assert attacks and attacks[0] == step + target, attacks
+
+                yield Case(specimen.name, route_choice, specimen.identity)
         for mode in ("walk", "shoot", "fly"):
             specimen = trial(
                 module,

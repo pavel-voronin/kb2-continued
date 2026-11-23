@@ -3,7 +3,7 @@
   "scope": "Недостижимые пути при указанных контрактах. Они не считаются выполненными тестами.",
   "modules": {
     "KBADVENT": "efb6a7fd774b5180f144ddbe0cac139f8b7b6f0e22acda4f2f31dc34310d2cff",
-    "KBBAI": "a3903397794ee248866759a7ce10d48bf0df6a7d491b3bdfadb55dac5ab5838b",
+    "KBBAI": "b5d359b0eec6c096d0a78c96bb390694dacf54c7917bd99dd0953d0fe4eed55b",
     "KBBATTLE": "0bfe6bad0e9d9bc9720b5aafd48528d28ae318a27e66d190af5cf1494fcf5437",
     "KBBDMG": "d4a2eef0a034ef3a5d100e0988c8c804f19e6912c7e4012fc447fa0614878fb3",
     "KBBDRAW": "ed7def47c2b0e6ffa9db63028510d7861eb136c0e4c801db950d5a7b2c043c33",
@@ -109,10 +109,11 @@
       ]
     },
     {
-      "id": "last-candidate-diagonal",
-      "reason": "При трёх равных рангах строгие сравнения RankNeighbour не переставляют последний Candidate[0]. Последняя итерация записывает (X+1,Y+1), в том числе при отказе кандидата. Обе координаты отличаются от (X,Y); ложная ветвь и её два оператора недостижимы.",
+      "id": "equal-ranks-same-step-parity",
+      "reason": "Кандидаты 1 и 2 проверяются здесь только при равных оценках. У принятых клеток оценка равна манхэттенскому расстоянию до цели. Прямой шаг меняет чётность этой оценки относительно исходной клетки, диагональный сохраняет её. Поэтому при равных оценках кандидат 1 не может быть диагональным, если кандидат 2 уже не диагональный. Если оба сохраняют начальную оценку 100, их координаты равны исходной клетке.",
       "depends_on": [
         "KBBAI",
+        "KBBDRAW",
         "KBBTYPE",
         "KBSTATE",
         "KBTYPES"
@@ -120,11 +121,11 @@
       "points": [
         {
           "module": "KBBAI",
-          "local_id": 80,
+          "local_id": 76,
           "line": 121,
           "shape": {
             "routine": "enemyphase.choosestep",
-            "kind": "branch-false",
+            "kind": "branch-true",
             "source": [
               "if",
               "(",
@@ -134,7 +135,7 @@
               ".",
               "candidatex",
               "[",
-              "0",
+              "1",
               "]",
               ")",
               "and",
@@ -147,8 +148,8 @@
         },
         {
           "module": "KBBAI",
-          "local_id": 83,
-          "line": 128,
+          "local_id": 78,
+          "line": 123,
           "shape": {
             "routine": "enemyphase.choosestep",
             "kind": "statement",
@@ -168,8 +169,8 @@
         },
         {
           "module": "KBBAI",
-          "local_id": 84,
-          "line": 129,
+          "local_id": 79,
+          "line": 124,
           "shape": {
             "routine": "enemyphase.choosestep",
             "kind": "statement",
@@ -202,8 +203,8 @@
       "points": [
         {
           "module": "KBBAI",
-          "local_id": 111,
-          "line": 169,
+          "local_id": 116,
+          "line": 176,
           "shape": {
             "routine": "enemyphase.flytotarget",
             "kind": "branch-true",
@@ -296,8 +297,8 @@
       "points": [
         {
           "module": "KBBAI",
-          "local_id": 166,
-          "line": 242,
+          "local_id": 171,
+          "line": 249,
           "shape": {
             "routine": "enemyphase.shooterturn",
             "kind": "branch-true",
@@ -323,8 +324,8 @@
         },
         {
           "module": "KBBAI",
-          "local_id": 168,
-          "line": 242,
+          "local_id": 173,
+          "line": 249,
           "shape": {
             "routine": "enemyphase.shooterturn",
             "kind": "statement",

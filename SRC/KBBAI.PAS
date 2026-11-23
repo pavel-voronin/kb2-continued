@@ -58,7 +58,7 @@ end;
 
 function ChooseStep(AbortIfWorse: boolean; X, Y: byte): boolean;
 var
-  DY, DX: shortint;
+  DY, DX, NeighbourX, NeighbourY: shortint;
 
 procedure CheckAlternative;
 begin
@@ -80,21 +80,28 @@ begin
 end;
 
 begin
-  EnemyAI.StepRanks[0] := 100;
-  EnemyAI.StepRanks[1] := 100;
-  EnemyAI.StepRanks[2] := 100;
+  for DX := 0 to 2 do
+  begin
+    EnemyAI.StepRanks[DX] := 100;
+    EnemyAI.CandidateX[DX] := X;
+    EnemyAI.CandidateY[DX] := Y;
+  end;
 
   for DY := -1 to 1 do
     for DX := -1 to 1 do
     begin
-      EnemyAI.CandidateX[0] := X + DX;
-      EnemyAI.CandidateY[0] := Y + DY;
+      NeighbourX := X + DX;
+      NeighbourY := Y + DY;
 
       if ((DX <> 0) or (DY <> 0)) and
-        (EnemyAI.CandidateX[0] >= 0) and (EnemyAI.CandidateX[0] <= 5) and
-        (EnemyAI.CandidateY[0] >= 0) and (EnemyAI.CandidateY[0] <= 4) and
-        (EnemyAI.StepRanks[0] >= EnemyAI.MovementCosts[EnemyAI.CandidateX[0],
-          EnemyAI.CandidateY[0]]) then RankNeighbour;
+        (NeighbourX >= 0) and (NeighbourX <= 5) and
+        (NeighbourY >= 0) and (NeighbourY <= 4) and
+        (EnemyAI.StepRanks[0] >= EnemyAI.MovementCosts[NeighbourX, NeighbourY]) then
+      begin
+        EnemyAI.CandidateX[0] := NeighbourX;
+        EnemyAI.CandidateY[0] := NeighbourY;
+        RankNeighbour;
+      end;
     end;
 
   if AbortIfWorse and (EnemyAI.StepRanks[2] > EnemyAI.PreviousRank) then CheckAlternative
