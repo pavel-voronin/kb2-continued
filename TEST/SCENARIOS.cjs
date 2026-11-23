@@ -23,6 +23,18 @@ try {
   const {unzipSync}=require('../WEB/node_modules/fflate'),local=unzipSync(snapshot.localBundle(archive));
   assert.equal(Buffer.from(local['KB2.EXE']).toString(),'EXE fixture');assert.ok(Buffer.from(local['.jsdos/dosbox.conf']).toString().includes('savefile='+snapshot.snapshotPath));
 
+  const {blackBattleCursor}=require('../TOOLS/scenarios/frame.cjs');
+  const cursorFrame=Buffer.alloc(640*350*3,255),cursor={x:5,y:4};
+  function paint(x,y,w,h){
+    for(let row=y;row<y+h;row++)cursorFrame.fill(0,(row*640+x)*3,(row*640+x+w)*3);
+  }
+  for(const y of [263,312])for(const x of [498,558])paint(x,y,16,2);
+  for(const y of [263,303])for(const x of [497,572])paint(x,y,3,11);
+  assert.ok(blackBattleCursor(cursorFrame,cursor));
+  assert.ok(!blackBattleCursor(cursorFrame,{x:4,y:4}));
+  cursorFrame[(313*640+574)*3+1]=170;
+  assert.ok(!blackBattleCursor(cursorFrame,cursor),'a partially repainted cursor is not ready');
+
   // Native completion protocol has no guest-memory or keyboard API at all.
   const messages=[],closed=[];
   const originalClose=stream=>closed.push(stream.position),originalSend=(name,props)=>messages.push({name,props});

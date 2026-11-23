@@ -34,13 +34,13 @@ begin
     PrepareSave;
     Str(Level, Name);
     Game.Runtime.DataFileName := 'L' + Name + '.DAT';
-    WriteCampaign;
+    if not WriteCampaign(true) then Halt(5);
     OriginalGold := Game.Campaign.Gold;
     Game.Campaign.Gold := -1;
     ReadCampaign;
     if Game.Campaign.Gold <> OriginalGold then Halt(1);
     Game.Runtime.DataFileName := 'R' + Name + '.DAT';
-    WriteCampaign;
+    if not WriteCampaign(false) then Halt(5);
     Assign(SourceFile, 'L' + Name + '.DAT');
     Assign(CopyFile, 'R' + Name + '.DAT');
     Reset(SourceFile, 1);

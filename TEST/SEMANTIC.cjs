@@ -1,4 +1,5 @@
-const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path'),{spawnSync}=require('node:child_process');
+const assert=require('node:assert/strict'),fs=require('node:fs'),os=require('node:os'),path=require('node:path'),{execFile}=require('node:child_process');
+const exec=require('node:util').promisify(execFile);
 const {sourceLayout,ROOT}=require('../TOOLS/scenarios/headless.cjs'),S=require('../TOOLS/scenarios/semantic.cjs');
 const layout=sourceLayout(path.join(ROOT,'WEB/.build/dev/build/SRC/DIST/KB2.EXE'));
 const blank=new S.State(layout,Buffer.alloc(layout.campaign.size));
@@ -46,16 +47,25 @@ for(const [patch,pattern]of [
 const battle=compile({army:{active:[{species:'ЭЛЬФЫ',count:40}]},view:{kind:'battle',target:'army',slot:0},battle:{enemies:[{species:'СКЕЛЕТЫ',count:15},{species:'ЗОМБИ',count:10}],player:{0:{shots:1,hitPoints:300,initialCount:40}},poison:{0:2}}});
 assert.equal(battle.state.get('WanderingArmies.1.0.Species.0'),3);assert.equal(battle.state.get('WanderingArmies.1.0.Counts.1'),10);
 console.log('PASS semantic fields, packing, all domains, names, derived state and rejection checks');
-if(process.argv.includes('--native')){
+async function testNative(){
   const ix=process.argv.indexOf('--base'),nativeBase=process.argv[ix+1];if(ix<0||!nativeBase)throw Error('Native checks need --base <cached campaign>');
+  const campaign=new S.State(layout,S.decode(layout,fs.readFileSync(nativeBase)));
+  // Scenarios that test an encounter or continued movement own one open tile.
+  const grass=(island,x,y)=>({map:{[island]:{[x]:{[y]:'grass'}}}});
+  function castleApproach(slot){
+    const x=campaign.get('Castles.1.'+slot+'.X'),y=campaign.get('Castles.1.'+slot+'.Y');
+    return grass(1,x,y+1);
+  }
+  const heroX=campaign.get('Hero.X'),heroY=campaign.get('Hero.Y');
+  const worldExit=grass(campaign.get('Island'),heroX,heroY<64?heroY+1:heroY-1);
   const temporary=fs.mkdtempSync(path.join(os.tmpdir(),'kb2-semantic-'));
   const cases=[
-    {id:'world',title:'Составное состояние',hero:{leadership:100000},economy:{gold:123456,cargo:{'ЖЕМЧУГ':5},carpenters:4},army:{active:[{species:'ЭЛЬФЫ',count:40}],reserve:[{species:'ДРАКОНЫ',count:1}],siegeEngineOwned:true},magic:{magicPower:12,scrolls:{'МОРОЗ':2},spellAvailable:{$all:true}},progress:{localMapOwned:{1:true},relics:{2:{owned:true}}},calendar:{weeks:12,days:1,extraDays:8},ship:{shipOwned:true},view:{kind:'world'}},
+    {id:'world',title:'Составное состояние',hero:{leadership:100000},economy:{gold:123456,cargo:{'ЖЕМЧУГ':5},carpenters:4},army:{active:[{species:'ЭЛЬФЫ',count:40}],reserve:[{species:'ДРАКОНЫ',count:1}],siegeEngineOwned:true},magic:{magicPower:12,scrolls:{'МОРОЗ':2},spellAvailable:{$all:true}},progress:{localMapOwned:{1:true},relics:{2:{owned:true}}},calendar:{weeks:12,days:1,extraDays:8},ship:{shipOwned:true},world:worldExit,view:{kind:'world'}},
     {id:'town',title:'Рынок города',economy:{gold:9000},runtime:{goodsStock:{$all:1},goodsBuyPrices:{$all:100},goodsSellPrices:{$all:90}},view:{kind:'dialog',target:'town',slot:1,section:'goods'}},
-    {id:'castle',title:'Карта замка куплена',economy:{gold:9000},progress:{localMapOwned:{1:true}},view:{kind:'dialog',target:'castle',slot:1}},
+    {id:'castle',title:'Карта замка куплена',economy:{gold:9000},progress:{localMapOwned:{1:true}},world:castleApproach(1),view:{kind:'dialog',target:'castle',slot:1}},
     {id:'battle',title:'Бой с ограниченным боезапасом',hero:{leadership:100000},army:{active:[{species:'ЭЛЬФЫ',count:40}],reserve:[]},view:{kind:'battle',target:'army',slot:0},battle:{enemies:[{species:'СКЕЛЕТЫ',count:15},{species:'ЗОМБИ',count:10}],player:{0:{shots:1,hitPoints:300,initialCount:40}},poison:{0:2}}},
     {id:'single',title:'Бой с одним отрядом',hero:{leadership:100000},army:{active:[{species:'ЭЛЬФЫ',count:40}],reserve:[]},view:{kind:'battle',target:'army',slot:0},battle:{enemies:[{species:'СКЕЛЕТЫ',count:15}],player:{0:{shots:0,position:{x:1,y:0}}},enemy:{0:{position:{x:4,y:4}}},terrain:{'3,2':'forest'}}},
-    {id:'siege',title:'Осада',hero:{leadership:100000},army:{active:[{species:'ЭЛЬФЫ',count:40}],reserve:[]},view:{kind:'battle',target:'castle',slot:2},battle:{enemies:[{species:'СКЕЛЕТЫ',count:15},{species:'ЗОМБИ',count:10}]}},
+    {id:'siege',title:'Осада',hero:{leadership:100000},army:{active:[{species:'ЭЛЬФЫ',count:40}],reserve:[]},world:castleApproach(2),view:{kind:'battle',target:'castle',slot:2},battle:{enemies:[{species:'СКЕЛЕТЫ',count:15},{species:'ЗОМБИ',count:10}]}},
     {id:'guardian',title:'Стражи заклинания',hero:{leadership:100000},army:{active:[{species:'ЭЛЬФЫ',count:40}],reserve:[]},world:{map:{1:{6:{19:'guardian'}}}},view:{kind:'battle',target:'guardian'},battle:{enemies:[{species:'СКЕЛЕТЫ',count:15},{species:'ЗОМБИ',count:10}]}},
     {id:'mage',title:'Чёрный маг',view:{kind:'dialog',target:'mage'}},
     {id:'offer',title:'Предложение волшебника',progress:{wizardRelations:{1:5}},view:{kind:'dialog',target:'wizard',offer:'transmute'}},
@@ -63,7 +73,27 @@ if(process.argv.includes('--native')){
   ];
   try{
     const selected=process.argv.includes('--case')?process.argv[process.argv.indexOf('--case')+1].split(','):cases.map(c=>c.id);
-    for(const item of cases.filter(c=>selected.includes(c.id))){const file=path.join(temporary,item.id+'.recipe.json');fs.writeFileSync(file,JSON.stringify({version:1,...item}));const result=spawnSync(process.execPath,[path.join(ROOT,'TOOLS/scenarios/assemble.cjs'),'--directory',temporary,'--base',nativeBase,'--spec',file],{encoding:'utf8',windowsHide:true,timeout:90000});process.stdout.write(result.stdout);assert.equal(result.status,0,result.stderr);}
+    const pending=cases.filter(item=>selected.includes(item.id));
+    const parallel=Math.min(3,os.availableParallelism());
+    async function runCase(item){
+      const file=path.join(temporary,item.id+'.recipe.json');
+      fs.writeFileSync(file,JSON.stringify({version:1,...item}));
+      const command=[path.join(ROOT,'TOOLS/scenarios/assemble.cjs'),'--directory',temporary,'--base',nativeBase,'--spec',file];
+      try{
+        const {stdout}=await exec(process.execPath,command,{windowsHide:true,timeout:90000,maxBuffer:4*1024*1024});
+        process.stdout.write(stdout);
+      }catch(error){
+        process.stdout.write(error.stdout||'');
+        throw new Error(item.id+': '+(error.stderr||error.message),{cause:error});
+      }
+    }
+    while(pending.length){
+      // Join the whole batch before deleting its shared temporary directory.
+      const results=await Promise.allSettled(pending.splice(0,parallel).map(runCase));
+      const failure=results.find(result=>result.status==='rejected');
+      if(failure)throw failure.reason;
+    }
     console.log('PASS native multi-domain world, town market, castle and configured combat');
   }finally{assert.ok(path.resolve(temporary).startsWith(path.resolve(os.tmpdir())+path.sep));fs.rmSync(temporary,{recursive:true,force:true});}
 }
+if(process.argv.includes('--native'))testNative().catch(error=>{console.error(error.message);process.exitCode=1;});

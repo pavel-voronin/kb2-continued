@@ -130,30 +130,38 @@ async function capture(file,base,specFile){
   // restore boundary used by the client, rather than an earlier host frame.
   await run.load(bytes);
   const frameMask=['world','near'].includes(plan.view.kind)?['magic',...(gold>999999?['wealth']:[])]:[];
-  const frameSha256=snapshot.sha(frame.normalize(run.rgb,frameMask));
-  fs.writeFileSync(file+'.rgb',run.rgb);
   const stateHash=campaignHash(run,plan.view),live=Object.fromEntries([...Object.keys(plan.live),'Campaign.Army','Campaign.Scrolls'].map(name=>[name,run.field(name).toString('hex')]));
   let battle;
-  if(plan.view.kind==='battle'){const {base,state}=require('./combat.cjs').bind(run);battle={address:base-run.ram,bytes:state.bytes.toString('hex'),field:run.field('Runtime.BattleField').toString('hex'),counts:run.field('Runtime.BattleDistances').toString('hex')};}
+  if(plan.view.kind==='battle'){
+    const {base,state}=require('./combat.cjs').bind(run);
+    battle={address:base-run.ram,bytes:state.bytes.toString('hex'),field:run.field('Runtime.BattleField').toString('hex'),counts:run.field('Runtime.BattleDistances').toString('hex'),cursor:{x:state.get('CursorX'),y:state.get('CursorY')}};
+  }
+  const rgb=await scenarioFrame(run,frameMask,battle),frameSha256=snapshot.sha(rgb);
+  fs.writeFileSync(file+'.rgb',rgb);
   fs.writeFileSync(file,bytes);fs.writeFileSync(file+'.receipt',JSON.stringify({expected,frameSha256,frameMask,stateHash,live,battle,view:plan.view,near:plan.near,elapsed:Date.now()-Number(process.env.KB2_ASSEMBLE_STARTED||Date.now())}));
   console.log('CAPTURED',spec.id,JSON.stringify({bytes:bytes.length,state:expected}));
 }
-function verifyFrame(run,file,receipt,label){
-  if(snapshot.sha(frame.normalize(run.rgb,receipt.frameMask))===receipt.frameSha256)return;
-  const expected=fs.readFileSync(file+'.rgb');let minX=run.width,minY=run.height,maxX=0,maxY=0,n=0;for(let i=0;i<expected.length;i++)if(expected[i]!==run.rgb[i]){const pixel=Math.floor(i/3),x=pixel%run.width,y=Math.floor(pixel/run.width);minX=Math.min(x,minX);minY=Math.min(y,minY);maxX=Math.max(x,maxX);maxY=Math.max(y,maxY);n++;}throw Error(label+' frame differs: '+JSON.stringify({n,minX,minY,maxX,maxY}));
+async function scenarioFrame(run,frameMask,battle){
+  if(battle)await wait(()=>frame.blackBattleCursor(run.rgb,battle.cursor),'black battle cursor phase');
+  return frame.normalize(run.rgb,frameMask);
+}
+async function verifyFrame(run,file,receipt,label){
+  const actual=await scenarioFrame(run,receipt.frameMask,receipt.battle);
+  if(snapshot.sha(actual)===receipt.frameSha256)return;
+  const expected=fs.readFileSync(file+'.rgb');let minX=run.width,minY=run.height,maxX=0,maxY=0,n=0;for(let i=0;i<expected.length;i++)if(expected[i]!==actual[i]){const pixel=Math.floor(i/3),x=pixel%run.width,y=Math.floor(pixel/run.width);minX=Math.min(x,minX);minY=Math.min(y,minY);maxX=Math.max(x,maxX);maxY=Math.max(y,maxY);n++;}throw Error(label+' frame differs: '+JSON.stringify({n,minX,minY,maxX,maxY}));
 }
 async function verify(file){
   const receipt=JSON.parse(fs.readFileSync(file+'.receipt','utf8')),bytes=fs.readFileSync(file),run=await Headless.start(game());await run.load(bytes);
   assert.deepEqual(run.summary(),receipt.expected);
   assert.equal(campaignHash(run,receipt.view),receipt.stateHash,'All campaign bytes restore (logical magic power excludes idle animation)');
-  verifyFrame(run,file,receipt,'Cold restore');
   for(const [field,value]of Object.entries(receipt.live))assert.equal(run.field(field).toString('hex'),value,'Cold restore '+field);
   if(receipt.battle){assert.equal(run.field('Runtime.BattleField').toString('hex'),receipt.battle.field);assert.equal(run.field('Runtime.BattleDistances').toString('hex'),receipt.battle.counts);const bytes=Buffer.from(run.mod.HEAPU8.buffer,run.ram+receipt.battle.address,receipt.battle.bytes.length/2);assert.equal(bytes.toString('hex'),receipt.battle.bytes,'Complete combat stack restored');}
+  await verifyFrame(run,file,receipt,'Cold restore');
   if(receipt.view.offer==='ancientMap'&&receipt.expected.owned){const before=run.summary();await press(run,7,54,true);assert.equal(run.number('Campaign.Gold'),before.gold);assert.equal(run.byte('Campaign.MapParts'),before.parts);for(let i=0;i<4;i++){const hero=run.summary().hero,step=[[0,1,80],[1,0,77],[-1,0,75],[0,-1,72]].find(([dx,dy])=>run.map(hero[0]+dx,hero[1]+dy)===0);if(!step)throw Error('No safe movement after wizard dialog');await press(run,step[2],0,true);assert.deepEqual(run.summary().hero,[hero[0]+step[0],hero[1]+step[1]]);}}
   else if(receipt.view.kind==='battle'){const frame=run.frames;run.key(77);await wait(()=>run.keyboardEmpty()&&run.frames>frame,'battle continues after restore');assert.equal(run.byte('Runtime.BattleResult'),0);}
   else if(receipt.view.kind==='world'||receipt.view.kind==='near'){const hero=run.summary().hero,step=[[0,1,80],[1,0,77],[-1,0,75],[0,-1,72]].find(([dx,dy])=>run.map(hero[0]+dx,hero[1]+dy)===0);if(!step)throw Error('World scenario has no walkable exit');await press(run,step[2],0,true);assert.deepEqual(run.summary().hero,[hero[0]+step[0],hero[1]+step[1]]);}
   else {await press(run,1,27);}
-  await run.load(bytes);assert.deepEqual(run.summary(),receipt.expected);assert.equal(campaignHash(run,receipt.view),receipt.stateHash,'All campaign bytes restore again');verifyFrame(run,file,receipt,'Repeated restore');assert.deepEqual(run.errors,[]);
+  await run.load(bytes);assert.deepEqual(run.summary(),receipt.expected);assert.equal(campaignHash(run,receipt.view),receipt.stateHash,'All campaign bytes restore again');await verifyFrame(run,file,receipt,'Repeated restore');assert.deepEqual(run.errors,[]);
   console.log('VERIFIED',JSON.stringify({coldRestore:true,reload:true,continues:true,frame:true,animatedHud:receipt.frameMask}));
 }
 function child(mode,options){const result=spawnSync(process.execPath,[__filename,mode,...Object.entries(options).filter(([,v])=>v!==undefined).flatMap(([k,v])=>['--'+k,v])],{encoding:'utf8',windowsHide:true,timeout:90000,maxBuffer:4*1024*1024});if(result.stdout)process.stdout.write(result.stdout);if(result.status!==0)throw Error(result.stderr||result.error?.message||'Assembly failed');}
