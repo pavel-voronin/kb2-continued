@@ -117,69 +117,64 @@ begin
 end;
 
 procedure WanderingArmyVisit;
-label
-  Finished, UnknownArmy, AskAgain, OfferBattle;
+const
+  ReserveMagicPower: array[0..5] of byte = (0, 2, 5, 10, 20, 35);
 
 var
-  I: shortint;
-  Total, Reserve: word;
+  Slot, ReserveCount: byte;
+  ArmyIndex: shortint;
+  Enemy: ^TWanderingArmy;
+  HasTroops, ForcedBattle: boolean;
 
 begin
-  Total := 0;
-  Reserve := 0;
-
-  for I := 0 to 9 do
-    if Game.Campaign.Army[I].Species < 100 then
+  HasTroops := false;
+  ReserveCount := 0;
+  for Slot := 0 to 9 do
+    if Game.Campaign.Army[Slot].Species < 100 then
     begin
-      if I > 4 then Inc(Reserve);
-      Inc(Total);
+      HasTroops := true;
+      if Slot > 4 then Inc(ReserveCount);
     end;
 
-  I := FindWanderingArmy(Game.Campaign.Island, Game.World.GenerationX, Game.World.GenerationY);
-  if I < 0 then
+  ArmyIndex := FindWanderingArmy(Game.Campaign.Island, Game.World.GenerationX, Game.World.GenerationY);
+  if ArmyIndex < 0 then
   begin
     Game.Campaign.Map[Game.Campaign.Island, Game.World.GenerationX, Game.World.GenerationY] := 0;
-    goto Finished;
-  end;
-  if ArmyReport(TReportSpecies(Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Species),
-    TReportCounts(Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Counts), ' ') then goto Finished;
-  case Reserve of
-    1: if Game.Campaign.MagicPower < 2 then goto UnknownArmy;
-    2: if Game.Campaign.MagicPower < 5 then goto UnknownArmy;
-    3: if Game.Campaign.MagicPower < 10 then goto UnknownArmy;
-    4: if Game.Campaign.MagicPower < 20 then goto UnknownArmy;
-    5: if Game.Campaign.MagicPower < 35 then goto UnknownArmy;
+    Exit;
   end;
 
-  goto OfferBattle;
-UnknownArmy:
-  DrawDialog(8, 230, 488, 320);
-  DrawText(false, 20, 272, 'Войско неизвестно!');
-OfferBattle:
-  if (Game.Campaign.EnemyGrace = 0) or (Total > 0) then
+  Enemy := @Game.Campaign.WanderingArmies[Game.Campaign.Island, ArmyIndex];
+  if ArmyReport(TReportSpecies(Enemy^.Species), TReportCounts(Enemy^.Counts), ' ') then Exit;
+
+  if Game.Campaign.MagicPower < ReserveMagicPower[ReserveCount] then
   begin
-    DrawText(false, 14, 304, 'Дpаться будешь ( Y-да / N-нет ) ?');
-AskAgain:
-    Game.Runtime.LastScan := ReadScanCode;
+    DrawDialog(8, 230, 488, 320);
+    DrawText(false, 20, 272, 'Войско неизвестно!');
+  end;
 
-    if Game.Runtime.LastScan = 21 then
-    begin
-      if Game.Campaign.Flags.ArmyAvailable then
-      begin
-        Battle(@Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Species,
-    @Game.Campaign.WanderingArmies[Game.Campaign.Island, I].Counts, 10);
+  if (Game.Campaign.EnemyGrace <> 0) and not HasTroops then
+  begin
+    ShowNotice(9);
+    Exit;
+  end;
 
-        if Game.Runtime.BattleResult = 2 then DefeatReport
-        else VictoryReport(I, 5);
-        RestoreControls;
-      end
-      else GameOver;
-    end
-    else if Game.Campaign.Map[Game.Campaign.Island, Game.Campaign.Hero.X, Game.Campaign.Hero.Y] = 5 then goto
-    AskAgain;
-  end
-  else ShowNotice(9);
-Finished:
+  ForcedBattle := Game.Campaign.Map[Game.Campaign.Island, Game.Campaign.Hero.X, Game.Campaign.Hero.Y] = 5;
+  if ForcedBattle then
+    DrawText(false, 7, 304, 'Попался! Готовься к бою ( Нажмите любую клавишу )')
+  else DrawText(false, 14, 304, 'Дpаться будешь ( Y-да / N-нет ) ?');
+  Game.Runtime.LastScan := ReadScanCode;
+  if not ForcedBattle and (Game.Runtime.LastScan <> 21) then Exit;
+
+  if not Game.Campaign.Flags.ArmyAvailable then
+  begin
+    GameOver;
+    Exit;
+  end;
+
+  Battle(@Enemy^.Species, @Enemy^.Counts, 10);
+  if Game.Runtime.BattleResult = 2 then DefeatReport
+  else VictoryReport(ArmyIndex, 5);
+  RestoreControls;
 end;
 
 procedure BoardShip;

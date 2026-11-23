@@ -517,7 +517,7 @@ def cases(module):
             module,
             "WanderingArmyVisit",
             "cannot-decline-standing-on-army",
-            scans=[49, 21],
+            scans=[49],
             changes={"Campaign.Map.0.30.30": 5},
         )
         yield sample(
