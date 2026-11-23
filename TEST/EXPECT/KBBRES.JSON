@@ -4073,14 +4073,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -4115,9 +4110,15 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -4128,14 +4129,14 @@
         ],
         [
           0,
-          0,
+          20,
           0,
           0,
           0
         ],
         [
           0,
-          20,
+          0,
           0,
           0,
           0
@@ -4262,7 +4263,7 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
+          1,
           1
         ]
       ]
@@ -4284,14 +4285,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -4326,9 +4322,15 @@
           0,
           112,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -4362,14 +4364,14 @@
           0,
           0,
           0,
-          0,
+          20,
           0
         ],
         [
           0,
           0,
           0,
-          20,
+          0,
           0
         ]
       ]
@@ -4473,7 +4475,7 @@
         [
           "<buffer>",
           "<buffer>",
-          5,
+          4,
           3
         ]
       ]
@@ -4706,14 +4708,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -4748,9 +4745,15 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -4761,14 +4764,14 @@
         ],
         [
           0,
-          0,
+          20,
           0,
           0,
           0
         ],
         [
           0,
-          20,
+          0,
           0,
           0,
           0
@@ -4895,7 +4898,7 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
+          1,
           1
         ]
       ]
@@ -4917,14 +4920,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -4959,9 +4957,15 @@
           0,
           112,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -4995,14 +4999,14 @@
           0,
           0,
           0,
-          0,
+          20,
           0
         ],
         [
           0,
           0,
           0,
-          20,
+          0,
           0
         ]
       ]
@@ -5106,7 +5110,7 @@
         [
           "<buffer>",
           "<buffer>",
-          5,
+          4,
           3
         ]
       ]
@@ -5339,14 +5343,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -5381,9 +5380,15 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -5394,14 +5399,14 @@
         ],
         [
           0,
-          0,
+          20,
           0,
           0,
           0
         ],
         [
           0,
-          20,
+          0,
           0,
           0,
           0
@@ -5528,7 +5533,7 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
+          1,
           1
         ]
       ]
@@ -5550,14 +5555,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -5592,9 +5592,15 @@
           0,
           112,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -5628,14 +5634,14 @@
           0,
           0,
           0,
-          0,
+          20,
           0
         ],
         [
           0,
           0,
           0,
-          20,
+          0,
           0
         ]
       ]
@@ -5739,7 +5745,7 @@
         [
           "<buffer>",
           "<buffer>",
-          5,
+          4,
           3
         ]
       ]
@@ -5972,14 +5978,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -6014,9 +6015,15 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -6027,14 +6034,14 @@
         ],
         [
           0,
-          0,
+          20,
           0,
           0,
           0
         ],
         [
           0,
-          20,
+          0,
           0,
           0,
           0
@@ -6161,7 +6168,7 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
+          1,
           1
         ]
       ]
@@ -6183,14 +6190,9 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": -1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -6225,9 +6227,15 @@
           0,
           112,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
       ],
-      "Runtime.StepY": -1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -6261,14 +6269,14 @@
           0,
           0,
           0,
-          0,
+          20,
           0
         ],
         [
           0,
           0,
           0,
-          20,
+          0,
           0
         ]
       ]
@@ -6372,7 +6380,7 @@
         [
           "<buffer>",
           "<buffer>",
-          5,
+          4,
           3
         ]
       ]
@@ -6605,14 +6613,8 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -6647,17 +6649,16 @@
           0,
           0,
           0
-        ]
-      ],
-      "Runtime.StepY": -1,
-      "Runtime.BattleDistances": [
+        ],
         [
           0,
           0,
           0,
           0,
           0
-        ],
+        ]
+      ],
+      "Runtime.BattleDistances": [
         [
           0,
           0,
@@ -6692,9 +6693,15 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -6795,7 +6802,7 @@
         [
           "<buffer>",
           "<buffer>",
-          3,
+          2,
           1
         ]
       ]
@@ -6817,6 +6824,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -6851,13 +6859,13 @@
           0,
           0,
           0,
-          112
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          112,
           0
         ]
       ],
@@ -6895,17 +6903,16 @@
           0,
           0,
           0,
-          20
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          20,
           0
         ]
-      ],
-      "Runtime.StepX": -1
+      ]
     },
     "calls_at_entry": [
       [
@@ -7006,8 +7013,8 @@
         [
           "<buffer>",
           "<buffer>",
-          4,
-          4
+          5,
+          3
         ]
       ]
     ],
@@ -7239,14 +7246,8 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -7281,17 +7282,16 @@
           0,
           0,
           0
-        ]
-      ],
-      "Runtime.StepY": -1,
-      "Runtime.BattleDistances": [
+        ],
         [
           0,
           0,
           0,
           0,
           0
-        ],
+        ]
+      ],
+      "Runtime.BattleDistances": [
         [
           0,
           0,
@@ -7326,9 +7326,15 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -7429,7 +7435,7 @@
         [
           "<buffer>",
           "<buffer>",
-          3,
+          2,
           1
         ]
       ]
@@ -7451,6 +7457,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -7485,13 +7492,13 @@
           0,
           0,
           0,
-          112
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          112,
           0
         ]
       ],
@@ -7529,17 +7536,16 @@
           0,
           0,
           0,
-          20
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          20,
           0
         ]
-      ],
-      "Runtime.StepX": -1
+      ]
     },
     "calls_at_entry": [
       [
@@ -7640,8 +7646,8 @@
         [
           "<buffer>",
           "<buffer>",
-          4,
-          4
+          5,
+          3
         ]
       ]
     ],
@@ -7873,14 +7879,8 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
         [
           0,
           0,
@@ -7915,17 +7915,16 @@
           0,
           0,
           0
-        ]
-      ],
-      "Runtime.StepY": -1,
-      "Runtime.BattleDistances": [
+        ],
         [
           0,
           0,
           0,
           0,
           0
-        ],
+        ]
+      ],
+      "Runtime.BattleDistances": [
         [
           0,
           0,
@@ -7960,9 +7959,15 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -8063,7 +8068,7 @@
         [
           "<buffer>",
           "<buffer>",
-          3,
+          2,
           1
         ]
       ]
@@ -8085,6 +8090,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -8119,13 +8125,13 @@
           0,
           0,
           0,
-          112
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          112,
           0
         ]
       ],
@@ -8163,17 +8169,16 @@
           0,
           0,
           0,
-          20
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          20,
           0
         ]
-      ],
-      "Runtime.StepX": -1
+      ]
     },
     "calls_at_entry": [
       [
@@ -8274,8 +8279,8 @@
         [
           "<buffer>",
           "<buffer>",
-          4,
-          4
+          5,
+          3
         ]
       ]
     ],
@@ -8507,6 +8512,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -8524,7 +8530,7 @@
         ],
         [
           0,
-          0,
+          112,
           0,
           0,
           0
@@ -8532,7 +8538,7 @@
         [
           0,
           0,
-          112,
+          0,
           0,
           0
         ],
@@ -8568,7 +8574,7 @@
         ],
         [
           0,
-          0,
+          20,
           0,
           0,
           0
@@ -8576,7 +8582,7 @@
         [
           0,
           0,
-          20,
+          0,
           0,
           0
         ],
@@ -8594,8 +8600,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -8696,8 +8701,8 @@
         [
           "<buffer>",
           "<buffer>",
-          3,
-          2
+          2,
+          1
         ]
       ]
     ],
@@ -8718,6 +8723,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -8752,13 +8758,13 @@
           0,
           0,
           0,
-          112
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          112,
           0
         ]
       ],
@@ -8796,17 +8802,16 @@
           0,
           0,
           0,
-          20
+          0
         ],
         [
           0,
           0,
           0,
-          0,
+          20,
           0
         ]
-      ],
-      "Runtime.StepX": -1
+      ]
     },
     "calls_at_entry": [
       [
@@ -8907,8 +8912,8 @@
         [
           "<buffer>",
           "<buffer>",
-          4,
-          4
+          5,
+          3
         ]
       ]
     ],
@@ -9140,6 +9145,8 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -9164,8 +9171,8 @@
         ],
         [
           0,
-          0,
           112,
+          0,
           0,
           0
         ],
@@ -9208,8 +9215,8 @@
         ],
         [
           0,
-          0,
           20,
+          0,
           0,
           0
         ],
@@ -9227,8 +9234,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -9330,7 +9336,7 @@
           "<buffer>",
           "<buffer>",
           3,
-          2
+          1
         ]
       ]
     ],
@@ -9773,6 +9779,8 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -9797,8 +9805,8 @@
         ],
         [
           0,
-          0,
           112,
+          0,
           0,
           0
         ],
@@ -9841,8 +9849,8 @@
         ],
         [
           0,
-          0,
           20,
+          0,
           0,
           0
         ],
@@ -9860,8 +9868,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -9963,7 +9970,7 @@
           "<buffer>",
           "<buffer>",
           3,
-          2
+          1
         ]
       ]
     ],
@@ -10195,6 +10202,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -10204,8 +10212,8 @@
           0
         ],
         [
-          0,
           112,
+          0,
           0,
           0,
           0
@@ -10239,7 +10247,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -10249,8 +10256,8 @@
           0
         ],
         [
-          0,
           20,
+          0,
           0,
           0,
           0
@@ -10283,8 +10290,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -10386,7 +10392,7 @@
           "<buffer>",
           "<buffer>",
           1,
-          1
+          0
         ]
       ]
     ],
@@ -10407,6 +10413,8 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -10431,9 +10439,9 @@
         ],
         [
           0,
-          0,
-          0,
           112,
+          0,
+          0,
           0
         ],
         [
@@ -10451,7 +10459,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -10476,9 +10483,9 @@
         ],
         [
           0,
-          0,
-          0,
           20,
+          0,
+          0,
           0
         ],
         [
@@ -10495,8 +10502,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -10598,7 +10604,7 @@
           "<buffer>",
           "<buffer>",
           3,
-          3
+          1
         ]
       ]
     ],
@@ -10830,6 +10836,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -10839,8 +10846,8 @@
           0
         ],
         [
-          0,
           112,
+          0,
           0,
           0,
           0
@@ -10874,7 +10881,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -10884,8 +10890,8 @@
           0
         ],
         [
-          0,
           20,
+          0,
           0,
           0,
           0
@@ -10918,8 +10924,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -11021,7 +11026,7 @@
           "<buffer>",
           "<buffer>",
           1,
-          1
+          0
         ]
       ]
     ],
@@ -11042,6 +11047,8 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
+      "Runtime.StepY": -1,
       "Runtime.BattleField": [
         [
           0,
@@ -11066,9 +11073,9 @@
         ],
         [
           0,
-          0,
-          0,
           112,
+          0,
+          0,
           0
         ],
         [
@@ -11086,7 +11093,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -11111,9 +11117,9 @@
         ],
         [
           0,
-          0,
-          0,
           20,
+          0,
+          0,
           0
         ],
         [
@@ -11130,8 +11136,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -11233,7 +11238,7 @@
           "<buffer>",
           "<buffer>",
           3,
-          3
+          1
         ]
       ]
     ],
@@ -11465,6 +11470,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -11474,8 +11480,8 @@
           0
         ],
         [
-          0,
           112,
+          0,
           0,
           0,
           0
@@ -11509,7 +11515,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -11519,8 +11524,8 @@
           0
         ],
         [
-          0,
           20,
+          0,
           0,
           0,
           0
@@ -11553,8 +11558,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -11656,7 +11660,7 @@
           "<buffer>",
           "<buffer>",
           1,
-          1
+          0
         ]
       ]
     ],
@@ -11677,6 +11681,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -11702,8 +11707,8 @@
         [
           0,
           0,
-          0,
           112,
+          0,
           0
         ],
         [
@@ -11721,7 +11726,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -11747,8 +11751,8 @@
         [
           0,
           0,
-          0,
           20,
+          0,
           0
         ],
         [
@@ -11765,8 +11769,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -11868,7 +11871,7 @@
           "<buffer>",
           "<buffer>",
           3,
-          3
+          2
         ]
       ]
     ],
@@ -12100,16 +12103,17 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
-          112,
+          0,
           0,
           0,
           0
         ],
         [
-          0,
+          112,
           0,
           0,
           0,
@@ -12144,17 +12148,16 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
-          20,
+          0,
           0,
           0,
           0
         ],
         [
-          0,
+          20,
           0,
           0,
           0,
@@ -12289,8 +12292,8 @@
         [
           "<buffer>",
           "<buffer>",
-          0,
-          1
+          1,
+          0
         ]
       ]
     ],
@@ -12311,6 +12314,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -12330,13 +12334,13 @@
           0,
           0,
           0,
-          112,
+          0,
           0
         ],
         [
           0,
           0,
-          0,
+          112,
           0,
           0
         ],
@@ -12355,7 +12359,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -12375,13 +12378,13 @@
           0,
           0,
           0,
-          20,
+          0,
           0
         ],
         [
           0,
           0,
-          0,
+          20,
           0,
           0
         ],
@@ -12500,8 +12503,8 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
-          3
+          3,
+          2
         ]
       ]
     ],
@@ -12733,16 +12736,17 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
-          112,
+          0,
           0,
           0,
           0
         ],
         [
-          0,
+          112,
           0,
           0,
           0,
@@ -12777,17 +12781,16 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
-          20,
+          0,
           0,
           0,
           0
         ],
         [
-          0,
+          20,
           0,
           0,
           0,
@@ -12922,8 +12925,8 @@
         [
           "<buffer>",
           "<buffer>",
-          0,
-          1
+          1,
+          0
         ]
       ]
     ],
@@ -12944,6 +12947,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -12963,13 +12967,13 @@
           0,
           0,
           0,
-          112,
+          0,
           0
         ],
         [
           0,
           0,
-          0,
+          112,
           0,
           0
         ],
@@ -12988,7 +12992,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -13008,13 +13011,13 @@
           0,
           0,
           0,
-          20,
+          0,
           0
         ],
         [
           0,
           0,
-          0,
+          20,
           0,
           0
         ],
@@ -13133,8 +13136,8 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
-          3
+          3,
+          2
         ]
       ]
     ],
@@ -13366,16 +13369,17 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
-          112,
+          0,
           0,
           0,
           0
         ],
         [
-          0,
+          112,
           0,
           0,
           0,
@@ -13410,17 +13414,16 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
-          20,
+          0,
           0,
           0,
           0
         ],
         [
-          0,
+          20,
           0,
           0,
           0,
@@ -13555,8 +13558,8 @@
         [
           "<buffer>",
           "<buffer>",
-          0,
-          1
+          1,
+          0
         ]
       ]
     ],
@@ -13577,6 +13580,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -13596,13 +13600,13 @@
           0,
           0,
           0,
-          112,
+          0,
           0
         ],
         [
           0,
           0,
-          0,
+          112,
           0,
           0
         ],
@@ -13621,7 +13625,6 @@
           0
         ]
       ],
-      "Runtime.StepY": 1,
       "Runtime.BattleDistances": [
         [
           0,
@@ -13641,13 +13644,13 @@
           0,
           0,
           0,
-          20,
+          0,
           0
         ],
         [
           0,
           0,
-          0,
+          20,
           0,
           0
         ],
@@ -13766,8 +13769,8 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
-          3
+          3,
+          2
         ]
       ]
     ],
@@ -14491,6 +14494,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.StepY": 1,
       "Runtime.BattleField": [
         [
@@ -14502,21 +14506,21 @@
         ],
         [
           64,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
           112,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
           0,
           0,
           0
@@ -14546,20 +14550,6 @@
         ],
         [
           0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
           20,
           0,
           0,
@@ -14578,9 +14568,22 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -14763,7 +14766,7 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
+          0,
           0
         ]
       ],
@@ -14789,7 +14792,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          0,
           0,
           1
         ]
@@ -14798,7 +14801,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          0,
           0,
           2
         ]
@@ -14807,7 +14810,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          0,
           0,
           3
         ]
@@ -14816,7 +14819,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          0,
           0,
           4
         ]
@@ -14825,7 +14828,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          0,
           0,
           5
         ]
@@ -14834,7 +14837,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          0,
           0,
           6
         ]
@@ -14845,7 +14848,7 @@
         [
           "<buffer>",
           "<buffer>",
-          3,
+          1,
           1
         ]
       ]
@@ -14867,6 +14870,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -14890,9 +14894,9 @@
           0
         ],
         [
-          0,
-          0,
           112,
+          0,
+          0,
           0,
           0
         ],
@@ -14934,9 +14938,9 @@
           0
         ],
         [
-          0,
-          0,
           20,
+          0,
+          0,
           0,
           0
         ],
@@ -14954,8 +14958,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -15139,7 +15142,7 @@
           "<buffer>",
           "<buffer>",
           2,
-          2
+          0
         ]
       ],
       [
@@ -15165,7 +15168,7 @@
         "PulseCell",
         [
           2,
-          2,
+          0,
           1
         ]
       ],
@@ -15174,7 +15177,7 @@
         "PulseCell",
         [
           2,
-          2,
+          0,
           2
         ]
       ],
@@ -15183,7 +15186,7 @@
         "PulseCell",
         [
           2,
-          2,
+          0,
           3
         ]
       ],
@@ -15192,7 +15195,7 @@
         "PulseCell",
         [
           2,
-          2,
+          0,
           4
         ]
       ],
@@ -15201,7 +15204,7 @@
         "PulseCell",
         [
           2,
-          2,
+          0,
           5
         ]
       ],
@@ -15210,7 +15213,7 @@
         "PulseCell",
         [
           2,
-          2,
+          0,
           6
         ]
       ],
@@ -15221,7 +15224,7 @@
           "<buffer>",
           "<buffer>",
           3,
-          2
+          0
         ]
       ]
     ],
@@ -15242,756 +15245,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          64,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          112,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.BattleDistances": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          20,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.StepX": 1
-    },
-    "calls_at_entry": [
-      [
-        "KBGFX",
-        "DrawText",
-        [
-          0,
-          2,
-          8,
-          "\u0412\u043e\u0438\u043d\u044b \u0432\u044b\u0448\u043b\u0438 \u0438\u0437 \u043f\u043e\u0434 \u043a\u043e\u043d\u0442p\u043e\u043b\u044f."
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "FindUnitCell",
-        [
-          0,
-          112,
-          "<buffer>",
-          "<buffer>"
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          1,
-          1
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          2,
-          2
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          3,
-          2
-        ]
-      ]
-    ],
-    "creature_delta": {},
-    "buffers": {
-      "combat": "00000001000000010100000000000000000000000000000000000000000000000000640000000009000064000000000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000004000214008c000000280000001400640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000"
-    },
-    "disk": {},
-    "effects": [],
-    "os_events": [],
-    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
-    "ports": [],
-    "random_seed": 1081369482
-  },
-  "UncontrolledTurn.combat.long-walk.initial-random-3": {
-    "result": 0,
-    "phase": "ready",
-    "exit_code": null,
-    "output": "",
-    "state_delta": {
-      "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          64,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          112,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.BattleDistances": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          20,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.StepX": 1
-    },
-    "calls_at_entry": [
-      [
-        "KBGFX",
-        "DrawText",
-        [
-          0,
-          2,
-          8,
-          "\u0412\u043e\u0438\u043d\u044b \u0432\u044b\u0448\u043b\u0438 \u0438\u0437 \u043f\u043e\u0434 \u043a\u043e\u043d\u0442p\u043e\u043b\u044f."
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "FindUnitCell",
-        [
-          0,
-          112,
-          "<buffer>",
-          "<buffer>"
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          1,
-          1
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          2,
-          2
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          2,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          3,
-          2
-        ]
-      ]
-    ],
-    "creature_delta": {},
-    "buffers": {
-      "combat": "00000001000000010100000000000000000000000000000000000000000000000000640000000009000064000000000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000004000214008c000000280000001400640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000"
-    },
-    "disk": {},
-    "effects": [],
-    "os_events": [],
-    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
-    "ports": [],
-    "random_seed": 1187014913
-  },
-  "UncontrolledTurn.combat.long-walk.initial-random-4": {
-    "result": 0,
-    "phase": "ready",
-    "exit_code": null,
-    "output": "",
-    "state_delta": {
+      "Runtime.StepX": 1,
       "Runtime.StepY": 1,
       "Runtime.BattleField": [
         [
@@ -16080,8 +15334,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -16182,7 +15435,7 @@
         [
           "<buffer>",
           "<buffer>",
-          0,
+          1,
           1
         ]
       ],
@@ -16208,7 +15461,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          0,
+          1,
           1,
           1
         ]
@@ -16217,7 +15470,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          0,
+          1,
           1,
           2
         ]
@@ -16226,7 +15479,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          0,
+          1,
           1,
           3
         ]
@@ -16235,7 +15488,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          0,
+          1,
           1,
           4
         ]
@@ -16244,7 +15497,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          0,
+          1,
           1,
           5
         ]
@@ -16253,7 +15506,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          0,
+          1,
           1,
           6
         ]
@@ -16360,7 +15613,669 @@
     "os_events": [],
     "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
     "ports": [],
-    "random_seed": 1292660344
+    "random_seed": 2548240391
+  },
+  "UncontrolledTurn.combat.long-walk.initial-random-3": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.StepY": -1
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u043e\u0438\u043d\u044b \u0432\u044b\u0448\u043b\u0438 \u0438\u0437 \u043f\u043e\u0434 \u043a\u043e\u043d\u0442p\u043e\u043b\u044f."
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "FindUnitCell",
+        [
+          0,
+          112,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          111
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          31
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          6
+        ]
+      ],
+      [
+        "KBBDMG",
+        "RelocateUnit",
+        [
+          "<buffer>",
+          "<buffer>",
+          1,
+          1
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          111
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          31
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          3
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          5
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          6
+        ]
+      ],
+      [
+        "KBBDMG",
+        "RelocateUnit",
+        [
+          "<buffer>",
+          "<buffer>",
+          0,
+          1
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          111
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          31
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          1,
+          4
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          1,
+          5
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          1,
+          6
+        ]
+      ],
+      [
+        "KBBDMG",
+        "RelocateUnit",
+        [
+          "<buffer>",
+          "<buffer>",
+          0,
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {
+      "combat": "00000001000000010100000000000000000000000000000000000000000000000000640000000009000064000000000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000004000214008c000000280000001400640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000"
+    },
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 4120756731
+  },
+  "UncontrolledTurn.combat.long-walk.initial-random-4": {
+    "result": 0,
+    "phase": "ready",
+    "exit_code": null,
+    "output": "",
+    "state_delta": {
+      "Runtime.StepX": 1,
+      "Runtime.BattleField": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          64,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          112,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "Runtime.BattleDistances": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          20,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "calls_at_entry": [
+      [
+        "KBGFX",
+        "DrawText",
+        [
+          0,
+          2,
+          8,
+          "\u0412\u043e\u0438\u043d\u044b \u0432\u044b\u0448\u043b\u0438 \u0438\u0437 \u043f\u043e\u0434 \u043a\u043e\u043d\u0442p\u043e\u043b\u044f."
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "FindUnitCell",
+        [
+          0,
+          112,
+          "<buffer>",
+          "<buffer>"
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          111
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          31
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          5
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          0,
+          0,
+          6
+        ]
+      ],
+      [
+        "KBBDMG",
+        "RelocateUnit",
+        [
+          "<buffer>",
+          "<buffer>",
+          1,
+          1
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          111
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          31
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          2
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          3
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          4
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          5
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          1,
+          1,
+          6
+        ]
+      ],
+      [
+        "KBBDMG",
+        "RelocateUnit",
+        [
+          "<buffer>",
+          "<buffer>",
+          2,
+          0
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          111
+        ]
+      ],
+      [
+        "KBPLAYER",
+        "FindAdjacent",
+        [
+          "<buffer>",
+          "<buffer>",
+          31
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          2,
+          0,
+          2
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          2,
+          0,
+          3
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          2,
+          0,
+          4
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          2,
+          0,
+          5
+        ]
+      ],
+      [
+        "KBBDRAW",
+        "PulseCell",
+        [
+          2,
+          0,
+          6
+        ]
+      ],
+      [
+        "KBBDMG",
+        "RelocateUnit",
+        [
+          "<buffer>",
+          "<buffer>",
+          3,
+          0
+        ]
+      ]
+    ],
+    "creature_delta": {},
+    "buffers": {
+      "combat": "00000001000000010100000000000000000000000000000000000000000000000000640000000009000064000000000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000004000214008c000000280000001400640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000"
+    },
+    "disk": {},
+    "effects": [],
+    "os_events": [],
+    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "ports": [],
+    "random_seed": 1398305775
   },
   "UncontrolledTurn.combat.long-walk.initial-random-5": {
     "result": 0,
@@ -16381,21 +16296,21 @@
           64,
           0,
           0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
           112,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
           0
         ],
         [
@@ -16425,20 +16340,6 @@
           0,
           0,
           0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
           20,
           0
         ],
@@ -16455,9 +16356,22 @@
           0,
           0,
           0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -16558,7 +16472,7 @@
         [
           "<buffer>",
           "<buffer>",
-          1,
+          0,
           1
         ]
       ],
@@ -16584,7 +16498,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          1,
+          0,
           1,
           1
         ]
@@ -16593,7 +16507,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          1,
+          0,
           1,
           2
         ]
@@ -16602,7 +16516,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          1,
+          0,
           1,
           3
         ]
@@ -16611,7 +16525,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          1,
+          0,
           1,
           4
         ]
@@ -16620,7 +16534,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          1,
+          0,
           1,
           5
         ]
@@ -16629,7 +16543,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          1,
+          0,
           1,
           6
         ]
@@ -16640,7 +16554,7 @@
         [
           "<buffer>",
           "<buffer>",
-          2,
+          1,
           2
         ]
       ],
@@ -16666,7 +16580,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          1,
           2,
           1
         ]
@@ -16675,7 +16589,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          1,
           2,
           2
         ]
@@ -16684,7 +16598,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          1,
           2,
           3
         ]
@@ -16693,7 +16607,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          1,
           2,
           4
         ]
@@ -16702,7 +16616,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          1,
           2,
           5
         ]
@@ -16711,7 +16625,7 @@
         "KBBDRAW",
         "PulseCell",
         [
-          2,
+          1,
           2,
           6
         ]
@@ -16722,7 +16636,7 @@
         [
           "<buffer>",
           "<buffer>",
-          3,
+          1,
           3
         ]
       ]
@@ -16736,7 +16650,7 @@
     "os_events": [],
     "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
     "ports": [],
-    "random_seed": 1398305775
+    "random_seed": 2970822115
   },
   "UncontrolledTurn.combat.long-walk.initial-random-6": {
     "result": 0,
@@ -17023,7 +16937,7 @@
     "os_events": [],
     "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
     "ports": [],
-    "random_seed": 2970822115
+    "random_seed": 248371159
   },
   "UncontrolledTurn.combat.long-walk.initial-random-7": {
     "result": 0,
@@ -17031,7 +16945,7 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Runtime.StepY": 1,
+      "Runtime.StepX": 1,
       "Runtime.BattleField": [
         [
           0,
@@ -17055,8 +16969,8 @@
           0
         ],
         [
-          0,
           112,
+          0,
           0,
           0,
           0
@@ -17099,8 +17013,8 @@
           0
         ],
         [
-          0,
           20,
+          0,
           0,
           0,
           0
@@ -17119,8 +17033,7 @@
           0,
           0
         ]
-      ],
-      "Runtime.StepX": 1
+      ]
     },
     "calls_at_entry": [
       [
@@ -17386,7 +17299,7 @@
           "<buffer>",
           "<buffer>",
           3,
-          1
+          0
         ]
       ]
     ],
@@ -17399,759 +17312,7 @@
     "os_events": [],
     "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
     "ports": [],
-    "random_seed": 3076467546
-  },
-  "UncontrolledTurn.combat.long-walk.initial-random-8": {
-    "result": 0,
-    "phase": "ready",
-    "exit_code": null,
-    "output": "",
-    "state_delta": {
-      "Runtime.StepY": 1,
-      "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          64,
-          0,
-          112,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.BattleDistances": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          20,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.StepX": 1
-    },
-    "calls_at_entry": [
-      [
-        "KBGFX",
-        "DrawText",
-        [
-          0,
-          2,
-          8,
-          "\u0412\u043e\u0438\u043d\u044b \u0432\u044b\u0448\u043b\u0438 \u0438\u0437 \u043f\u043e\u0434 \u043a\u043e\u043d\u0442p\u043e\u043b\u044f."
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "FindUnitCell",
-        [
-          0,
-          112,
-          "<buffer>",
-          "<buffer>"
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          1,
-          1
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          0,
-          1
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          1,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          1,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          1,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          1,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          1,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          1,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          1,
-          2
-        ]
-      ]
-    ],
-    "creature_delta": {},
-    "buffers": {
-      "combat": "00000001000000010100000000000000000000000000000000000000000000000000640000000009000064000000000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000004000214008c000000280000001400640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000"
-    },
-    "disk": {},
-    "effects": [],
-    "os_events": [],
-    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
-    "ports": [],
-    "random_seed": 3182112977
-  },
-  "UncontrolledTurn.combat.long-walk.initial-random-9": {
-    "result": 0,
-    "phase": "ready",
-    "exit_code": null,
-    "output": "",
-    "state_delta": {
-      "Runtime.StepY": 1,
-      "Runtime.BattleField": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          64,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          112,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.BattleDistances": [
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          20,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        [
-          0,
-          0,
-          0,
-          0,
-          0
-        ]
-      ],
-      "Runtime.StepX": 1
-    },
-    "calls_at_entry": [
-      [
-        "KBGFX",
-        "DrawText",
-        [
-          0,
-          2,
-          8,
-          "\u0412\u043e\u0438\u043d\u044b \u0432\u044b\u0448\u043b\u0438 \u0438\u0437 \u043f\u043e\u0434 \u043a\u043e\u043d\u0442p\u043e\u043b\u044f."
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "FindUnitCell",
-        [
-          0,
-          112,
-          "<buffer>",
-          "<buffer>"
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          0,
-          0,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          1,
-          1
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          1,
-          1,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          2,
-          0
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          111
-        ]
-      ],
-      [
-        "KBPLAYER",
-        "FindAdjacent",
-        [
-          "<buffer>",
-          "<buffer>",
-          31
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          0,
-          1
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          0,
-          2
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          0,
-          3
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          0,
-          4
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          0,
-          5
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "PulseCell",
-        [
-          2,
-          0,
-          6
-        ]
-      ],
-      [
-        "KBBDMG",
-        "RelocateUnit",
-        [
-          "<buffer>",
-          "<buffer>",
-          3,
-          1
-        ]
-      ]
-    ],
-    "creature_delta": {},
-    "buffers": {
-      "combat": "00000001000000010100000000000000000000000000000000000000000000000000640000000009000064000000000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000064000000000000000000000000000004000214008c000000280000001400640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000640000000000000000000000000000"
-    },
-    "disk": {},
-    "effects": [],
-    "os_events": [],
-    "video": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
-    "ports": [],
-    "random_seed": 3287758408
+    "random_seed": 1820887499
   },
   "ReserveMenu.combat.unpopulated-reserve-row": {
     "result": 0,

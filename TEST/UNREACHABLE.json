@@ -8,7 +8,7 @@
     "KBBDMG": "d4a2eef0a034ef3a5d100e0988c8c804f19e6912c7e4012fc447fa0614878fb3",
     "KBBDRAW": "ed7def47c2b0e6ffa9db63028510d7861eb136c0e4c801db950d5a7b2c043c33",
     "KBBMAGIC": "5229eace87eed03522f10798b03a6768e6876b856fe67ba8cc6445fe9b408f05",
-    "KBBRES": "31546b9217fee7f2690d4ff5941ad79019016671b16a2b2c2d33c5bf72b821bf",
+    "KBBRES": "a1ff5666dc910ed0d2952dd47178b3d2fd2f1e7389361fbe8f5b7d78ed29c58a",
     "KBBTYPE": "a1f683ea51f8f8f7ab4ad6f5f46085c2014391b4bb0c566b368444353ed40030",
     "KBCAL": "9e84028f8e41ea1691a8a48406afa40a233d490d0934183887bd5be82e13894a",
     "KBCASTLE": "592d7f5f73120f0a6f55762fa45c2e7f78dc04ac00a3a634673b905db7adc6b0",
@@ -414,83 +414,6 @@
               ".",
               "scrolls",
               "["
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "id": "uncontrolled-zero",
-      "reason": "После Random(10) TX находится в 0..9; перед case выполняется Inc(TX). После else TX:=0 возврат на Direction снова выполняет Inc. Ветка 0 и два её присваивания недостижимы.",
-      "depends_on": [
-        "KBBRES",
-        "KBPLAYER",
-        "KBSTATE",
-        "KBTYPES"
-      ],
-      "points": [
-        {
-          "module": "KBBRES",
-          "local_id": 170,
-          "line": 225,
-          "shape": {
-            "routine": "uncontrolledturn",
-            "kind": "case-0",
-            "source": [
-              "begin",
-              "game",
-              ".",
-              "runtime",
-              ".",
-              "stepx",
-              ":=",
-              "-",
-              "1",
-              ";",
-              "game",
-              ".",
-              "runtime",
-              ".",
-              "stepy",
-              ":="
-            ]
-          }
-        },
-        {
-          "module": "KBBRES",
-          "local_id": 171,
-          "line": 226,
-          "shape": {
-            "routine": "uncontrolledturn",
-            "kind": "statement",
-            "source": [
-              "game",
-              ".",
-              "runtime",
-              ".",
-              "stepx",
-              ":=",
-              "-",
-              "1"
-            ]
-          }
-        },
-        {
-          "module": "KBBRES",
-          "local_id": 172,
-          "line": 227,
-          "shape": {
-            "routine": "uncontrolledturn",
-            "kind": "statement",
-            "source": [
-              "game",
-              ".",
-              "runtime",
-              ".",
-              "stepy",
-              ":=",
-              "-",
-              "1"
             ]
           }
         }

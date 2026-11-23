@@ -925,11 +925,11 @@ def cases(module):
                 )
         yield trial(module, "MagicMenu", "no-power", changes={"Campaign.MagicPower": 0})
     elif module == "KBBRES":
-        for wanted in range(10):
+        for wanted in range(8):
             seed = next(
                 s
                 for s in range(20000)
-                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 10 >> 32) == wanted
+                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 8 >> 32) == wanted
             )
             yield trial(
                 module,
@@ -940,6 +940,30 @@ def cases(module):
                 changes={"Combat.Uncontrolled.0": True},
                 field=[(1, 0, 64)],
             )
+        neighbors = [(2 + dx, 2 + dy) for dy in (-1, 0, 1) for dx in (-1, 0, 1) if dx or dy]
+        for start_direction in range(8):
+            seed = next(
+                s
+                for s in range(20000)
+                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 8 >> 32) == start_direction
+            )
+            for opening in [None, *neighbors]:
+                specimen = trial(
+                    module,
+                    "UncontrolledTurn",
+                    f"single-opening.direction-{start_direction}.{opening}",
+                    seed=seed,
+                    units=[("Player", 0, 0, 20, 2, 2)],
+                    changes={"Combat.Uncontrolled.0": True},
+                    field=[(*cell, 80) for cell in neighbors if cell != opening],
+                )
+
+                def single_opening(v, specimen=specimen, opening=opening):
+                    specimen.run(v)
+                    moves = [args[-2:] for _, name, args in v.calls if name == "RelocateUnit"]
+                    assert moves == ([] if opening is None else [list(opening)]), moves
+
+                yield Case(specimen.name, single_opening, specimen.identity)
         yield trial(
             module,
             "ReserveMenu",

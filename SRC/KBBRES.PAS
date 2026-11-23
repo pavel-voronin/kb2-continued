@@ -187,13 +187,15 @@ end;
 
 procedure UncontrolledTurn(var Combat: TBattleState);
 label
-  Attack, Next, Direction, Step;
+  Attack, Next, Move, Step;
 
 const
+  DirectionX: array[0..7] of shortint = (-1, 0, 1, 1, 1, 0, -1, -1);
+  DirectionY: array[0..7] of shortint = (-1, -1, -1, 0, 1, 1, 1, 0);
   Caption = 'Воины вышли из под контpоля.';
 
 var
-  I: byte;
+  I, Direction, Attempt: byte;
   TX, TY: shortint;
   Slot, X, Y, Movement: byte;
 
@@ -215,63 +217,19 @@ Step:
           TY := Y;
 
           if FindAdjacent(TX, TY, 31) then goto Attack;
-          TX := Random(10);
-          Game.Runtime.StepX := 1;
-          Game.Runtime.StepY := 1;
-Direction:
-          Inc(TX);
-
-          case TX of
-            0: begin
-              Game.Runtime.StepX := -1;
-              Game.Runtime.StepY := -1
-            end;
-
-            1: begin
-              Game.Runtime.StepX := 0;
-              Game.Runtime.StepY := -1
-            end;
-
-            2: begin
-              Game.Runtime.StepX := 1;
-              Game.Runtime.StepY := -1
-            end;
-
-            3: begin
-              Game.Runtime.StepX := 1;
-              Game.Runtime.StepY := 0
-            end;
-
-            4: begin
-              Game.Runtime.StepX := 1;
-              Game.Runtime.StepY := 1
-            end;
-
-            5: begin
-              Game.Runtime.StepX := 0;
-              Game.Runtime.StepY := 1
-            end;
-
-            6: begin
-              Game.Runtime.StepX := -1;
-              Game.Runtime.StepY := 1
-            end;
-
-            7: begin
-              Game.Runtime.StepX := -1;
-              Game.Runtime.StepY := 0
-            end;
-          else TX := 0;
+          Direction := Random(8);
+          for Attempt := 1 to 8 do
+          begin
+            Game.Runtime.StepX := DirectionX[Direction];
+            Game.Runtime.StepY := DirectionY[Direction];
+            TX := X + Game.Runtime.StepX;
+            TY := Y + Game.Runtime.StepY;
+            if (TX >= 0) and (TX < 6) and (TY >= 0) and (TY < 5) then
+              if Game.Runtime.BattleField[TX, TY] = 0 then goto Move;
+            Direction := (Direction + 1) mod 8;
           end;
-
-          if X + Game.Runtime.StepX < 0 then goto Direction;
-          if Y + Game.Runtime.StepY < 0 then goto Direction;
-          if X + Game.Runtime.StepX >= 6 then goto Direction;
-
-          if Y + Game.Runtime.StepY >= 5 then goto Direction;
-          if Game.Runtime.BattleField[X + Game.Runtime.StepX, Y + Game.Runtime.StepY] <> 0 then goto Direction;
-          TX := X + Game.Runtime.StepX;
-          TY := Y + Game.Runtime.StepY;
+          goto Next;
+Move:
           Dec(Movement);
 
           for I := 1 to 6 do PulseCell(X, Y, I);
