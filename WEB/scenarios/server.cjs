@@ -28,9 +28,18 @@ function installScenarios(dev,{root,getGame}) {
   console.log('[scenarios] '+store.directory);
 }
 function patchWorker(source) {
-  const needle='const message=JSON.parse(json);switch(message.type)';
-  if(source.split(needle).length!==2)throw Error('Emulator snapshot hook no longer matches');
-  return source.replace(needle,'const message=JSON.parse(json);if(message.type==="kb2-snapshot"){('+restore.toString()+')(message,Module);return;}switch(message.type)');
+  // Asyncify cannot unwind the DOS console write stack during shell startup.
+  // Defer optional yields until KB2 enters graphics, keeping startup waits active.
+  const hooks=[
+    ['function syncSleep(ms,nonSkippable){','function syncSleep(ms,nonSkippable){if(!nonSkippable&&!Module.kb2GraphicsStarted)return;'],
+    ['function ws_client_log(tag,message){','function ws_client_log(tag,message){if(UTF8ToString(tag)==="kb2-startup"&&UTF8ToString(message)==="graphics-init")Module.kb2GraphicsStarted=true;'],
+    ['const message=JSON.parse(json);switch(message.type)','const message=JSON.parse(json);if(message.type==="kb2-snapshot"){('+restore.toString()+')(message,Module);return;}switch(message.type)']
+  ];
+  for(const [needle,replacement] of hooks){
+    if(source.split(needle).length!==2)throw Error('Emulator hook no longer matches: '+needle);
+    source=source.replace(needle,()=>replacement);
+  }
+  return source;
 }
 function injectHtml(html) {
   return html.replace('<script src="app.js','<link rel="stylesheet" href="/__scenarios/style.css">\n  <script src="/__scenarios/client.js" defer></script>\n  <script src="app.js');

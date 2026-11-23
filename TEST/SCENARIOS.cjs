@@ -19,6 +19,19 @@ try {
   assert.ok(injectHtml('<script src="app.js"></script>').includes('/__scenarios/client.js'));
   assert.throws(()=>patchWorker('changed runtime'));
   const source=fs.readFileSync(path.join(root,'WEB/runtime/vendor/wdosbox-x.js'),'utf8');assert.ok(patchWorker(source).includes('kb2-snapshot'));assert.ok(!source.includes('kb2-snapshot'));
+  const boot=vm.runInNewContext(patchWorker(`
+    const Module={},UTF8ToString=value=>value;
+    function syncSleep(ms,nonSkippable){return 'async sleep';}
+    function ws_client_log(tag,message){return message;}
+    function onBackendEvent(json){const message=JSON.parse(json);switch(message.type){}}
+    ({syncSleep,ws_client_log});
+  `));
+  assert.equal(boot.syncSleep(1,false),undefined);
+  assert.equal(boot.syncSleep(1,true),'async sleep');
+  boot.ws_client_log('other','graphics-init');
+  assert.equal(boot.syncSleep(1,false),undefined);
+  assert.equal(boot.ws_client_log('kb2-startup','graphics-init'),'graphics-init');
+  assert.equal(boot.syncSleep(1,false),'async sleep');
   const archive=zipSync({'.jsdos/dosbox.conf':Buffer.from('[dosbox]\nmachine=ega\n'),'KB2.EXE':Buffer.from('EXE fixture')});
   const {unzipSync}=require('../WEB/node_modules/fflate'),local=unzipSync(snapshot.localBundle(archive));
   assert.equal(Buffer.from(local['KB2.EXE']).toString(),'EXE fixture');assert.ok(Buffer.from(local['.jsdos/dosbox.conf']).toString().includes('savefile='+snapshot.snapshotPath));
