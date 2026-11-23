@@ -11,7 +11,7 @@
     "KBBRES": "31546b9217fee7f2690d4ff5941ad79019016671b16a2b2c2d33c5bf72b821bf",
     "KBBTYPE": "a1f683ea51f8f8f7ab4ad6f5f46085c2014391b4bb0c566b368444353ed40030",
     "KBCAL": "9e84028f8e41ea1691a8a48406afa40a233d490d0934183887bd5be82e13894a",
-    "KBCASTLE": "a191b9a25c47ffb50f4147d11b1c17484261e24a251366eb107a103e24622101",
+    "KBCASTLE": "592d7f5f73120f0a6f55762fa45c2e7f78dc04ac00a3a634673b905db7adc6b0",
     "KBEVENTS": "a5ebd9bc8752c1cf82eedc1cb7a30f2dff97d3da08caf76a4b7db37a64b5704d",
     "KBGEN": "0e8bc8920dc43956d5bea196b9d6ddca0606742589b13c96ec82978e362a7b0b",
     "KBMAGIC": "d6dd982809447b99c2adef1815c4fca0a3db0a2338fc8bb3e70b95c3c762565e",
@@ -579,55 +579,13 @@
     },
     {
       "id": "castle-greeting",
-      "reason": "I:=Random(5) даёт 0..4. Ветка 5 и отсутствие подходящей ветви case недостижимы.",
+      "reason": "I:=Random(6) дает 0..5; case перечисляет все шесть значений.",
       "depends_on": [
         "KBCASTLE",
         "KBSTATE",
         "KBTYPES"
       ],
       "points": [
-        {
-          "module": "KBCASTLE",
-          "local_id": 344,
-          "line": 404,
-          "shape": {
-            "routine": "castlevisit",
-            "kind": "case-5",
-            "source": [
-              "drawtext",
-              "(",
-              "false",
-              ",",
-              "14",
-              ",",
-              "264",
-              ",",
-              "'Чужеземец, что ты забыл в моем замке ?'",
-              ")"
-            ]
-          }
-        },
-        {
-          "module": "KBCASTLE",
-          "local_id": 345,
-          "line": 404,
-          "shape": {
-            "routine": "castlevisit",
-            "kind": "statement",
-            "source": [
-              "drawtext",
-              "(",
-              "false",
-              ",",
-              "14",
-              ",",
-              "264",
-              ",",
-              "'Чужеземец, что ты забыл в моем замке ?'",
-              ")"
-            ]
-          }
-        },
         {
           "module": "KBCASTLE",
           "local_id": 346,

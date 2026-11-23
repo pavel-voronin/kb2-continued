@@ -393,7 +393,7 @@ begin
       end
       else
       begin
-        I := Random(5);
+        I := Random(6);
 
         case I of
           0: DrawText(false, 6, 264, 'Деpжись подальше от этого замка, иначе ты покойник !');

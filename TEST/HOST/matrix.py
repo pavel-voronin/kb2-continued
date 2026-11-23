@@ -973,11 +973,11 @@ def cases(module):
                 **{f"Campaign.Castles.0.0.Species.{i}": i for i in range(5)},
             },
         )
-        for roll in range(5):
+        for roll in range(6):
             seed = next(
                 s
                 for s in range(20000)
-                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 5 >> 32) == roll
+                if (((s * 134775813 + 1) & 0xFFFFFFFF) * 6 >> 32) == roll
             )
             yield sample(
                 module,
