@@ -226,7 +226,7 @@ begin
       end
       else
       begin
-        DrawDialog(8, 230, 488, 320);
+        DrawDialog(8, 230, 584, 320);
         Text := 'Вы нашли ' + Game.Runtime.SpellTitles[Game.Campaign.HiddenSpellEffect] + ' заклинание.';
         DrawText(false, 13, 264, Text);
         Game.Campaign.Map[Game.Campaign.Island, Game.World.GenerationX, Game.World.GenerationY] := 0;
