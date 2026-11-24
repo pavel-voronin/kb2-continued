@@ -104,6 +104,7 @@ FreeSlot:
       Game.Campaign.Army[ArmyIndex].Count, Game.Campaign.Dwellings[Game.Campaign.Island, DwellingIndex].Count);
 
     if Game.Runtime.LastScan = 27 then goto Finished;
+    if Game.Campaign.Army[ArmyIndex].Count = 0 then goto ContinueLoop;
     if Game.Campaign.EnemyGrace > 0 then CopyRecord(0, 5, 2880, Game.Runtime.PictureBanks[13],
     Game.Runtime.PictureBanks[0]);
     Game.Campaign.Flags.ArmyAvailable := true;

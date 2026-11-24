@@ -662,6 +662,38 @@ def cases(module):
 
             yield Case("map-part.castle-reward-sets-ownership", castle_map_reward)
     if module == "KBDWELL":
+        for wanted in (0, 11):
+
+            def recruit_without_purchase(v, wanted=wanted):
+                g = preset(v)
+                g.Campaign.Dwellings[0][0].Count = 10
+                g.Campaign.EnemyGrace = 7
+                v.set_game(g)
+
+                # Run KBEcon in the same game state as DwellingVisit.
+                economy = {
+                    address: entry
+                    for address, entry in v.functions.items()
+                    if entry[0] == "KBECON"
+                }
+                assert any(meta["name"] == "BuyQuantity" for _, meta in economy.values())
+                for address in economy:
+                    del v.functions[address]
+                keys = [ord(digit) for digit in str(wanted)] + [13, 27]
+                try:
+                    ready(v, v.invoke("DwellingVisit", keys=keys))
+                finally:
+                    v.functions.update(economy)
+
+                after = v.game().Campaign
+                assert after.Army[0].Species == 100, after.Army[0].Species
+                assert after.Army[0].Count == 0
+                assert not after.Flags.ArmyAvailable
+                assert after.EnemyGrace == 7
+                assert after.Dwellings[0][0].Count == 10
+                assert after.Gold == g.Campaign.Gold
+
+            yield Case(f"recruit.no-purchase.stock-10.quantity-{wanted}", recruit_without_purchase)
         for army in ("empty", "reserve-free", "full", "over-limit"):
             for grace in (0, 1):
 
