@@ -158,7 +158,11 @@ begin
   if Attacker = Game.Campaign.WeeklySpecies then Damage := Game.Campaign.DamageBonus + Damage * Count
   else Damage := Game.Campaign.DamageBonus + (Random(Damage * Count * 2 div 3) + Damage * Count div 3);
   case Attacker of
-    12: Inc(AttackerHitPoints, Damage);
+    12: begin
+      Inc(AttackerHitPoints, Damage);
+      Temporary := LongInt(65535) * CreatureDefinitions[12].Defense;
+      if AttackerHitPoints > Temporary then AttackerHitPoints := Temporary;
+    end;
     15: if not (Defender in [19, 22, 23]) then
     begin
       Temporary := Temporary * Count;
@@ -168,15 +172,9 @@ begin
 
     17: if Defender <> 19 then
     begin
-      Temporary := AttackerHitPoints + Damage;
-      Count := Temporary div CreatureDefinitions[17].Defense;
-
-      if Count > Combat.VampireInitialCount then
-      begin
-        Temporary := CreatureDefinitions[17].Defense;
-        AttackerHitPoints := Combat.VampireInitialCount * Temporary;
-      end
-      else AttackerHitPoints := Temporary;
+      Inc(AttackerHitPoints, Damage);
+      Temporary := LongInt(Combat.VampireInitialCount) * CreatureDefinitions[17].Defense;
+      if AttackerHitPoints > Temporary then AttackerHitPoints := Temporary;
     end;
 
     19: if CreatureDefinitions[Defender].Defense > Damage then
@@ -248,7 +246,7 @@ procedure AttackUnit(var Combat: TBattleState; AttackerX, AttackerY, DefenderX, 
 var
   Attacker, Defender: TCombatUnit;
   OldHitPoints: longint;
-  Killed: word;
+  Killed, HitPointsPerUnit: word;
   DefenderSlot, AttackerSlot, PlayerSlot: byte;
   DefenderIsPlayer, AttackerIsPlayer: boolean;
 begin
@@ -292,7 +290,9 @@ begin
 
   if OldHitPoints < Attacker.HitPoints then
   begin
-    Attacker.Count := Attacker.HitPoints div CreatureDefinitions[Attacker.Species].Defense;
+    HitPointsPerUnit := CreatureDefinitions[Attacker.Species].Defense;
+    Attacker.Count := Attacker.HitPoints div HitPointsPerUnit;
+    if Attacker.HitPoints mod HitPointsPerUnit > 0 then Inc(Attacker.Count);
     Game.Runtime.BattleDistances[AttackerX, AttackerY] := Attacker.Count;
     DrawCellCount(AttackerX, AttackerY);
   end;

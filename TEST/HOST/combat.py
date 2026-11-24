@@ -706,6 +706,36 @@ def cases(module):
                 changes={"Combat.Enemy.0.Shots": 0},
             )
     elif module == "KBBDMG":
+        for label, species, count, health, healed_health in (
+            ("wounded-ghost", 12, 1, 10, 25),
+            ("wounded-vampire", 17, 1, 10, 50),
+            ("ghost-at-limit", 12, 65535, 65535 * 70, 65535 * 70),
+            ("vampire-at-limit", 17, 1, 90, 110),
+        ):
+            strike = trial(
+                module,
+                "AttackUnit",
+                "healing." + label,
+                units=[("Player", 0, species, count, 0, 0), ("Enemy", 0, 0, 2, 1, 0)],
+                args=[0, 0, 1, 0],
+                changes={
+                    "Campaign.WeeklySpecies": species,
+                    "Campaign.DamageBonus": 0,
+                    "Combat.Player.0.HitPoints": health,
+                },
+            )
+
+            def preserve_healed_unit(v, strike=strike, count=count, health=healed_health):
+                result = strike.run(v)
+                state = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
+                attacker = state.Player[0]
+                assert attacker.HitPoints == health, (attacker.HitPoints, health)
+                assert attacker.Count == count, (attacker.Count, count)
+                field_count = v.game().Runtime.BattleDistances[0][0]
+                assert field_count == count, (field_count, count)
+
+            yield Case(strike.name, preserve_healed_unit, strike.identity)
+
         seed = next(
             s
             for s in range(20000)
