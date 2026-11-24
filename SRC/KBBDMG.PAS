@@ -249,7 +249,7 @@ var
   Attacker, Defender: TCombatUnit;
   OldHitPoints: longint;
   Killed: word;
-  DefenderSlot, AttackerSlot: byte;
+  DefenderSlot, AttackerSlot, PlayerSlot: byte;
   DefenderIsPlayer, AttackerIsPlayer: boolean;
 begin
   AnimateImpact(DefenderX, DefenderY);
@@ -306,7 +306,11 @@ begin
         Dec(Combat.PlayerCount);
         Dec(Combat.ReadyPlayerCount);
 
-        if Combat.PlayerCount = 0 then Game.Runtime.BattleResult := 2;
+        { Погибший отряд записывается в Combat.Player в конце процедуры. }
+        PlayerSlot := 0;
+        while (PlayerSlot < 5) and
+          ((PlayerSlot = DefenderSlot) or (Combat.Player[PlayerSlot].Species >= 100)) do Inc(PlayerSlot);
+        if PlayerSlot = 5 then Game.Runtime.BattleResult := 2;
       end
       else
       begin

@@ -748,6 +748,27 @@ def cases(module):
             args=[0, 0, 5, 4],
             changes={"Combat.Player.0.HitPoints": 1},
         )
+        last_uncontrolled = trial(
+            module,
+            "AttackUnit",
+            "last-uncontrolled-player-stack-dies",
+            units=[("Enemy", 0, 5, 19, 5, 3), ("Player", 0, 7, 1, 1, 1)],
+            args=[5, 3, 1, 1],
+            changes={
+                "Campaign.WeeklySpecies": 5,
+                "Combat.PlayerCount": 0,
+                "Combat.ReadyPlayerCount": 0,
+                "Combat.Uncontrolled.0": True,
+            },
+        )
+
+        def last_uncontrolled_defeat(v):
+            last_uncontrolled.run(v)
+            runtime = v.game().Runtime
+            assert runtime.BattleField[1][1] == 0
+            assert runtime.BattleResult == 2, runtime.BattleResult
+
+        yield Case(last_uncontrolled.name, last_uncontrolled_defeat, last_uncontrolled.identity)
         yield trial(
             module,
             "ReportEnemyLoss",
