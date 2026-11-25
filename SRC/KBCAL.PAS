@@ -7,7 +7,7 @@ procedure EndWeek;
 
 implementation
 
-uses KBHud, KBState, KBTables, KBUI, KBGfx, KBInput, KBWorld, KBSess;
+uses KBHud, KBState, KBTypes, KBTables, KBUI, KBGfx, KBInput, KBWorld, KBSess;
 
 procedure EndWeek;
 var
@@ -23,6 +23,9 @@ label
 var
   I, J, Species, Island: byte;
   Total: longint;
+  Enemy: ^TWanderingArmy;
+  Previous, Candidate: TWanderingArmy;
+  NewArmy, HasTroops: boolean;
 
 begin
   Island := Random(Game.Campaign.UnlockedIslands) + 1;
@@ -32,10 +35,13 @@ begin
   if I > 5 then I := 5;
   if not Game.Campaign.Castles[Island, I].Owned then
   begin
+    NewArmy := false;
     for I := 0 to 20 do
       if Game.Campaign.WanderingArmies[Island, I].X = 255 then
       begin
+        Previous := Game.Campaign.WanderingArmies[Island, I];
         RelocateArmy(Island, I);
+        NewArmy := true;
         goto FoundSlot
       end;
 
@@ -49,14 +55,26 @@ begin
       else goto FoundSlot;
     goto Finished;
 FoundSlot:
+    Enemy := @Game.Campaign.WanderingArmies[Island, I];
+    Candidate := Enemy^;
+    HasTroops := false;
     for J := 0 to 4 do
     begin
       Species := Random(249) div 10;
-      Game.Campaign.WanderingArmies[Island, I].Counts[J] := (Game.Campaign.Leadership +
-    Game.Campaign.LeadershipBonus) div
-        CreatureDefinitions[Species].Defense;
-      if Game.Campaign.WanderingArmies[Island, I].Counts[J] > 1 then Game.Campaign.WanderingArmies[Island,
-    I].Species[J] := Species;
+      Candidate.Counts[J] := (Game.Campaign.Leadership +
+        Game.Campaign.LeadershipBonus) div CreatureDefinitions[Species].Defense;
+
+      if Candidate.Counts[J] = 0 then Candidate.Species[J] := 100
+      else if Candidate.Counts[J] > 1 then Candidate.Species[J] := Species;
+
+      if Candidate.Species[J] < 100 then HasTroops := true;
+    end;
+
+    if HasTroops then Enemy^ := Candidate
+    else if NewArmy then
+    begin
+      Game.Campaign.Map[Island, Enemy^.X, Enemy^.Y] := 0;
+      Enemy^ := Previous;
     end;
   end;
 

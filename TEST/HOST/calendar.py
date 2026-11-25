@@ -85,6 +85,56 @@ def cases(module):
                 )
 
         yield Case(f"mutant-lifetime.{lifetime}", mutant)
+
+    for label, authority, free, species, counts in (
+        ("existing-empty-result", 0, False, (5, 100, 4, 100, 6), (10, 0, 10, 0, 10)),
+        ("existing-partial-result", 20, False, (5, 100, 1, 0, 100), (1, 0, 2, 10, 0)),
+        ("new-empty-result", 0, True, (100,) * 5, (10, 0, 10, 0, 10)),
+        ("new-positive-result", 20, True, (1, 0, 100, 100, 100), (2, 10, 0, 0, 0)),
+    ):
+
+        def weekly_enemy(v, authority=authority, free=free, species=species, counts=counts):
+            g = v.fixture()
+            campaign = g.Campaign
+            campaign.UnlockedIslands = 1
+            campaign.Leadership = authority
+            for army in campaign.WanderingArmies[0]:
+                army.X, army.Y = 20, 20
+                army.Species[:] = [100] * 5
+            army = campaign.WanderingArmies[0][0]
+            army.Counts[:] = (10, 0, 10, 0, 10)
+            if free:
+                army.X, army.Y = 255, 17
+            else:
+                army.Species[:] = (5, 100, 4, 100, 6)
+                campaign.Map[0][20][20] = 5
+            v.set_game(g)
+
+            # Keep native placement and its random draws in the same weekly transition.
+            placement = {
+                address: entry for address, entry in v.functions.items()
+                if entry[0] == "KBWORLD" and entry[1]["name"] == "RelocateArmy"
+            }
+            assert len(placement) == 1
+            for address in placement:
+                del v.functions[address]
+            try:
+                ready(v, v.invoke("EndWeek"))
+            finally:
+                v.functions.update(placement)
+
+            after = v.game().Campaign
+            actual = after.WanderingArmies[0][0]
+            position = (22, 28) if free and authority else (army.X, army.Y)
+            assert (actual.X, actual.Y) == position, (actual.X, actual.Y)
+            assert tuple(actual.Species) == species, tuple(actual.Species)
+            assert tuple(actual.Counts) == counts, tuple(actual.Counts)
+            if free and authority:
+                campaign.Map[0][22][28] = 5
+            assert bytes(after.Map) == bytes(campaign.Map)
+
+        yield Case(f"weekly-enemy.{label}", weekly_enemy)
+
     from matrix import sample
 
     yield sample(
