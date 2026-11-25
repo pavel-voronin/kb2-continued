@@ -23,20 +23,33 @@ var
   OriginalArmy: array[0..4] of TArmyStack;
 
 procedure Audience;
+label ChooseReward;
+var
+  Capacity: word;
+
+procedure DrawAudience(ShowRewards: boolean);
 begin
   DrawDialog(8, 230, 488, 320);
   Text := 'Хозяин земли ' + RulerNames[Game.Campaign.Island] + ' говоpит, что';
   DrawText(false, 2, 240, Text);
 
-  if Game.Campaign.QuestFlags[Game.Campaign.Island] = 0 then
+  if ShowRewards then
   begin
     DrawText(false, 2, 256, 'Он благодаpит Вас за помощь его землям и пpедлагает:');
     DrawText(false, 2, 264, '1) Золото - $500000');
     DrawText(false, 2, 272, '2) Войско');
     DrawText(false, 2, 280, '3) Часть дpевней каpты');
     DrawText(false, 2, 288, '4) Звание Главного полководца его земель');
+  end;
+end;
+
+begin
+  DrawAudience(Game.Campaign.QuestFlags[Game.Campaign.Island] = 0);
+  if Game.Campaign.QuestFlags[Game.Campaign.Island] = 0 then
+  begin
     TransmuteDwellings(Game.Campaign.Island);
 
+ChooseReward:
     repeat
       Game.Runtime.LastScan := Ord(ReadKey)
     until Game.Runtime.LastScan in [49..52];
@@ -50,7 +63,20 @@ begin
           Inc(I)
         until (Game.Campaign.Army[I].Species < 100) or (I > 4);
 
-        if I < 4 then Game.Campaign.Army[I].Count := Game.Campaign.Army[I].Count * 2;
+        if I < 4 then
+        begin
+          Capacity := 65535 - Game.Campaign.Army[I].Count;
+          if Capacity = 0 then
+          begin
+            ShowNotice(26);
+            DrawAudience(true);
+            goto ChooseReward;
+          end;
+
+          if Game.Campaign.Army[I].Count < Capacity then
+            Capacity := Game.Campaign.Army[I].Count;
+          Inc(Game.Campaign.Army[I].Count, Capacity);
+        end;
       end;
 
       51: begin

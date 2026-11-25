@@ -661,6 +661,57 @@ def cases(module):
                 assert v.game().Campaign.MapParts == 1
 
             yield Case("map-part.castle-reward-sets-ownership", castle_map_reward)
+
+            for count, expected, alternate in (
+                (32767, 65534, False),
+                (32768, 65535, False),
+                (65535, 65535, True),
+            ):
+
+                def castle_army_reward(v, count=count, expected=expected, alternate=alternate):
+                    g = preset(v)
+                    g.Campaign.QuestFlags[0] = 0
+                    g.Campaign.Army[0].Species = 0
+                    g.Campaign.Army[0].Count = count
+                    g.Campaign.Flags.ArmyAvailable = True
+                    v.set_game(g)
+
+                    keys = [50, 50, 49, 27] if alternate else [50, 50, 27]
+                    ready(v, v.invoke("CastleVisit", keys=keys))
+
+                    if alternate:
+                        notice, = (
+                            i for i, (_, name, args) in enumerate(v.calls)
+                            if name == "ShowNotice" and args == [26]
+                        )
+                        before, after = (
+                            i for i, (_, name, args) in enumerate(v.calls)
+                            if name == "DrawText" and args[3] == "2) Войско"
+                        )
+                        assert before < notice < after
+
+                    after = v.game().Campaign
+                    assert after.Army[0].Count == expected, after.Army[0].Count
+                    assert after.Army[0].Species == 0
+                    assert after.Gold == g.Campaign.Gold + (500000 if alternate else 0)
+                    assert after.Income == g.Campaign.Income + 2000
+                    assert after.QuestFlags[0] == 100
+
+                yield Case(f"ruler-reward.army-count-{count}", castle_army_reward)
+    if module == "KBUI":
+
+        def full_reward_notice(v):
+            v.fixture()
+            v.scans.append(57)
+            ready(v, v.invoke("ShowNotice", 26))
+            assert v.calls[0][1:] == ("ClearRectangle", [8, 230, 488, 320])
+            assert v.calls[-2][1:] == (
+                "DrawText", [0, 13, 272, "Отряд полон. Выберите другую награду."]
+            )
+            assert v.calls[-1][1] == "ReadScanCode"
+            assert v.game().Runtime.LastScan == 57
+
+        yield Case("ruler-reward.full-army-notice", full_reward_notice)
     if module == "KBDWELL":
         for wanted in (0, 11):
 
