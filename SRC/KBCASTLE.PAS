@@ -237,6 +237,7 @@ label
 
 var
   J: byte;
+  Capacity, Available: word;
 
 begin
   Val(Chr(Game.Runtime.LastScan), I, Game.Runtime.AuthorityChange);
@@ -266,7 +267,22 @@ begin
     DrawGarrison;
     goto Finished;
 MergeStack:
-    Inc(Game.Campaign.Army[J].Count, Game.Campaign.Castles[Game.Campaign.Island, Slot].Counts[ReserveRows[I]]);
+    Capacity := 65535 - Game.Campaign.Army[J].Count;
+    if Capacity = 0 then
+    begin
+      ShowNotice(27);
+      goto Redraw;
+    end;
+
+    Available := Game.Campaign.Castles[Game.Campaign.Island, Slot].Counts[ReserveRows[I]];
+    if Available > Capacity then
+    begin
+      Inc(Game.Campaign.Army[J].Count, Capacity);
+      Dec(Game.Campaign.Castles[Game.Campaign.Island, Slot].Counts[ReserveRows[I]], Capacity);
+      goto Redraw;
+    end;
+
+    Inc(Game.Campaign.Army[J].Count, Available);
     goto ReplaceCastle;
 ActiveFree:
     Game.Campaign.Army[J].Species := Game.Campaign.Castles[Game.Campaign.Island, Slot].Species[ReserveRows[I]];

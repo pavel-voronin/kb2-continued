@@ -121,6 +121,7 @@ begin
     24: DrawText(false, 17, 272, 'У Вас нет ни одного смеpча.');
     25: DrawText(false, 18, 272, 'Не удалось сохранить игру.');
     26: DrawText(false, 13, 272, 'Отряд полон. Выберите другую награду.');
+    27: DrawText(false, 25, 272, 'Отряд полон.');
   end;
 
   Game.Runtime.LastScan := ReadScanCode;

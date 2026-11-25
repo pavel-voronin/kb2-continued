@@ -11,7 +11,7 @@
     "KBBRES": "a1ff5666dc910ed0d2952dd47178b3d2fd2f1e7389361fbe8f5b7d78ed29c58a",
     "KBBTYPE": "a1f683ea51f8f8f7ab4ad6f5f46085c2014391b4bb0c566b368444353ed40030",
     "KBCAL": "120185a08d77caa24cdb82d07cc7183a741dee1679b24eb971679fc0fda4dbf9",
-    "KBCASTLE": "62719be1ba156769d9f49776e1ae188475281f67d16339f9f7f7f7eda31103b6",
+    "KBCASTLE": "81294e4e1eee1f2cc30e9fefe5adb5ff4cce5f8b1f75907baae73f556fa09e6e",
     "KBEVENTS": "a5ebd9bc8752c1cf82eedc1cb7a30f2dff97d3da08caf76a4b7db37a64b5704d",
     "KBGEN": "0e8bc8920dc43956d5bea196b9d6ddca0606742589b13c96ec82978e362a7b0b",
     "KBMAGIC": "d6dd982809447b99c2adef1815c4fca0a3db0a2338fc8bb3e70b95c3c762565e",
@@ -512,8 +512,8 @@
       "points": [
         {
           "module": "KBCASTLE",
-          "local_id": 362,
-          "line": 424,
+          "local_id": 375,
+          "line": 440,
           "shape": {
             "routine": "castlevisit",
             "kind": "case-unmatched",

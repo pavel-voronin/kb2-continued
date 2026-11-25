@@ -698,20 +698,53 @@ def cases(module):
                     assert after.QuestFlags[0] == 100
 
                 yield Case(f"ruler-reward.army-count-{count}", castle_army_reward)
+
+            for label, count, expected, remaining in (
+                ("fits", 20, 25, 0),
+                ("partial", 65533, 65535, 3),
+                ("full", 65535, 65535, 5),
+            ):
+
+                def transfer_garrison(v, count=count, expected=expected, remaining=remaining):
+                    g = preset(v)
+                    g.Campaign.Army[0].Species = 0
+                    g.Campaign.Army[0].Count = count
+                    castle = g.Campaign.Castles[0][0]
+                    castle.Owned = True
+                    castle.Species[0] = 0
+                    castle.Counts[0] = 5
+                    v.set_game(g)
+
+                    ready(v, v.invoke("CastleVisit", keys=[49, 27]))
+
+                    after = v.game().Campaign
+                    guard = after.Castles[0][0]
+                    assert after.Army[0].Count == expected, after.Army[0].Count
+                    assert after.Army[0].Species == 0
+                    assert guard.Species[0] == (0 if remaining else 100), guard.Species[0]
+                    if remaining:
+                        assert guard.Counts[0] == remaining, guard.Counts[0]
+                    notices = [args for _, name, args in v.calls if name == "ShowNotice"]
+                    assert notices == ([[27]] if count == 65535 else []), notices
+
+                yield Case(f"garrison-transfer.{label}", transfer_garrison)
     if module == "KBUI":
 
-        def full_reward_notice(v):
-            v.fixture()
-            v.scans.append(57)
-            ready(v, v.invoke("ShowNotice", 26))
-            assert v.calls[0][1:] == ("ClearRectangle", [8, 230, 488, 320])
-            assert v.calls[-2][1:] == (
-                "DrawText", [0, 13, 272, "Отряд полон. Выберите другую награду."]
-            )
-            assert v.calls[-1][1] == "ReadScanCode"
-            assert v.game().Runtime.LastScan == 57
+        for label, notice, column, message in (
+            ("ruler-reward", 26, 13, "Отряд полон. Выберите другую награду."),
+            ("garrison-transfer", 27, 25, "Отряд полон."),
+        ):
 
-        yield Case("ruler-reward.full-army-notice", full_reward_notice)
+            def full_army_notice(v, notice=notice, column=column, message=message):
+                v.fixture()
+                v.scans.append(57)
+                ready(v, v.invoke("ShowNotice", notice))
+                assert v.calls[0][1:] == ("ClearRectangle", [8, 230, 488, 320])
+                assert v.calls[-2][1:] == ("DrawText", [0, column, 272, message]), v.calls[-2]
+                assert v.calls[-1][1] == "ReadScanCode"
+                assert v.game().Runtime.LastScan == 57
+
+            yield Case(f"{label}.full-army-notice", full_army_notice)
     if module == "KBDWELL":
         for wanted in (0, 11):
 
