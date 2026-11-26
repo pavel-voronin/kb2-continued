@@ -956,6 +956,65 @@ def cases(module):
 
             yield Case(cast.name, check_direct_cast, cast.identity)
 
+        for label, scans, species, count, initial, health, expected in (
+            ("ordinary", [28], 0, 20, 100, 39, (89, 139, 0)),
+            ("overflow", [28], 0, 32743, 32744, 65486, (32744, 65488, 0)),
+            ("wide-health", [28], 12, 999, 1000, 69930, (1000, 70000, 0)),
+            ("full-wounded", [28], 0, 20, 20, 39, (20, 40, 0)),
+            ("full-healthy", [28], 0, 32743, 32743, 65486, (32743, 65486, 1)),
+            ("cancelled", [1], 0, 20, 30, 40, (20, 40, 1)),
+            ("empty-cell", [77, 28], 0, 20, 30, 40, (20, 40, 1)),
+        ):
+            cast = trial(
+                module,
+                "MagicMenu",
+                "resurrect." + label,
+                scans=[7, *scans],
+                units=[("Player", 0, species, count, 0, 0)],
+                changes={
+                    "Campaign.MagicPower": 2,
+                    "Campaign.Scrolls.12": 1,
+                    "Combat.Player.0.InitialCount": initial,
+                    "Combat.Player.0.HitPoints": health,
+                },
+            )
+
+            def resurrect(v, cast=cast, expected=expected):
+                result = cast.run(v)
+                combat = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
+                unit = combat.Player[0]
+                game = v.game()
+                actual = unit.Count, unit.HitPoints, game.Campaign.Scrolls[12]
+                assert actual == expected, (actual, expected)
+                assert game.Runtime.BattleDistances[0][0] == expected[0]
+
+            yield Case(cast.name, resurrect, cast.identity)
+
+        for consume, stock in ((False, 1), (True, 0)):
+            cast = trial(
+                module,
+                "SelectSpellTarget",
+                f"resurrect.consume-{consume}.stock-{stock}",
+                spell=12,
+                consume=consume,
+                spends_scroll=False,
+                scans=[28],
+                units=[("Player", 0, 0, 20, 0, 0)],
+                changes={
+                    "Campaign.MagicPower": 1,
+                    "Campaign.Scrolls.12": stock,
+                    "Combat.Player.0.InitialCount": 25,
+                },
+            )
+
+            def check_resurrect_target(v, cast=cast):
+                result = cast.run(v)
+                combat = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
+                assert combat.Player[0].Count == 25
+                assert combat.Player[0].HitPoints == 50
+
+            yield Case(cast.name, check_resurrect_target, cast.identity)
+
         yield trial(
             module,
             "SelectSpellTarget",
@@ -995,7 +1054,9 @@ def cases(module):
                         f"spell-{spell}.tile-{tile}.consume-{consume}",
                         spell=spell,
                         consume=consume,
-                        spends_scroll=False if spell == 8 and tile != 112 and consume else None,
+                        spends_scroll=False
+                        if consume and (spell == 12 or (spell == 8 and tile != 112))
+                        else None,
                         scans=[28, 28, 1],
                         units=[("Player", 0, 0, 20, 0, 0), ("Enemy", 0, 0, 20, 5, 4)],
                         field=[(0, 0, tile)],
@@ -1015,6 +1076,7 @@ def cases(module):
                 "SelectSpellTarget",
                 f"resurrect-{hp}-{initial}",
                 spell=12,
+                spends_scroll=False if hp == 40 and initial == 20 else None,
                 scans=[28],
                 units=[("Player", 0, 0, 20, 0, 0)],
                 changes={

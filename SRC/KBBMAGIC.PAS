@@ -91,15 +91,19 @@ end;
 procedure ResurrectUnit;
 var
   Slot: byte;
-  NewHitPoints: longint;
+  NewHitPoints, NewCount: longint;
 
 begin
   Slot := (Game.Runtime.BattleField[X, Y] - 112) div 3;
+  if Combat.Player[Slot].HitPoints >= LongInt(Combat.Player[Slot].InitialCount) *
+    CreatureDefinitions[Combat.Player[Slot].Species].Defense then Exit;
+
   NewHitPoints := Game.Campaign.MagicPower * 50 + Combat.Player[Slot].HitPoints;
-  Game.Runtime.BattleTextColumn := Game.Runtime.BattleDistances[X, Y] +
+  NewCount := LongInt(Game.Runtime.BattleDistances[X, Y]) +
     NewHitPoints div CreatureDefinitions[Combat.Player[Slot].Species].Defense;
-  if Combat.Player[Slot].InitialCount >= Game.Runtime.BattleTextColumn then
+  if NewCount <= Combat.Player[Slot].InitialCount then
   begin
+    Game.Runtime.BattleTextColumn := NewCount;
     Game.Runtime.BattleDistances[X, Y] := Game.Runtime.BattleTextColumn;
     Combat.Player[Slot].Count := Game.Runtime.BattleTextColumn;
     Combat.Player[Slot].HitPoints := NewHitPoints;
@@ -108,11 +112,12 @@ begin
   begin
     Game.Runtime.BattleDistances[X, Y] := Combat.Player[Slot].InitialCount;
     Combat.Player[Slot].Count := Combat.Player[Slot].InitialCount;
-    Combat.Player[Slot].HitPoints := CreatureDefinitions[Combat.Player[Slot].Species].Defense *
-      Combat.Player[Slot].Count;
+    Combat.Player[Slot].HitPoints := LongInt(Combat.Player[Slot].InitialCount) *
+      CreatureDefinitions[Combat.Player[Slot].Species].Defense;
   end;
 
   DrawCellCount(X, Y);
+  if ConsumeScroll and (Game.Campaign.Scrolls[Spell] > 0) then Dec(Game.Campaign.Scrolls[Spell]);
 end;
 
 begin
@@ -123,7 +128,7 @@ begin
     9, 10, 11, 13: HeaderPrompt(20);
   end;
 
-  if (Spell <> 8) and ConsumeScroll and (Game.Campaign.Scrolls[Spell] > 0) then
+  if (Spell <> 8) and (Spell <> 12) and ConsumeScroll and (Game.Campaign.Scrolls[Spell] > 0) then
     Dec(Game.Campaign.Scrolls[Spell]);
   X := Combat.CursorX;
   Y := Combat.CursorY;

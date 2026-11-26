@@ -2717,22 +2717,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2
-      ],
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -2811,22 +2795,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2
-      ],
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -2866,7 +2834,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Runtime.BattleTextColumn": 1040,
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -2894,14 +2861,6 @@
           0,
           0,
           15,
-          0
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "DrawCellCount",
-        [
-          0,
           0
         ]
       ]
@@ -2914,23 +2873,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2
-      ],
-      "Runtime.BattleTextColumn": 1040,
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -2958,14 +2900,6 @@
           0,
           0,
           15,
-          0
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "DrawCellCount",
-        [
-          0,
           0
         ]
       ]
@@ -4860,7 +4794,6 @@
         1,
         2
       ],
-      "Runtime.BattleTextColumn": 1020,
       "Runtime.LastScan": 28,
       "Runtime.BattleDistances": [
         [
@@ -4968,7 +4901,6 @@
         1,
         2
       ],
-      "Runtime.BattleTextColumn": 1039,
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -5016,23 +4948,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2
-      ],
-      "Runtime.BattleTextColumn": 1040,
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -5060,14 +4975,6 @@
           0,
           0,
           15,
-          0
-        ]
-      ],
-      [
-        "KBBDRAW",
-        "DrawCellCount",
-        [
-          0,
           0
         ]
       ]
@@ -9896,22 +9803,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2
-      ],
       "Runtime.LastScan": 1,
       "Runtime.TextBuffer": [
         3,
