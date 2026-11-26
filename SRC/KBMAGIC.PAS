@@ -197,15 +197,19 @@ begin
       80: if Cursor < SummoningSpeciesLimits[Game.Campaign.Island] then Inc(Cursor);
       28: begin
         if Quantity = 0 then goto Finished;
-        Dec(Game.Campaign.Scrolls[4]);
         Slot := -1;
-        Game.Runtime.MagicCastSucceeded := true;
 
         repeat
           Inc(Slot)
         until (Slot > 9) or (Game.Campaign.Army[Slot].Species = Cursor);
 
-        if Slot <= 9 then Inc(Game.Campaign.Army[Slot].Count, Quantity)
+        if Slot <= 9 then
+        begin
+          if Quantity > 65535 - Game.Campaign.Army[Slot].Count then
+            Quantity := 65535 - Game.Campaign.Army[Slot].Count;
+          if Quantity = 0 then goto Finished;
+          Inc(Game.Campaign.Army[Slot].Count, Quantity);
+        end
         else
         begin
           Slot := -1;
@@ -228,6 +232,8 @@ begin
             CopyRecord(0, Slot, 8640, Game.Runtime.PictureBanks[11], Game.Runtime.PictureBanks[10]);
           end;
         end;
+        Dec(Game.Campaign.Scrolls[4]);
+        Game.Runtime.MagicCastSucceeded := true;
       end;
     end;
   until (Game.Runtime.LastScan = 1) or (Game.Runtime.LastScan = 28);

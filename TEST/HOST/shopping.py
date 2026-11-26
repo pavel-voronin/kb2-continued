@@ -27,6 +27,42 @@ def buying(v, args, byte_stock=False):
 
 
 def cases(module):
+    if module == "KBMAGIC":
+        for label, count, expected, spent in (
+            ("new-stack", None, 15, True),
+            ("fits", 20, 35, True),
+            ("partial", 65521, 65535, True),
+            ("full-match", 65535, 65535, False),
+            ("full-army", None, None, False),
+        ):
+
+            def summon(v, count=count, expected=expected, spent=spent):
+                g = preset(v)
+                g.Campaign.MagicPower = 1
+                g.Campaign.Scrolls[4] = 1
+                if count is not None:
+                    g.Campaign.Army[0].Species = 0
+                    g.Campaign.Army[0].Count = count
+                if expected is None:
+                    for i, army in enumerate(g.Campaign.Army, start=1):
+                        army.Species = i
+                        army.Count = 1
+                v.set_game(g)
+
+                v.scans.extend((6, 28))
+                ready(v, v.invoke("AdventureMagic"))
+
+                after = v.game()
+                army = [(unit.Species, unit.Count) for unit in g.Campaign.Army]
+                if expected is not None:
+                    army[0] = (0, expected)
+                actual = [(unit.Species, unit.Count) for unit in after.Campaign.Army]
+                assert actual == army, actual
+                assert after.Campaign.Scrolls[4] == 1 - spent, after.Campaign.Scrolls[4]
+                assert after.Runtime.MagicCastSucceeded == spent
+
+            yield Case(f"summon-army.{label}", summon)
+
     if module == "KBWIZARD":
         for key, field, price in ((49, "Carpenters", 500), (50, "Woodcutters", 1000),
                                   (51, "Diggers", 500), (52, "Stonecutters", 2000)):

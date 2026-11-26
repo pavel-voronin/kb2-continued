@@ -15119,22 +15119,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
       "Runtime.TextBuffer": [
         4,
         49,
@@ -15163,8 +15147,7 @@
         0,
         0
       ],
-      "Runtime.LastScan": 28,
-      "Runtime.MagicCastSucceeded": 1
+      "Runtime.LastScan": 28
     },
     "calls_at_entry": [
       [

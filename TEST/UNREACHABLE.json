@@ -14,7 +14,7 @@
     "KBCASTLE": "81294e4e1eee1f2cc30e9fefe5adb5ff4cce5f8b1f75907baae73f556fa09e6e",
     "KBEVENTS": "a5ebd9bc8752c1cf82eedc1cb7a30f2dff97d3da08caf76a4b7db37a64b5704d",
     "KBGEN": "0e8bc8920dc43956d5bea196b9d6ddca0606742589b13c96ec82978e362a7b0b",
-    "KBMAGIC": "d6dd982809447b99c2adef1815c4fca0a3db0a2338fc8bb3e70b95c3c762565e",
+    "KBMAGIC": "4690255aa428da1eab4489e90c1eb0fd21099d256ca6c632f7514dc3ff1d0b8c",
     "KBPLAYER": "47a9a6f8242d1f60d9eaaa4503315aba11e1ddc9fdf098bec97e0dbe2e463414",
     "KBSCROLL": "c55d95b94c8ae056802d0d912c8b40513bd689912a854471e9c7f86ad8eb1aa6",
     "KBSTART": "a955c4a4bfddd8455a98615b6460ebc504d5db9dbab4e757d7ac16dfe78d67f7",
@@ -654,8 +654,8 @@
       "points": [
         {
           "module": "KBMAGIC",
-          "local_id": 367,
-          "line": 350,
+          "local_id": 375,
+          "line": 356,
           "shape": {
             "routine": "adventuremagic",
             "kind": "case-unmatched",
