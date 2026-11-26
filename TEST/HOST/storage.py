@@ -80,6 +80,48 @@ def cases(module):
 
         yield Case(f"campaign-save.failure-{failure}", save_failure)
 
+    for label, saved_flag, slots, expected_slots, expected_flag in (
+        ("only-zero", True, {0: (0, 0), 9: (29, 0)}, {}, False),
+        ("active-survivor", True, {0: (0, 0), 3: (2, 7)}, {3: (2, 7)}, True),
+        ("reserve-survivor", False, {1: (0, 0), 9: (29, 4)}, {9: (29, 4)}, True),
+        ("empty-with-old-count", True, {2: (100, 7)}, {2: (100, 7)}, False),
+    ):
+        def load_old_army(v, saved_flag=saved_flag, slots=slots,
+                          expected_slots=expected_slots, expected_flag=expected_flag):
+            game = v.fixture()
+            game.Campaign.Flags.ArmyAvailable = saved_flag
+            game.Campaign.Gold = 123456
+            for i, (species, count) in slots.items():
+                slot = game.Campaign.Army[i]
+                slot.Species, slot.Count = species, count
+            v.set_game(game)
+            assert ready(v, v.invoke("WriteCampaign", False)) == 1
+            saved = v.disk["KB2.DAT"]
+
+            v.fixture()
+            v.disk["KB2.DAT"] = saved
+            ready(v, v.invoke("ReadCampaign"))
+
+            loaded = v.game().Campaign
+            actual = [(slot.Species, slot.Count) for slot in loaded.Army]
+            assert actual == [expected_slots.get(i, (100, 0)) for i in range(10)], actual
+            assert bool(loaded.Flags.ArmyAvailable) == expected_flag, loaded.Flags.ArmyAvailable
+            assert loaded.Gold == 123456
+            assert v.disk["KB2.DAT"] == saved
+
+        yield Case(f"campaign-load.old-army.{label}", load_old_army)
+
+    def missing_campaign(v):
+        game = v.fixture()
+        game.Campaign.Army[0].Species = 0
+        game.Campaign.Army[0].Count = 2
+        v.set_game(game)
+        v.disk.pop("KB2.DAT", None)
+        ready(v, v.invoke("ReadCampaign"))
+        assert bytes(v.game().Campaign) == bytes(game.Campaign)
+
+    yield Case("campaign-load.missing-keeps-army", missing_campaign)
+
     for pattern in (0, 1, 255, "mixed"):
 
         def codec(v, pattern=pattern):
@@ -102,7 +144,11 @@ def cases(module):
             v.disk["KB2.DAT"] = wanted
             ready(v, v.invoke("ReadCampaign"))
             actual = bytes(v.game().Campaign)
-            assert actual == bytes(int(bool(b)) for b in flags) + bytes(g.Campaign)[n:]
+            expected_flags = type(g.Campaign.Flags).from_buffer_copy(
+                bytes(int(bool(b)) for b in flags)
+            )
+            expected_flags.ArmyAvailable = False
+            assert actual == bytes(expected_flags) + bytes(g.Campaign)[n:]
 
         yield Case(f"codec.flags-{pattern}", codec)
 

@@ -143,7 +143,12 @@ begin
 end;
 
 procedure ReadCampaign;
+var
+  Loaded: boolean;
+  I: byte;
+
 begin
+  Loaded := false;
   asm
     mov ax, ds
     mov es, ax
@@ -206,8 +211,20 @@ begin
     rep movsw
     mov ax, es
     mov ds, ax
+    mov Loaded, 1
 
 @Finished:
+  end;
+
+  if Loaded then
+  begin
+    Game.Campaign.Flags.ArmyAvailable := false;
+    for I := 0 to 9 do
+      if Game.Campaign.Army[I].Species < 100 then
+        if Game.Campaign.Army[I].Count = 0 then
+          Game.Campaign.Army[I].Species := 100
+        else
+          Game.Campaign.Flags.ArmyAvailable := true;
   end;
 end;
 
