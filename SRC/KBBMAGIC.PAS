@@ -53,10 +53,18 @@ end;
 procedure MultiplyUnit;
 var
   Slot: byte;
+  MaxHitPoints: longint;
 
 begin
   Slot := (Game.Runtime.BattleField[X, Y] - 112) div 3;
-  Combat.Player[Slot].HitPoints := Game.Campaign.MagicPower * 30 + Combat.Player[Slot].HitPoints;
+  MaxHitPoints := LongInt(65535) *
+    CreatureDefinitions[Combat.Player[Slot].Species].Defense;
+  if (Game.Campaign.MagicPower = 0) or
+    (Combat.Player[Slot].HitPoints >= MaxHitPoints) then Exit;
+
+  Inc(Combat.Player[Slot].HitPoints, Game.Campaign.MagicPower * 30);
+  if Combat.Player[Slot].HitPoints > MaxHitPoints then
+    Combat.Player[Slot].HitPoints := MaxHitPoints;
   Game.Runtime.BattleTextColumn := Combat.Player[Slot].HitPoints div
     CreatureDefinitions[Combat.Player[Slot].Species].Defense;
   if Combat.Player[Slot].HitPoints mod CreatureDefinitions[Combat.Player[Slot].Species].Defense > 0 then
@@ -64,6 +72,7 @@ begin
   Game.Runtime.BattleDistances[X, Y] := Game.Runtime.BattleTextColumn;
   Combat.Player[Slot].Count := Game.Runtime.BattleTextColumn;
   DrawCellCount(X, Y);
+  if ConsumeScroll and (Game.Campaign.Scrolls[Spell] > 0) then Dec(Game.Campaign.Scrolls[Spell]);
 end;
 
 procedure DamageUnit(Factor: byte);
@@ -114,7 +123,8 @@ begin
     9, 10, 11, 13: HeaderPrompt(20);
   end;
 
-  if ConsumeScroll and (Game.Campaign.Scrolls[Spell] > 0) then Dec(Game.Campaign.Scrolls[Spell]);
+  if (Spell <> 8) and ConsumeScroll and (Game.Campaign.Scrolls[Spell] > 0) then
+    Dec(Game.Campaign.Scrolls[Spell]);
   X := Combat.CursorX;
   Y := Combat.CursorY;
 

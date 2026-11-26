@@ -1447,22 +1447,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -1541,22 +1525,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
       "Runtime.LastScan": 28
     },
     "buffers": {
@@ -6420,22 +6388,6 @@
     "exit_code": null,
     "output": "",
     "state_delta": {
-      "Campaign.Scrolls": [
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        2,
-        1,
-        2,
-        2,
-        2,
-        2,
-        2
-      ],
       "Runtime.LastScan": 1,
       "Runtime.TextBuffer": [
         3,

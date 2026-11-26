@@ -51,6 +51,7 @@ def trial(
     *,
     spell=7,
     consume=True,
+    spends_scroll=None,
     cursor=(0, 0),
     scans=(),
     keys=(),
@@ -81,6 +82,8 @@ def trial(
         outcomes=outcomes,
         flush_keyboard=flush_keyboard,
     )
+    if spends_scroll is not None:
+        spec["spends_scroll"] = spends_scroll
 
     def execute(vm):
         g = preset(vm, True)
@@ -200,7 +203,8 @@ def trial(
         result = vm.invoke(routine, *values, keys=keys, responses=responses)
         assert result[1]["kind"] == "ready", result
         if routine == "SelectSpellTarget":
-            assert vm.game().Campaign.Scrolls[spell] == 2 - int(consume)
+            spent = consume if spends_scroll is None else spends_scroll
+            assert vm.game().Campaign.Scrolls[spell] == g.Campaign.Scrolls[spell] - int(spent)
             assert not Battle.from_buffer_copy(
                 vm.read(linear(p), C.sizeof(Battle))
             ).EnemyPhaseFinished
@@ -900,6 +904,58 @@ def cases(module):
                     changes={"Campaign.Island": island},
                 )
     elif module == "KBBMAGIC":
+        for label, scans, count, health, expected in (
+            ("ordinary", [28], 20, 39, (35, 69, 0)),
+            ("partial", [28], 65521, 131042, (65535, 131070, 0)),
+            ("full-wounded", [28], 65535, 131069, (65535, 131070, 0)),
+            ("full-healthy", [28], 65535, 131070, (65535, 131070, 1)),
+            ("cancelled", [1], 20, 40, (20, 40, 1)),
+            ("empty-cell", [77, 28], 20, 40, (20, 40, 1)),
+        ):
+            cast = trial(
+                module,
+                "MagicMenu",
+                "multiply." + label,
+                scans=[3, *scans],
+                units=[("Player", 0, 0, count, 0, 0)],
+                changes={
+                    "Campaign.MagicPower": 1,
+                    "Campaign.Scrolls.8": 1,
+                    "Combat.Player.0.HitPoints": health,
+                },
+            )
+
+            def multiply(v, cast=cast, expected=expected):
+                result = cast.run(v)
+                combat = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
+                unit = combat.Player[0]
+                game = v.game()
+                actual = unit.Count, unit.HitPoints, game.Campaign.Scrolls[8]
+                assert actual == expected, (actual, expected)
+                assert game.Runtime.BattleDistances[0][0] == expected[0]
+
+            yield Case(cast.name, multiply, cast.identity)
+
+        for power, stock, expected_health in ((0, 1, 40), (1, 0, 70)):
+            cast = trial(
+                module,
+                "SelectSpellTarget",
+                f"multiply.power-{power}.stock-{stock}",
+                spell=8,
+                spends_scroll=False,
+                scans=[28],
+                units=[("Player", 0, 0, 20, 0, 0)],
+                changes={"Campaign.MagicPower": power, "Campaign.Scrolls.8": stock},
+            )
+
+            def check_direct_cast(v, cast=cast, expected_health=expected_health):
+                result = cast.run(v)
+                state = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
+                assert state.Player[0].HitPoints == expected_health
+                assert state.Player[0].Count == expected_health // 2
+
+            yield Case(cast.name, check_direct_cast, cast.identity)
+
         yield trial(
             module,
             "SelectSpellTarget",
@@ -939,6 +995,7 @@ def cases(module):
                         f"spell-{spell}.tile-{tile}.consume-{consume}",
                         spell=spell,
                         consume=consume,
+                        spends_scroll=False if spell == 8 and tile != 112 and consume else None,
                         scans=[28, 28, 1],
                         units=[("Player", 0, 0, 20, 0, 0), ("Enemy", 0, 0, 20, 5, 4)],
                         field=[(0, 0, tile)],

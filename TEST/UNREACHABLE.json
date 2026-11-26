@@ -7,7 +7,7 @@
     "KBBATTLE": "0bfe6bad0e9d9bc9720b5aafd48528d28ae318a27e66d190af5cf1494fcf5437",
     "KBBDMG": "7e684c854c3e7c28c1f1e203c6c03294e397a8b2fef29daae60e614c14fa4e4b",
     "KBBDRAW": "ed7def47c2b0e6ffa9db63028510d7861eb136c0e4c801db950d5a7b2c043c33",
-    "KBBMAGIC": "5229eace87eed03522f10798b03a6768e6876b856fe67ba8cc6445fe9b408f05",
+    "KBBMAGIC": "96852b79aa323a8d17f6a8b60dd3f470cbd439b2b234c69de45a153adb85cc76",
     "KBBRES": "a1ff5666dc910ed0d2952dd47178b3d2fd2f1e7389361fbe8f5b7d78ed29c58a",
     "KBBTYPE": "a1f683ea51f8f8f7ab4ad6f5f46085c2014391b4bb0c566b368444353ed40030",
     "KBCAL": "120185a08d77caa24cdb82d07cc7183a741dee1679b24eb971679fc0fda4dbf9",
@@ -392,8 +392,8 @@
       "points": [
         {
           "module": "KBBMAGIC",
-          "local_id": 243,
-          "line": 222,
+          "local_id": 256,
+          "line": 232,
           "shape": {
             "routine": "magicmenu",
             "kind": "case-unmatched",
