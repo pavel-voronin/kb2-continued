@@ -79,7 +79,9 @@ begin
     begin
       Rows := Random(SummoningSpeciesLimits[Game.Campaign.Island]);
       ArmyReport := true;
-      Quantity := Game.Campaign.Leadership div CreatureDefinitions[Rows].Defense;
+      if Game.Campaign.Leadership >= LongInt(65535) * CreatureDefinitions[Rows].Defense then
+        Quantity := 65535
+      else Quantity := Game.Campaign.Leadership div CreatureDefinitions[Rows].Defense;
 
       if Quantity = 0 then Quantity := 10;
       Caption := CreatureDefinitions[Rows].Name + JoinOfferSuffix;
@@ -108,6 +110,8 @@ Empty:
 
         Exit;
 Existing:
+        if Quantity > 65535 - Game.Campaign.Army[I].Count then
+          Quantity := 65535 - Game.Campaign.Army[I].Count;
         Inc(Game.Campaign.Army[I].Count, Quantity);
       end;
     end

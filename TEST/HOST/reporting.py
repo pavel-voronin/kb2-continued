@@ -68,6 +68,35 @@ def cases(module):
                     )
 
             yield Case(f"join.{arrangement}.accept-{accept}", join)
+    for label, owned_count, leadership, expected in (
+        ("partial", 65526, 0, 65535),
+        ("full", 65535, 0, 65535),
+        ("large-offer", None, 131072, 65535),
+    ):
+
+        def join_at_limit(v, owned_count=owned_count, leadership=leadership, expected=expected):
+            g = preset(v)
+            g.Campaign.Leadership = leadership
+            g.Campaign.Map[0][30][30] = 5
+            if owned_count is not None:
+                g.Campaign.Army[0].Species = 0
+                g.Campaign.Army[0].Count = owned_count
+            v.set_game(g)
+            v.cpu.mem_write(v.addresses[2][0], bytes(4))
+            v.scans.append(21)
+            species = v.alloc(bytes([100]) * 5)
+            counts = v.alloc(bytes(10))
+            assert ready(v, v.invoke("ArmyReport", species, counts, v.string_arg(" "))) == 1
+
+            campaign = v.game().Campaign
+            assert campaign.Army[0].Species == 0
+            assert campaign.Army[0].Count == expected, campaign.Army[0].Count
+            assert all(a.Species == 100 for a in campaign.Army[1:])
+            assert campaign.Map[0][30][30] == 0
+            assert not any(name == "ShowNotice" for _, name, _ in v.calls)
+
+        yield Case(f"join.limit.{label}", join_at_limit)
+
     from matrix import sample
 
     for island in range(6):
