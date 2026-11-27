@@ -5,7 +5,7 @@ import json
 import struct
 from cases import Case, ready
 from characterise import preset, battle, tree, projection
-from runtime import Battle, Creature, linear
+from runtime import Battle, Creature, UnitVM, linear
 
 
 def adjacent(v, args):
@@ -448,42 +448,72 @@ def cases(module):
                     assert attacks and attacks[0] == step + target, attacks
 
                 yield Case(specimen.name, route_choice, specimen.identity)
-        for mode in ("walk", "shoot", "fly"):
+        for mode, species, shots, power in (
+            ("walk", 1, 0, 0),
+            ("shoot", 0, 2, 5),
+            ("fly", 0, 0, 0),
+        ):
             specimen = trial(
                 module,
                 "EnemyPhase",
                 f"zero-sized-player-stack.{mode}",
-                units=[("Player", 0, 0, 0, 0, 0), ("Enemy", 0, 1, 20, 5, 4)],
+                units=[
+                    ("Player", 0, species, 0, 0, 0),
+                    ("Player", 5, 6, 20, -1, -1),
+                    ("Enemy", 0, 1, 20, 5, 4),
+                ],
                 changes={
-                    "Combat.Player.0.Shots": 0,
+                    "Combat.Player.0.Shots": shots,
+                    "Combat.Player.0.AttackPower": power,
                     "Combat.Enemy.0.Shots": 2 if mode == "shoot" else 0,
                     "Combat.Enemy.0.CanFly": mode == "fly",
                 },
             )
-            if mode == "walk":
-                yield specimen
-            else:
+            def no_living_target(v, specimen=specimen):
+                specimen.run(v)
+                assert v.game().Runtime.BattleResult == 2
+                assert not any(name in ("FindUnitCell", "AttackUnit", "RelocateUnit")
+                               for _, name, _ in v.calls)
 
-                def invalid_target(v, specimen=specimen):
-                    try:
-                        specimen.run(v)
-                    except AssertionError as error:
-                        assert error.args == (
-                            ("Unconfigured FindUnitCell dependency", 412),
-                        ), error
-                        assert v.calls[-1][1] == "FindUnitCell" and v.calls[-1][2][
-                            :2
-                        ] == [100, 112]
-                    else:
-                        raise AssertionError(
-                            "Expected invalid target slot 100 from a zero-sized army"
-                        )
+            yield Case("B030.no-living-target." + mode, no_living_target, specimen.identity)
 
-                yield Case(
-                    "B017.invalid-target-slot." + mode,
-                    invalid_target,
-                    specimen.identity,
-                )
+        def living_target_after_hit(v):
+            attack = trial(
+                "KBBDMG",
+                "AttackUnit",
+                "living-target-after-hit",
+                units=[("Player", 0, 6, 8193, 0, 0), ("Enemy", 0, 5, 5, 5, 4)],
+                args=[5, 4, 0, 0],
+                changes={"Campaign.WeeklySpecies": 5, "Campaign.DamageBonus": 0,
+                         "Combat.Player.0.Shots": 0},
+            )
+            result = attack.run(UnitVM("KBBDMG"))
+            state = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
+            survivor = state.Player[0]
+            assert survivor.Count == 8192 and survivor.HitPoints == 204795
+            choose = trial(
+                module,
+                "EnemyPhase",
+                "living-target-after-hit",
+                units=[("Player", 4, survivor.Species, survivor.Count, 0, 0),
+                       ("Enemy", 0, 5, 5, 5, 4)],
+                changes={
+                    "Combat.Player.4.HitPoints": survivor.HitPoints,
+                    "Combat.Player.4.AttackPower": survivor.AttackPower,
+                    "Combat.Player.4.Shots": survivor.Shots,
+                    "Combat.Uncontrolled.4": True,
+                    "Combat.PlayerCount": 0,
+                },
+            )
+            choose.run(v)
+            targets = [args[:2] for _, name, args in v.calls
+                       if name == "FindUnitCell" and args[1] == 112]
+            attacks = [args[1:] for _, name, args in v.calls if name == "AttackUnit"]
+            assert targets == [[4, 112]], targets
+            assert attacks == [[5, 4, 0, 0]], attacks
+            assert v.game().Runtime.BattleResult == 0
+
+        yield Case("B030.living-target-after-hit", living_target_after_hit)
         for species in (0, 4):
             yield trial(
                 module,

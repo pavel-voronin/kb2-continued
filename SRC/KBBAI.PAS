@@ -323,6 +323,27 @@ Escape:
   end;
 end;
 
+function IsLivingTarget(Slot: byte): boolean;
+begin
+  IsLivingTarget := (Combat.Player[Slot].Species < 100) and
+    (Combat.Player[Slot].Count > 0);
+end;
+
+function FirstLivingTarget: byte;
+var
+  I: byte;
+
+begin
+  for I := 0 to 4 do
+    if IsLivingTarget(I) then
+    begin
+      FirstLivingTarget := I;
+      Exit;
+    end;
+
+  FirstLivingTarget := 100;
+end;
+
 begin
   while KeyPressed do Game.Runtime.LastScan := ReadScanCode;
   FillChar(Combat.CanMove, 5, 1);
@@ -369,12 +390,13 @@ begin
     end;
 
     for EnemyAI.PreferredTargets[0] := 0 to 4 do
-      if Combat.Player[EnemyAI.PreferredTargets[0]].Species = Combat.Enemy[EnemyAI.EnemySlot].Species then goto
-        SameFound;
+      if IsLivingTarget(EnemyAI.PreferredTargets[0]) and
+        (Combat.Player[EnemyAI.PreferredTargets[0]].Species = Combat.Enemy[EnemyAI.EnemySlot].Species) then
+        goto SameFound;
     EnemyAI.PreferredTargets[0] := 100;
 SameFound:
     for EnemyAI.ScanIndex := 0 to 4 do
-      if (Combat.Player[EnemyAI.ScanIndex].Species < 100) and (Combat.Player[EnemyAI.ScanIndex].Shots > 0) then
+      if IsLivingTarget(EnemyAI.ScanIndex) and (Combat.Player[EnemyAI.ScanIndex].Shots > 0) then
         if EnemyAI.PreferredTargets[1] < 5 then
         begin
           if Combat.Player[EnemyAI.PreferredTargets[1]].AttackPower < Combat.Player[EnemyAI.ScanIndex].AttackPower
@@ -393,12 +415,23 @@ SameFound:
 
     EnemyAI.Distance := 0;
     for EnemyAI.ScanIndex := 0 to 4 do
-      if Combat.Player[EnemyAI.ScanIndex].Species < 100 then
+      if IsLivingTarget(EnemyAI.ScanIndex) then
         if Combat.Player[EnemyAI.ScanIndex].AttackPower > EnemyAI.Distance then
         begin
           EnemyAI.Distance := Combat.Player[EnemyAI.ScanIndex].AttackPower;
           EnemyAI.PreferredTargets[2] := EnemyAI.ScanIndex;
         end;
+
+    if (EnemyAI.PreferredTargets[0] = 100) and
+      (EnemyAI.PreferredTargets[1] = 100) and (EnemyAI.PreferredTargets[2] = 100) then
+    begin
+      EnemyAI.PreferredTargets[2] := FirstLivingTarget;
+      if EnemyAI.PreferredTargets[2] = 100 then
+      begin
+        Game.Runtime.BattleResult := 2;
+        Exit;
+      end;
+    end;
 
     if Combat.Enemy[EnemyAI.EnemySlot].CanFly then ChooseFlight
     else if Combat.Enemy[EnemyAI.EnemySlot].Shots > 0 then

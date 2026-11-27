@@ -3,7 +3,7 @@
   "scope": "Недостижимые пути при указанных контрактах. Они не считаются выполненными тестами.",
   "modules": {
     "KBADVENT": "efb6a7fd774b5180f144ddbe0cac139f8b7b6f0e22acda4f2f31dc34310d2cff",
-    "KBBAI": "b5d359b0eec6c096d0a78c96bb390694dacf54c7917bd99dd0953d0fe4eed55b",
+    "KBBAI": "fbe4fcf9ae2744492466ec68b242ca6bbca69fb05eb01acab5070b41b27fc095",
     "KBBATTLE": "0bfe6bad0e9d9bc9720b5aafd48528d28ae318a27e66d190af5cf1494fcf5437",
     "KBBDMG": "7e684c854c3e7c28c1f1e203c6c03294e397a8b2fef29daae60e614c14fa4e4b",
     "KBBDRAW": "ed7def47c2b0e6ffa9db63028510d7861eb136c0e4c801db950d5a7b2c043c33",
@@ -110,7 +110,7 @@
     },
     {
       "id": "equal-ranks-same-step-parity",
-      "reason": "Кандидаты 1 и 2 проверяются здесь только при равных оценках. У принятых клеток оценка равна манхэттенскому расстоянию до цели. Прямой шаг меняет чётность этой оценки относительно исходной клетки, диагональный сохраняет её. Поэтому при равных оценках кандидат 1 не может быть диагональным, если кандидат 2 уже не диагональный. Если оба сохраняют начальную оценку 100, их координаты равны исходной клетке.",
+      "reason": "Кандидаты 1 и 2 проверяются при равных оценках, а кандидат 0 — когда равны все три. Оценка принятой клетки равна манхэттенскому расстоянию до цели. Прямой шаг меняет чётность оценки относительно исходной клетки, диагональный сохраняет её. Поэтому при равных оценках предыдущий кандидат не может быть диагональным, если уже проверенный кандидат с той же оценкой оказался прямым. Кандидат, сохранивший исходную клетку, имеет оценку 100, которую не получает ни одна принятая соседняя клетка.",
       "depends_on": [
         "KBBAI",
         "KBBDRAW",
@@ -184,6 +184,75 @@
               "candidatey",
               "[",
               "1",
+              "]"
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 84,
+          "line": 128,
+          "shape": {
+            "routine": "enemyphase.choosestep",
+            "kind": "branch-true",
+            "source": [
+              "if",
+              "(",
+              "x",
+              "<>",
+              "enemyai",
+              ".",
+              "candidatex",
+              "[",
+              "0",
+              "]",
+              ")",
+              "and",
+              "(",
+              "y",
+              "<>",
+              "enemyai"
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 86,
+          "line": 130,
+          "shape": {
+            "routine": "enemyphase.choosestep",
+            "kind": "statement",
+            "source": [
+              "enemyai",
+              ".",
+              "bestx",
+              ":=",
+              "enemyai",
+              ".",
+              "candidatex",
+              "[",
+              "0",
+              "]"
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 87,
+          "line": 131,
+          "shape": {
+            "routine": "enemyphase.choosestep",
+            "kind": "statement",
+            "source": [
+              "enemyai",
+              ".",
+              "besty",
+              ":=",
+              "enemyai",
+              ".",
+              "candidatey",
+              "[",
+              "0",
               "]"
             ]
           }
@@ -333,6 +402,99 @@
               "shooterturn",
               ":=",
               "3"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "enemy-phase-has-target",
+      "reason": "Перед ChooseFlight, ShooterTurn и пешим движением EnemyPhase проверяет три PreferredTargets. Если все равны 100, первый живой боевой слот становится PreferredTargets[2]. Если такого слота нет, EnemyPhase завершает бой и выходит. Поэтому во всех трёх указанных циклах обязательно есть индекс 0..4. ChooseStep может заменить PreferredTargets[0] только на индекс соседнего отряда игрока, так что до последнего цикла хотя бы одна цель сохраняется.",
+      "depends_on": [
+        "KBBAI",
+        "KBBTYPE",
+        "KBPLAYER",
+        "KBSTATE"
+      ],
+      "points": [
+        {
+          "module": "KBBAI",
+          "local_id": 153,
+          "line": 228,
+          "shape": {
+            "routine": "enemyphase.chooseflight",
+            "kind": "loop-exit",
+            "source": [
+              "for",
+              "i",
+              ":=",
+              "0",
+              "to",
+              "2",
+              "do",
+              "if",
+              "enemyai",
+              ".",
+              "preferredtargets",
+              "[",
+              "i",
+              "]",
+              "<",
+              "5"
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 168,
+          "line": 245,
+          "shape": {
+            "routine": "enemyphase.shooterturn",
+            "kind": "loop-exit",
+            "source": [
+              "for",
+              "dx",
+              ":=",
+              "0",
+              "to",
+              "2",
+              "do",
+              "if",
+              "enemyai",
+              ".",
+              "preferredtargets",
+              "[",
+              "dx",
+              "]",
+              "<",
+              "5"
+            ]
+          }
+        },
+        {
+          "module": "KBBAI",
+          "local_id": 412,
+          "line": 475,
+          "shape": {
+            "routine": "enemyphase",
+            "kind": "loop-exit",
+            "source": [
+              "for",
+              "enemyai",
+              ".",
+              "scanindex",
+              ":=",
+              "0",
+              "to",
+              "2",
+              "do",
+              "if",
+              "enemyai",
+              ".",
+              "preferredtargets",
+              "[",
+              "enemyai",
+              "."
             ]
           }
         }
