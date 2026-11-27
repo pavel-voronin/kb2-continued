@@ -5,7 +5,7 @@ import json
 import struct
 from cases import Case, ready
 from characterise import preset, battle, tree, projection
-from runtime import Battle, Creature, UnitVM, linear
+from runtime import Battle, Creature, linear
 
 
 def adjacent(v, args):
@@ -477,30 +477,17 @@ def cases(module):
 
             yield Case("B030.no-living-target." + mode, no_living_target, specimen.identity)
 
-        def living_target_after_hit(v):
-            attack = trial(
-                "KBBDMG",
-                "AttackUnit",
-                "living-target-after-hit",
-                units=[("Player", 0, 6, 8193, 0, 0), ("Enemy", 0, 5, 5, 5, 4)],
-                args=[5, 4, 0, 0],
-                changes={"Campaign.WeeklySpecies": 5, "Campaign.DamageBonus": 0,
-                         "Combat.Player.0.Shots": 0},
-            )
-            result = attack.run(UnitVM("KBBDMG"))
-            state = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
-            survivor = state.Player[0]
-            assert survivor.Count == 8192 and survivor.HitPoints == 204795
+        def living_target_without_attack_power(v):
             choose = trial(
                 module,
                 "EnemyPhase",
-                "living-target-after-hit",
-                units=[("Player", 4, survivor.Species, survivor.Count, 0, 0),
+                "living-target-without-attack-power",
+                units=[("Player", 4, 6, 8192, 0, 0),
                        ("Enemy", 0, 5, 5, 5, 4)],
                 changes={
-                    "Combat.Player.4.HitPoints": survivor.HitPoints,
-                    "Combat.Player.4.AttackPower": survivor.AttackPower,
-                    "Combat.Player.4.Shots": survivor.Shots,
+                    "Combat.Player.4.HitPoints": 204795,
+                    "Combat.Player.4.AttackPower": 0,
+                    "Combat.Player.4.Shots": 0,
                     "Combat.Uncontrolled.4": True,
                     "Combat.PlayerCount": 0,
                 },
@@ -513,7 +500,7 @@ def cases(module):
             assert attacks == [[5, 4, 0, 0]], attacks
             assert v.game().Runtime.BattleResult == 0
 
-        yield Case("B030.living-target-after-hit", living_target_after_hit)
+        yield Case("B030.living-target-without-attack-power", living_target_without_attack_power)
         for species in (0, 4):
             yield trial(
                 module,
@@ -740,6 +727,39 @@ def cases(module):
                 changes={"Combat.Enemy.0.Shots": 0},
             )
     elif module == "KBBDMG":
+        for count in (21, 8193):
+            losses = []
+            for side, other in (("Player", "Enemy"), ("Enemy", "Player")):
+                hit = trial(
+                    module, "AttackUnit", f"attack-power.{side}.{count}",
+                    units=[(side, 0, 6, count, 0, 0), (other, 0, 5, 5, 5, 4)],
+                    args=[5, 4, 0, 0],
+                    changes={"Campaign.WeeklySpecies": 5, "Campaign.DamageBonus": 0},
+                )
+                losses.append((hit, side))
+            magic = trial(
+                module, "ReportEnemyLoss", f"attack-power.{count}",
+                units=[("Enemy", 0, 6, count, 0, 0)],
+                args=[0, 0, 0],
+                changes={
+                    "Runtime.BattleTextColumn": 1,
+                    "Combat.Enemy.0.HitPoints": count * 25 - 30,
+                },
+            )
+            losses.append((magic, "Enemy"))
+
+            for loss, side in losses:
+                def attack_power_after_loss(v, loss=loss, side=side, count=count):
+                    result = loss.run(v)
+                    state = Battle.from_buffer_copy(bytes.fromhex(result["buffers"]["combat"]))
+                    survivor = getattr(state, side)[0]
+                    assert survivor.Count == count - 1
+                    assert v.game().Runtime.BattleDistances[0][0] == count - 1
+                    assert survivor.HitPoints == count * 25 - 30
+                    assert survivor.AttackPower == (count - 1) * 8, survivor.AttackPower
+
+                yield Case(loss.name, attack_power_after_loss, loss.identity)
+
         for label, species, count, health, healed_health in (
             ("wounded-ghost", 12, 1, 10, 25),
             ("wounded-vampire", 17, 1, 10, 50),

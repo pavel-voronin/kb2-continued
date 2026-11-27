@@ -235,7 +235,7 @@ begin
   begin
     Game.Runtime.BattleDistances[X, Y] := Game.Runtime.BattleDistances[X, Y] - Game.Runtime.BattleTextColumn;
     Combat.Enemy[Slot].Count := Combat.Enemy[Slot].Count - Game.Runtime.BattleTextColumn;
-    Combat.Enemy[Slot].AttackPower := CreatureDefinitions[Combat.Enemy[Slot].Species].Attack *
+    Combat.Enemy[Slot].AttackPower := LongInt(CreatureDefinitions[Combat.Enemy[Slot].Species].Attack) *
       Game.Runtime.BattleDistances[X, Y];
     DrawTile(BattleCellOffsets[X + Y * 6], 0, Game.Runtime.BattleField[X, Y]);
     DrawCellCount(X, Y);
@@ -326,7 +326,8 @@ begin
     begin
       Defender.Count := Defender.Count - Killed;
       Game.Runtime.BattleDistances[DefenderX, DefenderY] := Defender.Count;
-      Defender.AttackPower := CreatureDefinitions[Defender.Species].Attack * Defender.Count;
+      Defender.AttackPower := LongInt(CreatureDefinitions[Defender.Species].Attack) *
+        Defender.Count;
     end;
   end;
 
